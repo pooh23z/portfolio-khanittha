@@ -1,6 +1,13 @@
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
-    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-    <line x1="12" y1="19" x2="12" y2="23"/>
-    <line x1="8" y1="23" x2="16" y2="23"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" rx="22" fill="#FFF1F2"/>
+    <!-- Microphone Capsule -->
+    <rect x="40" y="22" width="20" height="34" rx="10" fill="#E11D48"/>
+    <path d="M32 44 C32 58 68 58 68 44" fill="none" stroke="#BE123C" stroke-width="4" stroke-linecap="round"/>
+    <line x1="50" y1="60" x2="50" y2="74" stroke="#BE123C" stroke-width="4" stroke-linecap="round"/>
+    <line x1="36" y1="74" x2="64" y2="74" stroke="#BE123C" stroke-width="4" stroke-linecap="round"/>
+    <!-- On Air Dot -->
+    <circle cx="50" cy="30" r="3" fill="#FFFFFF"/>
+    <!-- Sound Waves -->
+    <path d="M24 38 C22 46 22 52 24 60" fill="none" stroke="#FB7185" stroke-width="3" stroke-linecap="round"/>
+    <path d="M76 38 C78 46 78 52 76 60" fill="none" stroke="#FB7185" stroke-width="3" stroke-linecap="round"/>
   </svg>
