@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ขนิษฐา วันไชย (อ้อม) ✨ — Portfolio | Creative Content & AI Media Creator</title>
+  <title>ขนิษฐา วันไชย (อ้อม) ✨ — Portfolio | Creative Content & AI Media</title>
   <meta name="description" content="แฟ้มสะสมผลงานของ ขนิษฐา วันไชย (อ้อม) นักศึกษาคณะนิเทศศาสตร์ สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE) มหาวิทยาลัยกรุงเทพ เชี่ยวชาญ AI Creative Content, งานถ่ายภาพ, ตัดต่อวิดีโอ การันตีรางวัลชนะเลิศอันดับ 1 Huawei Hub">
   
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="ขนิษฐา วันไชย (อ้อม) ✨ — Portfolio | Creative Content & AI Media Creator">
+  <meta property="og:title" content="ขนิษฐา วันไชย (อ้อม) ✨ — Portfolio | Creative Content & AI Media">
   <meta property="og:description" content="นักศึกษานิเทศศาสตร์ ม.กรุงเทพ ที่ผสมผสานความคิดสร้างสรรค์ การเล่าเรื่องดิจิทัล และ Generative AI ตั้งแต่การถ่ายภาพ ตัดต่อวิดีโอ ไปจนถึงการออกกองจริง">
   <meta property="og:image" content="assets/hero-cover.jpg">
   
   <link rel="icon" type="image/png" href="assets/profile.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      /* Feminine Chic & Aesthetic Color Palette */
+      /* Feminine Chic Palette */
       --paper: #FFFDFC;
       --surface: #FFFFFF;
       --surface-elevated: #FFFFFF;
@@ -41,17 +41,12 @@
       --accent-grad: linear-gradient(135deg, #F43F5E 0%, #FB7185 50%, #FDA4AF 100%);
       --accent-grad-soft: linear-gradient(135deg, #FFF1F2 0%, #FDF2F8 100%);
 
-      /* Pastel Tone Badges */
+      /* Pastel Tone Accents */
       --blush: #FB7185;
-      --blush-soft: #FFF1F2;
       --peach: #F97316;
-      --peach-soft: #FFF7ED;
       --lilac: #9333EA;
-      --lilac-soft: #FAF5FF;
       --sage: #10B981;
-      --sage-soft: #ECFDF5;
       --gold: #D97706;
-      --gold-soft: #FFFBEB;
       
       --radius-sm: 10px;
       --radius-md: 18px;
@@ -89,15 +84,10 @@
       --accent-grad-soft: linear-gradient(135deg, rgba(251, 113, 133, 0.15) 0%, rgba(244, 63, 94, 0.1) 100%);
 
       --blush: #FB7185;
-      --blush-soft: rgba(251, 113, 133, 0.15);
       --peach: #FB923C;
-      --peach-soft: rgba(251, 146, 60, 0.15);
       --lilac: #C084FC;
-      --lilac-soft: rgba(192, 132, 252, 0.15);
       --sage: #34D399;
-      --sage-soft: rgba(52, 211, 153, 0.15);
       --gold: #FBBF24;
-      --gold-soft: rgba(251, 191, 36, 0.15);
       
       --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.4);
       --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -128,77 +118,119 @@
       position: relative;
     }
 
-    /* Ambient Pastel Gradient Blobs */
-    .bg-aura {
+    /* -------------------------------------------------------------
+       Interactive 3D Spatial Backdrop (Exact Architecture as Kosan)
+       ------------------------------------------------------------- */
+    .spatial-backdrop {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 75% 48% at 16% -4%, rgba(244, 63, 94, 0.09), transparent 66%),
+        radial-gradient(ellipse 68% 46% at 86% 10%, rgba(251, 146, 60, 0.08), transparent 66%),
+        radial-gradient(ellipse 65% 45% at 50% 104%, rgba(192, 132, 252, 0.08), transparent 66%);
+    }
+
+    [data-theme="dark"] .spatial-backdrop {
+      background:
+        radial-gradient(ellipse 80% 50% at 16% -6%, rgba(244, 63, 94, 0.20), transparent 66%),
+        radial-gradient(ellipse 70% 48% at 86% 8%, rgba(251, 146, 60, 0.16), transparent 66%),
+        radial-gradient(ellipse 70% 45% at 50% 106%, rgba(192, 132, 252, 0.14), transparent 66%);
+    }
+
+    .spatial-cursor-aura {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 900px;
-      overflow: hidden;
+      width: 760px;
+      height: 760px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(244, 63, 94, 0.14) 0%, rgba(251, 146, 60, 0.08) 36%, transparent 70%);
+      transform: translate3d(-9999px, -9999px, 0);
+      will-change: transform;
       pointer-events: none;
-      z-index: 0;
     }
 
-    .aura-1 {
+    [data-theme="dark"] .spatial-cursor-aura {
+      background: radial-gradient(circle, rgba(251, 113, 133, 0.22) 0%, rgba(192, 132, 252, 0.15) 38%, transparent 70%);
+    }
+
+    .spatial-grid-rig {
       position: absolute;
-      top: -100px;
-      right: 5%;
-      width: 550px;
-      height: 550px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(253, 164, 175, 0.35) 0%, rgba(254, 205, 211, 0.12) 50%, transparent 70%);
-      filter: blur(60px);
-      animation: floatAura 12s ease-in-out infinite alternate;
+      inset: 0;
+      pointer-events: none;
     }
 
-    .aura-2 {
+    .spatial-grid-plane {
       position: absolute;
-      top: 150px;
-      left: -5%;
-      width: 500px;
-      height: 500px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(254, 215, 170, 0.3) 0%, rgba(253, 230, 138, 0.08) 50%, transparent 70%);
-      filter: blur(70px);
-      animation: floatAura 14s ease-in-out infinite alternate-reverse;
+      top: -14%;
+      left: -24%;
+      right: -24%;
+      height: 74vh;
+      background-image:
+        linear-gradient(to right, rgba(244, 63, 94, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(244, 63, 94, 0.08) 1px, transparent 1px);
+      background-size: 52px 52px;
+      transform: perspective(720px) rotateX(58deg);
+      transform-origin: center top;
+      will-change: transform;
+      -webkit-mask-image: radial-gradient(ellipse 72% 68% at 50% 16%, #000 12%, transparent 78%);
+      mask-image: radial-gradient(ellipse 72% 68% at 50% 16%, #000 12%, transparent 78%);
     }
 
-    .aura-3 {
+    .spatial-grid-floor {
       position: absolute;
-      top: 400px;
-      right: 25%;
-      width: 450px;
-      height: 450px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(243, 232, 255, 0.45) 0%, rgba(233, 213, 255, 0.12) 50%, transparent 70%);
-      filter: blur(65px);
+      bottom: -18%;
+      left: -24%;
+      right: -24%;
+      height: 68vh;
+      background-image:
+        linear-gradient(to right, rgba(192, 132, 252, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(251, 146, 60, 0.07) 1px, transparent 1px);
+      background-size: 52px 52px;
+      transform: perspective(720px) rotateX(-58deg);
+      transform-origin: center bottom;
+      will-change: transform;
+      -webkit-mask-image: radial-gradient(ellipse 72% 64% at 50% 86%, #000 10%, transparent 76%);
+      mask-image: radial-gradient(ellipse 72% 64% at 50% 86%, #000 10%, transparent 76%);
     }
 
-    [data-theme="dark"] .aura-1 {
-      background: radial-gradient(circle, rgba(244, 63, 94, 0.22) 0%, transparent 70%);
+    [data-theme="dark"] .spatial-grid-plane {
+      background-image:
+        linear-gradient(to right, rgba(251, 113, 133, 0.12) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(251, 113, 133, 0.12) 1px, transparent 1px);
     }
 
-    [data-theme="dark"] .aura-2 {
-      background: radial-gradient(circle, rgba(192, 132, 252, 0.18) 0%, transparent 70%);
+    [data-theme="dark"] .spatial-grid-floor {
+      background-image:
+        linear-gradient(to right, rgba(192, 132, 252, 0.10) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(251, 146, 60, 0.10) 1px, transparent 1px);
     }
 
-    @keyframes floatAura {
-      0% { transform: translateY(0px) scale(1); }
-      100% { transform: translateY(35px) scale(1.08); }
+    #spatial3dCanvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      pointer-events: none;
     }
 
-    .mono {
-      font-family: 'IBM Plex Mono', monospace;
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--accent-grad);
+      z-index: 1001;
+      width: 0%;
+      transition: width 0.1s ease-out;
     }
 
-    .display {
-      font-family: 'Chonburi', serif;
-    }
-
-    .serif-chic {
-      font-family: 'Playfair Display', serif;
-    }
+    .mono { font-family: 'IBM Plex Mono', monospace; }
+    .display { font-family: 'Chonburi', serif; }
 
     .wrap {
       max-width: var(--max);
@@ -244,9 +276,7 @@
       font-size: 1rem;
     }
 
-    .nav-avatar-wrap {
-      position: relative;
-    }
+    .nav-avatar-wrap { position: relative; }
 
     .nav-avatar {
       width: 38px;
@@ -279,9 +309,7 @@
       position: relative;
     }
 
-    .nav-links a:hover {
-      color: var(--accent);
-    }
+    .nav-links a:hover { color: var(--accent); }
 
     .nav-links a:hover::after {
       content: '';
@@ -478,36 +506,16 @@
       margin-bottom: 32px;
     }
 
-    /* Hero Card / Visual with Pretty Gradient Frame */
+    /* Hero Card / Visual with Pretty Frame & 3D Tilt */
     .hero-card {
       position: relative;
       background: var(--surface);
       border-radius: var(--radius-lg);
       padding: 14px;
       box-shadow: var(--shadow-lg);
-      transition: transform var(--transition), box-shadow var(--transition);
       border: 1.5px solid var(--line);
-    }
-
-    .hero-card::before {
-      content: '';
-      position: absolute;
-      inset: -4px;
-      background: var(--accent-grad);
-      border-radius: calc(var(--radius-lg) + 4px);
-      z-index: -1;
-      opacity: 0.35;
-      filter: blur(10px);
-      transition: opacity var(--transition);
-    }
-
-    .hero-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-xl);
-    }
-
-    .hero-card:hover::before {
-      opacity: 0.6;
+      transform-style: preserve-3d;
+      will-change: transform;
     }
 
     .hero-card-img-wrap {
@@ -526,10 +534,6 @@
       transition: transform 0.6s ease;
     }
 
-    .hero-card:hover .hero-card-img {
-      transform: scale(1.03);
-    }
-
     .floating-pill {
       position: absolute;
       background: rgba(255, 255, 255, 0.94);
@@ -545,7 +549,6 @@
       font-weight: 600;
       color: #261924;
       z-index: 2;
-      transition: transform var(--transition);
     }
 
     [data-theme="dark"] .floating-pill {
@@ -554,19 +557,8 @@
       border-color: #3D2647;
     }
 
-    .floating-pill:hover {
-      transform: scale(1.04);
-    }
-
-    .pill-top-right {
-      top: 16px;
-      right: 16px;
-    }
-
-    .pill-bottom-left {
-      bottom: 16px;
-      left: 16px;
-    }
+    .pill-top-right { top: 16px; right: 16px; }
+    .pill-bottom-left { bottom: 16px; left: 16px; }
 
     /* Metrics Bar */
     .metrics-bar {
@@ -585,7 +577,8 @@
       position: relative;
       overflow: hidden;
       box-shadow: var(--shadow-sm);
-      transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+      transition: border-color var(--transition), box-shadow var(--transition);
+      will-change: transform;
     }
 
     .metric-card::after {
@@ -600,15 +593,7 @@
       transition: opacity var(--transition);
     }
 
-    .metric-card:hover {
-      transform: translateY(-3px);
-      border-color: var(--accent-border);
-      box-shadow: var(--shadow-md);
-    }
-
-    .metric-card:hover::after {
-      opacity: 1;
-    }
+    .metric-card:hover::after { opacity: 1; }
 
     .metric-icon-corner {
       position: absolute;
@@ -639,9 +624,7 @@
       position: relative;
     }
 
-    .section-head {
-      margin-bottom: 38px;
-    }
+    .section-head { margin-bottom: 38px; }
 
     .section-eyebrow {
       display: inline-flex;
@@ -672,97 +655,255 @@
       max-width: 700px;
     }
 
-    /* Core Strengths (4 Cards) with Pastel Card Accents */
-    .strengths-grid {
+    /* -------------------------------------------------------------
+       SKILLS SECTION — Exact Architecture from Kosan with Feminine Palette
+       ------------------------------------------------------------- */
+    .skills-cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .skills-cards-row-top {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .skills-cards-row-bottom {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
+      gap: 24px;
     }
 
-    .strength-card {
-      background: var(--surface);
+    .skill-card {
+      --card-accent: #E11D48;
+      --card-accent-soft: rgba(225, 29, 72, 0.10);
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFFDFE 100%);
       border: 1.5px solid var(--line);
-      border-radius: var(--radius-md);
-      padding: 30px;
+      border-radius: 22px;
+      padding: 26px 22px 24px;
+      transition: box-shadow 0.28s ease, border-color 0.25s ease;
       display: flex;
-      gap: 22px;
-      box-shadow: var(--shadow-sm);
-      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+      flex-direction: column;
       position: relative;
+      overflow: hidden;
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.95) inset,
+        0 12px 28px -10px rgba(225, 29, 72, 0.08),
+        0 4px 10px -4px rgba(225, 29, 72, 0.04);
+      backface-visibility: hidden;
+      will-change: transform;
     }
 
-    .strength-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--accent-border);
+    .skill-card[data-cat="01"] {
+      --card-accent: #F43F5E;
+      --card-accent-soft: rgba(244, 63, 94, 0.12);
+    }
+    .skill-card[data-cat="02"] {
+      --card-accent: #F97316;
+      --card-accent-soft: rgba(249, 115, 22, 0.12);
+    }
+    .skill-card[data-cat="03"] {
+      --card-accent: #9333EA;
+      --card-accent-soft: rgba(147, 51, 234, 0.12);
+    }
+    .skill-card[data-cat="04"] {
+      --card-accent: #E11D48;
+      --card-accent-soft: rgba(225, 29, 72, 0.12);
+    }
+    .skill-card[data-cat="05"] {
+      --card-accent: #10B981;
+      --card-accent-soft: rgba(16, 185, 129, 0.12);
     }
 
-    .strength-num {
-      width: 48px;
-      height: 48px;
-      border-radius: var(--radius-md);
-      background: var(--accent-grad-soft);
-      color: var(--accent);
+    .skill-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 16px;
+      right: 16px;
+      height: 3px;
+      border-radius: 0 0 4px 4px;
+      background: linear-gradient(90deg, transparent, var(--card-accent), transparent);
+      opacity: 0.75;
+      transition: opacity 0.25s ease;
+      pointer-events: none;
+    }
+
+    .skill-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 0%), var(--card-accent-soft), transparent 65%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .skill-card:hover {
+      border-color: var(--card-accent);
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 1) inset,
+        0 24px 48px -12px rgba(225, 29, 72, 0.15),
+        0 8px 18px -6px rgba(225, 29, 72, 0.08);
+    }
+
+    .skill-card:hover::before,
+    .skill-card:hover::after {
+      opacity: 1;
+    }
+
+    [data-theme="dark"] .skill-card {
+      background: linear-gradient(180deg, #1B1320 0%, #150F1A 100%);
+      border-color: #302038;
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.10) inset,
+        0 16px 36px -10px rgba(0, 0, 0, 0.65);
+    }
+
+    [data-theme="dark"] .skill-card[data-cat="01"] {
+      --card-accent: #FB7185;
+      --card-accent-soft: rgba(251, 113, 133, 0.15);
+    }
+    [data-theme="dark"] .skill-card[data-cat="02"] {
+      --card-accent: #FB923C;
+      --card-accent-soft: rgba(251, 146, 60, 0.15);
+    }
+    [data-theme="dark"] .skill-card[data-cat="03"] {
+      --card-accent: #C084FC;
+      --card-accent-soft: rgba(192, 132, 252, 0.15);
+    }
+    [data-theme="dark"] .skill-card[data-cat="04"] {
+      --card-accent: #FDA4AF;
+      --card-accent-soft: rgba(253, 164, 175, 0.15);
+    }
+    [data-theme="dark"] .skill-card[data-cat="05"] {
+      --card-accent: #34D399;
+      --card-accent-soft: rgba(52, 211, 153, 0.15);
+    }
+
+    .skill-card-head {
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+      z-index: 1;
+    }
+
+    [data-theme="dark"] .skill-card-head {
+      border-bottom-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .skill-card-num {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--card-accent);
+      background: var(--card-accent-soft);
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 10px;
+      border-radius: 999px;
       border: 1px solid var(--accent-border);
+    }
+
+    .skill-card-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 0;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+    }
+
+    .skill-items-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+      position: relative;
+      z-index: 1;
+    }
+
+    .skill-item {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      padding: 8px 12px;
+      border-radius: 14px;
+      transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s ease, border-color 0.2s ease;
+      background: transparent;
+      border: 1px solid transparent;
+    }
+
+    .skill-item:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent-border);
+      transform: translate3d(4px, 0, 0);
+    }
+
+    .skill-icon-box {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 700;
-      font-size: 1.15rem;
       flex-shrink: 0;
-      box-shadow: 0 4px 12px var(--accent-glow);
-    }
-
-    .strength-content h3 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-      color: var(--ink);
-    }
-
-    .strength-content p {
-      font-size: 0.94rem;
-      color: var(--steel);
-      line-height: 1.6;
-    }
-
-    /* Skills Grid */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .skill-box {
-      background: var(--surface);
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFF5F7 100%);
       border: 1.5px solid var(--line);
-      border-radius: var(--radius-md);
-      padding: 26px 22px;
-      box-shadow: var(--shadow-sm);
-      transition: transform var(--transition), border-color var(--transition);
+      box-shadow:
+        0 1px 0 #FFFFFF inset,
+        0 3px 8px -1px rgba(225, 29, 72, 0.1);
+      color: var(--card-accent);
+      transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.22s ease, border-color 0.22s ease;
     }
 
-    .skill-box:hover {
-      transform: translateY(-3px);
-      border-color: var(--accent-border);
+    [data-theme="dark"] .skill-icon-box {
+      background: linear-gradient(180deg, #241A2B 0%, #1B1320 100%);
+      border-color: rgba(255, 255, 255, 0.12);
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.14) inset,
+        0 4px 8px rgba(0, 0, 0, 0.45);
     }
 
-    .skill-box-title {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    .skill-item:hover .skill-icon-box {
+      transform: translate3d(0, -2px, 0) scale(1.08);
+      border-color: var(--card-accent);
+      box-shadow:
+        0 1px 0 #FFFFFF inset,
+        0 7px 16px -3px rgba(225, 29, 72, 0.2);
+    }
+
+    .skill-icon-box img {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      display: block;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .skill-icon-box svg {
+      width: 20px;
+      height: 20px;
+      display: block;
+      stroke: currentColor;
+      pointer-events: none;
+    }
+
+    .skill-name-text {
+      font-size: 14.5px;
+      font-weight: 500;
       color: var(--ink);
+      line-height: 1.35;
     }
 
-    .skill-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-    }
-
+    /* Tag styles */
     .tag {
       font-size: 0.8rem;
       padding: 5px 12px;
@@ -771,28 +912,20 @@
       color: var(--ink);
       font-weight: 500;
       border: 1px solid var(--line);
-      transition: all var(--transition);
     }
-
-    .tag:hover {
-      transform: translateY(-1px);
-    }
-
     .tag.highlight {
       background: var(--accent-soft);
       color: var(--accent);
       border-color: var(--accent-border);
       font-weight: 600;
     }
-
     .tag.peach {
-      background: var(--peach-soft);
+      background: #FFF7ED;
       color: var(--peach);
       border-color: rgba(249, 115, 22, 0.25);
     }
-
     .tag.lilac {
-      background: var(--lilac-soft);
+      background: #FAF5FF;
       color: var(--lilac);
       border-color: rgba(147, 51, 234, 0.25);
     }
@@ -845,13 +978,13 @@
       display: flex;
       flex-direction: column;
       box-shadow: var(--shadow-sm);
-      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+      transition: border-color var(--transition), box-shadow var(--transition);
+      will-change: transform;
     }
 
     .work-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
       border-color: var(--accent-border);
+      box-shadow: var(--shadow-lg);
     }
 
     .work-thumb-wrap {
@@ -947,14 +1080,14 @@
       border-radius: var(--radius-lg);
       overflow: hidden;
       box-shadow: var(--shadow-sm);
-      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+      transition: border-color var(--transition), box-shadow var(--transition);
       cursor: pointer;
+      will-change: transform;
     }
 
     .cert-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-xl);
       border-color: var(--accent-border);
+      box-shadow: var(--shadow-xl);
     }
 
     .cert-img-wrap {
@@ -974,9 +1107,7 @@
       transition: transform 0.5s ease;
     }
 
-    .cert-card:hover .cert-img {
-      transform: scale(1.03);
-    }
+    .cert-card:hover .cert-img { transform: scale(1.03); }
 
     .cert-overlay-icon {
       position: absolute;
@@ -993,9 +1124,7 @@
       backdrop-filter: blur(8px);
     }
 
-    .cert-body {
-      padding: 26px;
-    }
+    .cert-body { padding: 26px; }
 
     .cert-award-pill {
       display: inline-flex;
@@ -1075,7 +1204,7 @@
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.92);
       color: var(--accent);
       border: none;
       display: flex;
@@ -1120,9 +1249,7 @@
       box-shadow: var(--shadow-sm);
     }
 
-    .thumb-item:hover {
-      opacity: 0.9;
-    }
+    .thumb-item:hover { opacity: 0.9; }
 
     .thumb-item.active {
       border-color: var(--accent);
@@ -1284,9 +1411,7 @@
       padding: 24px;
     }
 
-    .lightbox-modal.active {
-      display: flex;
-    }
+    .lightbox-modal.active { display: flex; }
 
     .lightbox-content {
       max-width: 90vw;
@@ -1358,69 +1483,48 @@
       text-align: center;
       color: var(--steel);
       font-size: 0.9rem;
+      position: relative;
+      z-index: 1;
     }
 
     /* Responsive */
     @media (max-width: 960px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-      .metrics-bar {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .strengths-grid {
-        grid-template-columns: 1fr;
-      }
-      .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .works-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .certs-grid {
-        grid-template-columns: 1fr;
-      }
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-      .nav-links {
-        display: none;
-      }
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .metrics-bar { grid-template-columns: repeat(2, 1fr); }
+      .skills-cards-row-top { grid-template-columns: repeat(2, 1fr); }
+      .skills-cards-row-bottom { grid-template-columns: repeat(2, 1fr); }
+      .works-grid { grid-template-columns: repeat(2, 1fr); }
+      .certs-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
     }
 
     @media (max-width: 640px) {
-      .hero-title {
-        font-size: 2.3rem;
-      }
-      .hero-title .nick-badge {
-        font-size: 1.3rem;
-      }
-      .works-grid {
-        grid-template-columns: 1fr;
-      }
-      .skills-grid {
-        grid-template-columns: 1fr;
-      }
-      .metrics-bar {
-        grid-template-columns: 1fr;
-      }
-      .timeline-card {
-        grid-template-columns: 1fr;
-        gap: 8px;
-      }
+      .hero-title { font-size: 2.3rem; }
+      .hero-title .nick-badge { font-size: 1.3rem; }
+      .skills-cards-row-top,
+      .skills-cards-row-bottom { grid-template-columns: 1fr; gap: 16px; }
+      .works-grid { grid-template-columns: 1fr; }
+      .metrics-bar { grid-template-columns: 1fr; }
+      .timeline-card { grid-template-columns: 1fr; gap: 8px; }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Ambient Glow Effects -->
-  <div class="bg-aura">
-    <div class="aura-1"></div>
-    <div class="aura-2"></div>
-    <div class="aura-3"></div>
+  <!-- 3D Spatial World Rig & Interactive Canvas (Like Kosan) -->
+  <div class="spatial-backdrop" aria-hidden="true">
+    <div class="spatial-cursor-aura" id="spatialAura"></div>
+    <div class="spatial-grid-rig" id="spatialGridRig">
+      <div class="spatial-grid-plane" id="spatialGridTop"></div>
+      <div class="spatial-grid-floor" id="spatialGridBottom"></div>
+    </div>
+    <canvas id="spatial3dCanvas"></canvas>
   </div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress"></div>
 
   <!-- Top Sticky Navigation Bar -->
   <nav class="nav">
@@ -1436,7 +1540,6 @@
 
       <div class="nav-links">
         <a href="#about">เกี่ยวกับ</a>
-        <a href="#strengths">ความถนัด</a>
         <a href="#skills">ทักษะ</a>
         <a href="#works">ผลงาน</a>
         <a href="#certs">รางวัล</a>
@@ -1556,7 +1659,6 @@
       </div>
 
       <div style="background:var(--surface); border:1.5px solid var(--line); border-radius:var(--radius-lg); padding:36px; line-height:1.85; color:var(--steel); box-shadow:var(--shadow-sm); position:relative; overflow:hidden;">
-        <div style="position:absolute; top:-20px; right:20px; font-size:6rem; color:var(--line); font-family:serif; pointer-events:none; opacity:0.6;">“</div>
         <p style="margin-bottom:16px;">
           "ตลอดระยะเวลาที่ศึกษา ข้าพเจ้าได้เรียนรู้ตั้งแต่การคิดและพัฒนาแนวคิด การวางแผน การผลิตสื่อไปจนถึงการนำเสนอผลงาน รวมถึงได้ฝึกการทำงานร่วมกับผู้อื่นและการแก้ไขปัญหาจากการลงมือปฏิบัติจริง ซึ่งทำให้ค้นพบว่าตนเองยังมีอีกหลายสิ่งที่ต้องเรียนรู้และพัฒนา"
         </p>
@@ -1576,119 +1678,170 @@
     </div>
   </section>
 
-  <!-- Core Strengths Section (Why work with me) -->
-  <section id="strengths" class="section">
+  <!-- -------------------------------------------------------------
+       SKILLS SECTION — Full Card Grid with Logos (Exact Like Kosan)
+       ------------------------------------------------------------- -->
+  <section class="section" id="skills">
     <div class="wrap">
       <div class="section-head">
-        <span class="section-eyebrow">✦ CORE COMPETENCIES</span>
-        <h2 class="section-title">ความถนัด 4 ด้านหลัก</h2>
+        <span class="section-eyebrow">✦ TOOLKIT & COMPETENCIES</span>
+        <h2 class="section-title">ทักษะและเครื่องมือการทำงาน</h2>
         <p class="section-desc">
-          ทักษะและความเชี่ยวชาญที่พร้อมนำมาประยุกต์ใช้เพื่อสร้างสรรค์คุณค่าให้กับทีมและองค์กร
+          เครื่องมือ ซอฟต์แวร์ และทักษะวิชาชีพที่ใช้งานคล่องแคล่วในการผลิตคอนเทนต์และสื่อสร้างสรรค์
         </p>
       </div>
 
-      <div class="strengths-grid">
-        <div class="strength-card">
-          <div class="strength-num">01</div>
-          <div class="strength-content">
-            <h3>การผลิตสื่อและคอนเทนต์ด้วย AI 🪄</h3>
-            <p>ถนัดด้านการถ่ายภาพ การตัดต่อวิดีโอ และการผลิตสื่อด้วยเครื่องมือ AI สร้างสรรค์ภาพและงานดิจิทัลที่ทันกระแส รวดเร็ว และมีคุณภาพ</p>
+      <div class="skills-cards-container">
+        <!-- Top Row (3 Cards: AI, Video, Photography) -->
+        <div class="skills-cards-row-top">
+
+          <!-- 01 AI & Generative Media -->
+          <div class="skill-card" data-cat="01">
+            <div class="skill-card-head">
+              <span class="skill-card-num">01</span>
+              <h3 class="skill-card-title">AI & Generative Media</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/midjourney.svg" alt="Midjourney" loading="lazy"></div>
+                <span class="skill-name-text">Midjourney (Style & Image Gen)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/chatgpt.svg" alt="ChatGPT" loading="lazy"></div>
+                <span class="skill-name-text">ChatGPT & Prompt Engineering</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></div>
+                <span class="skill-name-text">Generative Video & Motion AI</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path><path d="M12 6v6l4 2"></path></svg></div>
+                <span class="skill-name-text">Intel Core Ultra AI Workshop</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/figma.svg" alt="Figma" loading="lazy"></div>
+                <span class="skill-name-text">AI Moodboard & Concept Art</span>
+              </div>
+            </div>
           </div>
+
+          <!-- 02 Video & Post-Production -->
+          <div class="skill-card" data-cat="02">
+            <div class="skill-card-head">
+              <span class="skill-card-num">02</span>
+              <h3 class="skill-card-title">Video & Post-Production</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/capcut.svg" alt="CapCut" loading="lazy"></div>
+                <span class="skill-name-text">CapCut (Effects & Transitions)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/premierepro.svg" alt="Premiere Pro" loading="lazy"></div>
+                <span class="skill-name-text">Adobe Premiere Pro</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/tiktok.svg" alt="Short-form" loading="lazy"></div>
+                <span class="skill-name-text">Short-form Video (Reels / TikTok)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/photoshop.svg" alt="Photoshop" loading="lazy"></div>
+                <span class="skill-name-text">Adobe Photoshop (Cover & Retouch)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg></div>
+                <span class="skill-name-text">Sound Design & Beat Syncing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 Photography & On-set Production -->
+          <div class="skill-card" data-cat="03">
+            <div class="skill-card-head">
+              <span class="skill-card-num">03</span>
+              <h3 class="skill-card-title">Photography & On-set</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/camera.svg" alt="Camera" loading="lazy"></div>
+                <span class="skill-name-text">DSLR & Mirrorless Photography</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+                <span class="skill-name-text">Event & Light Fest (Awakening BKK)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/lighting.svg" alt="Lighting" loading="lazy"></div>
+                <span class="skill-name-text">Studio Lighting & Mood Setting</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/makeup.svg" alt="Makeup" loading="lazy"></div>
+                <span class="skill-name-text">On-set Makeup & Styling</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg></div>
+                <span class="skill-name-text">Set Props & Scene Management</span>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="strength-card">
-          <div class="strength-num">02</div>
-          <div class="strength-content">
-            <h3>การสื่อสาร ประสานงาน และทำงานเป็นทีม 🤝</h3>
-            <p>ถนัดด้านการสื่อสาร การนำเสนอข้อมูล มีประสบการณ์เป็น Staff กองถ่าย ประสานงานนักศึกษาใหม่ และปรับตัวทำงานร่วมกับผู้อื่นได้อย่างราบรื่น</p>
-          </div>
-        </div>
+        <!-- Bottom Row (2 Cards: Storytelling, Coordination) -->
+        <div class="skills-cards-row-bottom">
 
-        <div class="strength-card">
-          <div class="strength-num">03</div>
-          <div class="strength-content">
-            <h3>ความคิดสร้างสรรค์และบริหารสื่อออนไลน์ 💡</h3>
-            <p>ถนัดการคิดคอนเทนต์ที่ดึงดูดใจผู้บริโภค การเล่าเรื่องแบบ Storytelling การผลิตคอนเทนต์สั้นบน TikTok, Reels และ CapCut</p>
+          <!-- 04 Storytelling & Presentation -->
+          <div class="skill-card" data-cat="04">
+            <div class="skill-card-head">
+              <span class="skill-card-num">04</span>
+              <h3 class="skill-card-title">Storytelling & Presentation</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/anchor.svg" alt="Anchor" loading="lazy"></div>
+                <span class="skill-name-text">ผู้ประกาศข่าว & พิธีกรหน้ากล้อง (News Anchor)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/storytelling.svg" alt="Storytelling" loading="lazy"></div>
+                <span class="skill-name-text">Digital Storytelling & Scriptwriting (บทวิดีโอ)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div>
+                <span class="skill-name-text">การนำเสนอและสื่อสารเชิงธุรกิจ (Pitching)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></div>
+                <span class="skill-name-text">Social Media Trend & Audience Engagement</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="strength-card">
-          <div class="strength-num">04</div>
-          <div class="strength-content">
-            <h3>การเขียนและงานประชาสัมพันธ์ ✍️</h3>
-            <p>ถนัดด้านการเขียน การเรียบเรียงข้อมูลอย่างเป็นลำดับขั้นตอน การทำ Script วิดีโอ และงานประชาสัมพันธ์สื่อสารองค์กร</p>
+          <!-- 05 Coordination & Teamwork -->
+          <div class="skill-card" data-cat="05">
+            <div class="skill-card-head">
+              <span class="skill-card-num">05</span>
+              <h3 class="skill-card-title">Coordination & Teamwork</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+                <span class="skill-name-text">สตาฟฟ์สาขา CDE & ปฐมนิเทศ Diamond Days</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><img src="./assets/icons/line.svg" alt="LINE" loading="lazy"></div>
+                <span class="skill-name-text">การประสานงานกองถ่ายและการสื่อสารองค์กร (PR)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+                <span class="skill-name-text">ทักษะการทำงานเป็นทีม & การสื่อสารสองภาษา (TH/EN)</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+                <span class="skill-name-text">ความรับผิดชอบ ความตรงต่อเวลา และการแก้ปัญหาเฉพาะหน้า</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Skills & Tools -->
-  <section id="skills" class="section">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="section-eyebrow">✦ SKILLS & TOOLS</span>
-        <h2 class="section-title">เครื่องมือและทักษะการทำงาน</h2>
-        <p class="section-desc">
-          เทคโนโลยีและซอฟต์แวร์ที่ใช้งานเป็นประจำในการผลิตสื่อ
-        </p>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-box">
-          <div class="skill-box-title">
-            <span>✨</span>
-            AI & Generative Media
-          </div>
-          <div class="skill-tags">
-            <span class="tag highlight">Midjourney</span>
-            <span class="tag highlight">ChatGPT / Prompts</span>
-            <span class="tag">Generative VDO</span>
-            <span class="tag">AI Image Creation</span>
-            <span class="tag">Intel AI Workshop</span>
-          </div>
-        </div>
-
-        <div class="skill-box">
-          <div class="skill-box-title">
-            <span>🎬</span>
-            Video & Post-Production
-          </div>
-          <div class="skill-tags">
-            <span class="tag peach">CapCut</span>
-            <span class="tag">Adobe Premiere Pro</span>
-            <span class="tag">Short-form Video</span>
-            <span class="tag">Sound & Pace</span>
-            <span class="tag">Subtitles & Effects</span>
-          </div>
-        </div>
-
-        <div class="skill-box">
-          <div class="skill-box-title">
-            <span>📸</span>
-            Photography & On-set
-          </div>
-          <div class="skill-tags">
-            <span class="tag lilac">DSLR / Mirrorless</span>
-            <span class="tag">Event Photography</span>
-            <span class="tag">Awakening Bangkok</span>
-            <span class="tag">Makeup & Styling</span>
-            <span class="tag">Set Props Management</span>
-          </div>
-        </div>
-
-        <div class="skill-box">
-          <div class="skill-box-title">
-            <span>🌷</span>
-            Communication & Soft Skills
-          </div>
-          <div class="skill-tags">
-            <span class="tag highlight">ผู้ประกาศข่าว (Anchor)</span>
-            <span class="tag">การนำเสนอ (Pitching)</span>
-            <span class="tag">การทำงานเป็นทีม</span>
-            <span class="tag">ความรับผิดชอบสูง</span>
-            <span class="tag">ภาษาไทย / อังกฤษ</span>
-          </div>
         </div>
       </div>
     </div>
@@ -2039,9 +2192,7 @@
         </div>
 
         <!-- Thumbnails Strip -->
-        <div class="reader-thumbnails" id="thumbsContainer">
-          <!-- Populated by JS -->
-        </div>
+        <div class="reader-thumbnails" id="thumbsContainer"></div>
       </div>
     </div>
   </section>
@@ -2176,7 +2327,9 @@
   </footer>
 
   <script>
+    // -------------------------------------------------------------
     // 1. Theme Management (Light / Dark)
+    // -------------------------------------------------------------
     const themeToggle = document.getElementById('themeToggle');
     const sunIcon = document.getElementById('themeIconSun');
     const moonIcon = document.getElementById('themeIconMoon');
@@ -2194,7 +2347,6 @@
       }
     }
 
-    // Initialize Theme
     const savedTheme = localStorage.getItem('portfolio-theme') || 
       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     applyTheme(savedTheme);
@@ -2204,7 +2356,541 @@
       applyTheme(current === 'dark' ? 'light' : 'dark');
     });
 
-    // 2. Filter Works
+    // -------------------------------------------------------------
+    // 2. Scroll Progress Bar
+    // -------------------------------------------------------------
+    const scrollProgress = document.getElementById('scrollProgress');
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      if (scrollProgress) scrollProgress.style.width = scrolled + '%';
+    }, { passive: true });
+
+    // -------------------------------------------------------------
+    // 3. Interactive 3D Spatial Canvas World (Exact Physics as Kosan)
+    // -------------------------------------------------------------
+    function initSpatial3DWorld() {
+      var canvas = document.getElementById('spatial3dCanvas');
+      if (!canvas || !canvas.getContext) return;
+      var ctx = canvas.getContext('2d', { alpha: true });
+      var auraEl = document.getElementById('spatialAura');
+      var gridTop = document.getElementById('spatialGridTop');
+      var gridBottom = document.getElementById('spatialGridBottom');
+
+      var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+      var vw = window.innerWidth;
+      var vh = window.innerHeight;
+      var dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+      var themeObs = new MutationObserver(function () {
+        isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      });
+      themeObs.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+      function resizeCanvas() {
+        vw = window.innerWidth;
+        vh = window.innerHeight;
+        dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+        canvas.width = Math.round(vw * dpr);
+        canvas.height = Math.round(vh * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas, { passive: true });
+
+      var mouseActive = false;
+      var targetMX = vw * 0.65;
+      var targetMY = vh * 0.36;
+      var smoothMX = targetMX;
+      var smoothMY = targetMY;
+      var prevMX = targetMX;
+      var prevMY = targetMY;
+      var velX = 0;
+      var velY = 0;
+
+      var camYaw = 0, camPitch = 0;
+      var scrollYVal = window.scrollY || 0;
+      var smoothScroll = scrollYVal;
+
+      window.addEventListener('mousemove', function (e) {
+        mouseActive = true;
+        targetMX = e.clientX;
+        targetMY = e.clientY;
+      }, { passive: true });
+
+      window.addEventListener('touchmove', function (e) {
+        if (e.touches && e.touches[0]) {
+          mouseActive = true;
+          targetMX = e.touches[0].clientX;
+          targetMY = e.touches[0].clientY;
+        }
+      }, { passive: true });
+
+      window.addEventListener('scroll', function () {
+        scrollYVal = window.scrollY || 0;
+      }, { passive: true });
+
+      // 3D Polyhedrons
+      function makeOctahedron() {
+        var v = [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1]];
+        var e = [[0, 2], [0, 3], [0, 4], [0, 5], [1, 2], [1, 3], [1, 4], [1, 5], [2, 4], [4, 3], [3, 5], [5, 2]];
+        return { v: v, e: e };
+      }
+      function makeCube() {
+        var s = 0.72;
+        var v = [[-s, -s, -s], [s, -s, -s], [s, s, -s], [-s, s, -s], [-s, -s, s], [s, -s, s], [s, s, s], [-s, s, s]];
+        var e = [[0, 1], [1, 2], [2, 3], [3, 0], [4, 5], [5, 6], [6, 7], [7, 4], [0, 4], [1, 5], [2, 6], [3, 7]];
+        return { v: v, e: e };
+      }
+      function makeTetrahedron() {
+        var s = 0.85;
+        var v = [[s, s, s], [-s, -s, s], [-s, s, -s], [s, -s, -s]];
+        var e = [[0, 1], [0, 2], [0, 3], [1, 2], [2, 3], [3, 1]];
+        return { v: v, e: e };
+      }
+      function makeIcosahedron() {
+        var t = (1 + Math.sqrt(5)) / 2;
+        var raw = [
+          [-1, t, 0], [1, t, 0], [-1, -t, 0], [1, -t, 0],
+          [0, -1, t], [0, 1, t], [0, -1, -t], [0, 1, -t],
+          [t, 0, -1], [t, 0, 1], [-t, 0, -1], [-t, 0, 1]
+        ];
+        var len = Math.sqrt(1 + t * t);
+        var v = raw.map(function (p) { return [p[0] / len, p[1] / len, p[2] / len]; });
+        var e = [];
+        for (var i = 0; i < v.length; i++) {
+          for (var j = i + 1; j < v.length; j++) {
+            var dx = v[i][0] - v[j][0], dy = v[i][1] - v[j][1], dz = v[i][2] - v[j][2];
+            var d = Math.sqrt(dx * dx + dy * dy + dz * dz);
+            if (d < 1.15) e.push([i, j]);
+          }
+        }
+        return { v: v, e: e };
+      }
+
+      var geoIco = makeIcosahedron();
+      var geoOct = makeOctahedron();
+      var geoCube = makeCube();
+      var geoTet = makeTetrahedron();
+
+      var shapes = [
+        { geo: geoIco, xr: 0.34, yr: -0.22, z: 70, r: 66, rx: 0.3, ry: 0.6, rz: 0.1, drx: 0.0032, dry: 0.0048, drz: 0.0018, ox: 0, oy: 0, vx: 0, vy: 0, hue: 0 },
+        { geo: geoOct, xr: -0.38, yr: -0.26, z: 130, r: 46, rx: 0.8, ry: 0.2, rz: 0.4, drx: -0.004, dry: 0.0035, drz: 0.0022, ox: 0, oy: 0, vx: 0, vy: 0, hue: 1 },
+        { geo: geoCube, xr: -0.32, yr: 0.28, z: 40, r: 44, rx: 0.5, ry: 0.9, rz: 0.2, drx: 0.0036, dry: -0.003, drz: 0.0025, ox: 0, oy: 0, vx: 0, vy: 0, hue: 2 },
+        { geo: geoOct, xr: 0.40, yr: 0.30, z: 180, r: 52, rx: 0.1, ry: 0.4, rz: 0.7, drx: 0.0028, dry: 0.0042, drz: -0.002, ox: 0, oy: 0, vx: 0, vy: 0, hue: 1 },
+        { geo: geoTet, xr: 0.06, yr: -0.34, z: 240, r: 42, rx: 0.4, ry: 0.7, rz: 0.3, drx: -0.0035, dry: 0.0038, drz: 0.003, ox: 0, oy: 0, vx: 0, vy: 0, hue: 0 },
+        { geo: geoCube, xr: 0.14, yr: 0.36, z: 310, r: 50, rx: 0.2, ry: 0.5, rz: 0.6, drx: 0.0026, dry: -0.0034, drz: 0.002, ox: 0, oy: 0, vx: 0, vy: 0, hue: 2 },
+        { geo: geoOct, xr: -0.14, yr: 0.04, z: 380, r: 58, rx: 0.7, ry: 0.3, rz: 0.5, drx: 0.0022, dry: 0.0030, drz: -0.0018, ox: 0, oy: 0, vx: 0, vy: 0, hue: 0 }
+      ];
+
+      var NODE_COUNT = isFinePointer ? 48 : 24;
+      var nodes = [];
+      for (var n = 0; n < NODE_COUNT; n++) {
+        nodes.push({
+          xr: (Math.random() - 0.5) * 1.45,
+          yr: (Math.random() - 0.5) * 1.45,
+          z: -160 + Math.random() * 720,
+          vx: (Math.random() - 0.5) * 0.00035,
+          vy: (Math.random() - 0.5) * 0.00035,
+          vz: (Math.random() - 0.5) * 0.22,
+          ox: 0, oy: 0,
+          size: 1.5 + Math.random() * 1.9,
+          hue: n % 3
+        });
+      }
+
+      var nSX = new Float32Array(NODE_COUNT);
+      var nSY = new Float32Array(NODE_COUNT);
+      var nSZ = new Float32Array(NODE_COUNT);
+      var nScale = new Float32Array(NODE_COUNT);
+      var nVis = new Uint8Array(NODE_COUNT);
+
+      var vSX = new Float32Array(16);
+      var vSY = new Float32Array(16);
+      var vSZ = new Float32Array(16);
+
+      var fov = 640;
+      var gyroPhase = 0;
+      var animFrameId = 0;
+
+      function wrapSym(val, span) {
+        var half = span * 0.5;
+        var m = ((val + half) % span + span) % span;
+        return m - half;
+      }
+
+      function renderFrame() {
+        animFrameId = 0;
+        ctx.clearRect(0, 0, vw, vh);
+
+        var cx = vw * 0.5;
+        var cy = vh * 0.5;
+
+        smoothMX += (targetMX - smoothMX) * 0.12;
+        smoothMY += (targetMY - smoothMY) * 0.12;
+        velX = velX * 0.84 + (smoothMX - prevMX) * 0.16;
+        velY = velY * 0.84 + (smoothMY - prevMY) * 0.16;
+        prevMX = smoothMX;
+        prevMY = smoothMY;
+
+        smoothScroll += (scrollYVal - smoothScroll) * 0.10;
+
+        var mxNorm = (smoothMX / Math.max(vw, 1) - 0.5) * 2;
+        var myNorm = (smoothMY / Math.max(vh, 1) - 0.5) * 2;
+
+        var targetYaw = mouseActive ? mxNorm * 0.48 : Math.sin(gyroPhase * 0.4) * 0.08;
+        var targetPitch = mouseActive ? -myNorm * 0.34 : Math.cos(gyroPhase * 0.3) * 0.05;
+        camYaw += (targetYaw - camYaw) * 0.085;
+        camPitch += (targetPitch - camPitch) * 0.085;
+
+        if (auraEl && mouseActive) {
+          auraEl.style.transform = 'translate3d(' + (smoothMX - 380).toFixed(1) + 'px,' + (smoothMY - 380).toFixed(1) + 'px,0)';
+        }
+        if (gridTop) {
+          gridTop.style.transform = 'perspective(720px) rotateX(' + (58 + camPitch * 18).toFixed(2) + 'deg) rotateZ(' + (-camYaw * 11).toFixed(2) + 'deg) translate3d(' + (-camYaw * 64).toFixed(1) + 'px,' + (camPitch * 34).toFixed(1) + 'px,0)';
+        }
+        if (gridBottom) {
+          gridBottom.style.transform = 'perspective(720px) rotateX(' + (-58 + camPitch * 18).toFixed(2) + 'deg) rotateZ(' + (camYaw * 11).toFixed(2) + 'deg) translate3d(' + (-camYaw * 70).toFixed(1) + 'px,' + (camPitch * 38).toFixed(1) + 'px,0)';
+        }
+
+        var cosY = Math.cos(camYaw), sinY = Math.sin(camYaw);
+        var cosP = Math.cos(camPitch), sinP = Math.sin(camPitch);
+        var camPanX = -camYaw * 145;
+        var camPanY = camPitch * 105;
+
+        // Feminine 3D Canvas Palette (Rose Peony, Peach, Lilac)
+        var cPrimary = isDark ? '251, 113, 133' : '225, 29, 72';
+        var cSecondary = isDark ? '251, 146, 60' : '249, 115, 22';
+        var cTertiary = isDark ? '192, 132, 252' : '147, 51, 234';
+        var baseAlpha = isDark ? 1.0 : 0.85;
+
+        gyroPhase += 0.016;
+
+        var fieldW = Math.max(vw, 900) * 1.35;
+        var fieldH = Math.max(vh, 750) * 1.35;
+
+        for (var i = 0; i < NODE_COUNT; i++) {
+          var nd = nodes[i];
+          if (!reducedMotion) {
+            nd.xr += nd.vx;
+            nd.yr += nd.vy;
+            nd.z += nd.vz;
+            if (nd.xr > 0.72) nd.xr = -0.72;
+            else if (nd.xr < -0.72) nd.xr = 0.72;
+            if (nd.yr > 0.72) nd.yr = -0.72;
+            else if (nd.yr < -0.72) nd.yr = 0.72;
+            if (nd.z > 560) nd.z = -160;
+            else if (nd.z < -160) nd.z = 560;
+          }
+
+          var wx = nd.xr * fieldW + nd.ox;
+          var wy = wrapSym(nd.yr * fieldH - smoothScroll * 0.22, fieldH) + nd.oy;
+          var wz = nd.z;
+
+          var x1 = wx * cosY + wz * sinY + camPanX;
+          var z1 = -wx * sinY + wz * cosY;
+          var y2 = wy * cosP - z1 * sinP + camPanY;
+          var z2 = wy * sinP + z1 * cosP;
+
+          if (z2 < -fov + 80) {
+            nVis[i] = 0;
+            nd.ox *= 0.92;
+            nd.oy *= 0.92;
+            continue;
+          }
+
+          var sc = fov / (fov + z2);
+          var sx = cx + x1 * sc;
+          var sy = cy + y2 * sc;
+
+          if (mouseActive) {
+            var mdx = smoothMX - sx;
+            var mdy = smoothMY - sy;
+            var mDistSq = mdx * mdx + mdy * mdy;
+            if (mDistSq < 57600 && mDistSq > 4) {
+              var mDist = Math.sqrt(mDistSq);
+              var pull = (1 - mDist / 240) * 1.45;
+              nd.ox += (mdx / mDist * 0.65 - mdy / mDist * 0.45) * pull;
+              nd.oy += (mdy / mDist * 0.65 + mdx / mDist * 0.45) * pull;
+            }
+          }
+          nd.ox *= 0.93;
+          nd.oy *= 0.93;
+
+          nSX[i] = sx;
+          nSY[i] = sy;
+          nSZ[i] = z2;
+          nScale[i] = sc;
+          nVis[i] = (sx > -80 && sx < vw + 80 && sy > -80 && sy < vh + 80) ? 1 : 0;
+        }
+
+        // Draw Node Connections
+        ctx.lineWidth = 1;
+        for (var a = 0; a < NODE_COUNT; a++) {
+          if (!nVis[a]) continue;
+          var ax = nSX[a], ay = nSY[a], az = nSZ[a];
+          for (var b = a + 1; b < NODE_COUNT; b++) {
+            if (!nVis[b]) continue;
+            var dz = az - nSZ[b];
+            if (dz > 220 || dz < -220) continue;
+            var dx = ax - nSX[b];
+            if (dx > 145 || dx < -145) continue;
+            var dy = ay - nSY[b];
+            if (dy > 145 || dy < -145) continue;
+            var dSq = dx * dx + dy * dy;
+            if (dSq < 21025) {
+              var distFactor = 1 - Math.sqrt(dSq) / 145;
+              var depthFactor = Math.min(1.15, (nScale[a] + nScale[b]) * 0.5);
+              var alpha = distFactor * depthFactor * 0.16 * baseAlpha;
+              ctx.strokeStyle = 'rgba(' + cPrimary + ',' + alpha.toFixed(3) + ')';
+              ctx.beginPath();
+              ctx.moveTo(ax, ay);
+              ctx.lineTo(nSX[b], nSY[b]);
+              ctx.stroke();
+            }
+          }
+        }
+
+        // Cursor Tethers
+        if (mouseActive && isFinePointer) {
+          for (var c = 0; c < NODE_COUNT; c++) {
+            if (!nVis[c]) continue;
+            var cdx = smoothMX - nSX[c];
+            var cdy = smoothMY - nSY[c];
+            var cdSq = cdx * cdx + cdy * cdy;
+            if (cdSq < 52900) {
+              var tFactor = 1 - Math.sqrt(cdSq) / 230;
+              var tAlpha = tFactor * Math.min(1.2, nScale[c]) * (isDark ? 0.38 : 0.28);
+              ctx.strokeStyle = 'rgba(' + (c % 2 === 0 ? cPrimary : cSecondary) + ',' + tAlpha.toFixed(3) + ')';
+              ctx.lineWidth = 1.15;
+              ctx.beginPath();
+              ctx.moveTo(smoothMX, smoothMY);
+              ctx.lineTo(nSX[c], nSY[c]);
+              ctx.stroke();
+            }
+          }
+        }
+
+        // Draw Nodes
+        for (var k = 0; k < NODE_COUNT; k++) {
+          if (!nVis[k]) continue;
+          var nObj = nodes[k];
+          var scN = nScale[k];
+          var rN = Math.max(1.1, nObj.size * scN);
+          var colN = nObj.hue === 0 ? cPrimary : (nObj.hue === 1 ? cSecondary : cTertiary);
+          var aN = Math.min(0.72, scN * 0.48) * baseAlpha;
+
+          if (scN > 0.92) {
+            ctx.fillStyle = 'rgba(' + colN + ',' + (aN * 0.22).toFixed(3) + ')';
+            ctx.beginPath();
+            ctx.arc(nSX[k], nSY[k], rN * 2.6, 0, Math.PI * 2);
+            ctx.fill();
+          }
+          ctx.fillStyle = 'rgba(' + colN + ',' + aN.toFixed(3) + ')';
+          ctx.beginPath();
+          ctx.arc(nSX[k], nSY[k], rN, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Render 7 Wireframe 3D Polyhedrons
+        var polySpanH = Math.max(vh, 760) * 1.28;
+        for (var p = 0; p < shapes.length; p++) {
+          var sh = shapes[p];
+          if (!reducedMotion) {
+            sh.rx += sh.drx;
+            sh.ry += sh.dry;
+            sh.rz += sh.drz;
+          }
+
+          var centerWX = sh.xr * Math.max(vw, 960) + sh.ox;
+          var centerWY = wrapSym(sh.yr * polySpanH - smoothScroll * 0.16, polySpanH) + sh.oy;
+          var centerWZ = sh.z;
+
+          var cx1 = centerWX * cosY + centerWZ * sinY + camPanX;
+          var cz1 = -centerWX * sinY + centerWZ * cosY;
+          var cy2 = centerWY * cosP - cz1 * sinP + camPanY;
+          var cz2 = centerWY * sinP + cz1 * cosP;
+          if (cz2 < -fov + 110) continue;
+
+          var cScale = fov / (fov + cz2);
+          var centerSX = cx + cx1 * cScale;
+          var centerSY = cy + cy2 * cScale;
+
+          var prox = 0;
+          if (mouseActive) {
+            var pdx = centerSX - smoothMX;
+            var pdy = centerSY - smoothMY;
+            var pDist = Math.sqrt(pdx * pdx + pdy * pdy);
+            if (pDist < 290 && pDist > 1) {
+              prox = 1 - pDist / 290;
+              sh.vx += (pdx / pDist) * prox * 0.55;
+              sh.vy += (pdy / pDist) * prox * 0.55;
+              sh.rx += velY * 0.0012 * prox;
+              sh.ry += velX * 0.0012 * prox;
+            }
+          }
+          sh.vx = (sh.vx - sh.ox * 0.045) * 0.88;
+          sh.vy = (sh.vy - sh.oy * 0.045) * 0.88;
+          sh.ox += sh.vx;
+          sh.oy += sh.vy;
+
+          var lrx = sh.rx + camPitch * 0.85;
+          var lry = sh.ry + camYaw * 0.85;
+          var lrz = sh.rz;
+          var cX = Math.cos(lrx), sX = Math.sin(lrx);
+          var cY = Math.cos(lry), sY = Math.sin(lry);
+          var cZ = Math.cos(lrz), sZ = Math.sin(lrz);
+
+          var verts = sh.geo.v;
+          var edges = sh.geo.e;
+          var radP = sh.r;
+
+          for (var vi = 0; vi < verts.length; vi++) {
+            var vx0 = verts[vi][0] * radP;
+            var vy0 = verts[vi][1] * radP;
+            var vz0 = verts[vi][2] * radP;
+
+            var vy1 = vy0 * cX - vz0 * sX;
+            var vz1 = vy0 * sX + vz0 * cX;
+            var vx2 = vx0 * cY + vz1 * sY;
+            var vz2 = -vx0 * sY + vz1 * cY;
+            var vx3 = vx2 * cZ - vy1 * sZ;
+            var vy3 = vx2 * sZ + vy1 * cZ;
+
+            var pwx = centerWX + vx3;
+            var pwy = centerWY + vy3;
+            var pwz = centerWZ + vz2;
+
+            var rx1 = pwx * cosY + pwz * sinY + camPanX;
+            var rz1 = -pwx * sinY + pwz * cosY;
+            var ry2 = pwy * cosP - rz1 * sinP + camPanY;
+            var rz2 = pwy * sinP + rz1 * cosP;
+
+            var vSc = fov / Math.max(90, fov + rz2);
+            vSX[vi] = cx + rx1 * vSc;
+            vSY[vi] = cy + ry2 * vSc;
+            vSZ[vi] = rz2;
+          }
+
+          var pCol = sh.hue === 0 ? cPrimary : (sh.hue === 1 ? cSecondary : cTertiary);
+          var edgeBaseAlpha = (isDark ? 0.28 : 0.22) * cScale + prox * 0.28;
+          ctx.lineWidth = 1.15 + prox * 0.55;
+
+          for (var ei = 0; ei < edges.length; ei++) {
+            var i0 = edges[ei][0];
+            var i1 = edges[ei][1];
+            var avgZ = (vSZ[i0] + vSZ[i1]) * 0.5;
+            var frontBoost = avgZ < cz2 ? 1.28 : 0.62;
+            var eAlpha = Math.min(0.68, edgeBaseAlpha * frontBoost);
+            ctx.strokeStyle = 'rgba(' + pCol + ',' + eAlpha.toFixed(3) + ')';
+            ctx.beginPath();
+            ctx.moveTo(vSX[i0], vSY[i0]);
+            ctx.lineTo(vSX[i1], vSY[i1]);
+            ctx.stroke();
+          }
+
+          var vDotAlpha = Math.min(0.78, edgeBaseAlpha * 1.45);
+          ctx.fillStyle = 'rgba(' + pCol + ',' + vDotAlpha.toFixed(3) + ')';
+          for (var vd = 0; vd < verts.length; vd++) {
+            if (vSZ[vd] <= cz2 + 12) {
+              ctx.beginPath();
+              ctx.arc(vSX[vd], vSY[vd], 1.7 + prox * 0.9, 0, Math.PI * 2);
+              ctx.fill();
+            }
+          }
+        }
+
+        if (!reducedMotion && !document.hidden) {
+          animFrameId = requestAnimationFrame(renderFrame);
+        }
+      }
+
+      document.addEventListener('visibilitychange', function () {
+        if (!document.hidden && !animFrameId) {
+          animFrameId = requestAnimationFrame(renderFrame);
+        }
+      });
+
+      renderFrame();
+    }
+    initSpatial3DWorld();
+
+    // -------------------------------------------------------------
+    // 4. 3D Tilt Card Physics (Exact Like Kosan's Portfolio)
+    // -------------------------------------------------------------
+    var isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (isFinePointer) {
+      var tiltCards = document.querySelectorAll('.skill-card, .work-card, .hero-card, .cert-card, .metric-card');
+      tiltCards.forEach(function (el) {
+        var rect = null;
+        var rafId = 0;
+        var targetRX = 0, targetRY = 0;
+        var currentRX = 0, currentRY = 0;
+        var hovering = false;
+        var maxTilt = el.classList.contains('hero-card') ? 5.5 : 3.8;
+        var liftY = -5;
+
+        function stepTilt() {
+          currentRX += (targetRX - currentRX) * 0.18;
+          currentRY += (targetRY - currentRY) * 0.18;
+          el.style.transform = 'perspective(1100px) translate3d(0, ' + liftY + 'px, 0) rotateX(' + currentRX.toFixed(2) + 'deg) rotateY(' + currentRY.toFixed(2) + 'deg)';
+          if (hovering && (Math.abs(targetRX - currentRX) > 0.02 || Math.abs(targetRY - currentRY) > 0.02)) {
+            rafId = requestAnimationFrame(stepTilt);
+          } else {
+            rafId = 0;
+          }
+        }
+
+        el.addEventListener('mouseenter', function (e) {
+          rect = el.getBoundingClientRect();
+          hovering = true;
+          var x = e.clientX - rect.left;
+          var y = e.clientY - rect.top;
+          el.style.setProperty('--mx', x.toFixed(0) + 'px');
+          el.style.setProperty('--my', y.toFixed(0) + 'px');
+        }, { passive: true });
+
+        el.addEventListener('mousemove', function (e) {
+          if (!rect) {
+            rect = el.getBoundingClientRect();
+            hovering = true;
+          }
+          var x = e.clientX - rect.left;
+          var y = e.clientY - rect.top;
+          var nx = (x / rect.width) - 0.5;
+          var ny = (y / rect.height) - 0.5;
+          targetRX = -ny * maxTilt * 2;
+          targetRY = nx * maxTilt * 2;
+          el.style.setProperty('--mx', x.toFixed(0) + 'px');
+          el.style.setProperty('--my', y.toFixed(0) + 'px');
+          if (!rafId) {
+            rafId = requestAnimationFrame(stepTilt);
+          }
+        }, { passive: true });
+
+        el.addEventListener('mouseleave', function () {
+          hovering = false;
+          rect = null;
+          if (rafId) {
+            cancelAnimationFrame(rafId);
+            rafId = 0;
+          }
+          currentRX = 0;
+          currentRY = 0;
+          targetRX = 0;
+          targetRY = 0;
+          el.style.transform = '';
+        }, { passive: true });
+      });
+    }
+
+    // -------------------------------------------------------------
+    // 5. Filter Works
+    // -------------------------------------------------------------
     const filterBtns = document.querySelectorAll('.filter-btn');
     const workCards = document.querySelectorAll('.work-card');
 
@@ -2224,7 +2910,9 @@
       });
     });
 
-    // 3. Portfolio Book Reader (11 Pages)
+    // -------------------------------------------------------------
+    // 6. Portfolio Book Reader (11 Pages)
+    // -------------------------------------------------------------
     const pageTitles = [
       "หน้าปก (Cover Page)",
       "คำนำ (Preface)",
@@ -2246,7 +2934,6 @@
     const pageTitleDesc = document.getElementById('pageTitleDesc');
     const thumbsContainer = document.getElementById('thumbsContainer');
 
-    // Generate thumbnails
     for (let i = 1; i <= totalPages; i++) {
       const thumb = document.createElement('div');
       thumb.className = `thumb-item ${i === 1 ? 'active' : ''}`;
@@ -2262,7 +2949,6 @@
       currentPageNum.textContent = currentPage;
       pageTitleDesc.textContent = pageTitles[currentPage - 1];
 
-      // Update active thumbnail
       const thumbs = thumbsContainer.querySelectorAll('.thumb-item');
       thumbs.forEach((t, idx) => {
         if (idx === currentPage - 1) {
@@ -2288,7 +2974,9 @@
       openLightbox(`assets/pages/page-${currentPage}.webp`, `หน้า ${currentPage}: ${pageTitles[currentPage - 1]}`);
     }
 
-    // 4. Lightbox Modal
+    // -------------------------------------------------------------
+    // 7. Lightbox Modal
+    // -------------------------------------------------------------
     const lightboxModal = document.getElementById('lightboxModal');
     const lightboxImg = document.getElementById('lightboxImg');
 
@@ -2312,7 +3000,9 @@
       }
     });
 
-    // 5. Toast Notification & Copy Text
+    // -------------------------------------------------------------
+    // 8. Toast Notification & Copy Text
+    // -------------------------------------------------------------
     function copyText(text, message) {
       navigator.clipboard.writeText(text).then(() => {
         showToast(message || 'คัดลอกเรียบร้อยแล้วค่ะ! ✨');
