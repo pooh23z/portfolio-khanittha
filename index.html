@@ -1,0 +1,2060 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ขนิษฐา วันไชย (อ้อม) — Portfolio | Creative Content Production & AI Media</title>
+  <meta name="description" content="แฟ้มสะสมผลงานของ ขนิษฐา วันไชย (อ้อม) นักศึกษาคณะนิเทศศาสตร์ สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE) มหาวิทยาลัยกรุงเทพ เชี่ยวชาญ AI Creative Content, งานถ่ายภาพ, ตัดต่อวิดีโอ การันตีรางวัลชนะเลิศอันดับ 1 Huawei Hub">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ขนิษฐา วันไชย (อ้อม) — Portfolio | Creative Content Production & AI Media">
+  <meta property="og:description" content="นักศึกษานิเทศศาสตร์ ม.กรุงเทพ ที่ผสมผสานความคิดสร้างสรรค์ การเล่าเรื่องดิจิทัล และ Generative AI ตั้งแต่การถ่ายภาพ ตัดต่อวิดีโอ ไปจนถึงการออกกองจริง">
+  <meta property="og:image" content="assets/hero-cover.jpg">
+  
+  <link rel="icon" type="image/png" href="assets/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --paper: #FAFAFA;
+      --surface: #FFFFFF;
+      --surface-elevated: #FFFFFF;
+      --ink: #121212;
+      --steel: #4B5563;
+      --steel-soft: #9CA3AF;
+      --line: #E5E7EB;
+      --line-subtle: #F3F4F6;
+      --signal: #111827;
+      --signal-soft: #F3F4F6;
+      --signal-glow: rgba(0, 0, 0, 0.06);
+      
+      --accent: #8B5CF6;
+      --accent-soft: #EDE9FE;
+      --accent-glow: rgba(139, 92, 246, 0.15);
+      
+      --ok: #10B981;
+      --ok-soft: #ECFDF5;
+      --warn: #F59E0B;
+      --warn-soft: #FFFBEB;
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+      --max: 1120px;
+      
+      --shadow-sm: 0 2px 8px rgba(18, 18, 18, 0.04);
+      --shadow-md: 0 8px 24px rgba(18, 18, 18, 0.06);
+      --shadow-lg: 0 16px 40px rgba(18, 18, 18, 0.08);
+      --shadow-xl: 0 24px 60px rgba(18, 18, 18, 0.12);
+      
+      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="dark"] {
+      --paper: #0B0B0E;
+      --surface: #141419;
+      --surface-elevated: #1C1C24;
+      --ink: #F9FAFB;
+      --steel: #9CA3AF;
+      --steel-soft: #6B7280;
+      --line: #262630;
+      --line-subtle: #1A1A22;
+      --signal: #FFFFFF;
+      --signal-soft: rgba(255, 255, 255, 0.07);
+      --signal-glow: rgba(255, 255, 255, 0.12);
+      
+      --accent: #A78BFA;
+      --accent-soft: rgba(167, 139, 250, 0.15);
+      --accent-glow: rgba(167, 139, 250, 0.25);
+      
+      --ok: #34D399;
+      --ok-soft: rgba(52, 211, 153, 0.15);
+      --warn: #FBBF24;
+      --warn-soft: rgba(251, 191, 36, 0.15);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
+      --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: 'IBM Plex Sans Thai', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color var(--transition), color var(--transition);
+      overflow-x: hidden;
+    }
+
+    .mono {
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .display {
+      font-family: 'Chonburi', serif;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Navigation */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(250, 250, 250, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+      transition: background-color var(--transition), border-color var(--transition);
+    }
+
+    [data-theme="dark"] .nav {
+      background: rgba(11, 11, 14, 0.85);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--ink);
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .nav-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: var(--radius-full);
+      object-fit: cover;
+      border: 1.5px solid var(--line);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: var(--steel);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--ink);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .btn-icon:hover {
+      background: var(--signal-soft);
+      border-color: var(--steel-soft);
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--signal);
+      color: var(--paper);
+      padding: 10px 18px;
+      border-radius: var(--radius-md);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface);
+      color: var(--ink);
+      padding: 10px 18px;
+      border-radius: var(--radius-md);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .btn-secondary:hover {
+      background: var(--signal-soft);
+      border-color: var(--steel-soft);
+      transform: translateY(-2px);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 72px 0 48px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .badge-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--ok-soft);
+      color: var(--ok);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    .badge-sub {
+      background: var(--signal-soft);
+      color: var(--steel);
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--line);
+    }
+
+    .hero-title {
+      font-size: 2.85rem;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+    }
+
+    .hero-title span.nick {
+      color: var(--accent);
+      font-family: 'Chonburi', serif;
+      font-weight: 400;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--steel);
+      margin-bottom: 24px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    /* Hero Card / Visual */
+    .hero-card {
+      position: relative;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      box-shadow: var(--shadow-lg);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .hero-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .hero-card-img-wrap {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      background: var(--line-subtle);
+    }
+
+    .hero-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.6s ease;
+    }
+
+    .hero-card:hover .hero-card-img {
+      transform: scale(1.03);
+    }
+
+    .floating-pill {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--line);
+      padding: 8px 14px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-md);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #121212;
+      z-index: 2;
+    }
+
+    [data-theme="dark"] .floating-pill {
+      background: rgba(20, 20, 25, 0.92);
+      color: #F9FAFB;
+      border-color: #333;
+    }
+
+    .pill-top-right {
+      top: 16px;
+      right: 16px;
+    }
+
+    .pill-bottom-left {
+      bottom: 16px;
+      left: 16px;
+    }
+
+    /* Metrics Bar */
+    .metrics-bar {
+      margin: 20px 0 60px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .metric-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 22px 20px;
+      text-align: left;
+      transition: transform var(--transition), border-color var(--transition);
+    }
+
+    .metric-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .metric-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .metric-label {
+      font-size: 0.85rem;
+      color: var(--steel);
+      font-weight: 500;
+    }
+
+    /* Section Header */
+    .section {
+      padding: 56px 0;
+      border-top: 1px solid var(--line-subtle);
+    }
+
+    .section-head {
+      margin-bottom: 36px;
+    }
+
+    .section-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .section-desc {
+      font-size: 1rem;
+      color: var(--steel);
+      max-width: 680px;
+    }
+
+    /* Core Strengths (4 Cards) */
+    .strengths-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .strength-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      display: flex;
+      gap: 20px;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .strength-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent);
+    }
+
+    .strength-num {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .strength-content h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .strength-content p {
+      font-size: 0.92rem;
+      color: var(--steel);
+      line-height: 1.55;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .skill-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 24px 20px;
+      transition: transform var(--transition);
+    }
+
+    .skill-box:hover {
+      transform: translateY(-2px);
+      border-color: var(--steel-soft);
+    }
+
+    .skill-box-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      background: var(--signal-soft);
+      color: var(--ink);
+      font-weight: 500;
+      border: 1px solid var(--line);
+    }
+
+    .tag.highlight {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-color: rgba(139, 92, 246, 0.2);
+    }
+
+    /* Works Filter & Grid */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 30px;
+    }
+
+    .filter-btn {
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--steel);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .filter-btn:hover {
+      color: var(--ink);
+      border-color: var(--steel-soft);
+    }
+
+    .filter-btn.active {
+      background: var(--signal);
+      color: var(--paper);
+      border-color: var(--signal);
+    }
+
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .work-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .work-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .work-thumb-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      background: var(--line-subtle);
+      overflow: hidden;
+    }
+
+    .work-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .work-card:hover .work-thumb {
+      transform: scale(1.05);
+    }
+
+    .work-badge-overlay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(18, 18, 18, 0.75);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+    }
+
+    .work-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .work-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .work-desc {
+      font-size: 0.86rem;
+      color: var(--steel);
+      line-height: 1.5;
+      margin-bottom: 16px;
+      flex: 1;
+    }
+
+    .work-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--line-subtle);
+      padding-top: 14px;
+    }
+
+    .work-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.84rem;
+      text-decoration: none;
+      transition: gap var(--transition);
+    }
+
+    .work-link:hover {
+      gap: 9px;
+    }
+
+    /* Certificates Spotlight */
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .cert-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+      cursor: pointer;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--accent);
+    }
+
+    .cert-img-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      background: var(--line-subtle);
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .cert-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.5s ease;
+    }
+
+    .cert-card:hover .cert-img {
+      transform: scale(1.03);
+    }
+
+    .cert-overlay-icon {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(18, 18, 18, 0.8);
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.76rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cert-body {
+      padding: 24px;
+    }
+
+    .cert-award-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--warn-soft);
+      color: var(--warn);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      margin-bottom: 12px;
+    }
+
+    .cert-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .cert-desc {
+      font-size: 0.9rem;
+      color: var(--steel);
+      line-height: 1.55;
+    }
+
+    /* Interactive Portfolio Book Reader */
+    .book-reader {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .reader-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .reader-counter {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .reader-viewer {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto 24px;
+      background: #000;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-xl);
+      aspect-ratio: 1414 / 2000;
+      cursor: zoom-in;
+    }
+
+    .reader-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      transition: opacity 0.2s ease;
+    }
+
+    .reader-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(18, 18, 18, 0.75);
+      color: #fff;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      transition: background var(--transition);
+      z-index: 5;
+    }
+
+    .reader-nav-btn:hover {
+      background: rgba(18, 18, 18, 0.95);
+    }
+
+    .reader-prev { left: 16px; }
+    .reader-next { right: 16px; }
+
+    .reader-thumbnails {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 8px 4px 14px;
+      scrollbar-width: thin;
+    }
+
+    .thumb-item {
+      flex-shrink: 0;
+      width: 68px;
+      height: 96px;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 2px solid transparent;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: all var(--transition);
+    }
+
+    .thumb-item:hover {
+      opacity: 0.9;
+    }
+
+    .thumb-item.active {
+      border-color: var(--accent);
+      opacity: 1;
+      transform: scale(1.04);
+    }
+
+    .thumb-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Timeline Section */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 800px;
+    }
+
+    .timeline-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .timeline-year {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .timeline-role {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .timeline-org {
+      font-size: 0.92rem;
+      color: var(--steel);
+      margin-bottom: 8px;
+    }
+
+    .timeline-desc {
+      font-size: 0.88rem;
+      color: var(--steel-soft);
+    }
+
+    /* Contact Section */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 40px;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform var(--transition);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+    }
+
+    .contact-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-full);
+      background: var(--signal-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      color: var(--accent);
+    }
+
+    .contact-label {
+      font-size: 0.8rem;
+      color: var(--steel);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+
+    .contact-value {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      word-break: break-all;
+    }
+
+    .btn-copy {
+      background: var(--signal-soft);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all var(--transition);
+    }
+
+    .btn-copy:hover {
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    /* Modal / Lightbox */
+    .lightbox-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(12px);
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+    }
+
+    .lightbox-content {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: var(--radius-md);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 85vh;
+      object-fit: contain;
+      display: block;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: background var(--transition);
+      z-index: 10;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--signal);
+      color: var(--paper);
+      padding: 12px 20px;
+      border-radius: var(--radius-md);
+      font-size: 0.88rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 10000;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 48px 0;
+      background: var(--paper);
+      text-align: center;
+      color: var(--steel);
+      font-size: 0.88rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .metrics-bar {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .strengths-grid {
+        grid-template-columns: 1fr;
+      }
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .certs-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: 2.2rem;
+      }
+      .works-grid {
+        grid-template-columns: 1fr;
+      }
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      .metrics-bar {
+        grid-template-columns: 1fr;
+      }
+      .timeline-card {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <img src="assets/profile.jpg" alt="Khanittha Wanchai" class="nav-avatar">
+        <span>ขนิษฐา วันไชย</span>
+        <span class="tag highlight" style="font-size: 0.7rem; padding: 2px 8px;">CDE • BU</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">เกี่ยวกับ</a>
+        <a href="#strengths">ความถนัด</a>
+        <a href="#skills">ทักษะ</a>
+        <a href="#works">ผลงาน</a>
+        <a href="#certs">รางวัล</a>
+        <a href="#book">เล่มพอร์ต</a>
+        <a href="#timeline">ประวัติ</a>
+        <a href="#contact">ติดต่อ</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="resume.html" target="_blank" class="btn-secondary" style="padding: 7px 12px; font-size: 0.8rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          CV / เรซูเม่
+        </a>
+        <button class="btn-icon" id="themeToggle" aria-label="Toggle Theme">
+          <svg id="themeIconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg id="themeIconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-text-col">
+          <div class="hero-badge-row">
+            <span class="badge-status">
+              <span class="pulse-dot"></span>
+              พร้อมเริ่มงาน / กำลังมองหาที่ฝึกงาน
+            </span>
+            <span class="badge-sub mono">CREATIVE CONTENT & DIGITAL EXPERIENCE</span>
+          </div>
+
+          <h1 class="hero-title">
+            ขนิษฐา วันไชย <span class="nick">(อ้อม)</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            นักศึกษาคณะนิเทศศาสตร์ สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE) มหาวิทยาลัยกรุงเทพ ที่ผสมผสาน <strong>การสร้างสรรค์สื่อด้วย AI</strong>, การเล่าเรื่องดิจิทัล, งานถ่ายภาพ และการตัดต่อวิดีโอ การันตีรางวัลชนะเลิศ Huawei Hub ระดับประเทศ
+          </p>
+
+          <div class="hero-cta">
+            <a href="#works" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              ดูผลงานเด่น
+            </a>
+            <a href="#book" class="btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+              เปิดเล่มพอร์ต 11 หน้า
+            </a>
+            <a href="#contact" class="btn-secondary">
+              ติดต่อฉัน
+            </a>
+          </div>
+
+          <div class="hero-tags-row" style="display:flex; flex-wrap:wrap; gap:8px;">
+            <span class="tag">AI Content Creation</span>
+            <span class="tag">Video Editing (CapCut / Premiere)</span>
+            <span class="tag">Photography & On-set Staff</span>
+            <span class="tag">Event & PR</span>
+          </div>
+        </div>
+
+        <div class="hero-visual-col">
+          <div class="hero-card">
+            <div class="hero-card-img-wrap">
+              <img src="assets/profile.jpg" alt="ขนิษฐา วันไชย" class="hero-card-img">
+              <div class="floating-pill pill-top-right">
+                <span>🏆</span>
+                <span>Huawei Hub 1st Place</span>
+              </div>
+              <div class="floating-pill pill-bottom-left">
+                <span>⭐</span>
+                <span>GPA 3.29 ม.กรุงเทพ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPI Metrics Bar -->
+      <div class="metrics-bar">
+        <div class="metric-card">
+          <div class="metric-value mono">3.29</div>
+          <div class="metric-label">เกรดเฉลี่ยสะสมปัจจุบัน (ม.กรุงเทพ)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value mono" style="color:var(--accent);">อันดับ 1</div>
+          <div class="metric-label">ชนะเลิศ Huawei Hub Campaign</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value mono">Honorable</div>
+          <div class="metric-label">เกียรติบัตรชมเชย Airdog VDO 2024</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value mono">11 หน้า</div>
+          <div class="metric-label">แฟ้มสะสมผลงาน + ผลงานวิดีโอจริง</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About & Preface Section -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-eyebrow">PREFACE & OBJECTIVES</p>
+        <h2 class="section-title">คำนำและความตั้งใจในการทำงาน</h2>
+        <p class="section-desc">
+          PORTFOLIO เล่มนี้จัดทำขึ้นเพื่อรวบรวมประสบการณ์ ผลงาน และทักษะที่ได้เรียนรู้และพัฒนาตลอดระยะเวลาการศึกษาในหลักสูตรนิเทศศาสตร์ สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CREATIVE CONTENT PRODUCTION AND DIGITAL EXPERIENCE)
+        </p>
+      </div>
+
+      <div style="background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg); padding:32px; line-height:1.8; color:var(--steel);">
+        <p style="margin-bottom:16px;">
+          "ตลอดระยะเวลาที่ศึกษา ข้าพเจ้าได้เรียนรู้ตั้งแต่การคิดและพัฒนาแนวคิด การวางแผน การผลิตสื่อไปจนถึงการนำเสนอผลงาน รวมถึงได้ฝึกการทำงานร่วมกับผู้อื่นและการแก้ไขปัญหาจากการลงมือปฏิบัติจริง ซึ่งทำให้ค้นพบว่าตนเองยังมีอีกหลายสิ่งที่ต้องเรียนรู้และพัฒนา"
+        </p>
+        <p style="margin-bottom:16px;">
+          "ดิฉันมีความตั้งใจที่จะสมัครงานและฝึกงานในองค์กรเพื่อเรียนรู้และเก็บเกี่ยวประสบการณ์จากการทำงานจริง รวมถึงนำความรู้และทักษะด้าน AI ที่มีมาพัฒนาต่อยอดให้เกิดประโยชน์สูงสุด พร้อมเปิดรับคำแนะนำจากผู้มีประสบการณ์ อ่อนน้อม มีความรับผิดชอบ และพร้อมเรียนรู้สิ่งใหม่ ๆ อยู่เสมอค่ะ"
+        </p>
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; border-top:1px solid var(--line-subtle); padding-top:18px; margin-top:20px;">
+          <div style="font-weight:600; color:var(--ink);">
+            ขนิษฐา วันไชย (อ้อม) — ผู้จัดทำ
+          </div>
+          <div class="mono" style="font-size:0.85rem; color:var(--steel-soft);">
+            khanittha.wanc@bumail.net
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Strengths Section (Why work with me) -->
+  <section id="strengths" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-eyebrow">CORE COMPETENCIES</p>
+        <h2 class="section-title">ความถนัด 4 ด้านหลัก</h2>
+        <p class="section-desc">
+          ทักษะและความเชี่ยวชาญที่พร้อมนำมาประยุกต์ใช้เพื่อสร้างสรรค์คุณค่าให้กับทีมและองค์กร
+        </p>
+      </div>
+
+      <div class="strengths-grid">
+        <div class="strength-card">
+          <div class="strength-num">01</div>
+          <div class="strength-content">
+            <h3>การผลิตสื่อและคอนเทนต์ด้วย AI</h3>
+            <p>ถนัดด้านการถ่ายภาพ การตัดต่อวิดีโอ และการผลิตสื่อด้วยเครื่องมือ AI สร้างสรรค์ภาพและงานดิจิทัลที่ทันกระแส รวดเร็ว และมีคุณภาพ</p>
+          </div>
+        </div>
+
+        <div class="strength-card">
+          <div class="strength-num">02</div>
+          <div class="strength-content">
+            <h3>การสื่อสาร ประสานงาน และทำงานเป็นทีม</h3>
+            <p>ถนัดด้านการสื่อสาร การนำเสนอข้อมูล มีประสบการณ์เป็น Staff กองถ่าย ประสานงานนักศึกษาใหม่ และปรับตัวทำงานร่วมกับผู้อื่นได้อย่างราบรื่น</p>
+          </div>
+        </div>
+
+        <div class="strength-card">
+          <div class="strength-num">03</div>
+          <div class="strength-content">
+            <h3>ความคิดสร้างสรรค์และบริหารสื่อออนไลน์</h3>
+            <p>ถนัดการคิดคอนเทนต์ที่ดึงดูดใจผู้บริโภค การเล่าเรื่องแบบ Storytelling การผลิตคอนเทนต์สั้นบน TikTok, Reels และ CapCut</p>
+          </div>
+        </div>
+
+        <div class="strength-card">
+          <div class="strength-num">04</div>
+          <div class="strength-content">
+            <h3>การเขียนและงานประชาสัมพันธ์</h3>
+            <p>ถนัดด้านการเขียน การเรียบเรียงข้อมูลอย่างเป็นลำดับขั้นตอน การทำ Script วิดีโอ และงานประชาสัมพันธ์สื่อสารองค์กร</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Tools -->
+  <section id="skills" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-eyebrow">SKILLS & TOOLS</p>
+        <h2 class="section-title">เครื่องมือและทักษะการทำงาน</h2>
+        <p class="section-desc">
+          เทคโนโลยีและซอฟต์แวร์ที่ใช้งานเป็นประจำในการผลิตสื่อ
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-box">
+          <div class="skill-box-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent);"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            AI & Generative Media
+          </div>
+          <div class="skill-tags">
+            <span class="tag highlight">Midjourney</span>
+            <span class="tag highlight">ChatGPT / Prompts</span>
+            <span class="tag">Generative VDO</span>
+            <span class="tag">AI Image Creation</span>
+            <span class="tag">Intel AI Workshop</span>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-box-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent);"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+            Video & Post-Production
+          </div>
+          <div class="skill-tags">
+            <span class="tag highlight">CapCut</span>
+            <span class="tag">Adobe Premiere Pro</span>
+            <span class="tag">Short-form Video</span>
+            <span class="tag">Sound & Pace</span>
+            <span class="tag">Subtitles & Effects</span>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-box-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent);"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            Photography & On-set
+          </div>
+          <div class="skill-tags">
+            <span class="tag highlight">DSLR / Mirrorless</span>
+            <span class="tag">Event Photography</span>
+            <span class="tag">Awakening Bangkok</span>
+            <span class="tag">Makeup & Styling</span>
+            <span class="tag">Set Props Management</span>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-box-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent);"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            Communication & Soft Skills
+          </div>
+          <div class="skill-tags">
+            <span class="tag">ผู้ประกาศข่าว (Anchor)</span>
+            <span class="tag">การนำเสนอ (Pitching)</span>
+            <span class="tag">การทำงานเป็นทีม</span>
+            <span class="tag">ความรับผิดชอบสูง</span>
+            <span class="tag">ภาษาไทย (Native) / อังกฤษ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Works & Projects -->
+  <section id="works" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-eyebrow">PORTFOLIO SHOWCASE</p>
+        <h2 class="section-title">ผลงานและกิจกรรมสร้างสรรค์</h2>
+        <p class="section-desc">
+          ผลงานวิดีโอ สื่อดิจิทัล AI และการออกกองกิจกรรมต่าง ๆ สามารถคลิกดูคลิปวิดีโอและไฟล์ต้นฉบับได้โดยตรง
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">ทั้งหมด (All)</button>
+        <button class="filter-btn" data-filter="ai">ผลงาน AI (AI Content)</button>
+        <button class="filter-btn" data-filter="anchor">ผู้ประกาศข่าว & CapCut</button>
+        <button class="filter-btn" data-filter="editing">งานตัดต่อส่วนตัว</button>
+        <button class="filter-btn" data-filter="activities">กิจกรรม & ออกกอง</button>
+        <button class="filter-btn" data-filter="workshop">เวิร์กช็อป</button>
+      </div>
+
+      <!-- Works Grid -->
+      <div class="works-grid">
+
+        <!-- Work 1: AI Project 1 -->
+        <div class="work-card" data-category="ai">
+          <div class="work-thumb-wrap">
+            <img src="assets/works/ai-work-1.jpg" alt="AI Creative Concept 1" class="work-thumb">
+            <span class="work-badge-overlay">AI CONTENT</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Creative AI Generation — ชุดที่ 1</h3>
+            <p class="work-desc">การสร้างสรรค์ภาพคอนเซปต์และเรื่องราวด้วย Generative AI ในชั้นเรียน ออกแบบ Prompt เชิงศิลปะและสื่ออารมณ์</p>
+            <div class="work-footer">
+              <span class="tag">Google Drive</span>
+              <a href="https://drive.google.com/file/d/1AXfa-3PzHWOURz240N86NJnDOhg4zRsN/view?usp=drivesdk" target="_blank" class="work-link">
+                ดูไฟล์งาน
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work 2: AI Project 2 -->
+        <div class="work-card" data-category="ai">
+          <div class="work-thumb-wrap">
+            <img src="assets/works/ai-work-2.jpg" alt="AI Creative Concept 2" class="work-thumb">
+            <span class="work-badge-overlay">AI CONTENT</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Creative AI Generation — ชุดที่ 2</h3>
+            <p class="work-desc">การทดลองสร้าง Visual Content และตัวละครเพื่อใช้ในสื่อโฆษณาและการตลาดดิจิทัล</p>
+            <div class="work-footer">
+              <span class="tag">Google Drive</span>
+              <a href="https://drive.google.com/file/d/1H8qPL2JOMygX8KcLXxrkpTvBt1YeSILu/view?usp=drivesdk" target="_blank" class="work-link">
+                ดูไฟล์งาน
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work 3: AI Project 3 -->
+        <div class="work-card" data-category="ai">
+          <div class="work-thumb-wrap">
+            <img src="assets/works/ai-work-3.jpg" alt="AI Creative Concept 3" class="work-thumb">
+            <span class="work-badge-overlay">AI VIDEO & VISUAL</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">AI Video Animation & Motion</h3>
+            <p class="work-desc">การผสานภาพจาก AI เข้ากับการจัดทำ Animation และเสียงประกอบ เพื่อสร้างบรรยากาศและเรื่องราวที่น่าติดตาม</p>
+            <div class="work-footer">
+              <span class="tag">Google Drive</span>
+              <a href="https://drive.google.com/file/d/1KDcvxvjLMMhmA5IMNBvLYVyUuziM4800/view?usp=drivesdk" target="_blank" class="work-link">
+                ดูวิดีโอคลิป
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work 4: News Anchor 1 -->
+        <div class="work-card" data-category="anchor">
+          <div class="work-thumb-wrap">
+            <img src="assets/works/anchor-1.jpg" alt="News Anchor Video 1" class="work-thumb">
+            <span class="work-badge-overlay">NEWS ANCHOR</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">งานผู้ประกาศข่าวในสตูดิโอ (ชุดที่ 1)</h3>
+            <p class="work-desc">การฝึกปฏิบัติหน้าที่ผู้ประกาศข่าว การจัดท่าทาง บุคลิกภาพ การอ่านข่าวหน้ากล้อง และการควบคุมจังหวะการพูด</p>
+            <div class="work-footer">
+              <span class="tag">Studio Work</span>
+              <a href="https://drive.google.com/file/d/19LBYkJaRBPKPQoPKKp9GfWS3rPO-irRc/view?usp=drivesdk" target="_blank" class="work-link">
+                ดูวิดีโอ
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work 5: News Anchor 2 -->
+        <div class="work-card" data-category="anchor">
+          <div class="work-thumb-wrap">
+            <img src="assets/works/anchor-2.jpg" alt="News Anchor Video 2" class="work-thumb">
+            <span class="work-badge-overlay">NEWS ANCHOR</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">งานผู้ประกาศข่าวในสตูดิโอ (ชุดที่ 2)</h3>
+            <p class="work-desc">การรายงานข่าวเหตุการณ์สด การจำลองรายการโทรทัศน์ และการประสานงานกับทีมงานเบื้องหลัง</p>
+            <div class="work-footer">
+              <span class="tag">Studio Work</span>
+              <a href="https://drive.google.com/file/d/1ls1YaMxe8dEY4KCF5UBhyrhtUmSfo/view?usp=drivesdk" target="_blank" class="work-link">
+                ดูวิดีโอ
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work 6: CapCut Short-form 1 -->
+        <div class="work-card" data-category="anchor">
+          <div class="work-thumb-wrap">
+            <img src="assets/works/capcut-1.jpg" alt="Capcut VDO Project 1" class="work-thumb">
+            <span class="work-badge-overlay">CAPCUT & SHORT-FORM</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Creative Short Content — CapCut</h3>
+            <p class="work-desc">การตัดต่อวิดีโอสั้นพร้อมใส่ Effects, Keyframes และ Transitions เหมาะกับแพลตฟอร์ม TikTok และ Instagram Reels</p>
+            <div class="work-footer">
+              <span class="tag">CapCut</span>
+              <a href="https://drive.google.com/file/d/1dVIUnAeHtxcINd42CZ7tLcGRZ5E6ME/view?usp=drivesdk" target="_blank" class="work-link">
+                ดูวิดีโอ
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work 7: CapCut Short-form 2 -->
+        <div class="work-card" data-category="anchor">
+          <div class="work-thumb-wrap">
+            <img src="assets/works/capcut-2.jpg" alt="Capcut VDO Project 2" class="work-thumb">
+            <span class="work-badge-overlay">CAPCUT & SHORT-FORM</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Lifestyle & Trend VDO Editing</h3>
+            <p class="work-desc">การเกาะกระแสไวรัลและการออกแบบจังหวะภาพให้เข้ากับเสียงดนตรี เพื่อเพิ่มยอดการรับชมและการมีส่วนร่วม</p>
+            <div class="work-footer">
+              <span class="tag">CapCut</span>
+              <a href="https://drive.google.com/file/d/1WqcjiAFRsbMMnCOVtIQi60TtNKoyDJp/view?usp=drivesdk" target="_blank" class="work-link">
+                ดูวิดีโอ
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work 8: Personal Video Editing 1 -->
+        <div class="work-card" data-category="editing">
+          <div class="work-thumb-wrap">
+            <img src="assets/works/edit-1.jpg" alt="Personal Video Editing 1" class="work-thumb">
+            <span class="work-badge-overlay">PERSONAL EDIT</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Personal VDO Showcase #1</h3>
+            <p class="work-desc">การตัดต่อวิดีโอเล่าเรื่องสไตล์ Vlog คุมโทนสี การจัดลำดับภาพ และการเลือกใช้ดนตรีประกอบเพื่อสร้างอารมณ์ร่วม</p>
+            <div class="work-footer">
+              <span class="tag">Video Edit</span>
+              <a href="https://drive.google.com/file/d/1EjIzVASnHjdOaR0QUJzo3b7hldZohZQB/view?usp=drivesdk" target="_blank" class="work-link">
+                ดูคลิปวิดีโอ
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work 9: Personal Video Editing 2 -->
+        <div class="work-card" data-category="editing">
+          <div class="work-thumb-wrap">
+            <img src="assets/works/edit-2.jpg" alt="Personal Video Editing 2" class="work-thumb">
+            <span class="work-badge-overlay">PERSONAL EDIT</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Personal VDO Showcase #2</h3>
+            <p class="work-desc">ผลงานตัดต่อสไตล์ Cinematic เน้นการจัดแสงและ Mood & Tone ให้ความรู้สึกร่วมสมัย</p>
+            <div class="work-footer">
+              <span class="tag">Cinematic</span>
+              <a href="https://drive.google.com/file/d/1fcqUMuGylrsHaKXxK7TOyqG8EVO5XWDh/view?usp=drivesdk" target="_blank" class="work-link">
+                ดูคลิปวิดีโอ
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work 10: Awakening Bangkok (Activity) -->
+        <div class="work-card" data-category="activities">
+          <div class="work-thumb-wrap">
+            <img src="assets/activities/awakening-bangkok.jpg" alt="Awakening Bangkok Photo" class="work-thumb">
+            <span class="work-badge-overlay">PHOTOGRAPHY</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Awakening Bangkok ณ สวนรมณีนาถ</h3>
+            <p class="work-desc">รับหน้าที่ช่างภาพบันทึกภาพถ่ายในงานเทศกาลไฟ Awakening Bangkok ถ่ายทอดศิลปะแสงไฟยามค่ำคืนและปฏิสัมพันธ์ของผู้เข้าชม</p>
+            <div class="work-footer">
+              <span class="tag">Exhibition</span>
+              <a href="https://share.google/008w1SFKhaPOOPU8t" target="_blank" class="work-link">
+                ดูภาพถ่าย
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work 11: CDE Staff & Diamond Days (Activity) -->
+        <div class="work-card" data-category="activities">
+          <div class="work-thumb-wrap">
+            <img src="assets/activities/cde-staff.jpg" alt="Staff CDE & Diamond Days" class="work-thumb">
+            <span class="work-badge-overlay">ON-SET STAFF</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Staff สาขา CDE & ปฐมนิเทศ Diamond Days 2024</h3>
+            <p class="work-desc">รับหน้าที่หลากหลายเวลาออกกอง ทั้งเป็นช่างแต่งหน้า หาพร็อพประกอบฉาก และเป็นพี่บิ้วน้องงานรับน้องปฐมนิเทศนักศึกษาใหม่ ม.กรุงเทพ</p>
+            <div class="work-footer">
+              <span class="tag">Bangkok University</span>
+              <span class="mono" style="font-size:0.8rem; color:var(--steel-soft);">2567</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work 12: Intel AI Workshop (Workshop) -->
+        <div class="work-card" data-category="workshop">
+          <div class="work-thumb-wrap">
+            <img src="assets/activities/ai-workshop.jpg" alt="Intel AI Workshop" class="work-thumb">
+            <span class="work-badge-overlay">AI WORKSHOP</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Workshop "สร้างภาพอย่างคูล AI Everywhere"</h3>
+            <p class="work-desc">ร่วมอบรมและฝึกปฏิบัติจริงกับ Intel Core Ultra ในการประยุกต์ใช้เทคโนโลยี AI ในการผลิตภาพและสื่อสร้างสรรค์ยุคใหม่</p>
+            <div class="work-footer">
+              <span class="tag">Intel & CDE</span>
+              <span class="mono" style="font-size:0.8rem; color:var(--steel-soft);">2024</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates & Awards Spotlight -->
+  <section id="certs" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-eyebrow">HONORS & CERTIFICATES</p>
+        <h2 class="section-title">เกียรติบัตรและรางวัลแห่งความสำเร็จ</h2>
+        <p class="section-desc">
+          ผลลัพธ์จากความมุ่งมั่นในการเรียนรู้และการเข้าร่วมการแข่งขันระดับประเทศ (คลิกที่ภาพเพื่อซูมดูเกียรติบัตร)
+        </p>
+      </div>
+
+      <div class="certs-grid">
+        <!-- Huawei Hub 1st Place -->
+        <div class="cert-card" onclick="openLightbox('assets/cert-huawei.jpg', 'เกียรติบัตรชนะเลิศอันดับ 1 — HUAWEI HUB & FIRST GENERATE CAMPAIGN')">
+          <div class="cert-img-wrap">
+            <img src="assets/cert-huawei.jpg" alt="Huawei Hub 1st Place Certificate" class="cert-img">
+            <div class="cert-overlay-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+              <span>คลิกเพื่อดูภาพขยาย</span>
+            </div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-award-pill">
+              🏆 ชนะเลิศอันดับ 1 (AWARD OF EXCELLENCE)
+            </span>
+            <h3 class="cert-title">Huawei Hub & First Generate Campaign</h3>
+            <p class="cert-desc">
+              ชนะผลการประกวดและเวิร์กช็อปจากโปรเจกต์ "HUAWEI HUB" และ "HUAWEI FIRST GENERATE CAMPAIGN" ได้รับเงินรางวัลมูลค่า 10,000 บาท ให้กับทีมที่ชนะการนำเสนอผลงาน
+            </p>
+          </div>
+        </div>
+
+        <!-- Airdog Contest Honorable Mention -->
+        <div class="cert-card" onclick="openLightbox('assets/cert-airdog.jpg', 'เกียรติบัตรชมเชย — Airdog Air Purifier VDO Contest 2024')">
+          <div class="cert-img-wrap">
+            <img src="assets/cert-airdog.jpg" alt="Airdog Honorable Mention Certificate" class="cert-img">
+            <div class="cert-overlay-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+              <span>คลิกเพื่อดูภาพขยาย</span>
+            </div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-award-pill" style="background:var(--accent-soft); color:var(--accent);">
+              🎖️ HONORABLE MENTION (รางวัลชมเชยระดับประเทศ)
+            </span>
+            <h3 class="cert-title">Airdog Air Purifier VDO Contest 2024</h3>
+            <p class="cert-desc">
+              เกียรติบัตรชมเชยจากงานประกวดแข่งขันผลิตเนื้อหาวิดีโอเครื่องฟอกอากาศ AIRDOG บนแพลตฟอร์มโซเชียลมีเดีย ประจำปี 2024 โดย NAPA SOLUTIONS CO., LTD.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Portfolio Book Viewer (11 Pages) -->
+  <section id="book" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-eyebrow">FULL SLIDE DECK</p>
+        <h2 class="section-title">เปิดอ่านเล่มแฟ้มสะสมผลงาน (11 หน้า)</h2>
+        <p class="section-desc">
+          สามารถเปิดพลิกดูเล่ม Portfolio ฉบับจริงครบทั้ง 11 หน้าได้อย่างคมชัด หรือคลิกที่หน้าเพื่อซูมดูรายละเอียด
+        </p>
+      </div>
+
+      <div class="book-reader">
+        <div class="reader-controls">
+          <div class="reader-counter">
+            <span>หน้าที่ </span>
+            <span id="currentPageNum" class="mono" style="font-size:1.2rem; color:var(--accent); font-weight:700;">1</span>
+            <span> / 11 : </span>
+            <span id="pageTitleDesc" style="color:var(--steel);">หน้าปก (Cover Page)</span>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:8px;">
+            <button class="btn-secondary" onclick="prevPage()" style="padding:6px 14px; font-size:0.82rem;">
+              ‹ ก่อนหน้า
+            </button>
+            <button class="btn-secondary" onclick="nextPage()" style="padding:6px 14px; font-size:0.82rem;">
+              ถัดไป ›
+            </button>
+            <button class="btn-primary" onclick="zoomCurrentPage()" style="padding:6px 14px; font-size:0.82rem;">
+              🔍 ซูมเต็มจอ
+            </button>
+          </div>
+        </div>
+
+        <div class="reader-viewer" onclick="zoomCurrentPage()">
+          <img id="mainReaderImg" src="assets/pages/page-1.webp" alt="Portfolio Page" class="reader-img">
+          <button class="reader-nav-btn reader-prev" onclick="event.stopPropagation(); prevPage();" aria-label="Previous Page">‹</button>
+          <button class="reader-nav-btn reader-next" onclick="event.stopPropagation(); nextPage();" aria-label="Next Page">›</button>
+        </div>
+
+        <!-- Thumbnails Strip -->
+        <div class="reader-thumbnails" id="thumbsContainer">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Timeline -->
+  <section id="timeline" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-eyebrow">EDUCATION & BACKGROUND</p>
+        <h2 class="section-title">ประวัติการศึกษาและการเติบโต</h2>
+        <p class="section-desc">
+          เส้นทางการเรียนรู้และประสบการณ์ที่หล่อหลอมความสนใจด้านสื่อนวัตกรรมดิจิทัล
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-card">
+          <div class="timeline-year mono">ปัจจุบัน (2565 - ปัจจุบัน)</div>
+          <div>
+            <h3 class="timeline-role">ระดับปริญญาตรี (กำลังศึกษา)</h3>
+            <div class="timeline-org">มหาวิทยาลัยกรุงเทพ (Bangkok University)</div>
+            <p class="timeline-desc">
+              คณะนิเทศศาสตร์ สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (Creative Content Production and Digital Experience — CDE)<br>
+              <strong>ผลการเรียนปัจจุบัน: 3.29</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-card">
+          <div class="timeline-year mono">มัธยมศึกษาตอนปลาย</div>
+          <div>
+            <h3 class="timeline-role">ระดับมัธยมศึกษาตอนปลาย (ม.4 - ม.6)</h3>
+            <div class="timeline-org">โรงเรียนปทุมราชวงศา</div>
+            <p class="timeline-desc">
+              ผลการเรียน 2.51 — ฝึกฝนทักษะการทำกิจกรรมและร่วมงานกับกลุ่มเพื่อน
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-card">
+          <div class="timeline-year mono">ประถม - ม.ต้น</div>
+          <div>
+            <h3 class="timeline-role">ระดับอนุบาล 1 - มัธยมศึกษาปีที่ 3</h3>
+            <div class="timeline-org">โรงเรียนบ้านนาผาง (วิบูลยาราษฎร์สามัคคี)</div>
+            <p class="timeline-desc">
+              ผลการเรียน 3.22 — เป็นเด็กกิจกรรม ช่างสังเกต และมีความรับผิดชอบ
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="wrap">
+      <div class="section-head" style="text-align:center; max-width:680px; margin:0 auto 40px;">
+        <p class="section-eyebrow">GET IN TOUCH</p>
+        <h2 class="section-title">ช่องทางการติดต่อ</h2>
+        <p class="section-desc" style="margin:0 auto;">
+          พร้อมสำหรับการสัมภาษณ์งานฝึกงานและพูดคุยแลกเปลี่ยนโอกาสในการร่วมงานค่ะ
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Phone -->
+        <div class="contact-card">
+          <div class="contact-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div class="contact-label">เบอร์โทรศัพท์</div>
+          <div class="contact-value mono">061-528-7148</div>
+          <button class="btn-copy" onclick="copyText('0615287148', 'คัดลอกเบอร์โทรเรียบร้อยแล้ว!')">
+            คัดลอกเบอร์โทร
+          </button>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-card">
+          <div class="contact-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div class="contact-label">อีเมลมหาวิทยาลัย</div>
+          <div class="contact-value mono" style="font-size:0.92rem;">khanittha.wanc@bumail.net</div>
+          <button class="btn-copy" onclick="copyText('khanittha.wanc@bumail.net', 'คัดลอกอีเมลเรียบร้อยแล้ว!')">
+            คัดลอกอีเมล
+          </button>
+        </div>
+
+        <!-- Line / Social -->
+        <div class="contact-card">
+          <div class="contact-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </div>
+          <div class="contact-label">Instagram / Social</div>
+          <div class="contact-value mono">@khanitthawanchai</div>
+          <a href="https://instagram.com/khanitthawanchai" target="_blank" class="btn-copy" style="text-decoration:none;">
+            เปิด Instagram
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Summary Card -->
+      <div style="background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg); padding:32px; text-align:center;">
+        <h3 style="font-size:1.3rem; margin-bottom:10px;">ต้องการเอกสารสรุปประวัติ (Resume / CV)?</h3>
+        <p style="color:var(--steel); margin-bottom:20px; font-size:0.95rem;">
+          คุณสามารถเปิดดูเรซูเม่ฉบับออนไลน์ที่พร้อมสำหรับการสั่งพิมพ์หรือบันทึกเป็น PDF ได้ทันที
+        </p>
+        <a href="resume.html" target="_blank" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          เปิดหน้า Resume (CV) สำหรับพิมพ์ / บันทึก PDF
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img id="lightboxImg" src="" alt="Enlarged View" class="lightbox-img">
+    </div>
+  </div>
+
+  <!-- Toast Element -->
+  <div class="toast" id="toastMsg">ข้อความ</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      <p style="margin-bottom:8px; font-weight:600; color:var(--ink);">
+        ขนิษฐา วันไชย (อ้อม) — Creative Content Production & Digital Experience
+      </p>
+      <p style="font-size:0.82rem; color:var(--steel-soft);">
+        คณะนิเทศศาสตร์ มหาวิทยาลัยกรุงเทพ (Bangkok University) • © 2024-2026 All Rights Reserved
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // 1. Theme Management (Light / Dark)
+    const themeToggle = document.getElementById('themeToggle');
+    const sunIcon = document.getElementById('themeIconSun');
+    const moonIcon = document.getElementById('themeIconMoon');
+    const html = document.documentElement;
+
+    function applyTheme(theme) {
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem('portfolio-theme', theme);
+      if (theme === 'dark') {
+        sunIcon.style.display = 'block';
+        moonIcon.style.display = 'none';
+      } else {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'block';
+      }
+    }
+
+    // Initialize Theme
+    const savedTheme = localStorage.getItem('portfolio-theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    applyTheme(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    // 2. Filter Works
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const workCards = document.querySelectorAll('.work-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+
+        workCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 3. Portfolio Book Reader (11 Pages)
+    const pageTitles = [
+      "หน้าปก (Cover Page)",
+      "คำนำ (Preface)",
+      "เหตุผลที่อยากเข้าทำงาน (Reasons & Goals)",
+      "ข้อมูลส่วนตัว & ประวัติการศึกษา (Profile & Education)",
+      "กิจกรรมในมหาวิทยาลัย (CDE Staff & Awakening Bangkok)",
+      "ผลงานในชั้นเรียน — งาน AI Content Creation",
+      "ผลงานในชั้นเรียน — ผู้ประกาศข่าว & CapCut",
+      "กิจกรรม — ผลงานตัดต่อวิดีโอส่วนตัว",
+      "เวิร์กช็อป — CDE Back to the Future & Intel AI",
+      "เกียรติบัตร — Huawei Hub 1st Place & Airdog 2024",
+      "ขอขอบคุณ (Thank You)"
+    ];
+
+    let currentPage = 1;
+    const totalPages = 11;
+    const mainReaderImg = document.getElementById('mainReaderImg');
+    const currentPageNum = document.getElementById('currentPageNum');
+    const pageTitleDesc = document.getElementById('pageTitleDesc');
+    const thumbsContainer = document.getElementById('thumbsContainer');
+
+    // Generate thumbnails
+    for (let i = 1; i <= totalPages; i++) {
+      const thumb = document.createElement('div');
+      thumb.className = `thumb-item ${i === 1 ? 'active' : ''}`;
+      thumb.onclick = () => goToPage(i);
+      thumb.innerHTML = `<img src="assets/pages/thumb-${i}.webp" alt="Page ${i} thumbnail">`;
+      thumbsContainer.appendChild(thumb);
+    }
+
+    function goToPage(page) {
+      if (page < 1 || page > totalPages) return;
+      currentPage = page;
+      mainReaderImg.src = `assets/pages/page-${currentPage}.webp`;
+      currentPageNum.textContent = currentPage;
+      pageTitleDesc.textContent = pageTitles[currentPage - 1];
+
+      // Update active thumbnail
+      const thumbs = thumbsContainer.querySelectorAll('.thumb-item');
+      thumbs.forEach((t, idx) => {
+        if (idx === currentPage - 1) {
+          t.classList.add('active');
+          t.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        } else {
+          t.classList.remove('active');
+        }
+      });
+    }
+
+    function prevPage() {
+      if (currentPage > 1) goToPage(currentPage - 1);
+      else goToPage(totalPages);
+    }
+
+    function nextPage() {
+      if (currentPage < totalPages) goToPage(currentPage + 1);
+      else goToPage(1);
+    }
+
+    function zoomCurrentPage() {
+      openLightbox(`assets/pages/page-${currentPage}.webp`, `หน้า ${currentPage}: ${pageTitles[currentPage - 1]}`);
+    }
+
+    // 4. Lightbox Modal
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImg = document.getElementById('lightboxImg');
+
+    function openLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || 'Preview';
+      lightboxModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightboxModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+      if (lightboxModal.classList.contains('active')) {
+        if (e.key === 'ArrowLeft') prevPage();
+        if (e.key === 'ArrowRight') nextPage();
+      }
+    });
+
+    // 5. Toast Notification & Copy Text
+    function copyText(text, message) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(message || 'คัดลอกเรียบร้อยแล้ว!');
+      }).catch(() => {
+        showToast('ไม่สามารถคัดลอกได้');
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastMsg');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+  </script>
+</body>
+</html>

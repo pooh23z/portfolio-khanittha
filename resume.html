@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ขนิษฐา วันไชย (อ้อม) — เรซูเม่ (Resume / CV)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "IBM Plex Sans Thai", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      font-size: 9.6pt;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+      padding: 24px 0 40px;
+    }
+
+    .mono { font-family: "IBM Plex Mono", monospace; }
+
+    .actions-bar {
+      max-width: 210mm;
+      margin: 0 auto 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 8px;
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #475569;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .btn-back:hover { color: #8b5cf6; }
+
+    .btn-print {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #8b5cf6;
+      color: #ffffff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(139, 92, 246, 0.25);
+      transition: background 0.2s ease;
+    }
+    .btn-print:hover { background: #7c3aed; }
+
+    /* A4 Page */
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: #ffffff;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+      padding: 18mm 20mm;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      border-bottom: 2px solid #8b5cf6;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+    }
+
+    .avatar {
+      width: 82px;
+      height: 98px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #e2e8f0;
+      flex-shrink: 0;
+    }
+
+    .header-info {
+      flex: 1;
+    }
+
+    .name-row {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 4px;
+    }
+
+    .name-th {
+      font-size: 20pt;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.1;
+    }
+
+    .name-en {
+      font-size: 11pt;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    .title-role {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #8b5cf6;
+      margin-bottom: 8px;
+    }
+
+    .contact-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 8.8pt;
+      color: #475569;
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 15px;
+    }
+
+    .sec-title {
+      font-size: 10.8pt;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sec-title-icon {
+      color: #8b5cf6;
+    }
+
+    p.summary {
+      font-size: 9.2pt;
+      color: #334155;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    /* Grid Layout for Skills / Education */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .skill-block {
+      margin-bottom: 8px;
+    }
+
+    .skill-heading {
+      font-weight: 600;
+      font-size: 9pt;
+      color: #0f172a;
+      margin-bottom: 2px;
+    }
+
+    .skill-list {
+      font-size: 8.8pt;
+      color: #475569;
+    }
+
+    /* Timeline / Item */
+    .item {
+      margin-bottom: 10px;
+    }
+
+    .item-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .item-title {
+      font-weight: 700;
+      font-size: 9.6pt;
+      color: #0f172a;
+    }
+
+    .item-date {
+      font-size: 8.5pt;
+      color: #8b5cf6;
+      font-weight: 600;
+    }
+
+    .item-subtitle {
+      font-size: 9pt;
+      color: #475569;
+      margin-bottom: 3px;
+    }
+
+    .item-desc {
+      font-size: 8.8pt;
+      color: #334155;
+      line-height: 1.45;
+    }
+
+    .badge-pill {
+      display: inline-block;
+      font-size: 7.8pt;
+      font-weight: 600;
+      background: #f3e8ff;
+      color: #7c3aed;
+      padding: 1px 7px;
+      border-radius: 4px;
+      margin-left: 6px;
+    }
+
+    /* Print settings */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .actions-bar {
+        display: none !important;
+      }
+      .sheet {
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 12mm 15mm;
+        width: 100%;
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="actions-bar">
+    <a href="index.html" class="btn-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      กลับสู่หน้าเว็บไซต์ Portfolio
+    </a>
+
+    <button class="btn-print" onclick="window.print()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+      สั่งพิมพ์ / บันทึก PDF
+    </button>
+  </div>
+
+  <main class="sheet">
+    <!-- Header -->
+    <header class="header">
+      <img src="assets/profile.jpg" alt="ขนิษฐา วันไชย" class="avatar">
+      <div class="header-info">
+        <div class="name-row">
+          <h1 class="name-th">ขนิษฐา วันไชย</h1>
+          <span class="name-en mono">Khanittha Wanchai (Aom)</span>
+        </div>
+        <div class="title-role">
+          นักศึกษานิเทศศาสตร์ ม.กรุงเทพ — สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE)
+        </div>
+        <div class="contact-chips">
+          <span class="contact-item"><strong>โทร:</strong> 061-528-7148</span>
+          <span class="contact-item"><strong>อีเมล:</strong> khanittha.wanc@bumail.net</span>
+          <span class="contact-item"><strong>IG:</strong> @khanitthawanchai</span>
+          <span class="contact-item"><strong>ที่อยู่:</strong> กรุงเทพมหานคร</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <h2 class="sec-title"><span class="sec-title-icon">✦</span> สรุปประวัติและความมุ่งมั่น (Professional Summary)</h2>
+      <p class="summary">
+        นักศึกษาคณะนิเทศศาสตร์ สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (Creative Content Production and Digital Experience — CDE) มหาวิทยาลัยกรุงเทพ ผลการเรียนสะสม 3.29 มีความชำนาญในการผลิตสื่อสร้างสรรค์ด้วย Generative AI, งานถ่ายภาพ, การตัดต่อวิดีโอ (CapCut / Premiere Pro), และการเป็นผู้ประกาศข่าว มีประสบการณ์ออกกองจริง เป็น Staff กองถ่าย และการประสานงานกิจกรรม มีความกระตือรือร้น ละเอียดรอบคอบ มนุษยสัมพันธ์ดีเยี่ยม พร้อมทุ่มเทและเรียนรู้การทำงานจริงในตำแหน่งฝึกงานด้าน AI Content Creator, Video Editor, และ Production Assistant
+      </p>
+    </section>
+
+    <!-- Core Strengths & Skills -->
+    <section class="section">
+      <h2 class="sec-title"><span class="sec-title-icon">✦</span> ทักษะและความถนัดหลัก (Skills & Core Competencies)</h2>
+      <div class="grid-2">
+        <div>
+          <div class="skill-block">
+            <div class="skill-heading">1. ด้าน AI & เทคโนโลยีสร้างสรรค์</div>
+            <div class="skill-list">Midjourney, ChatGPT, Generative Video/Motion, AI Prompt Engineering, Intel Core Ultra Workshop</div>
+          </div>
+          <div class="skill-block">
+            <div class="skill-heading">2. ด้านการตัดต่อและลำดับภาพ (Video Production)</div>
+            <div class="skill-list">CapCut, Adobe Premiere Pro, การทำคลิปสั้น (TikTok / Reels / Shorts), การควบคุมจังหวะและเสียงประกอบ</div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-block">
+            <div class="skill-heading">3. ด้านการถ่ายภาพและงานกองถ่าย (On-set Production)</div>
+            <div class="skill-list">ช่างภาพงาน Event (Awakening Bangkok), แต่งหน้ากองถ่าย (Makeup), ดูแลพร็อพประกอบฉาก, การจัดแสงเบื้องต้น</div>
+          </div>
+          <div class="skill-block">
+            <div class="skill-heading">4. ด้านการสื่อสารและทักษะส่วนบุคคล (Soft Skills)</div>
+            <div class="skill-list">ผู้ประกาศข่าวหน้ากล้อง, พิธีกร, สตอรี่เทลลิ่ง, การทำงานเป็นทีม, ภาษาไทย (Native) และภาษาอังกฤษ</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honors & Awards -->
+    <section class="section">
+      <h2 class="sec-title"><span class="sec-title-icon">✦</span> รางวัลและเกียรติบัตร (Honors & Awards)</h2>
+      
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">รางวัลชนะเลิศอันดับ 1 — Award of Excellence (เงินรางวัล 10,000 บาท)</span>
+          <span class="item-date mono">2567</span>
+        </div>
+        <div class="item-subtitle">โครงการประกวดและเวิร์กช็อป "HUAWEI HUB" และ "HUAWEI FIRST GENERATE CAMPAIGN"</div>
+        <div class="item-desc">พัฒนาแผนกลยุทธ์คอนเทนต์ดิจิทัลและการนำเสนอผลงานร่วมกับทีม ได้รับรางวัลชนะเลิศระดับมหาวิทยาลัย</div>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">เกียรติบัตรชมเชย (Honorable Mention)</span>
+          <span class="item-date mono">2567</span>
+        </div>
+        <div class="item-subtitle">งานประกวดแข่งขันผลิตเนื้อหาวิดีโอเครื่องฟอกอากาศ AIRDOG บนแพลตฟอร์มโซเชียลมีเดีย ประจำปี 2024</div>
+        <div class="item-desc">จัดโดย NAPA SOLUTIONS CO., LTD. ออกแบบและผลิตคลิปวิดีโอสร้างสรรค์เพื่อสื่อสารคุณสมบัติผลิตภัณฑ์</div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2 class="sec-title"><span class="sec-title-icon">✦</span> ประวัติการศึกษา (Education)</h2>
+      
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">มหาวิทยาลัยกรุงเทพ (Bangkok University) <span class="badge-pill">เกรดเฉลี่ย 3.29</span></span>
+          <span class="item-date mono">2565 - ปัจจุบัน</span>
+        </div>
+        <div class="item-subtitle">คณะนิเทศศาสตร์ สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE)</div>
+        <div class="item-desc">ศึกษากระบวนการผลิตสื่อครบวงจร ตั้งแต่การวางแนวคิด การใช้ AI ผลิตคอนเทนต์ การถ่ายทำ การตัดต่อ จนถึงการสื่อสารการตลาด</div>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">โรงเรียนปทุมราชวงศา</span>
+          <span class="item-date mono">มัธยมศึกษาตอนปลาย (ม.4 - ม.6)</span>
+        </div>
+        <div class="item-desc">ผลการเรียนเฉลี่ย 2.51 — มีส่วนร่วมในกิจกรรมของโรงเรียนและงานกลุ่มอย่างต่อเนื่อง</div>
+      </div>
+    </section>
+
+    <!-- Experience & Activities -->
+    <section class="section" style="margin-bottom:0;">
+      <h2 class="sec-title"><span class="sec-title-icon">✦</span> ประสบการณ์และกิจกรรม (Activities & Leadership)</h2>
+      
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">ช่างภาพในงาน Awakening Bangkok ณ สวนรมณีนาถ</span>
+          <span class="item-date mono">2567</span>
+        </div>
+        <div class="item-desc">ปฏิบัติหน้าที่ช่างภาพบันทึกภาพถ่ายบรรยากาศ แสงสี และปฏิสัมพันธ์ของผู้เข้าชมในเทศกาลศิลปะแสงไฟระดับเมือง</div>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">Staff กองถ่ายและกิจกรรมสาขา CDE & ปฐมนิเทศ Diamond Days 2024</span>
+          <span class="item-date mono">2567</span>
+        </div>
+        <div class="item-desc">ทำหน้าที่ช่างแต่งหน้ากองถ่าย, จัดหาพร็อพฉาก, พี่สตาฟฟ์ดูแลและบิ้วท์นักศึกษาใหม่ในวันปฐมนิเทศและรับน้องเฟรชชี่</div>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">ผู้เข้าร่วม Workshop "สร้างภาพอย่างคูล AI Everywhere" (Intel Core Ultra)</span>
+          <span class="item-date mono">2567</span>
+        </div>
+        <div class="item-desc">เรียนรู้เทคนิคการ Generate ภาพและสื่อดิจิทัลด้วยระบบประมวลผล AI รุ่นล่าสุดร่วมกับคณาจารย์และผู้เชี่ยวชาญ</div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
