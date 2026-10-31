@@ -28,6 +28,266 @@
     syncThemeIcon();
   });
 
+  /* ---------- Bilingual Support (TH / EN) ---------- */
+  const I18N = {
+    th: {
+      nav_about: 'ผู้กำกับ',
+      nav_skills: 'ทักษะ',
+      nav_works: 'ผลงาน',
+      nav_bts: 'เบื้องหลัง',
+      nav_awards: 'รางวัล',
+      nav_lookbook: 'เล่มพอร์ต',
+      nav_journey: 'การศึกษา',
+      nav_contact: 'ติดต่อ',
+      nav_cv: 'CV / Resume',
+      nav_resume_m: 'เรซูเม่ ↗',
+
+      hero_name: 'ขนิษฐา วันไชย',
+      hero_nick: '(อ้อม)',
+      hero_desc: 'เด็กนิเทศที่เล่าเรื่องผ่าน <strong>ภาพ แสง เสียง และ AI</strong> — จากหน้ากล้องผู้ประกาศข่าว สู่หลังกองถ่าย ไปจนถึงเวทีประกวดที่คว้า <strong>ชนะเลิศอันดับ 1 Huawei Hub</strong>',
+      hero_cta_reel: 'ดูโชว์รีล',
+      hero_cta_lookbook: 'Lookbook 11 หน้า',
+      hero_cta_contact: 'ติดต่อ',
+      hero_sticker1: 'Huawei Hub — 1st Place',
+      hero_sticker2: 'GPA <b>3.29</b> • นิเทศ BU',
+
+      about_subtitle: 'ทำความรู้จักผู้กำกับเรื่องนี้ — คนที่หลงใหลการเล่าเรื่องผ่านทุกสื่อ',
+      about_lead: 'ทุกเฟรมมีเรื่องเล่า — หน้าที่ของฉันคือทำให้คนดู <span class="grad-text">รู้สึก</span> ไปกับมัน',
+      about_p1: 'ตลอดการเรียนใน <strong>สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE) คณะนิเทศศาสตร์ มหาวิทยาลัยกรุงเทพ</strong> ฉันได้เรียนรู้ตั้งแต่การคิด Creative Concept เขียนบท ออกกองถ่ายทำ ไปจนถึงตัดต่อและลำดับภาพ รวมถึงการทำงานเป็นทีมและแก้ปัญหาเฉพาะหน้าในกองจริง',
+      about_p2: 'ฉันตั้งใจนำ <strong>ความคิดสร้างสรรค์ + ทักษะผลิตสื่อ + Generative AI</strong> มาสร้างคอนเทนต์ที่มีคุณค่า พร้อมเปิดรับคำแนะนำจากพี่ ๆ ในวงการ รับผิดชอบ อ่อนน้อม และพร้อมทุ่มเทเต็มที่ค่ะ',
+
+      stat_huawei: 'ชนะเลิศ Huawei Hub Campaign',
+      stat_prize: 'เงินรางวัลทีม (บาท)',
+      stat_gpa: 'GPA นิเทศ CDE ม.กรุงเทพ',
+      stat_works: 'ผลงานวิดีโอ / AI / ภาพถ่าย',
+
+      skills_subtitle: 'อุปกรณ์ โปรแกรม และทักษะที่ใช้จริงในการทำงาน — เรียงเป็นฟิล์มทีละเฟรม',
+      skill_cat1: 'AI & Generative Media',
+      skill_mj: 'Midjourney — Image Gen',
+      skill_gpt: 'ChatGPT & Prompting',
+      skill_vid: 'Generative Video / Motion',
+      skill_intel: 'Intel AI Everywhere',
+      skill_cat2: 'Edit & Post-Production',
+      skill_capcut: 'CapCut — Effects & Keyframes',
+      skill_premiere: 'Adobe Premiere Pro',
+      skill_ps: 'Photoshop — Cover & Retouch',
+      skill_sound: 'Sound & Beat Sync',
+      skill_cat3: 'Camera & Lighting',
+      skill_cam: 'DSLR / Mirrorless',
+      skill_photo: 'Event Photo — Awakening BKK',
+      skill_light: 'Studio Lighting & Mood',
+      skill_canva: 'Canva — Social Design',
+      skill_cat4: 'On-Air & Storytelling',
+      skill_anchor: 'ผู้ประกาศข่าว & พิธีกรหน้ากล้อง',
+      skill_story: 'Digital Storytelling & เขียนบท',
+      skill_tiktok: 'Short-form — TikTok / Reels',
+      skill_trend: 'Social Trend & Engagement',
+      skill_cat5: 'Crew, Set & People Skills',
+      skill_makeup: 'On-set Makeup & Styling',
+      skill_props: 'Props & Scene Management',
+      skill_staff: 'Staff CDE & Diamond Days',
+      skill_pitch: 'Pitching & Teamwork (TH/EN)',
+
+      works_subtitle: 'ผลงานจริงทุกชิ้น — คลิกที่โปสเตอร์เพื่อเปิดดูคลิปและไฟล์งานบน Google Drive',
+      filter_all: 'ทั้งหมด',
+      filter_ai: 'AI Content',
+      filter_anchor: 'ผู้ประกาศข่าว',
+      filter_short: 'Short-form',
+      filter_edit: 'ตัดต่อ',
+      filter_onset: 'ออกกอง & กิจกรรม',
+
+      bts_subtitle: 'ประสบการณ์จริงหลังกล้อง — ออกกอง ถ่ายภาพ แต่งหน้านักแสดง และทีมสตาฟฟ์สาขา',
+
+      awards_subtitle: 'รางวัลแห่งความภาคภูมิใจจากเวทีประกวดระดับประเทศ (คลิกเกียรติบัตรเพื่อขยาย)',
+      award1_prize: 'เงินรางวัล <b>10,000</b> บาท',
+      award1_title: 'Award of Excellence — Huawei Hub & First Generate Campaign',
+      award1_desc: 'ชนะเลิศการประกวดและเวิร์กช็อป "HUAWEI HUB" และ "HUAWEI FIRST GENERATE CAMPAIGN" ในฐานะทีมที่นำเสนอผลงานได้ดีที่สุด',
+      award2_prize: 'รางวัล<b>ชมเชย</b> ระดับประเทศ',
+      award2_title: 'Honorable Mention — Airdog VDO Contest 2024',
+      award2_desc: 'รางวัลชมเชยการประกวดผลิตวิดีโอเครื่องฟอกอากาศ AIRDOG บนโซเชียลมีเดีย โดย NAPA SOLUTIONS CO., LTD.',
+
+      lookbook_subtitle: 'ม่านเปิดแล้ว! เลื่อนดูเล่มพอร์ตฉบับจริงทั้ง 11 หน้า — คลิกจอเพื่อดูเต็มจอ, ใช้ปุ่ม ← → ได้',
+      lb_prev: '‹ ก่อนหน้า',
+      lb_next: 'ถัดไป ›',
+      lb_fullscreen: '⤢ เต็มจอ',
+
+      journey_subtitle: 'เส้นทางการเรียนรู้และประสบการณ์ที่สั่งสมมาจนถึงปัจจุบัน',
+
+      contact_subtitle: 'พร้อมสำหรับการฝึกงาน และการร่วมงานในทุกโปรเจกต์สร้างสรรค์ค่ะ',
+      cs_talent: 'ขนิษฐา วันไชย (อ้อม)',
+      cs_pos: 'AI Content Creator • Video Editor • Production Assistant',
+      cs_loc: 'Bangkok University • กรุงเทพฯ / ปทุมธานี',
+
+      cv_title: 'ต้องการเอกสารประวัติและผลงานฉบับย่อ?',
+      cv_desc: 'เปิด Resume / CV ฉบับพร้อมพิมพ์ หรือบันทึกเป็น PDF ได้ทันที',
+      cv_btn: 'เปิดดู Resume / CV',
+
+      footer_copyright: '© 2024–2026 Khanittha Wanchai • Creative Content Production and Digital Experience (CDE) • School of Communication Arts, Bangkok University'
+    },
+    en: {
+      nav_about: 'Director',
+      nav_skills: 'Toolkit',
+      nav_works: 'Works',
+      nav_bts: 'BTS',
+      nav_awards: 'Awards',
+      nav_lookbook: 'Lookbook',
+      nav_journey: 'Journey',
+      nav_contact: 'Contact',
+      nav_cv: 'CV / Resume',
+      nav_resume_m: 'Resume ↗',
+
+      hero_name: 'Khanittha Wanchai',
+      hero_nick: '(Aom)',
+      hero_desc: 'Communication Arts student storytelling through <strong>Visuals, Light, Sound & AI</strong> — from on-camera anchor to production crew, to winning <strong>1st Place in the Huawei Hub Campaign</strong>.',
+      hero_cta_reel: 'Watch Showreel',
+      hero_cta_lookbook: '11-Page Lookbook',
+      hero_cta_contact: 'Contact',
+      hero_sticker1: 'Huawei Hub — 1st Place',
+      hero_sticker2: 'GPA <b>3.29</b> • Comm Arts BU',
+
+      about_subtitle: 'Get to know the director — passionate about cinematic storytelling across all media.',
+      about_lead: 'Every frame tells a story — my mission is to make the audience <span class="grad-text">feel</span> it.',
+      about_p1: 'Throughout my studies in <strong>Creative Content Production and Digital Experience (CDE), School of Communication Arts, Bangkok University</strong>, I learned the full production lifecycle: creative concepting, scriptwriting, filming on set, video editing, audio mixing, and live problem-solving with the crew.',
+      about_p2: 'I aim to combine <strong>creative imagination + production craftsmanship + Generative AI</strong> to craft meaningful stories. Open to mentorship, humble, responsible, and ready to give 100% to every production.',
+
+      stat_huawei: 'Huawei Hub 1st Place Champion',
+      stat_prize: 'Team Prize Pool (THB)',
+      stat_gpa: 'GPA Comm Arts CDE, BU',
+      stat_works: 'Video, AI & Photo Projects',
+
+      skills_subtitle: 'Equipment, software, and real production skills — arranged frame by frame.',
+      skill_cat1: 'AI & Generative Media',
+      skill_mj: 'Midjourney — Image Gen',
+      skill_gpt: 'ChatGPT & Prompting',
+      skill_vid: 'Generative Video / Motion',
+      skill_intel: 'Intel AI Everywhere',
+      skill_cat2: 'Edit & Post-Production',
+      skill_capcut: 'CapCut — Effects & Keyframes',
+      skill_premiere: 'Adobe Premiere Pro',
+      skill_ps: 'Photoshop — Cover & Retouch',
+      skill_sound: 'Sound & Beat Sync',
+      skill_cat3: 'Camera & Lighting',
+      skill_cam: 'DSLR / Mirrorless',
+      skill_photo: 'Event Photo — Awakening BKK',
+      skill_light: 'Studio Lighting & Mood',
+      skill_canva: 'Canva — Social Design',
+      skill_cat4: 'On-Air & Storytelling',
+      skill_anchor: 'News Anchor & On-Camera Host',
+      skill_story: 'Digital Storytelling & Scriptwriting',
+      skill_tiktok: 'Short-form — TikTok / Reels',
+      skill_trend: 'Social Trend & Engagement',
+      skill_cat5: 'Crew, Set & People Skills',
+      skill_makeup: 'On-set Makeup & Styling',
+      skill_props: 'Props & Scene Management',
+      skill_staff: 'Staff CDE & Diamond Days',
+      skill_pitch: 'Pitching & Teamwork (TH/EN)',
+
+      works_subtitle: 'Real projects — click any poster to view videos and files on Google Drive.',
+      filter_all: 'All',
+      filter_ai: 'AI Content',
+      filter_anchor: 'News Anchor',
+      filter_short: 'Short-form',
+      filter_edit: 'Video Editing',
+      filter_onset: 'On-Set & Events',
+
+      bts_subtitle: 'Hands-on experience behind the camera — filming, photography, on-set makeup, and crew staff.',
+
+      awards_subtitle: 'National competition honors and achievements (click certificates to zoom).',
+      award1_prize: 'Prize: <b>10,000</b> THB',
+      award1_title: 'Award of Excellence — Huawei Hub & First Generate Campaign',
+      award1_desc: '1st Place Winner in the HUAWEI HUB & FIRST GENERATE CAMPAIGN workshop and pitching competition for top creative presentation.',
+      award2_prize: 'National <b>Honorable Mention</b>',
+      award2_title: 'Honorable Mention — Airdog VDO Contest 2024',
+      award2_desc: 'National Honorable Mention in the Airdog Air Purifier short-video contest by NAPA SOLUTIONS CO., LTD.',
+
+      lookbook_subtitle: 'Curtain rises! Flip through all 11 pages of the official portfolio lookbook — click to view fullscreen.',
+      lb_prev: '‹ Prev',
+      lb_next: 'Next ›',
+      lb_fullscreen: '⤢ Fullscreen',
+
+      journey_subtitle: 'Learning milestones and creative journey from early years to university.',
+
+      contact_subtitle: 'Open for internships, production roles, and creative collaborations.',
+      cs_talent: 'Khanittha Wanchai (Aom)',
+      cs_pos: 'AI Content Creator • Video Editor • Production Assistant',
+      cs_loc: 'Bangkok University • Bangkok / Pathum Thani',
+
+      cv_title: 'Looking for a concise CV / Resume?',
+      cv_desc: 'View the print-ready Resume / CV or download it as PDF.',
+      cv_btn: 'View Resume / CV',
+
+      footer_copyright: '© 2024–2026 Khanittha Wanchai • Creative Content Production and Digital Experience (CDE) • School of Communication Arts, Bangkok University'
+    }
+  };
+
+  const rolesMap = {
+    th: ['AI Content Creator', 'ผู้ประกาศข่าว & พิธีกร', 'Video Editor & ตัดต่อ', 'ตากล้อง & ภาพนิ่ง', 'นักเล่าเรื่องสร้างสรรค์'],
+    en: ['AI Content Creator', 'News Anchor & MC', 'Video Editor & Motion', 'On-Set Photographer', 'Creative Storyteller']
+  };
+
+  const lookbookTitlesMap = {
+    th: [
+      'หน้าปก (Cover Page)', 'คำนำ (Preface & Vision)', 'เหตุผลที่อยากเข้าทำงาน (Reasons & Goals)',
+      'ข้อมูลส่วนตัว & ประวัติการศึกษา', 'กิจกรรมในมหาวิทยาลัย (CDE Staff & Awakening Bangkok)',
+      'ผลงานในชั้นเรียน — AI Content Creation', 'ผลงานในชั้นเรียน — ผู้ประกาศข่าว & CapCut',
+      'กิจกรรม — ผลงานตัดต่อวิดีโอส่วนตัว', 'เวิร์กช็อป — CDE Back to the Future & Intel AI',
+      'เกียรติบัตร — Huawei Hub 1st Place & Airdog 2024', 'ขอขอบคุณ (Thank You)'
+    ],
+    en: [
+      'Cover Page', 'Preface & Vision', 'Career Goals & Motivation',
+      'Personal Profile & Education', 'Campus Life: CDE Staff & Awakening BKK',
+      'Coursework: AI Content Creation', 'Coursework: News Anchor & CapCut',
+      'Projects: Personal Video Showcase', 'Workshops: CDE Future & Intel AI',
+      'Awards: Huawei Hub 1st & Airdog 2024', 'Thank You & Wrap'
+    ]
+  };
+
+  let currentLang = localStorage.getItem('aom-lang') || 'th';
+  let roles = rolesMap[currentLang] || rolesMap.th;
+  let titles = lookbookTitlesMap[currentLang] || lookbookTitlesMap.th;
+
+  const setLanguage = (lang, notify = true) => {
+    currentLang = lang === 'en' ? 'en' : 'th';
+    root.lang = currentLang;
+    localStorage.setItem('aom-lang', currentLang);
+
+    // Update nav toggle buttons
+    const lTh = $('.lang-toggle .l-th');
+    const lEn = $('.lang-toggle .l-en');
+    if (lTh && lEn) {
+      lTh.classList.toggle('active', currentLang === 'th');
+      lEn.classList.toggle('active', currentLang === 'en');
+    }
+
+    // Update mobile menu language buttons
+    $$('.m-lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.setlang === currentLang);
+    });
+
+    // Translate DOM elements
+    const dict = I18N[currentLang] || I18N.th;
+    $$('[data-i18n]').forEach(el => {
+      const key = el.dataset.i18n;
+      if (dict[key]) el.innerHTML = dict[key];
+    });
+
+    // Update roles for typewriter
+    roles = rolesMap[currentLang] || rolesMap.th;
+    if (typeof typeEl !== 'undefined' && typeEl && roles && roles.length) {
+      typeEl.textContent = roles[0];
+    }
+
+    // Update lookbook titles
+    titles = lookbookTitlesMap[currentLang] || lookbookTitlesMap.th;
+    if (typeof ttl !== 'undefined' && ttl && typeof page !== 'undefined' && titles[page - 1]) {
+      ttl.textContent = titles[page - 1];
+    }
+
+    if (notify && typeof showToast === 'function') {
+      showToast(currentLang === 'th' ? 'สลับเป็นภาษาไทยเรียบร้อย' : 'Switched to English');
+    }
+  };
+
   /* ---------- Split hero title into chars ---------- */
   $$('[data-split]').forEach(el => {
     let i = +(el.dataset.offset || 0);
@@ -64,7 +324,6 @@
 
   /* ---------- Typewriter roles ---------- */
   const typeEl = $('#typeText');
-  const roles = ['AI Content Creator', 'News Anchor & MC', 'Video Editor', 'On-set Photographer', 'Creative Storyteller'];
   if (typeEl) {
     let r = 0, c = roles[0].length, del = false;
     typeEl.textContent = roles[0];
@@ -209,8 +468,31 @@
 
   /* ---------- Mobile menu ---------- */
   const menu = $('#mobileMenu'), menuBtn = $('#menuBtn');
-  menuBtn.addEventListener('click', () => { const o = menu.classList.toggle('open'); menuBtn.textContent = o ? '✕' : '☰'; document.body.style.overflow = o ? 'hidden' : ''; });
-  $$('a', menu).forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); menuBtn.textContent = '☰'; document.body.style.overflow = ''; }));
+  if (menu && menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      const o = menu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(o));
+      document.body.style.overflow = o ? 'hidden' : '';
+    });
+    $$('a', menu).forEach(a => a.addEventListener('click', () => {
+      menu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }));
+  }
+
+  // Wire Language toggles
+  const langToggleBtn = $('#langToggle');
+  if (langToggleBtn) {
+    langToggleBtn.addEventListener('click', () => {
+      setLanguage(currentLang === 'th' ? 'en' : 'th');
+    });
+  }
+  $$('.m-lang-btn').forEach(b => {
+    b.addEventListener('click', () => {
+      setLanguage(b.dataset.setlang || 'th');
+    });
+  });
 
   /* ---------- Works filter ---------- */
   $$('.filter').forEach(btn => btn.addEventListener('click', () => {
@@ -228,13 +510,6 @@
   $$('[data-lightbox]').forEach(el => el.addEventListener('click', () => openLightbox(el.dataset.lightbox, el.dataset.caption)));
 
   /* ---------- Lookbook theatre ---------- */
-  const titles = [
-    'หน้าปก (Cover Page)', 'คำนำ (Preface & Vision)', 'เหตุผลที่อยากเข้าทำงาน (Reasons & Goals)',
-    'ข้อมูลส่วนตัว & ประวัติการศึกษา', 'กิจกรรมในมหาวิทยาลัย (CDE Staff & Awakening Bangkok)',
-    'ผลงานในชั้นเรียน — AI Content Creation', 'ผลงานในชั้นเรียน — ผู้ประกาศข่าว & CapCut',
-    'กิจกรรม — ผลงานตัดต่อวิดีโอส่วนตัว', 'เวิร์กช็อป — CDE Back to the Future & Intel AI',
-    'เกียรติบัตร — Huawei Hub 1st Place & Airdog 2024', 'ขอขอบคุณ (Thank You)'
-  ];
   const total = titles.length;
   let page = 1;
   const scr = $('#screenImg'), bgScr = $('#screenBg'), num = $('#pageNum'), ttl = $('#pageTitle'), thumbs = $('#thumbs');
@@ -514,4 +789,6 @@
       $$('[data-reveal]', el).forEach(c => c.classList.add('in'));
     }
   }
+  // Initialize language on startup
+  setLanguage(currentLang, false);
 })();
