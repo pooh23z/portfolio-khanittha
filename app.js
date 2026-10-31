@@ -58,7 +58,8 @@
   const typeEl = $('#typeText');
   const roles = ['AI Content Creator ✨', 'News Anchor & MC 🎙️', 'Video Editor ✂️', 'On-set Photographer 📸', 'Creative Storyteller 🎬'];
   if (typeEl) {
-    let r = 0, c = 0, del = false;
+    let r = 0, c = roles[0].length, del = false;
+    typeEl.textContent = roles[0];
     const loop = () => {
       const word = roles[r];
       typeEl.textContent = word.slice(0, c);
@@ -68,45 +69,70 @@
       else { del = false; r = (r + 1) % roles.length; }
       setTimeout(loop, del ? 35 : 75);
     };
-    setTimeout(loop, 1200);
+    setTimeout(loop, 1800);
   }
 
-  /* ---------- Custom cursor ---------- */
+  /* ---------- Custom cursor (hardware accelerated & throttled) ---------- */
   if (fine && !reduce) {
     document.body.classList.add('has-cursor');
     const dot = $('.cursor-dot'), ring = $('.cursor-ring'), label = $('span', ring);
-    let x = innerWidth / 2, y = innerHeight / 2, rx = x, ry = y;
-    addEventListener('mousemove', e => { x = e.clientX; y = e.clientY; dot.style.transform = `translate(${x}px,${y}px) translate(-50%,-50%)`; });
-    const follow = () => { rx += (x - rx) * .18; ry += (y - ry) * .18; ring.style.transform = `translate(${rx}px,${ry}px) translate(-50%,-50%)`; requestAnimationFrame(follow); };
-    follow();
+    let x = innerWidth / 2, y = innerHeight / 2, rx = x, ry = y, moving = false;
+    addEventListener('mousemove', e => {
+      x = e.clientX; y = e.clientY;
+      dot.style.transform = `translate3d(${x}px,${y}px,0) translate(-50%,-50%)`;
+      if (!moving) { moving = true; requestAnimationFrame(follow); }
+    }, { passive: true });
+    const follow = () => {
+      rx += (x - rx) * .22; ry += (y - ry) * .22;
+      ring.style.transform = `translate3d(${rx}px,${ry}px,0) translate(-50%,-50%)`;
+      if (Math.abs(x - rx) > 0.4 || Math.abs(y - ry) > 0.4) {
+        requestAnimationFrame(follow);
+      } else {
+        moving = false;
+      }
+    };
     document.addEventListener('mouseover', e => {
       const t = e.target.closest('[data-cursor], a, button');
       if (t) { ring.classList.add('is-hover'); label.textContent = t.dataset.cursor || 'CLICK'; }
       else ring.classList.remove('is-hover');
-    });
+    }, { passive: true });
   }
 
-  /* ---------- Hero spotlight + 3D tilt ---------- */
+  /* ---------- Hero spotlight + 3D tilt (throttled) ---------- */
   const hero = $('.hero'), spot = $('.spotlight');
   if (hero && spot && fine) {
+    let spotTicking = false;
     hero.addEventListener('mousemove', e => {
-      const b = hero.getBoundingClientRect();
-      spot.style.left = (e.clientX - b.left) + 'px';
-      spot.style.top = (e.clientY - b.top) + 'px';
-    });
+      if (!spotTicking) {
+        requestAnimationFrame(() => {
+          const b = hero.getBoundingClientRect();
+          spot.style.left = (e.clientX - b.left) + 'px';
+          spot.style.top = (e.clientY - b.top) + 'px';
+          spotTicking = false;
+        });
+        spotTicking = true;
+      }
+    }, { passive: true });
   }
   const tilt = (el, max = 10) => {
     if (!fine || reduce) return;
+    let ticking = false;
     el.addEventListener('mousemove', e => {
-      const b = el.getBoundingClientRect();
-      const px = (e.clientX - b.left) / b.width, py = (e.clientY - b.top) / b.height;
-      el.style.transform = `rotateY(${(px - .5) * max * 2}deg) rotateX(${(.5 - py) * max * 2}deg)`;
-      el.style.setProperty('--mx', px * 100 + '%');
-      el.style.setProperty('--my', py * 100 + '%');
-    });
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const b = el.getBoundingClientRect();
+          const px = (e.clientX - b.left) / b.width, py = (e.clientY - b.top) / b.height;
+          el.style.transform = `rotateY(${(px - .5) * max * 2}deg) rotateX(${(.5 - py) * max * 2}deg)`;
+          el.style.setProperty('--mx', px * 100 + '%');
+          el.style.setProperty('--my', py * 100 + '%');
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
     el.addEventListener('mouseleave', () => { el.style.transform = ''; });
   };
-  $$('.vf, .frame').forEach(el => tilt(el, el.classList.contains('vf') ? 9 : 6));
+  $$('.vf, .frame').forEach(el => tilt(el, el.classList.contains('vf') ? 8 : 5));
 
   /* Viewfinder focus box wanders */
   const focus = $('.vf-focus');
@@ -115,17 +141,20 @@
     let k = 0;
     setInterval(() => { k = (k + 1) % pts.length; focus.style.left = pts[k][0] + '%'; focus.style.top = pts[k][1] + '%'; }, 2400);
   }
-  /* Live timecode */
+
+  /* Live timecode (throttled to 10 FPS to eliminate layout thrashing) */
   const tcEls = $$('[data-tc]');
   const t0 = performance.now();
   const pad = n => String(n).padStart(2, '0');
-  const tc = () => {
+  const updateTc = () => {
     const s = (performance.now() - t0) / 1000;
     const str = `${pad(Math.floor(s / 3600))}:${pad(Math.floor(s / 60) % 60)}:${pad(Math.floor(s) % 60)}:${pad(Math.floor(s * 24) % 24)}`;
-    tcEls.forEach(el => el.textContent = (el.dataset.tc || '') + str);
-    requestAnimationFrame(tc);
+    for (let i = 0; i < tcEls.length; i++) {
+      tcEls[i].textContent = (tcEls[i].dataset.tc || '') + str;
+    }
   };
-  tc();
+  setInterval(updateTc, 100);
+  updateTc();
 
   /* ---------- Magnetic buttons ---------- */
   if (fine && !reduce) $$('.btn').forEach(b => {
@@ -139,16 +168,18 @@
   /* ---------- Duplicate marquee tracks for seamless loop ---------- */
   $$('[data-loop]').forEach(t => { t.innerHTML += t.innerHTML; });
 
-  /* ---------- Marquee light bulbs ---------- */
+  /* ---------- Marquee sign corner bulbs ---------- */
   $$('.marquee-sign').forEach(sign => {
-    const add = (l, t, d) => { const b = document.createElement('i'); b.className = 'bulb'; b.style.left = l; b.style.top = t; b.style.animationDelay = d + 's'; sign.appendChild(b); };
-    const N = 14;
-    for (let i = 0; i <= N; i++) { const p = (i / N * 100) + '%'; add(p, '0%', i * .1); add(p, '100%', i * .1 + .6); }
-    for (let i = 1; i < 4; i++) { const p = (i / 4 * 100) + '%'; add('0%', p, i * .1 + .3); add('100%', p, i * .1 + .9); }
+    const pts = [['10px', '10px'], ['calc(100% - 10px)', '10px'], ['10px', 'calc(100% - 10px)'], ['calc(100% - 10px)', 'calc(100% - 10px)']];
+    pts.forEach(([l, t]) => {
+      const b = document.createElement('i'); b.className = 'bulb'; b.style.left = l; b.style.top = t; sign.appendChild(b);
+    });
   });
 
   /* ---------- Reveal on scroll + counters ---------- */
   const countUp = el => {
+    if (el.dataset.counted) return;
+    el.dataset.counted = '1';
     const end = parseFloat(el.dataset.count), dec = (el.dataset.count.split('.')[1] || '').length;
     const pre = el.dataset.pre || '', suf = el.dataset.suf || '';
     const t = performance.now(), dur = 1600;
@@ -190,8 +221,6 @@
     let cur = null;
     secs.forEach(s => { if (s.getBoundingClientRect().top < innerHeight * .4) cur = s.id; });
     links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
-    const sceneEl = $('#hudScene');
-    if (sceneEl) sceneEl.textContent = cur ? 'SCENE ' + (secs.findIndex(s => s.id === cur) + 1).toString().padStart(2, '0') : 'SCENE 00';
   };
   addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -226,7 +255,7 @@
   ];
   const total = titles.length;
   let page = 1;
-  const scr = $('#screenImg'), num = $('#pageNum'), ttl = $('#pageTitle'), thumbs = $('#thumbs');
+  const scr = $('#screenImg'), bgScr = $('#screenBg'), num = $('#pageNum'), ttl = $('#pageTitle'), thumbs = $('#thumbs');
   if (scr) {
     titles.forEach((t, i) => {
       const b = document.createElement('button');
@@ -238,7 +267,11 @@
     const go = p => {
       page = (p - 1 + total) % total + 1;
       scr.classList.add('swap');
-      setTimeout(() => { scr.src = `assets/pages/page-${page}.webp`; scr.onload = () => scr.classList.remove('swap'); }, 180);
+      setTimeout(() => {
+        scr.src = `assets/pages/page-${page}.webp`;
+        if (bgScr) bgScr.src = scr.src;
+        scr.onload = () => scr.classList.remove('swap');
+      }, 180);
       num.textContent = String(page).padStart(2, '0');
       ttl.textContent = titles[page - 1];
       $$('.thumb', thumbs).forEach((t, i) => t.classList.toggle('active', i + 1 === page));
@@ -324,128 +357,168 @@
   if (th) new IntersectionObserver((en, o) => { if (en[0].isIntersecting) { setTimeout(() => th.classList.add('open'), 250); o.disconnect(); } }, { threshold: .3 }).observe(th);
 
   /* =====================================================================
-     3D CINEMA WORLD — floating film strips carrying her photos + bokeh
+     3D CINEMA WORLD — optimized 60/120 FPS render loop
      ===================================================================== */
   const c3 = $('#film3d');
   if (c3) {
-    const g = c3.getContext('2d');
-    let W = 0, H = 0, DPR = Math.min(devicePixelRatio || 1, 2);
-    const resize = () => { const b = c3.getBoundingClientRect(); W = b.width; H = b.height; c3.width = W * DPR; c3.height = H * DPR; };
-    resize(); addEventListener('resize', resize);
+    const g = c3.getContext('2d', { alpha: true });
+    let W = 0, H = 0, DPR = Math.min(devicePixelRatio || 1, 1.25);
+    const resize = () => {
+      const b = c3.getBoundingClientRect();
+      W = b.width; H = b.height;
+      c3.width = Math.round(W * DPR);
+      c3.height = Math.round(H * DPR);
+    };
+    resize();
+    window.addEventListener('resize', resize, { passive: true });
 
     const srcs = ['ai-work-2', 'anchor-1', 'awakening-bangkok', 'cde-staff-2', 'anchor-2', 'ai-workshop-2', 'capcut-1', 'photo-club-2', 'cde-future-1', 'edit-2', 'ai-work-3', 'cde-staff-1'];
     const imgs = srcs.map(s => { const im = new Image(); im.src = `assets/cine/${s}.jpg`; return im; });
 
-    // Film strips: each is a sine ribbon in 3D drifting along X
+    // Pre-bake bokeh sprite onto an offscreen canvas (avoids createRadialGradient in render loop)
+    const bCan = document.createElement('canvas');
+    bCan.width = 64; bCan.height = 64;
+    const bg = bCan.getContext('2d');
+    const bGr = bg.createRadialGradient(32, 32, 0, 32, 32, 32);
+    bGr.addColorStop(0, 'rgba(255, 143, 184, 0.85)');
+    bGr.addColorStop(0.4, 'rgba(255, 61, 127, 0.4)');
+    bGr.addColorStop(1, 'rgba(255, 61, 127, 0)');
+    bg.fillStyle = bGr;
+    bg.beginPath(); bg.arc(32, 32, 32, 0, Math.PI * 2); bg.fill();
+
+    // 2 sleek floating strips with 13 frames each (smooth, low draw calls)
     const strips = [
-      { y: -140, z: 520, amp: 70, freq: .0042, tilt: -.18, speed: .35, phase: 0, off: 0 },
-      { y: 150, z: 760, amp: 90, freq: .0034, tilt: .14, speed: -.25, phase: 2, off: 4 },
-      { y: -10, z: 1100, amp: 120, freq: .0028, tilt: -.06, speed: .18, phase: 4, off: 8 }
+      { y: -130, z: 540, amp: 65, freq: .0040, tilt: -.16, speed: .30, phase: 0, off: 0 },
+      { y: 140, z: 780, amp: 85, freq: .0032, tilt: .12, speed: -.22, phase: 2, off: 5 }
     ];
-    const FW = 150, FH = 112, GAP = 20, PITCH = FW + GAP, COUNT = 22;
-    const bokeh = Array.from({ length: 70 }, () => ({
-      x: (Math.random() - .5) * 2600, y: (Math.random() - .5) * 1500, z: 200 + Math.random() * 1600,
-      r: 6 + Math.random() * 26, hue: [340, 330, 40, 260, 350][Math.floor(Math.random() * 5)], tw: Math.random() * 6
+    const FW = 150, FH = 112, GAP = 22, PITCH = FW + GAP, COUNT = 14;
+    const bokeh = Array.from({ length: 22 }, () => ({
+      x: (Math.random() - .5) * 2400, y: (Math.random() - .5) * 1400, z: 200 + Math.random() * 1500,
+      r: 12 + Math.random() * 32, tw: Math.random() * 6
     }));
+
     let mx = 0, my = 0, tmx = 0, tmy = 0, scrollY = 0, t = 0;
-    addEventListener('mousemove', e => { tmx = e.clientX / innerWidth - .5; tmy = e.clientY / innerHeight - .5; });
+    addEventListener('mousemove', e => {
+      tmx = (e.clientX / innerWidth - .5) * 0.8;
+      tmy = (e.clientY / innerHeight - .5) * 0.8;
+    }, { passive: true });
     addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
+
     const FOV = 700;
     const proj = (x, y, z) => {
-      // camera orbit by mouse
-      const ry = mx * .35, rx = my * .2;
-      let X = x * Math.cos(ry) - z * Math.sin(ry) * .2;
-      let Z = z + x * Math.sin(ry) * .4;
-      let Y = y * Math.cos(rx) + Z * Math.sin(rx) * .15;
-      Y -= scrollY * .25;
+      const ry = mx * .3, rx = my * .15;
+      let X = x * Math.cos(ry) - z * Math.sin(ry) * .18;
+      let Z = z + x * Math.sin(ry) * .35;
+      let Y = y * Math.cos(rx) + Z * Math.sin(rx) * .12 - scrollY * .2;
       const s = FOV / (FOV + Z);
       return { x: W * .62 + X * s, y: H * .5 + Y * s, s };
     };
 
-    let visible = true;
-    new IntersectionObserver(en => { visible = en[0].isIntersecting; }).observe(c3);
+    let visible = true, rafId = null;
+    const heroObserver = new IntersectionObserver(en => {
+      visible = en[0].isIntersecting;
+      if (visible && !rafId) {
+        rafId = requestAnimationFrame(draw);
+      } else if (!visible && rafId) {
+        cancelAnimationFrame(rafId);
+        rafId = null;
+      }
+    }, { threshold: 0.05 });
+    heroObserver.observe(c3);
 
     const draw = () => {
-      requestAnimationFrame(draw);
-      if (!visible) return;
+      if (!visible) { rafId = null; return; }
+      rafId = requestAnimationFrame(draw);
+
       t += reduce ? 0 : 1;
       mx += (tmx - mx) * .05; my += (tmy - my) * .05;
+
       g.setTransform(DPR, 0, 0, DPR, 0, 0);
       g.clearRect(0, 0, W, H);
       const light = root.dataset.theme === 'light';
 
-      // bokeh (far → near)
-      bokeh.sort((a, b) => b.z - a.z).forEach(b => {
-        const p = proj(b.x + Math.sin(t * .004 + b.tw) * 30, b.y + Math.cos(t * .003 + b.tw) * 20, b.z);
-        const r = b.r * p.s * 2.2;
-        const a = (.10 + .12 * Math.sin(t * .02 + b.tw) ** 2) * (light ? .9 : 1);
-        const grd = g.createRadialGradient(p.x, p.y, 0, p.x, p.y, r);
-        grd.addColorStop(0, `hsla(${b.hue},95%,${light ? 62 : 72}%,${a * 1.6})`);
-        grd.addColorStop(.7, `hsla(${b.hue},95%,${light ? 62 : 70}%,${a})`);
-        grd.addColorStop(1, `hsla(${b.hue},95%,70%,0)`);
-        g.fillStyle = grd; g.beginPath(); g.arc(p.x, p.y, r, 0, Math.PI * 2); g.fill();
-      });
+      // 1. Draw pre-baked bokeh sprites
+      for (let i = 0; i < bokeh.length; i++) {
+        const b = bokeh[i];
+        const p = proj(b.x + Math.sin(t * .003 + b.tw) * 25, b.y + Math.cos(t * .002 + b.tw) * 18, b.z);
+        const dia = b.r * p.s * 3.5;
+        const alpha = (0.12 + 0.14 * Math.sin(t * .015 + b.tw) ** 2) * (light ? .7 : 1);
+        g.globalAlpha = alpha;
+        g.drawImage(bCan, p.x - dia / 2, p.y - dia / 2, dia, dia);
+      }
 
-      // film strips (far first)
-      [...strips].sort((a, b) => b.z - a.z).forEach((st, si) => {
+      // 2. Film strips
+      for (let si = 0; si < strips.length; si++) {
+        const st = strips[si];
         const shift = (t * st.speed) % PITCH;
         const span = COUNT * PITCH;
         for (let i = 0; i < COUNT; i++) {
           const x0 = -span / 2 + i * PITCH + shift;
           const xc = x0 + FW / 2;
-          const yc = st.y + Math.sin(xc * st.freq + st.phase + t * .006) * st.amp + xc * st.tilt;
-          const zc = st.z + Math.cos(xc * st.freq * .8 + st.phase) * 120;
+          const yc = st.y + Math.sin(xc * st.freq + st.phase + t * .005) * st.amp + xc * st.tilt;
+          const zc = st.z + Math.cos(xc * st.freq * .8 + st.phase) * 100;
           const pc = proj(xc, yc, zc);
-          // slope for rotation
-          const dx = 6, y2 = st.y + Math.sin((xc + dx) * st.freq + st.phase + t * .006) * st.amp + (xc + dx) * st.tilt;
+          if (pc.x < -180 || pc.x > W + 180) continue;
+
+          const dx = 6, y2 = st.y + Math.sin((xc + dx) * st.freq + st.phase + t * .005) * st.amp + (xc + dx) * st.tilt;
           const p2 = proj(xc + dx, y2, zc);
           const ang = Math.atan2(p2.y - pc.y, p2.x - pc.x);
           const s = pc.s;
-          if (pc.x < -200 || pc.x > W + 200) continue;
-          const fog = Math.min(1, s * 1.5);
+
           g.save();
-          g.translate(pc.x, pc.y); g.rotate(ang); g.scale(s, s);
-          g.globalAlpha = .9 * fog;
-          // strip base
-          g.fillStyle = light ? '#2a1620' : '#160b11';
-          g.fillRect(-PITCH / 2 - .5, -FH / 2 - 26, PITCH + 1, FH + 52);
-          // sprockets
-          g.fillStyle = light ? '#FFF6F3' : 'rgba(255,240,245,.85)';
-          for (let k = 0; k < 6; k++) {
-            const sx = -PITCH / 2 + 8 + k * (PITCH / 6);
-            g.beginPath(); g.roundRect ? g.roundRect(sx, -FH / 2 - 19, 14, 10, 2) : g.rect(sx, -FH / 2 - 19, 14, 10); g.fill();
-            g.beginPath(); g.roundRect ? g.roundRect(sx, FH / 2 + 9, 14, 10, 2) : g.rect(sx, FH / 2 + 9, 14, 10); g.fill();
+          g.translate(pc.x, pc.y);
+          g.rotate(ang);
+          g.scale(s, s);
+          g.globalAlpha = 0.35 * Math.min(1, s * 1.5);
+
+          // Strip background
+          g.fillStyle = light ? '#2a1620' : '#14080e';
+          g.fillRect(-PITCH / 2, -FH / 2 - 24, PITCH, FH + 48);
+
+          // Fast sprocket holes (fillRect)
+          g.fillStyle = light ? '#FFF6F3' : 'rgba(255,240,245,.8)';
+          for (let k = 0; k < 5; k++) {
+            const sx = -PITCH / 2 + 6 + k * (PITCH / 5);
+            g.fillRect(sx, -FH / 2 - 18, 12, 8);
+            g.fillRect(sx, FH / 2 + 10, 12, 8);
           }
-          // frame image
+
+          // Frame image
           const im = imgs[(i + st.off) % imgs.length];
           if (im.complete && im.naturalWidth) {
             const ir = im.naturalWidth / im.naturalHeight, fr = FW / FH;
             let sw = im.naturalWidth, sh = im.naturalHeight, sx = 0, sy = 0;
-            if (ir > fr) { sw = sh * fr; sx = (im.naturalWidth - sw) / 2; } else { sh = sw / fr; sy = (im.naturalHeight - sh) * .3; }
+            if (ir > fr) { sw = sh * fr; sx = (im.naturalWidth - sw) / 2; }
+            else { sh = sw / fr; sy = (im.naturalHeight - sh) * .3; }
             g.drawImage(im, sx, sy, sw, sh, -FW / 2, -FH / 2, FW, FH);
           } else {
-            g.fillStyle = `hsl(${330 + i * 7},70%,40%)`; g.fillRect(-FW / 2, -FH / 2, FW, FH);
+            g.fillStyle = '#2A101C';
+            g.fillRect(-FW / 2, -FH / 2, FW, FH);
           }
-          // tint + frame number
-          g.fillStyle = `rgba(255,61,127,${.10 + si * .05})`; g.fillRect(-FW / 2, -FH / 2, FW, FH);
-          g.fillStyle = '#F6C46A'; g.font = '600 9px "IBM Plex Mono", monospace';
-          g.fillText(`${String((i + st.off) % 36 + 1).padStart(2, '0')}A  ▸ KODAK 5219`, -PITCH / 2 + 6, FH / 2 + 25);
+
+          // Tint + frame code
+          g.fillStyle = `rgba(255,61,127,${0.12 + si * .04})`;
+          g.fillRect(-FW / 2, -FH / 2, FW, FH);
+          g.fillStyle = '#F6C46A';
+          g.font = '600 9px "IBM Plex Mono", monospace';
+          g.fillText(`${String((i + st.off) % 36 + 1).padStart(2, '0')}A  ▸ KODAK 5219`, -PITCH / 2 + 6, FH / 2 + 23);
+
           g.restore();
         }
-      });
+      }
 
-      // anamorphic lens flare following mouse
-      const fx = W * (.62 + mx * .5), fy = H * (.38 + my * .4);
+      // 3. Subtle horizontal anamorphic flare
+      const fx = W * (.62 + mx * .4), fy = H * (.38 + my * .35);
+      g.globalAlpha = light ? 0.18 : 0.28;
       const lg = g.createLinearGradient(0, fy, W, fy);
       lg.addColorStop(0, 'rgba(255,143,184,0)');
-      lg.addColorStop(fx / W, light ? 'rgba(255,61,127,.22)' : 'rgba(255,190,215,.38)');
+      lg.addColorStop(fx / W, 'rgba(255,143,184,0.6)');
       lg.addColorStop(1, 'rgba(255,143,184,0)');
-      g.fillStyle = lg; g.fillRect(0, fy - 1.2, W, 2.4);
-      const fg = g.createRadialGradient(fx, fy, 0, fx, fy, 90);
-      fg.addColorStop(0, light ? 'rgba(255,61,127,.25)' : 'rgba(255,230,240,.45)'); fg.addColorStop(1, 'rgba(255,61,127,0)');
-      g.fillStyle = fg; g.beginPath(); g.arc(fx, fy, 90, 0, Math.PI * 2); g.fill();
+      g.fillStyle = lg;
+      g.fillRect(0, fy - 1, W, 2);
     };
-    draw();
+
+    rafId = requestAnimationFrame(draw);
   }
 
   /* ---------- Scroll param helper for testing & direct navigation ---------- */

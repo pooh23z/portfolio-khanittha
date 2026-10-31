@@ -11,6 +11,7 @@
   <meta property="og:description" content="Creative Content Producer & AI Storyteller • ชนะเลิศอันดับ 1 Huawei Hub • นิเทศศาสตร์ CDE ม.กรุงเทพ">
   <meta property="og:image" content="assets/hero-cover.jpg">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('aom-theme')||document.documentElement.dataset.theme;}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Mali:wght@500;600&family=Playfair+Display:ital,wght@0,600;0,800;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -84,8 +85,6 @@
   <!-- Camera HUD on viewport -->
   <div class="hud" aria-hidden="true">
     <i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
-    <div class="hud-bl"><span class="hud-rec">REC</span><span data-tc="TC "></span></div>
-    <div class="hud-br"><span id="hudScene">SCENE 00</span><span>ISO 800</span><span>f/1.8</span><span>4K • 24P</span></div>
   </div>
 
   <!-- ===== NAV ===== -->
@@ -138,15 +137,15 @@
             <span class="l2"><span data-split data-offset="11">ON AIR</span><sup>(TAKE 01)</sup></span>
           </h1>
           <div class="hero-th">ขนิษฐา วันไชย <span class="nick">อ้อม 🌸</span></div>
-          <div class="typeline">&gt; ROLE: <b id="typeText"></b><span class="caret"></span></div>
+          <div class="typeline">&gt; ROLE: <b id="typeText">AI Content Creator ✨</b><span class="caret"></span></div>
           <p class="hero-desc">
             เด็กนิเทศที่เล่าเรื่องผ่าน <strong>ภาพ แสง เสียง และ AI</strong> — จากหน้ากล้องผู้ประกาศข่าว สู่หลังกองถ่าย
             ไปจนถึงเวทีประกวดที่คว้า <strong>ชนะเลิศอันดับ 1 Huawei Hub</strong> 🏆
           </p>
           <div class="hero-cta">
             <a href="#works" class="btn btn-primary" data-cursor="PLAY"><span class="play-ico">▶</span> ดูโชว์รีล</a>
-            <a href="#lookbook" class="btn" data-cursor="OPEN">📖 Lookbook 11 หน้า</a>
-            <a href="#contact" class="btn" data-cursor="HI!">💌 ติดต่อ</a>
+            <a href="#lookbook" class="btn" data-cursor="OPEN"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5C10.3 5 8 4.5 4.5 4.5v13c3.5 0 5.8.5 7.5 2 1.7-1.5 4-2 7.5-2v-13c-3.5 0-5.8.5-7.5 2Z"/><path d="M12 6.5v13"/></svg> Lookbook 11 หน้า</a>
+            <a href="#contact" class="btn" data-cursor="HI!"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m3.8 7 8.2 6 8.2-6"/></svg> ติดต่อ</a>
           </div>
         </div>
 
@@ -172,11 +171,6 @@
           </div>
           <div class="sticker s1">🏆 Huawei Hub 1st Place</div>
           <div class="sticker s2">⭐ GPA <b>3.29</b> นิเทศ BU</div>
-          <div class="badge-rotor" aria-hidden="true">
-            <div class="bg"></div>
-            <svg viewBox="0 0 132 132"><defs><path id="circ" d="M66,66 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0"/></defs><text><textPath href="#circ">OPEN FOR INTERNSHIP ✦ COMM ARTS ✦ </textPath></text></svg>
-            <div class="core">🎬</div>
-          </div>
         </div>
       </div>
     </div>
@@ -186,13 +180,15 @@
     <div class="ticker" aria-label="ข่าวด่วน">
       <div class="ticker-label">⚡ BREAKING</div>
       <div class="ticker-live"><b>LIVE</b><span data-tc=""></span></div>
-      <div class="ticker-track" data-loop>
-        <span>อ้อม ขนิษฐา คว้าชนะเลิศอันดับ 1 โครงการ HUAWEI HUB & FIRST GENERATE CAMPAIGN รับเงินรางวัล 10,000 บาท</span>
-        <span>รางวัลชมเชยระดับประเทศ AIRDOG VDO CONTEST 2024</span>
-        <span>ช่างภาพประจำงาน AWAKENING BANGKOK ณ สวนรมณีนาถ</span>
-        <span>สตาฟฟ์สาขา CDE & ปฐมนิเทศ DIAMOND DAYS 2024</span>
-        <span>ผ่านเวิร์กช็อป "สร้างภาพอย่างคูล AI EVERYWHERE" กับ INTEL CORE ULTRA</span>
-        <span>พร้อมรับฝึกงานสาย AI CONTENT • VIDEO EDITOR • PRODUCTION ASSISTANT แล้ววันนี้!</span>
+      <div class="ticker-view">
+        <div class="ticker-track" data-loop>
+          <span>อ้อม ขนิษฐา คว้าชนะเลิศอันดับ 1 โครงการ HUAWEI HUB & FIRST GENERATE CAMPAIGN รับเงินรางวัล 10,000 บาท</span>
+          <span>รางวัลชมเชยระดับประเทศ AIRDOG VDO CONTEST 2024</span>
+          <span>ช่างภาพประจำงาน AWAKENING BANGKOK ณ สวนรมณีนาถ</span>
+          <span>สตาฟฟ์สาขา CDE & ปฐมนิเทศ DIAMOND DAYS 2024</span>
+          <span>ผ่านเวิร์กช็อป "สร้างภาพอย่างคูล AI EVERYWHERE" กับ INTEL CORE ULTRA</span>
+          <span>พร้อมรับฝึกงานสาย AI CONTENT • VIDEO EDITOR • PRODUCTION ASSISTANT แล้ววันนี้!</span>
+        </div>
       </div>
     </div>
   </header>
@@ -310,7 +306,7 @@
               <div class="chip"><span class="ico"><img src="assets/icons/camera.svg" alt=""></span>DSLR / Mirrorless</div>
               <div class="chip"><span class="ico"><img src="assets/icons/awakening.svg" alt=""></span>Event Photo — Awakening BKK</div>
               <div class="chip"><span class="ico"><img src="assets/icons/lighting.svg" alt=""></span>Studio Lighting & Mood</div>
-              <div class="chip"><span class="ico"><img src="assets/icons/canva.svg" alt=""></span>Canva — Social Design</div>
+              <div class="chip"><span class="ico"><img src="assets/icons/canva-brand.svg" alt=""></span>Canva — Social Design</div>
             </div>
           </div></div>
         </div>
@@ -356,11 +352,11 @@
 
       <div class="filters">
         <button class="filter active" data-filter="all" type="button">ทั้งหมด <small>12</small></button>
-        <button class="filter" data-filter="ai" type="button">🤖 AI Content <small>03</small></button>
-        <button class="filter" data-filter="anchor" type="button">🎙️ ผู้ประกาศข่าว <small>02</small></button>
-        <button class="filter" data-filter="short" type="button">📱 Short-form <small>02</small></button>
-        <button class="filter" data-filter="edit" type="button">✂️ ตัดต่อ <small>02</small></button>
-        <button class="filter" data-filter="onset" type="button">📸 ออกกอง & กิจกรรม <small>03</small></button>
+        <button class="filter" data-filter="ai" type="button">AI Content <small>03</small></button>
+        <button class="filter" data-filter="anchor" type="button">ผู้ประกาศข่าว <small>02</small></button>
+        <button class="filter" data-filter="short" type="button">Short-form <small>02</small></button>
+        <button class="filter" data-filter="edit" type="button">ตัดต่อ <small>02</small></button>
+        <button class="filter" data-filter="onset" type="button">ออกกอง & กิจกรรม <small>03</small></button>
       </div>
 
       <div class="reels">
@@ -473,13 +469,14 @@
           <div class="prize">💰 <b>10,000</b> บาท</div>
           <h3>Award of Excellence — Huawei Hub & First Generate Campaign</h3>
           <p>ชนะเลิศการประกวดและเวิร์กช็อป "HUAWEI HUB" และ "HUAWEI FIRST GENERATE CAMPAIGN" ในฐานะทีมที่นำเสนอผลงานได้ดีที่สุด</p>
-          <button class="cert" type="button" data-lightbox="assets/cert-huawei.jpg" data-caption="เกียรติบัตรชนะเลิศอันดับ 1 — HUAWEI HUB & FIRST GENERATE CAMPAIGN" data-cursor="ZOOM">
-            <img src="assets/cert-huawei.jpg" alt="เกียรติบัตร Huawei Hub" loading="lazy"><span class="zoom">⤢ ขยาย</span>
+          <button class="cert" type="button" data-lightbox="assets/cert-huawei-fixed.jpg" data-caption="เกียรติบัตรชนะเลิศอันดับ 1 — HUAWEI HUB & FIRST GENERATE CAMPAIGN" data-cursor="ZOOM">
+            <img src="assets/cert-huawei-fixed.jpg" alt="เกียรติบัตร Huawei Hub" loading="lazy"><span class="zoom">⤢ ขยาย</span>
           </button>
         </div>
         <div class="award" data-reveal="zoom" style="--d:.15s">
           <div class="laurel"><svg viewBox="0 0 300 200"><use href="#laurel"/></svg>
             <div class="lt"><small>OFFICIAL SELECTION</small><b>HONORABLE</b><span>AIRDOG 2024</span></div></div>
+          <div class="prize prize-alt">🏅 <b>ชมเชย</b> ระดับประเทศ</div>
           <h3>Honorable Mention — Airdog VDO Contest 2024</h3>
           <p>รางวัลชมเชยการประกวดผลิตวิดีโอเครื่องฟอกอากาศ AIRDOG บนโซเชียลมีเดีย โดย NAPA SOLUTIONS CO., LTD.</p>
           <button class="cert" type="button" data-lightbox="assets/cert-airdog.jpg" data-caption="เกียรติบัตรชมเชย — Airdog VDO Contest 2024" data-cursor="ZOOM">
@@ -511,6 +508,7 @@
         <div class="curtain r" aria-hidden="true"></div>
         <div class="screen-label">★ SCREEN 1 • WORLD PREMIERE ★</div>
         <div class="screen" data-cursor="ZOOM">
+          <img class="screen-bg" id="screenBg" src="assets/pages/page-1.webp" alt="" aria-hidden="true">
           <img id="screenImg" src="assets/pages/page-1.webp" alt="หน้าพอร์ตโฟลิโอ">
           <button class="screen-nav prev" id="prevPage" type="button" aria-label="หน้าก่อนหน้า">‹</button>
           <button class="screen-nav next" id="nextPage" type="button" aria-label="หน้าถัดไป">›</button>
@@ -584,7 +582,7 @@
         </div>
 
         <div data-reveal="right">
-          <svg class="clapper" id="clapper" viewBox="0 0 380 330" role="button" aria-label="กดแคลปบอร์ดเพื่อ ACTION!" data-cursor="ACTION!">
+          <svg class="clapper" id="clapper" viewBox="0 -80 380 410" role="button" aria-label="กดแคลปบอร์ดเพื่อ ACTION!" data-cursor="ACTION!">
             <rect x="10" y="80" width="360" height="240" rx="12" fill="#1a0f14"/>
             <rect x="10" y="80" width="360" height="240" rx="12" fill="none" stroke="#3b2530" stroke-width="2"/>
             <g stroke="#F4E7D7" stroke-opacity=".35" stroke-width="2">
@@ -592,7 +590,7 @@
               <line x1="130" y1="160" x2="130" y2="220"/><line x1="250" y1="160" x2="250" y2="220"/><line x1="190" y1="270" x2="190" y2="320"/>
             </g>
             <text x="26" y="108" font-size="12" letter-spacing="3">PRODUCTION</text>
-            <text class="chalk" x="26" y="146" font-size="28">The Storyteller 🎬</text>
+            <text class="chalk" x="26" y="146" font-size="28">The Storyteller</text>
             <text x="26" y="178" font-size="11" letter-spacing="3">ROLL</text><text class="chalk" x="40" y="210" font-size="26">A01</text>
             <text x="146" y="178" font-size="11" letter-spacing="3">SCENE</text><text class="chalk" x="164" y="210" font-size="26">08</text>
             <text x="266" y="178" font-size="11" letter-spacing="3">TAKE</text><text class="chalk" id="takeNo" x="284" y="210" font-size="26">01</text>
