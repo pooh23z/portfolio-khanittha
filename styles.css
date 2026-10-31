@@ -136,7 +136,7 @@ section { position: relative; scroll-margin-top: 135px; }
 .mobile-lang-row { display: flex; gap: 10px; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px dashed var(--line-strong); }
 .m-lang-btn {
   flex: 1; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--line-strong);
-  background: var(--surface); color: var(--mute); font-family: var(--f-body); font-size: 14px; font-weight: 600;
+  background: var(--surface); color: var(--mute); font-family: var(--f-mono); font-size: 13px; font-weight: 700; letter-spacing: .08em;
   cursor: pointer; transition: all .25s ease; text-align: center;
 }
 .m-lang-btn.active { background: var(--grad); color: #fff; border-color: transparent; box-shadow: 0 6px 18px -4px rgba(255, 61, 127, .5); }

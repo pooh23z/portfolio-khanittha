@@ -88,17 +88,19 @@
     .lang-btn {
       border: none;
       background: transparent;
-      padding: 5px 12px;
+      padding: 4px 14px;
+      min-width: 42px;
       border-radius: 6px;
-      font-size: 12px;
-      font-weight: 600;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      font-family: var(--font-mono);
       color: var(--text-muted);
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 5px;
+      justify-content: center;
       transition: all 0.2s ease;
-      font-family: inherit;
     }
     .lang-btn:hover {
       color: var(--primary);
@@ -541,8 +543,8 @@
 
     <!-- Language Selector Pill -->
     <div class="lang-switch" role="group" aria-label="เลือกภาษา / Choose Language">
-      <button type="button" class="lang-btn active" data-lang="th" id="btnTh">🇹🇭 ภาษาไทย</button>
-      <button type="button" class="lang-btn" data-lang="en" id="btnEn">🇬🇧 English</button>
+      <button type="button" class="lang-btn active" data-lang="th" id="btnTh">TH</button>
+      <button type="button" class="lang-btn" data-lang="en" id="btnEn">EN</button>
     </div>
   </aside>
 
