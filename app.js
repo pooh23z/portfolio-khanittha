@@ -12,7 +12,15 @@
   const saved = localStorage.getItem('aom-theme');
   if (saved) root.dataset.theme = saved;
   const themeBtn = $('#themeToggle');
-  const syncThemeIcon = () => { themeBtn.textContent = root.dataset.theme === 'light' ? '🌙' : '☀️'; };
+  const syncThemeIcon = () => {
+    const isLight = root.dataset.theme === 'light';
+    const sunIco = $('.theme-icon-sun', themeBtn);
+    const moonIco = $('.theme-icon-moon', themeBtn);
+    if (sunIco && moonIco) {
+      sunIco.style.display = isLight ? 'none' : 'block';
+      moonIco.style.display = isLight ? 'block' : 'none';
+    }
+  };
   syncThemeIcon();
   themeBtn.addEventListener('click', () => {
     root.dataset.theme = root.dataset.theme === 'light' ? 'dark' : 'light';
@@ -56,7 +64,7 @@
 
   /* ---------- Typewriter roles ---------- */
   const typeEl = $('#typeText');
-  const roles = ['AI Content Creator ✨', 'News Anchor & MC 🎙️', 'Video Editor ✂️', 'On-set Photographer 📸', 'Creative Storyteller 🎬'];
+  const roles = ['AI Content Creator', 'News Anchor & MC', 'Video Editor', 'On-set Photographer', 'Creative Storyteller'];
   if (typeEl) {
     let r = 0, c = roles[0].length, del = false;
     typeEl.textContent = roles[0];
@@ -70,32 +78,6 @@
       setTimeout(loop, del ? 35 : 75);
     };
     setTimeout(loop, 1800);
-  }
-
-  /* ---------- Custom cursor (hardware accelerated & throttled) ---------- */
-  if (fine && !reduce) {
-    document.body.classList.add('has-cursor');
-    const dot = $('.cursor-dot'), ring = $('.cursor-ring'), label = $('span', ring);
-    let x = innerWidth / 2, y = innerHeight / 2, rx = x, ry = y, moving = false;
-    addEventListener('mousemove', e => {
-      x = e.clientX; y = e.clientY;
-      dot.style.transform = `translate3d(${x}px,${y}px,0) translate(-50%,-50%)`;
-      if (!moving) { moving = true; requestAnimationFrame(follow); }
-    }, { passive: true });
-    const follow = () => {
-      rx += (x - rx) * .22; ry += (y - ry) * .22;
-      ring.style.transform = `translate3d(${rx}px,${ry}px,0) translate(-50%,-50%)`;
-      if (Math.abs(x - rx) > 0.4 || Math.abs(y - ry) > 0.4) {
-        requestAnimationFrame(follow);
-      } else {
-        moving = false;
-      }
-    };
-    document.addEventListener('mouseover', e => {
-      const t = e.target.closest('[data-cursor], a, button');
-      if (t) { ring.classList.add('is-hover'); label.textContent = t.dataset.cursor || 'CLICK'; }
-      else ring.classList.remove('is-hover');
-    }, { passive: true });
   }
 
   /* ---------- Hero spotlight + 3D tilt (throttled) ---------- */
@@ -259,7 +241,7 @@
   if (scr) {
     titles.forEach((t, i) => {
       const b = document.createElement('button');
-      b.className = 'thumb'; b.setAttribute('aria-label', `หน้า ${i + 1}: ${t}`); b.dataset.cursor = 'P.' + (i + 1);
+      b.className = 'thumb'; b.setAttribute('aria-label', `หน้า ${i + 1}: ${t}`);
       b.innerHTML = `<img src="assets/pages/thumb-${i + 1}.webp" alt="" loading="lazy">`;
       b.addEventListener('click', () => go(i + 1));
       thumbs.appendChild(b);
@@ -302,7 +284,7 @@
   const toast = $('#toast');
   const showToast = m => { toast.textContent = m; toast.classList.add('show'); clearTimeout(showToast.t); showToast.t = setTimeout(() => toast.classList.remove('show'), 2400); };
   $$('[data-copy]').forEach(b => b.addEventListener('click', () => {
-    navigator.clipboard.writeText(b.dataset.copy).then(() => showToast(b.dataset.msg || 'คัดลอกแล้วค่ะ ✨')).catch(() => showToast('คัดลอกไม่สำเร็จ'));
+    navigator.clipboard.writeText(b.dataset.copy).then(() => showToast(b.dataset.msg || 'คัดลอกข้อความแล้วค่ะ')).catch(() => showToast('คัดลอกไม่สำเร็จ'));
   }));
 
   /* ---------- Confetti (gold + rose) ---------- */
@@ -347,7 +329,7 @@
       take++;
       $('#takeNo').textContent = String(take).padStart(2, '0');
       confetti(e.clientX, e.clientY, 90);
-      showToast(take % 2 ? '🎬 CUT! เป็นเทคที่ดีมากค่ะ' : '🎬 ACTION! พร้อมร่วมงานกับทีมคุณแล้วค่ะ');
+      showToast(take % 2 ? 'CUT! บันทึกเทคเรียบร้อย' : 'ACTION! เริ่มต้นการถ่ายทำ');
       setTimeout(() => clapper.classList.remove('clap'), 260);
     });
   }

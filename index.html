@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>ขนิษฐา วันไชย (อ้อม) 🎬 THE STORYTELLER — นิเทศศาสตร์ ม.กรุงเทพ</title>
+  <title>ขนิษฐา วันไชย (อ้อม) — THE STORYTELLER | คณะนิเทศศาสตร์ มหาวิทยาลัยกรุงเทพ</title>
   <meta name="description" content="พอร์ตโฟลิโอของ ขนิษฐา วันไชย (อ้อม) นักศึกษาคณะนิเทศศาสตร์ สาขา CDE มหาวิทยาลัยกรุงเทพ — AI Content Creator, ผู้ประกาศข่าว, ตัดต่อวิดีโอ และช่างภาพ เจ้าของรางวัลชนะเลิศอันดับ 1 Huawei Hub">
   <meta name="theme-color" content="#0A0608">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="ขนิษฐา วันไชย (อ้อม) 🎬 THE STORYTELLER — Comm Arts BU">
+  <meta property="og:title" content="ขนิษฐา วันไชย (อ้อม) — THE STORYTELLER | Comm Arts BU">
   <meta property="og:description" content="Creative Content Producer & AI Storyteller • ชนะเลิศอันดับ 1 Huawei Hub • นิเทศศาสตร์ CDE ม.กรุงเทพ">
   <meta property="og:image" content="assets/hero-cover.jpg">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23ff3d7f'/><circle cx='16' cy='16' r='9' fill='none' stroke='%23fff' stroke-width='2.2'/><circle cx='16' cy='16' r='3.5' fill='%23fff'/><circle cx='16' cy='10' r='1.5' fill='%23fff'/><circle cx='16' cy='22' r='1.5' fill='%23fff'/><circle cx='10' cy='16' r='1.5' fill='%23fff'/><circle cx='22' cy='16' r='1.5' fill='%23fff'/></svg>">
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('aom-theme')||document.documentElement.dataset.theme;}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,8 +79,6 @@
   <div class="vignette" aria-hidden="true"></div>
   <div class="scroll-bar" aria-hidden="true"></div>
   <canvas id="confetti" aria-hidden="true"></canvas>
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" aria-hidden="true"><span>CLICK</span></div>
 
   <!-- Camera HUD on viewport -->
   <div class="hud" aria-hidden="true">
@@ -90,7 +88,7 @@
   <!-- ===== NAV ===== -->
   <nav class="nav" aria-label="เมนูหลัก">
     <div class="nav-inner">
-      <a href="#top" class="brand" data-cursor="TOP">
+      <a href="#top" class="brand">
         <img src="assets/cine/profile-cine.jpg" alt="อ้อม ขนิษฐา">
         <b>Aom.</b>
         <span class="rec-chip">ON AIR</span>
@@ -106,9 +104,14 @@
         <a href="#contact">ติดต่อ</a>
       </div>
       <div class="nav-actions">
-        <a href="resume.html" target="_blank" class="btn btn-sm" data-cursor="CV">📄 CV</a>
-        <button class="icon-btn" id="themeToggle" type="button" aria-label="สลับโหมดสี">☀️</button>
-        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="เปิดเมนู">☰</button>
+        <a href="resume.html" target="_blank" class="btn btn-sm"><svg class="btn-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px;vertical-align:-1px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>CV / Resume</a>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="สลับโหมดสี">
+          <svg class="theme-icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="เปิดเมนู">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+        </button>
       </div>
     </div>
   </nav>
@@ -136,22 +139,22 @@
             <span class="l1 glitch" data-split>Storyteller</span>
             <span class="l2"><span data-split data-offset="11">ON AIR</span><sup>(TAKE 01)</sup></span>
           </h1>
-          <div class="hero-th">ขนิษฐา วันไชย <span class="nick">อ้อม 🌸</span></div>
-          <div class="typeline">&gt; ROLE: <b id="typeText">AI Content Creator ✨</b><span class="caret"></span></div>
+          <div class="hero-th">ขนิษฐา วันไชย <span class="nick">(อ้อม)</span></div>
+          <div class="typeline">&gt; ROLE: <b id="typeText">AI Content Creator</b><span class="caret"></span></div>
           <p class="hero-desc">
             เด็กนิเทศที่เล่าเรื่องผ่าน <strong>ภาพ แสง เสียง และ AI</strong> — จากหน้ากล้องผู้ประกาศข่าว สู่หลังกองถ่าย
-            ไปจนถึงเวทีประกวดที่คว้า <strong>ชนะเลิศอันดับ 1 Huawei Hub</strong> 🏆
+            ไปจนถึงเวทีประกวดที่คว้า <strong>ชนะเลิศอันดับ 1 Huawei Hub</strong>
           </p>
           <div class="hero-cta">
-            <a href="#works" class="btn btn-primary" data-cursor="PLAY"><span class="play-ico">▶</span> ดูโชว์รีล</a>
-            <a href="#lookbook" class="btn" data-cursor="OPEN"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5C10.3 5 8 4.5 4.5 4.5v13c3.5 0 5.8.5 7.5 2 1.7-1.5 4-2 7.5-2v-13c-3.5 0-5.8.5-7.5 2Z"/><path d="M12 6.5v13"/></svg> Lookbook 11 หน้า</a>
-            <a href="#contact" class="btn" data-cursor="HI!"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m3.8 7 8.2 6 8.2-6"/></svg> ติดต่อ</a>
+            <a href="#works" class="btn btn-primary"><span class="play-ico">▶</span> ดูโชว์รีล</a>
+            <a href="#lookbook" class="btn"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5C10.3 5 8 4.5 4.5 4.5v13c3.5 0 5.8.5 7.5 2 1.7-1.5 4-2 7.5-2v-13c-3.5 0-5.8.5-7.5 2Z"/><path d="M12 6.5v13"/></svg> Lookbook 11 หน้า</a>
+            <a href="#contact" class="btn"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m3.8 7 8.2 6 8.2-6"/></svg> ติดต่อ</a>
           </div>
         </div>
 
         <div class="vf-wrap">
           <div class="vf-border" aria-hidden="true"></div>
-          <div class="vf" data-cursor="REC">
+          <div class="vf">
             <img src="assets/cine/profile-cine.jpg" alt="ขนิษฐา วันไชย (อ้อม)">
             <div class="frame-glare"></div>
             <div class="vf-ui">
@@ -169,8 +172,8 @@
               <div class="vf-bottom"><span>4K UHD</span><span>24P</span><span>WB 5600K</span><span>S-LOG3</span></div>
             </div>
           </div>
-          <div class="sticker s1">🏆 Huawei Hub 1st Place</div>
-          <div class="sticker s2">⭐ GPA <b>3.29</b> นิเทศ BU</div>
+          <div class="sticker s1">Huawei Hub — 1st Place</div>
+          <div class="sticker s2">GPA <b>3.29</b> • นิเทศ BU</div>
         </div>
       </div>
     </div>
@@ -178,7 +181,7 @@
     <div class="scroll-cue" aria-hidden="true"><i></i>SCROLL</div>
 
     <div class="ticker" aria-label="ข่าวด่วน">
-      <div class="ticker-label">⚡ BREAKING</div>
+      <div class="ticker-label">FEATURED</div>
       <div class="ticker-live"><b>LIVE</b><span data-tc=""></span></div>
       <div class="ticker-view">
         <div class="ticker-track" data-loop>
@@ -238,7 +241,7 @@
           <div class="q">“</div>
           <p class="lead">ทุกเฟรมมีเรื่องเล่า — หน้าที่ของฉันคือทำให้คนดู <span class="grad-text">รู้สึก</span> ไปกับมัน</p>
           <p>ตลอดการเรียนใน <strong>สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE) คณะนิเทศศาสตร์ มหาวิทยาลัยกรุงเทพ</strong> ฉันได้เรียนรู้ตั้งแต่การคิด Creative Concept เขียนบท ออกกองถ่ายทำ ไปจนถึงตัดต่อและลำดับภาพ รวมถึงการทำงานเป็นทีมและแก้ปัญหาเฉพาะหน้าในกองจริง</p>
-          <p>ฉันตั้งใจนำ <strong>ความคิดสร้างสรรค์ + ทักษะผลิตสื่อ + Generative AI</strong> มาสร้างคอนเทนต์ที่มีคุณค่า พร้อมเปิดรับคำแนะนำจากพี่ ๆ ในวงการ รับผิดชอบ อ่อนน้อม และพร้อมทุ่มเทเต็มที่ค่ะ ✨</p>
+          <p>ฉันตั้งใจนำ <strong>ความคิดสร้างสรรค์ + ทักษะผลิตสื่อ + Generative AI</strong> มาสร้างคอนเทนต์ที่มีคุณค่า พร้อมเปิดรับคำแนะนำจากพี่ ๆ ในวงการ รับผิดชอบ อ่อนน้อม และพร้อมทุ่มเทเต็มที่ค่ะ</p>
           <div class="sign">
             <div>
               <div class="autograph">Khanittha W.</div>
@@ -249,10 +252,10 @@
       </div>
 
       <div class="stats" data-reveal>
-        <div class="stat" data-ico="🥇"><div class="v">#<span data-count="1">0</span></div><div class="k">ชนะเลิศ Huawei Hub Campaign</div></div>
-        <div class="stat" data-ico="💰"><div class="v"><span data-count="10" data-suf="K">0</span></div><div class="k">เงินรางวัลทีม (บาท)</div></div>
-        <div class="stat" data-ico="🎓"><div class="v"><span data-count="3.29">0</span></div><div class="k">GPA นิเทศ CDE ม.กรุงเทพ</div></div>
-        <div class="stat" data-ico="🎬"><div class="v"><span data-count="12" data-suf="+">0</span></div><div class="k">ผลงานวิดีโอ / AI / ภาพถ่าย</div></div>
+        <div class="stat" data-num="01"><div class="v">#<span data-count="1">0</span></div><div class="k">ชนะเลิศ Huawei Hub Campaign</div></div>
+        <div class="stat" data-num="02"><div class="v"><span data-count="10" data-suf="K">0</span></div><div class="k">เงินรางวัลทีม (บาท)</div></div>
+        <div class="stat" data-num="03"><div class="v"><span data-count="3.29">0</span></div><div class="k">GPA นิเทศ CDE ม.กรุงเทพ</div></div>
+        <div class="stat" data-num="04"><div class="v"><span data-count="12" data-suf="+">0</span></div><div class="k">ผลงานวิดีโอ / AI / ภาพถ่าย</div></div>
       </div>
     </div>
   </section>
@@ -267,7 +270,7 @@
         </div>
         <div>
           <h2 class="scene-title">The <em>Toolkit</em></h2>
-          <p class="scene-th">อุปกรณ์ โปรแกรม และทักษะที่ใช้จริงในกอง — เรียงเป็นฟิล์มทีละเฟรม 🎞️</p>
+          <p class="scene-th">อุปกรณ์ โปรแกรม และทักษะที่ใช้จริงในการทำงาน — เรียงเป็นฟิล์มทีละเฟรม</p>
         </div>
       </div>
 
@@ -347,7 +350,7 @@
         <div class="marquee-sign" data-reveal="zoom"><div class="txt">NOW SHOWING</div></div>
         <div class="slate"><div class="slate-meta"><span>SC.03</span><span>12 TITLES</span><span>PREMIERE</span></div></div>
         <h2 class="scene-title">Selected <em>Reels</em></h2>
-        <p class="scene-th">ผลงานจริงทุกชิ้น — กดที่โปสเตอร์เพื่อเปิดดูคลิป / ภาพบน Google Drive 🍿</p>
+        <p class="scene-th">ผลงานจริงทุกชิ้น — คลิกที่โปสเตอร์เพื่อเปิดดูคลิปและไฟล์งานบน Google Drive</p>
       </div>
 
       <div class="filters">
@@ -360,62 +363,62 @@
       </div>
 
       <div class="reels">
-        <a class="reel" data-cat="ai" data-reveal href="https://drive.google.com/file/d/1AXfa-3PzHWOURz240N86NJnDOhg4zRsN/view?usp=drivesdk" target="_blank" rel="noopener" data-cursor="PLAY">
+        <a class="reel" data-cat="ai" data-reveal href="https://drive.google.com/file/d/1AXfa-3PzHWOURz240N86NJnDOhg4zRsN/view?usp=drivesdk" target="_blank" rel="noopener">
           <div class="reel-screen"><img src="assets/cine/ai-work-1.jpg" alt="Creative AI Generation ชุดที่ 1" loading="lazy"><div class="shade"></div>
             <span class="reel-tag">16:9 • AI VISUAL</span><span class="reel-ch">CH.01</span><span class="reel-play">▶</span><span class="reel-bar"><i></i></span><span class="reel-tc">00:00:42</span></div>
           <div class="reel-body"><div class="reel-meta">EP.01 — GENERATIVE AI</div><h3>Creative AI Generation — ชุดที่ 1</h3><p>สร้างภาพคอนเซปต์และเรื่องราวด้วย Generative AI ออกแบบ Prompt เชิงศิลปะเพื่อสื่ออารมณ์</p><div class="reel-cta"><span>เปิดดูผลงาน</span><span>↗</span></div></div>
         </a>
-        <a class="reel" data-cat="ai" data-reveal style="--d:.08s" href="https://drive.google.com/file/d/1H8qPL2JOMygX8KcLXxrkpTvBt1YeSILu/view?usp=drivesdk" target="_blank" rel="noopener" data-cursor="PLAY">
+        <a class="reel" data-cat="ai" data-reveal style="--d:.08s" href="https://drive.google.com/file/d/1H8qPL2JOMygX8KcLXxrkpTvBt1YeSILu/view?usp=drivesdk" target="_blank" rel="noopener">
           <div class="reel-screen"><img src="assets/cine/ai-work-2.jpg" alt="Creative AI Generation ชุดที่ 2" loading="lazy"><div class="shade"></div>
             <span class="reel-tag">4:5 • AI CHARACTER</span><span class="reel-ch">CH.02</span><span class="reel-play">▶</span><span class="reel-bar"><i></i></span><span class="reel-tc">00:00:38</span></div>
           <div class="reel-body"><div class="reel-meta">EP.02 — GENERATIVE AI</div><h3>Creative AI Generation — ชุดที่ 2</h3><p>ทดลองสร้าง Visual Content และตัวละครเพื่อใช้ในสื่อโฆษณาและการตลาดดิจิทัล</p><div class="reel-cta"><span>เปิดดูผลงาน</span><span>↗</span></div></div>
         </a>
-        <a class="reel" data-cat="ai" data-reveal style="--d:.16s" href="https://drive.google.com/file/d/1KDcvxvjLMMhmA5IMNBvLYVyUuziM4800/view?usp=drivesdk" target="_blank" rel="noopener" data-cursor="PLAY">
+        <a class="reel" data-cat="ai" data-reveal style="--d:.16s" href="https://drive.google.com/file/d/1KDcvxvjLMMhmA5IMNBvLYVyUuziM4800/view?usp=drivesdk" target="_blank" rel="noopener">
           <div class="reel-screen"><img src="assets/cine/ai-work-3.jpg" alt="AI Video Animation" loading="lazy"><div class="shade"></div>
             <span class="reel-tag">2.39:1 • AI MOTION</span><span class="reel-ch">CH.03</span><span class="reel-play">▶</span><span class="reel-bar"><i></i></span><span class="reel-tc">00:01:12</span></div>
           <div class="reel-body"><div class="reel-meta">EP.03 — AI CINEMA</div><h3>AI Video Animation & Motion</h3><p>ผสานภาพจาก AI เข้ากับ Animation และเสียงประกอบ สร้างบรรยากาศแบบภาพยนตร์</p><div class="reel-cta"><span>ดูวิดีโอ</span><span>↗</span></div></div>
         </a>
-        <a class="reel" data-cat="anchor" data-reveal href="https://drive.google.com/file/d/19LBYkJaRBPKPQoPKKp9GfWS3rPO-irRc/view?usp=drivesdk" target="_blank" rel="noopener" data-cursor="PLAY">
+        <a class="reel" data-cat="anchor" data-reveal href="https://drive.google.com/file/d/19LBYkJaRBPKPQoPKKp9GfWS3rPO-irRc/view?usp=drivesdk" target="_blank" rel="noopener">
           <div class="reel-screen"><img src="assets/cine/anchor-1.jpg" alt="ผู้ประกาศข่าว ชุดที่ 1" loading="lazy"><div class="shade"></div>
             <span class="reel-tag">16:9 • ON AIR</span><span class="reel-ch">LIVE</span><span class="reel-play">▶</span><span class="reel-bar"><i></i></span><span class="reel-tc">00:02:05</span></div>
           <div class="reel-body"><div class="reel-meta">EP.04 — NEWSROOM</div><h3>ผู้ประกาศข่าวในสตูดิโอ (ชุดที่ 1)</h3><p>ฝึกบทบาทผู้ประกาศข่าว บุคลิกภาพ การอ่านข่าวหน้ากล้อง และการคุมจังหวะการพูด</p><div class="reel-cta"><span>ดูวิดีโอสตูดิโอ</span><span>↗</span></div></div>
         </a>
-        <a class="reel" data-cat="anchor" data-reveal style="--d:.08s" href="https://drive.google.com/file/d/1ls1YaMxe8dEY4KCF5UBhyrhtUmSfo/view?usp=drivesdk" target="_blank" rel="noopener" data-cursor="PLAY">
+        <a class="reel" data-cat="anchor" data-reveal style="--d:.08s" href="https://drive.google.com/file/d/1ls1YaMxe8dEY4KCF5UBhyrhtUmSfo/view?usp=drivesdk" target="_blank" rel="noopener">
           <div class="reel-screen"><img src="assets/cine/anchor-2.jpg" alt="ผู้ประกาศข่าว ชุดที่ 2" loading="lazy"><div class="shade"></div>
             <span class="reel-tag">16:9 • BREAKING</span><span class="reel-ch">LIVE</span><span class="reel-play">▶</span><span class="reel-bar"><i></i></span><span class="reel-tc">00:01:48</span></div>
           <div class="reel-body"><div class="reel-meta">EP.05 — NEWSROOM</div><h3>ผู้ประกาศข่าวในสตูดิโอ (ชุดที่ 2)</h3><p>รายงานข่าวสด จำลองรายการโทรทัศน์ และประสานงานกับทีมงานเบื้องหลัง</p><div class="reel-cta"><span>ดูวิดีโอสตูดิโอ</span><span>↗</span></div></div>
         </a>
-        <a class="reel" data-cat="short" data-reveal style="--d:.16s" href="https://drive.google.com/file/d/1dVIUnAeHtxcINd42CZ7tLcGRZ5E6ME/view?usp=drivesdk" target="_blank" rel="noopener" data-cursor="PLAY">
+        <a class="reel" data-cat="short" data-reveal style="--d:.16s" href="https://drive.google.com/file/d/1dVIUnAeHtxcINd42CZ7tLcGRZ5E6ME/view?usp=drivesdk" target="_blank" rel="noopener">
           <div class="reel-screen"><img src="assets/cine/capcut-1.jpg" alt="Creative Short Content CapCut" loading="lazy"><div class="shade"></div>
             <span class="reel-tag">9:16 • REELS</span><span class="reel-ch">CH.06</span><span class="reel-play">▶</span><span class="reel-bar"><i></i></span><span class="reel-tc">00:00:29</span></div>
           <div class="reel-body"><div class="reel-meta">EP.06 — SHORT-FORM</div><h3>Creative Short Content — CapCut</h3><p>ตัดต่อวิดีโอสั้นด้วย Effects, Keyframes และ Transitions สำหรับ TikTok / Reels</p><div class="reel-cta"><span>ดูคลิปสั้น</span><span>↗</span></div></div>
         </a>
-        <a class="reel" data-cat="short" data-reveal href="https://drive.google.com/file/d/1WqcjiAFRsbMMnCOVtIQi60TtNKoyDJp/view?usp=drivesdk" target="_blank" rel="noopener" data-cursor="PLAY">
+        <a class="reel" data-cat="short" data-reveal href="https://drive.google.com/file/d/1WqcjiAFRsbMMnCOVtIQi60TtNKoyDJp/view?usp=drivesdk" target="_blank" rel="noopener">
           <div class="reel-screen"><img src="assets/cine/capcut-2.jpg" alt="Lifestyle & Trend VDO" loading="lazy"><div class="shade"></div>
             <span class="reel-tag">9:16 • TREND</span><span class="reel-ch">CH.07</span><span class="reel-play">▶</span><span class="reel-bar"><i></i></span><span class="reel-tc">00:00:33</span></div>
           <div class="reel-body"><div class="reel-meta">EP.07 — SHORT-FORM</div><h3>Lifestyle & Trend VDO Editing</h3><p>เกาะกระแสไวรัล ออกแบบจังหวะภาพให้เข้ากับเพลง เพิ่มยอดชมและ Engagement</p><div class="reel-cta"><span>ดูคลิปสั้น</span><span>↗</span></div></div>
         </a>
-        <a class="reel" data-cat="edit" data-reveal style="--d:.08s" href="https://drive.google.com/file/d/1EjIzVASnHjdOaR0QUJzo3b7hldZohZQB/view?usp=drivesdk" target="_blank" rel="noopener" data-cursor="PLAY">
+        <a class="reel" data-cat="edit" data-reveal style="--d:.08s" href="https://drive.google.com/file/d/1EjIzVASnHjdOaR0QUJzo3b7hldZohZQB/view?usp=drivesdk" target="_blank" rel="noopener">
           <div class="reel-screen"><img src="assets/cine/edit-1.jpg" alt="Personal VDO Showcase 1" loading="lazy"><div class="shade"></div>
             <span class="reel-tag">16:9 • EXPERIMENTAL</span><span class="reel-ch">CH.08</span><span class="reel-play">▶</span><span class="reel-bar"><i></i></span><span class="reel-tc">00:01:20</span></div>
           <div class="reel-body"><div class="reel-meta">EP.08 — DIRECTOR'S CUT</div><h3>Personal VDO Showcase #1</h3><p>วิดีโอเล่าเรื่องคุมโทนสี จัดลำดับภาพ และเลือกดนตรีเพื่อสร้างอารมณ์ร่วม</p><div class="reel-cta"><span>ดูคลิปวิดีโอ</span><span>↗</span></div></div>
         </a>
-        <a class="reel" data-cat="edit" data-reveal style="--d:.16s" href="https://drive.google.com/file/d/1fcqUMuGylrsHaKXxK7TOyqG8EVO5XWDh/view?usp=drivesdk" target="_blank" rel="noopener" data-cursor="PLAY">
+        <a class="reel" data-cat="edit" data-reveal style="--d:.16s" href="https://drive.google.com/file/d/1fcqUMuGylrsHaKXxK7TOyqG8EVO5XWDh/view?usp=drivesdk" target="_blank" rel="noopener">
           <div class="reel-screen"><img src="assets/cine/edit-2.jpg" alt="Personal VDO Showcase 2" loading="lazy"><div class="shade"></div>
             <span class="reel-tag">9:16 • VLOG</span><span class="reel-ch">CH.09</span><span class="reel-play">▶</span><span class="reel-bar"><i></i></span><span class="reel-tc">00:00:58</span></div>
           <div class="reel-body"><div class="reel-meta">EP.09 — DIRECTOR'S CUT</div><h3>Personal VDO Showcase #2</h3><p>งานตัดต่อสไตล์ Lifestyle เน้น Mood & Tone สดใส ร่วมสมัย</p><div class="reel-cta"><span>ดูคลิปวิดีโอ</span><span>↗</span></div></div>
         </a>
-        <a class="reel" data-cat="onset" data-reveal href="https://share.google/008w1SFKhaPOOPU8t" target="_blank" rel="noopener" data-cursor="VIEW">
+        <a class="reel" data-cat="onset" data-reveal href="https://share.google/008w1SFKhaPOOPU8t" target="_blank" rel="noopener">
           <div class="reel-screen"><img src="assets/cine/awakening-bangkok.jpg" alt="Awakening Bangkok" loading="lazy"><div class="shade"></div>
             <span class="reel-tag">4K • LIGHT FEST</span><span class="reel-ch">CH.10</span><span class="reel-play">▶</span><span class="reel-bar"><i></i></span><span class="reel-tc">NIGHT</span></div>
           <div class="reel-body"><div class="reel-meta">EP.10 — PHOTOGRAPHY</div><h3>Awakening Bangkok ณ สวนรมณีนาถ</h3><p>ช่างภาพบันทึกเทศกาลไฟยามค่ำคืน ถ่ายทอดศิลปะแสงและปฏิสัมพันธ์ของผู้ชม</p><div class="reel-cta"><span>ดูภาพถ่ายงาน</span><span>↗</span></div></div>
         </a>
-        <button class="reel" data-cat="onset" data-reveal style="--d:.08s" type="button" data-lightbox="assets/cine/cde-staff-2.jpg" data-caption="Staff สาขา CDE — ช่างแต่งหน้า & เบื้องหลังกองถ่าย" data-cursor="ZOOM">
+        <button class="reel" data-cat="onset" data-reveal style="--d:.08s" type="button" data-lightbox="assets/cine/cde-staff-2.jpg" data-caption="Staff สาขา CDE — ช่างแต่งหน้า & เบื้องหลังกองถ่าย">
           <div class="reel-screen"><img src="assets/cine/cde-staff-1.jpg" alt="Staff CDE" loading="lazy"><div class="shade"></div>
             <span class="reel-tag">ON-SET • CREW</span><span class="reel-ch">BTS</span><span class="reel-play">⤢</span><span class="reel-bar"><i></i></span><span class="reel-tc">2567</span></div>
           <div class="reel-body"><div class="reel-meta">EP.11 — BEHIND THE SCENES</div><h3>Staff สาขา CDE & Diamond Days 2024</h3><p>ออกกองหลายหน้าที่ — ช่างแต่งหน้า หาพร็อพ และพี่บิ้วงานปฐมนิเทศ ม.กรุงเทพ</p><div class="reel-cta"><span>ดูภาพเบื้องหลัง</span><span>⤢</span></div></div>
         </button>
-        <button class="reel" data-cat="onset" data-reveal style="--d:.16s" type="button" data-lightbox="assets/activities/ai-workshop.jpg" data-caption="Workshop &quot;สร้างภาพอย่างคูล AI Everywhere&quot; — Intel Core Ultra" data-cursor="ZOOM">
+        <button class="reel" data-cat="onset" data-reveal style="--d:.16s" type="button" data-lightbox="assets/activities/ai-workshop.jpg" data-caption="Workshop &quot;สร้างภาพอย่างคูล AI Everywhere&quot; — Intel Core Ultra">
           <div class="reel-screen"><img src="assets/cine/ai-workshop-1.jpg" alt="Intel AI Workshop" loading="lazy"><div class="shade"></div>
             <span class="reel-tag">WORKSHOP • AI</span><span class="reel-ch">CH.12</span><span class="reel-play">⤢</span><span class="reel-bar"><i></i></span><span class="reel-tc">2024</span></div>
           <div class="reel-body"><div class="reel-meta">EP.12 — MASTERCLASS</div><h3>Workshop "สร้างภาพอย่างคูล AI Everywhere"</h3><p>อบรมและลงมือจริงกับ Intel Core Ultra ประยุกต์ AI ในการผลิตภาพและสื่อยุคใหม่</p><div class="reel-cta"><span>ดูภาพเวิร์กช็อป</span><span>⤢</span></div></div>
@@ -434,18 +437,18 @@
         </div>
         <div>
           <h2 class="scene-title">Behind the <em>Scenes</em></h2>
-          <p class="scene-th">ชีวิตเด็กนิเทศหลังกล้อง — ออกกอง แต่งหน้านักแสดง สตาฟฟ์งานสาขา และเพื่อนร่วมทีม 📸</p>
+          <p class="scene-th">ประสบการณ์จริงหลังกล้อง — ออกกอง ถ่ายภาพ แต่งหน้านักแสดง และทีมสตาฟฟ์สาขา</p>
         </div>
       </div>
       <div class="cork">
-        <figure class="polaroid" style="--r:-4deg" data-reveal data-lightbox="assets/cine/cde-staff-2.jpg" data-caption="แต่งหน้านักแสดงก่อนเข้าฉาก" data-cursor="ZOOM"><img src="assets/cine/cde-staff-2.jpg" alt="แต่งหน้านักแสดง" loading="lazy"><figcaption>แต่งหน้าก่อนเข้าซีน 💄</figcaption></figure>
-        <figure class="polaroid" style="--r:3deg; --d:.06s" data-reveal data-lightbox="assets/cine/diamond-days.jpg" data-caption="ช่างภาพประจำงาน" data-cursor="ZOOM"><img src="assets/cine/diamond-days.jpg" alt="ช่างภาพ" loading="lazy"><figcaption>หลังเลนส์ทุกงาน 📷</figcaption></figure>
-        <figure class="polaroid" style="--r:-2deg; --d:.12s" data-reveal data-lightbox="assets/cine/cde-future-1.jpg" data-caption="CDE Back to the Future" data-cursor="ZOOM"><img src="assets/cine/cde-future-1.jpg" alt="CDE Back to the Future" loading="lazy"><figcaption>CDE Back to the Future 🚀</figcaption></figure>
-        <figure class="polaroid" style="--r:5deg; --d:.18s" data-reveal data-lightbox="assets/cine/photo-club-1.jpg" data-caption="ครอบครัวถ่ายภาพ 47" data-cursor="ZOOM"><img src="assets/cine/photo-club-1.jpg" alt="ชมรมถ่ายภาพ" loading="lazy"><figcaption>ถ่ายภาพ 47 ❤️</figcaption></figure>
-        <figure class="polaroid" style="--r:4deg" data-reveal data-lightbox="assets/cine/activity-staff.jpg" data-caption="สตาฟฟ์งานสาขา CDE" data-cursor="ZOOM"><img src="assets/cine/activity-staff.jpg" alt="สตาฟฟ์ CDE" loading="lazy"><figcaption>Staff day ✌️</figcaption></figure>
-        <figure class="polaroid" style="--r:-5deg; --d:.06s" data-reveal data-lightbox="assets/cine/photo-club-2.jpg" data-caption="แต่งหน้าเอฟเฟกต์ในกองถ่าย" data-cursor="ZOOM"><img src="assets/cine/photo-club-2.jpg" alt="กองถ่าย" loading="lazy"><figcaption>Makeup FX on set 🎭</figcaption></figure>
-        <figure class="polaroid" style="--r:2deg; --d:.12s" data-reveal data-lightbox="assets/cine/freshy-bu.jpg" data-caption="Freshy & ปฐมนิเทศ Diamond Days" data-cursor="ZOOM"><img src="assets/cine/freshy-bu.jpg" alt="Freshy BU" loading="lazy"><figcaption>Diamond Days 💎</figcaption></figure>
-        <figure class="polaroid" style="--r:-3deg; --d:.18s" data-reveal data-lightbox="assets/cine/cde-future-2.jpg" data-caption="เวที THE FUTURE — CDE" data-cursor="ZOOM"><img src="assets/cine/cde-future-2.jpg" alt="THE FUTURE stage" loading="lazy"><figcaption>THE FUTURE stage 🌌</figcaption></figure>
+        <figure class="polaroid" style="--r:-4deg" data-reveal data-lightbox="assets/cine/cde-staff-2.jpg" data-caption="แต่งหน้านักแสดงก่อนเข้าฉาก"><img src="assets/cine/cde-staff-2.jpg" alt="แต่งหน้านักแสดง" loading="lazy"><figcaption>แต่งหน้านักแสดงก่อนเข้าฉาก</figcaption></figure>
+        <figure class="polaroid" style="--r:3deg; --d:.06s" data-reveal data-lightbox="assets/cine/diamond-days.jpg" data-caption="ช่างภาพประจำงาน"><img src="assets/cine/diamond-days.jpg" alt="ช่างภาพ" loading="lazy"><figcaption>บันทึกภาพเบื้องหลังงานสำคัญ</figcaption></figure>
+        <figure class="polaroid" style="--r:-2deg; --d:.12s" data-reveal data-lightbox="assets/cine/cde-future-1.jpg" data-caption="CDE Back to the Future"><img src="assets/cine/cde-future-1.jpg" alt="CDE Back to the Future" loading="lazy"><figcaption>CDE Back to the Future</figcaption></figure>
+        <figure class="polaroid" style="--r:5deg; --d:.18s" data-reveal data-lightbox="assets/cine/photo-club-1.jpg" data-caption="ครอบครัวถ่ายภาพ 47"><img src="assets/cine/photo-club-1.jpg" alt="ชมรมถ่ายภาพ" loading="lazy"><figcaption>ชมรมถ่ายภาพ รุ่น 47</figcaption></figure>
+        <figure class="polaroid" style="--r:4deg" data-reveal data-lightbox="assets/cine/activity-staff.jpg" data-caption="สตาฟฟ์งานสาขา CDE"><img src="assets/cine/activity-staff.jpg" alt="สตาฟฟ์ CDE" loading="lazy"><figcaption>ทีมสตาฟฟ์สาขา CDE</figcaption></figure>
+        <figure class="polaroid" style="--r:-5deg; --d:.06s" data-reveal data-lightbox="assets/cine/photo-club-2.jpg" data-caption="แต่งหน้าเอฟเฟกต์ในกองถ่าย"><img src="assets/cine/photo-club-2.jpg" alt="กองถ่าย" loading="lazy"><figcaption>Makeup FX ประจำกองถ่าย</figcaption></figure>
+        <figure class="polaroid" style="--r:2deg; --d:.12s" data-reveal data-lightbox="assets/cine/freshy-bu.jpg" data-caption="Freshy & ปฐมนิเทศ Diamond Days"><img src="assets/cine/freshy-bu.jpg" alt="Freshy BU" loading="lazy"><figcaption>ปฐมนิเทศ Diamond Days</figcaption></figure>
+        <figure class="polaroid" style="--r:-3deg; --d:.18s" data-reveal data-lightbox="assets/cine/cde-future-2.jpg" data-caption="เวที THE FUTURE — CDE"><img src="assets/cine/cde-future-2.jpg" alt="THE FUTURE stage" loading="lazy"><figcaption>เวที THE FUTURE CDE</figcaption></figure>
       </div>
     </div>
   </section>
@@ -456,7 +459,16 @@
     <div class="beam r" aria-hidden="true"></div>
     <div class="wrap">
       <div class="scene-head center">
-        <span class="trophy" data-confetti data-cursor="🎉" role="img" aria-label="ถ้วยรางวัล">🏆</span>
+        <button class="trophy" data-confetti type="button" aria-label="คลิกเพื่อเฉลิมฉลองรางวัล">
+          <svg class="trophy-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+            <path d="M4 22h16"/>
+            <path d="M10 14.66V17c0 .55-.45 1-1 1H8c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h8c.55 0 1-.45 1-1v-1c0-.55-.45-1-1-1h-1c-.55 0-1-.45-1-1v-2.34"/>
+            <path d="M18 4H6v5c0 3.31 2.69 6 6 6s6-2.69 6-6V4z"/>
+          </svg>
+          <span class="trophy-hint">CLICK TO CELEBRATE</span>
+        </button>
         <div class="goes-to">AND THE AWARD GOES TO…</div>
         <h2 class="scene-title">Red Carpet <em>Moments</em></h2>
         <p class="scene-th">รางวัลแห่งความภาคภูมิใจจากเวทีประกวดระดับประเทศ (คลิกเกียรติบัตรเพื่อขยาย)</p>
@@ -466,20 +478,20 @@
         <div class="award" data-reveal="zoom">
           <div class="laurel"><svg viewBox="0 0 300 200"><use href="#laurel"/></svg>
             <div class="lt"><small>OFFICIAL WINNER</small><b>1ST PLACE</b><span>HUAWEI HUB</span></div></div>
-          <div class="prize">💰 <b>10,000</b> บาท</div>
+          <div class="prize">เงินรางวัล <b>10,000</b> บาท</div>
           <h3>Award of Excellence — Huawei Hub & First Generate Campaign</h3>
           <p>ชนะเลิศการประกวดและเวิร์กช็อป "HUAWEI HUB" และ "HUAWEI FIRST GENERATE CAMPAIGN" ในฐานะทีมที่นำเสนอผลงานได้ดีที่สุด</p>
-          <button class="cert" type="button" data-lightbox="assets/cert-huawei-fixed.jpg" data-caption="เกียรติบัตรชนะเลิศอันดับ 1 — HUAWEI HUB & FIRST GENERATE CAMPAIGN" data-cursor="ZOOM">
+          <button class="cert" type="button" data-lightbox="assets/cert-huawei-fixed.jpg" data-caption="เกียรติบัตรชนะเลิศอันดับ 1 — HUAWEI HUB & FIRST GENERATE CAMPAIGN">
             <img src="assets/cert-huawei-fixed.jpg" alt="เกียรติบัตร Huawei Hub" loading="lazy"><span class="zoom">⤢ ขยาย</span>
           </button>
         </div>
         <div class="award" data-reveal="zoom" style="--d:.15s">
           <div class="laurel"><svg viewBox="0 0 300 200"><use href="#laurel"/></svg>
             <div class="lt"><small>OFFICIAL SELECTION</small><b>HONORABLE</b><span>AIRDOG 2024</span></div></div>
-          <div class="prize prize-alt">🏅 <b>ชมเชย</b> ระดับประเทศ</div>
+          <div class="prize prize-alt">รางวัล<b>ชมเชย</b> ระดับประเทศ</div>
           <h3>Honorable Mention — Airdog VDO Contest 2024</h3>
           <p>รางวัลชมเชยการประกวดผลิตวิดีโอเครื่องฟอกอากาศ AIRDOG บนโซเชียลมีเดีย โดย NAPA SOLUTIONS CO., LTD.</p>
-          <button class="cert" type="button" data-lightbox="assets/cert-airdog.jpg" data-caption="เกียรติบัตรชมเชย — Airdog VDO Contest 2024" data-cursor="ZOOM">
+          <button class="cert" type="button" data-lightbox="assets/cert-airdog.jpg" data-caption="เกียรติบัตรชมเชย — Airdog VDO Contest 2024">
             <img src="assets/cert-airdog.jpg" alt="เกียรติบัตร Airdog" loading="lazy"><span class="zoom">⤢ ขยาย</span>
           </button>
         </div>
@@ -498,7 +510,7 @@
         </div>
         <div>
           <h2 class="scene-title">The <em>Lookbook</em> Premiere</h2>
-          <p class="scene-th">ม่านเปิดแล้ว! เลื่อนดูเล่มพอร์ตฉบับจริงทั้ง 11 หน้า — คลิกจอเพื่อดูเต็มจอ, ใช้ปุ่ม ← → ได้ 🎟️</p>
+          <p class="scene-th">ม่านเปิดแล้ว! เลื่อนดูเล่มพอร์ตฉบับจริงทั้ง 11 หน้า — คลิกจอเพื่อดูเต็มจอ, ใช้ปุ่ม ← → ได้</p>
         </div>
       </div>
 
@@ -506,8 +518,8 @@
         <div class="valance" aria-hidden="true"></div>
         <div class="curtain l" aria-hidden="true"></div>
         <div class="curtain r" aria-hidden="true"></div>
-        <div class="screen-label">★ SCREEN 1 • WORLD PREMIERE ★</div>
-        <div class="screen" data-cursor="ZOOM">
+        <div class="screen-label">SCREEN 1 • PORTFOLIO LOOKBOOK</div>
+        <div class="screen">
           <img class="screen-bg" id="screenBg" src="assets/pages/page-1.webp" alt="" aria-hidden="true">
           <img id="screenImg" src="assets/pages/page-1.webp" alt="หน้าพอร์ตโฟลิโอ">
           <button class="screen-nav prev" id="prevPage" type="button" aria-label="หน้าก่อนหน้า">‹</button>
@@ -536,24 +548,24 @@
         </div>
         <div>
           <h2 class="scene-title">Origin <em>Story</em></h2>
-          <p class="scene-th">ซีรีส์ชีวิต 3 ตอน — เส้นทางการเรียนที่พามาถึงคณะนิเทศศาสตร์ 📺</p>
+          <p class="scene-th">เส้นทางการเรียนรู้และประสบการณ์ที่สั่งสมมาจนถึงปัจจุบัน</p>
         </div>
       </div>
       <div class="episodes">
         <article class="ep" style="--p:100%">
           <div class="ep-art g1"><span class="ep-badge">S1 • E1</span><span class="ep-num">E01</span></div>
           <div class="ep-progress"><i></i></div>
-          <div class="ep-body"><div class="when">อนุบาล 1 — ม.3</div><h3>Pilot: เด็กช่างสังเกต 🌸</h3><div class="org">โรงเรียนบ้านนาผาง (วิบูลยาราษฎร์สามัคคี)</div><p>เด็กกิจกรรม ช่างสังเกต และมีความรับผิดชอบ</p><span class="gpa">GPA 3.22</span></div>
+          <div class="ep-body"><div class="when">อนุบาล 1 — ม.3</div><h3>Pilot: ความคิดสร้างสรรค์ในวัยเรียน</h3><div class="org">โรงเรียนบ้านนาผาง (วิบูลยาราษฎร์สามัคคี)</div><p>เด็กกิจกรรม ช่างสังเกต และมีความรับผิดชอบ</p><span class="gpa">GPA 3.22</span></div>
         </article>
         <article class="ep" style="--p:100%">
           <div class="ep-art g2"><span class="ep-badge">S1 • E2</span><span class="ep-num">E02</span></div>
           <div class="ep-progress"><i></i></div>
-          <div class="ep-body"><div class="when">ม.4 — ม.6</div><h3>Rising Action: ค้นหาตัวเอง 🏫</h3><div class="org">โรงเรียนปทุมราชวงศา</div><p>ฝึกทักษะการทำกิจกรรมและทำงานร่วมกับเพื่อน จุดเริ่มต้นความชอบด้านสื่อ</p><span class="gpa">GPA 2.51</span></div>
+          <div class="ep-body"><div class="when">ม.4 — ม.6</div><h3>Rising Action: แผนการเรียนศิลป์-คำนวณ</h3><div class="org">โรงเรียนปทุมราชวงศา</div><p>ฝึกทักษะการทำกิจกรรมและทำงานร่วมกับเพื่อน จุดเริ่มต้นความชอบด้านสื่อ</p><span class="gpa">GPA 2.51</span></div>
         </article>
         <article class="ep" style="--p:72%">
           <div class="ep-art"><img src="assets/cine/cde-future-2.jpg" alt="" loading="lazy"><span class="ep-badge">S1 • E3</span><span class="ep-now">● NOW PLAYING</span><span class="ep-num">E03</span></div>
           <div class="ep-progress"><i></i></div>
-          <div class="ep-body"><div class="when">2565 — ปัจจุบัน</div><h3>The Main Plot: เด็กนิเทศ CDE 🎬</h3><div class="org">มหาวิทยาลัยกรุงเทพ — คณะนิเทศศาสตร์</div><p>สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (Creative Content Production and Digital Experience)</p><span class="gpa" style="border-color:var(--rose); color:var(--rose);">GPA 3.29 ✨</span></div>
+          <div class="ep-body"><div class="when">2565 — ปัจจุบัน</div><h3>The Main Plot: นักศึกษานิเทศศาสตร์ CDE</h3><div class="org">มหาวิทยาลัยกรุงเทพ — คณะนิเทศศาสตร์</div><p>สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (Creative Content Production and Digital Experience)</p><span class="gpa" style="border-color:var(--rose); color:var(--rose);">GPA 3.29</span></div>
         </article>
       </div>
     </div>
@@ -565,7 +577,7 @@
       <div class="scene-head center">
         <div class="slate"><svg class="clap"><use href="#clap"/></svg><div class="slate-meta"><span>SC.08</span><span>FINAL TAKE</span><span>THAT'S A WRAP</span></div></div>
         <h2 class="scene-title">Let's Make the <em>Next Scene</em></h2>
-        <p class="scene-th">พร้อมสัมภาษณ์ฝึกงาน และพร้อมร่วมกองกับทีมของคุณแล้วค่ะ 💌</p>
+        <p class="scene-th">พร้อมสำหรับการฝึกงาน และการร่วมงานในทุกโปรเจกต์สร้างสรรค์ค่ะ</p>
       </div>
 
       <div class="contact-grid">
@@ -574,15 +586,15 @@
           <div class="sub">PRODUCTION: "THE NEXT SCENE" • CREW CALL: ANYTIME ✦</div>
           <div class="cs-row"><span class="k">TALENT / CREW</span><span class="v">ขนิษฐา วันไชย (อ้อม)</span><span></span></div>
           <div class="cs-row"><span class="k">POSITION</span><span class="v">AI Content Creator • Video Editor • Production Assistant</span><span></span></div>
-          <div class="cs-row"><span class="k">PHONE</span><span class="v">061-528-7148</span><button class="cs-btn" type="button" data-copy="0615287148" data-msg="📞 คัดลอกเบอร์โทรแล้วค่ะ!">COPY</button></div>
-          <div class="cs-row"><span class="k">EMAIL</span><span class="v">khanittha.wanc@bumail.net</span><button class="cs-btn" type="button" data-copy="khanittha.wanc@bumail.net" data-msg="✉️ คัดลอกอีเมลแล้วค่ะ!">COPY</button></div>
+          <div class="cs-row"><span class="k">PHONE</span><span class="v">061-528-7148</span><button class="cs-btn" type="button" data-copy="0615287148" data-msg="คัดลอกเบอร์โทรศัพท์แล้วค่ะ">COPY</button></div>
+          <div class="cs-row"><span class="k">EMAIL</span><span class="v">khanittha.wanc@bumail.net</span><button class="cs-btn" type="button" data-copy="khanittha.wanc@bumail.net" data-msg="คัดลอกอีเมลแล้วค่ะ">COPY</button></div>
           <div class="cs-row"><span class="k">INSTAGRAM</span><span class="v">@khanitthawanchai</span><a class="cs-btn" href="https://instagram.com/khanitthawanchai" target="_blank" rel="noopener">OPEN ↗</a></div>
           <div class="cs-row"><span class="k">LOCATION</span><span class="v">Bangkok University • กรุงเทพฯ / ปทุมธานี</span><span></span></div>
           <div class="stamp">READY<br>TO<br>SHOOT</div>
         </div>
 
         <div data-reveal="right">
-          <svg class="clapper" id="clapper" viewBox="0 -80 380 410" role="button" aria-label="กดแคลปบอร์ดเพื่อ ACTION!" data-cursor="ACTION!">
+          <svg class="clapper" id="clapper" viewBox="0 -80 380 410" role="button" aria-label="กดแคลปบอร์ดเพื่อ ACTION!">
             <rect x="10" y="80" width="360" height="240" rx="12" fill="#1a0f14"/>
             <rect x="10" y="80" width="360" height="240" rx="12" fill="none" stroke="#3b2530" stroke-width="2"/>
             <g stroke="#F4E7D7" stroke-opacity=".35" stroke-width="2">
@@ -612,9 +624,9 @@
       </div>
 
       <div class="cv-cta" data-reveal>
-        <h3>อยากได้เรซูเม่ฉบับพิมพ์? 🌷</h3>
+        <h3>ต้องการเอกสารประวัติและผลงานฉบับย่อ?</h3>
         <p>เปิด Resume / CV ฉบับพร้อมพิมพ์ หรือบันทึกเป็น PDF ได้ทันที</p>
-        <a href="resume.html" target="_blank" class="btn btn-primary" data-cursor="CV">📄 เปิด Resume / CV</a>
+        <a href="resume.html" target="_blank" class="btn btn-primary">เปิดดู Resume / CV</a>
       </div>
     </div>
   </section>
@@ -631,13 +643,13 @@
           <div class="credit"><small>AI VISUALS</small><b>Midjourney • ChatGPT • Generative Video</b></div>
           <div class="credit"><small>POST-PRODUCTION</small><b>CapCut • Premiere Pro • Photoshop</b></div>
           <div class="credit"><small>SPECIAL THANKS</small><b>เพื่อน ๆ CDE • ครอบครัว • อาจารย์คณะนิเทศศาสตร์</b></div>
-          <div class="credit"><small>AWARDS</small><b>🏆 Huawei Hub 1st Place • 🎖️ Airdog Honorable 2024</b></div>
-          <div class="credit big"><small>AND YOU</small><b>ขอบคุณที่รับชมค่ะ 🌸</b></div>
+          <div class="credit"><small>AWARDS</small><b>Huawei Hub — 1st Place • Airdog VDO Contest 2024 — Honorable Mention</b></div>
+          <div class="credit big"><small>AND YOU</small><b>ขอบคุณสำหรับการรับชม</b></div>
         </div>
       </div>
       <div class="the-end">The End.</div>
       <div class="wrap-line">…OR THE BEGINNING?</div>
-      <p class="copyright">© 2024–2026 Khanittha Wanchai • Comm Arts BU • No AI-generated humans were harmed in the making of this portfolio 🎬</p>
+      <p class="copyright">© 2024–2026 Khanittha Wanchai • Creative Content Production and Digital Experience (CDE) • School of Communication Arts, Bangkok University</p>
     </div>
   </footer>
 

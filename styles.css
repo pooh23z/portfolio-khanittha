@@ -89,22 +89,6 @@ section { position: relative; scroll-margin-top: 80px; }
 @keyframes blink { 50% { opacity: 0; } }
 .scroll-bar { position: fixed; top: 0; left: 0; height: 3px; width: 0; z-index: 200; background: var(--grad); box-shadow: 0 0 14px var(--rose); }
 
-/* ---------- Custom cursor ---------- */
-.cursor-dot, .cursor-ring { position: fixed; top: 0; left: 0; z-index: 7000; pointer-events: none; border-radius: 50%; transform: translate(-50%, -50%); display: none; }
-.has-cursor .cursor-dot, .has-cursor .cursor-ring { display: block; }
-.has-cursor, .has-cursor a, .has-cursor button, .has-cursor [data-cursor] { cursor: none; }
-.cursor-dot { width: 7px; height: 7px; background: var(--rose); box-shadow: 0 0 12px var(--rose); }
-.cursor-ring {
-  width: 38px; height: 38px; border: 1.5px solid var(--pink);
-  display: none; align-items: center; justify-content: center;
-  transition: width .3s cubic-bezier(.2,.8,.2,1), height .3s cubic-bezier(.2,.8,.2,1), background .3s, border-color .3s;
-  mix-blend-mode: normal;
-}
-.has-cursor .cursor-ring { display: flex; }
-.cursor-ring span { font-family: var(--f-mono); font-size: 10px; font-weight: 600; letter-spacing: .1em; color: #fff; opacity: 0; transition: opacity .2s; }
-.cursor-ring.is-hover { width: 74px; height: 74px; background: rgba(255, 61, 127, .88); border-color: transparent; }
-.cursor-ring.is-hover span { opacity: 1; }
-
 /* ---------- Intro: film leader countdown (disabled for instant hero reveal) ---------- */
 .intro { display: none !important; }
 
@@ -403,7 +387,7 @@ section { position: relative; scroll-margin-top: 80px; }
 .sign small { display: block; font-family: var(--f-mono); font-size: 11px; color: var(--dim); letter-spacing: .12em; }
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 70px; }
 .stat { position: relative; padding: 26px 22px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); overflow: hidden; }
-.stat::before { content: attr(data-ico); position: absolute; right: 14px; top: 10px; font-size: 26px; opacity: .9; }
+.stat::before { content: attr(data-num); position: absolute; right: 18px; top: 14px; font-family: var(--f-mono); font-size: 13px; font-weight: 700; letter-spacing: .08em; color: var(--rose); opacity: .85; }
 .stat .v { font-family: var(--f-cond); font-size: clamp(44px, 5vw, 68px); line-height: 1; letter-spacing: .02em; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .stat .k { font-size: .88rem; color: var(--mute); margin-top: 6px; }
 .stat::after { content: ""; position: absolute; left: 0; bottom: 0; height: 3px; width: 100%; background: var(--grad); transform: scaleX(0); transform-origin: left; transition: transform 1.4s .3s cubic-bezier(.2,.8,.2,1); }
@@ -529,8 +513,11 @@ section { position: relative; scroll-margin-top: 80px; }
 .cert img { border-radius: 5px; width: 100%; }
 .cert .zoom { position: absolute; right: 16px; top: 16px; font-family: var(--f-mono); font-size: 11px; background: rgba(0,0,0,.65); backdrop-filter: blur(6px); color: #fff; padding: 5px 10px; border-radius: 6px; transition: opacity .25s; }
 @media (hover: hover) { .cert .zoom { opacity: 0; } .cert:hover .zoom, .cert:focus-visible .zoom { opacity: 1; } }
-.trophy { font-size: 64px; display: inline-block; cursor: pointer; filter: drop-shadow(0 10px 24px rgba(246,196,106,.5)); animation: trophy 3s ease-in-out infinite; }
-@keyframes trophy { 50% { transform: translateY(-8px) rotate(4deg); } }
+.trophy { display: inline-flex; flex-direction: column; align-items: center; gap: 8px; cursor: pointer; background: none; border: none; padding: 6px 16px; border-radius: 12px; transition: transform .25s ease; }
+.trophy:hover { transform: scale(1.06); }
+.trophy-svg { width: 56px; height: 56px; stroke: #f6c46a; stroke-width: 1.8; fill: rgba(246, 196, 106, .18); filter: drop-shadow(0 10px 24px rgba(246,196,106,.45)); animation: trophy 3s ease-in-out infinite; }
+.trophy-hint { font-family: var(--f-mono); font-size: 10px; font-weight: 600; letter-spacing: .16em; color: var(--gold); opacity: .85; }
+@keyframes trophy { 50% { transform: translateY(-8px) rotate(3deg); } }
 .red-carpet { height: 18px; margin: 46px auto 0; width: min(760px, 90%); background: linear-gradient(180deg, #B3122E, #6E0A1C); border-radius: 50%; filter: blur(.4px); box-shadow: 0 18px 50px -10px rgba(220, 20, 60, .7); }
 
 /* ---------- LOOKBOOK: premiere theatre ---------- */
