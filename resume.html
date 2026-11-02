@@ -220,45 +220,23 @@
       text-decoration: underline;
     }
 
-    /* Photo Placeholder (Formal 1.5 - 2 inches) */
-    .photo-placeholder {
+    /* Formal Photo Frame (Formal 1.5 - 2 inches) */
+    .photo-frame {
       width: 96px;
       height: 124px;
-      border: 1.5px dashed var(--border);
+      border: 1px solid var(--border);
       border-radius: 4px;
+      overflow: hidden;
       background: #f8fafc;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: var(--text-light);
-      padding: 6px 4px;
       flex-shrink: 0;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
       box-sizing: border-box;
-      user-select: none;
     }
-    .photo-placeholder svg {
-      color: #94a3b8;
-      margin-bottom: 4px;
-    }
-    .ph-label {
-      font-size: 7.8pt;
-      font-weight: 600;
-      color: var(--text-muted);
-      line-height: 1.2;
-    }
-    .ph-sub {
-      font-size: 6.8pt;
-      color: var(--text-light);
-      line-height: 1.2;
-      margin-top: 2px;
-    }
-    .ph-dim {
-      font-family: var(--font-mono);
-      font-size: 6.5pt;
-      color: #94a3b8;
-      margin-top: 3px;
+    .photo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     /* Section Styles */
@@ -462,17 +440,12 @@
       .name-th { font-size: 17pt; line-height: 1.15; }
       .name-en { font-size: 9.5pt; }
       .title-role { font-size: 9.2pt; }
-      .photo-placeholder {
+      .photo-frame {
         width: 82px;
         height: 106px;
         flex-shrink: 0;
         margin: 0;
-        padding: 6px 4px;
       }
-      .photo-placeholder svg { width: 22px; height: 22px; margin-bottom: 3px; }
-      .ph-label { font-size: 7.8pt; }
-      .ph-sub { font-size: 6.8pt; }
-      .ph-dim { font-size: 6.4pt; }
       .contact-grid { grid-template-columns: 1fr; gap: 4px; font-size: 8.2pt; }
       .grid-2 { grid-template-columns: 1fr; gap: 6px; }
       .item-head { flex-wrap: wrap; gap: 2px 8px; }
@@ -513,9 +486,8 @@
       .section {
         margin-bottom: 9px;
       }
-      .photo-placeholder {
-        border: 1px dashed #94a3b8;
-        background: #fafafa !important;
+      .photo-frame {
+        border: 1px solid #cbd5e1;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
@@ -588,19 +560,9 @@
         </div>
       </div>
 
-      <!-- Formal Photo Placeholder Box -->
-      <div class="photo-placeholder" aria-label="ช่องสำหรับติดรูปถ่าย / Photo Placeholder">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
-          <circle cx="12" cy="7" r="4"/>
-        </svg>
-        <span class="ph-label l-th">รูปถ่ายทางการ</span>
-        <span class="ph-sub l-th">(เว้นติดรูปถ่าย)</span>
-        <span class="ph-dim l-th">1.5 – 2 นิ้ว</span>
-
-        <span class="ph-label l-en">Official Photo</span>
-        <span class="ph-sub l-en">(Attach Photo)</span>
-        <span class="ph-dim l-en">1.5 – 2 inches</span>
+      <!-- Formal Photo Box -->
+      <div class="photo-frame" aria-label="รูปถ่ายทางการ / Official Photo">
+        <img src="assets/profile-formal.jpg" alt="กนิษฐา วันไชย / Khanittha Wanchai" class="photo-img">
       </div>
     </header>
 
