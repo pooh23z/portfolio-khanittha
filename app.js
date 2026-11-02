@@ -111,13 +111,13 @@
       reel3_title: 'บทพากย์เสียงสารคดี — วาฬ 52 Hz (The 52-Hertz Whale)',
       reel3_desc: 'งานพากย์เสียงสารคดีเล่าเรื่อง (Voiceover & Audio Storytelling) ควบคุมจังหวะ ลมหายใจ และถ่ายทอดอารมณ์ความเหงาของวาฬใต้สมุทร',
 
-      reel4_meta: 'EP.04 — BU BROADCAST',
-      reel4_title: 'ผู้ประกาศข่าวโทรทัศน์ & รายงานสกู๊ปข่าว (BU Broadcast)',
-      reel4_desc: 'ผลงานผู้ประกาศข่าวฉบับสมบูรณ์ (Master Cut) เปิดรายการหน้ากล้องในสตูดิโอ รายงานสกู๊ปข่าวและคลิปกล้องวงจรปิดพร้อมเสียงบรรยาย',
+      reel4_meta: 'EP.04 — NEWSROOM (ชุดที่ 1)',
+      reel4_title: 'ผู้ประกาศข่าวในสตูดิโอ & บอร์ดแคสต์ TNN News (ชุดที่ 1)',
+      reel4_desc: 'ฝึกปฏิบัติการอ่านข่าวสดหน้ากล้องผ่าน Teleprompter ควบคุมน้ำเสียง จังหวะ บุคลิกภาพหน้ากล้องโทรทัศน์ และการจำลองสกู๊ปข่าว',
 
-      reel5_meta: 'EP.05 — NEWSROOM',
-      reel5_title: 'ผู้ประกาศข่าวในสตูดิโอ & บอร์ดแคสต์ TNN News',
-      reel5_desc: 'ฝึกปฏิบัติการอ่านข่าวสดหน้ากล้องผ่าน Teleprompter ควบคุมน้ำเสียง จังหวะ บุคลิกภาพหน้ากล้องโทรทัศน์ และการจำลองสกู๊ปข่าว',
+      reel5_meta: 'EP.05 — NEWSROOM (ชุดที่ 2)',
+      reel5_title: 'ผู้ประกาศข่าวโทรทัศน์ & รายงานสกู๊ปข่าว — BU Broadcast (ชุดที่ 2)',
+      reel5_desc: 'ผลงานผู้ประกาศข่าวฉบับสมบูรณ์ (Master Cut) เปิดรายการหน้ากล้องในสตูดิโอ รายงานสกู๊ปข่าวอาชญากรรมและคลิปกล้องวงจรปิดพร้อมเสียงบรรยาย',
 
       reel6_meta: 'EP.06 — COMMERCIAL PRODUCTION',
       reel6_title: 'วิดีโอโฆษณาจำลอง — ฟิตเนส & เครื่องดื่มเกลือแร่',
@@ -260,13 +260,13 @@
       reel3_title: 'Documentary Voiceover — The 52-Hertz Whale',
       reel3_desc: 'Documentary narration and storytelling piece, demonstrating vocal modulation, pacing, and emotional resonance.',
 
-      reel4_meta: 'EP.04 — BU BROADCAST',
-      reel4_title: 'Television News Anchor & Crime Scoop (BU Broadcast)',
-      reel4_desc: 'Complete broadcast news package featuring studio on-camera anchor introduction, investigative CCTV footage, and field narration.',
+      reel4_meta: 'EP.04 — NEWSROOM (PART 1)',
+      reel4_title: 'Studio News Anchor & Broadcast Report — TNN News (Part 1)',
+      reel4_desc: 'Live television news broadcasting practical, teleprompter reading, vocal clarity, on-camera presence, and newsroom pacing.',
 
-      reel5_meta: 'EP.05 — NEWSROOM',
-      reel5_title: 'Studio News Anchor & Broadcast Report (TNN News)',
-      reel5_desc: 'Live television news broadcasting practical, teleprompter reading, vocal clarity, on-camera presence, and newsroom pacing.',
+      reel5_meta: 'EP.05 — NEWSROOM (PART 2)',
+      reel5_title: 'Television News Anchor & Crime Scoop — BU Broadcast (Part 2)',
+      reel5_desc: 'Complete broadcast news package featuring studio on-camera anchor introduction, investigative CCTV footage, and field narration.',
 
       reel6_meta: 'EP.06 — COMMERCIAL PRODUCTION',
       reel6_title: 'Spec Commercial Ad — Fitness & Energy Drink',
