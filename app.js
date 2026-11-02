@@ -88,13 +88,64 @@
       skill_staff: 'Staff CDE & Diamond Days',
       skill_pitch: 'Pitching & Teamwork (TH/EN)',
 
-      works_subtitle: 'ผลงานจริงทุกชิ้น — คลิกที่โปสเตอร์เพื่อเปิดดูคลิปและไฟล์งานบน Google Drive',
+      works_subtitle: 'ผลงานจริงทุกชิ้น — คลิกที่โปสเตอร์เพื่อดูวิดีโอระดับคมชัดบนเว็บได้ทันที',
       filter_all: 'ทั้งหมด',
       filter_ai: 'AI Content',
-      filter_anchor: 'ผู้ประกาศข่าว',
+      filter_anchor: 'ผู้ประกาศ & พากย์',
       filter_short: 'Short-form',
-      filter_edit: 'ตัดต่อ',
+      filter_edit: 'ตัดต่อ & โฆษณา',
       filter_onset: 'ออกกอง & กิจกรรม',
+      reel_play_cta: 'เล่นวิดีโอบนเว็บ',
+      reel_view_photo: 'ดูภาพถ่าย',
+
+      // Reel items
+      reel1_meta: 'EP.01 — AI CINEMA',
+      reel1_title: 'ภาพยนตร์อนิเมชันแฟนตาซี — The Golden Knight (EP.1)',
+      reel1_desc: 'สร้างสรรค์ภาพยนตร์แอนิเมชันเต็มเรื่องด้วย Generative AI ควบคุม Mood & Tone, การเคลื่อนไหวของตัวละคร และผสานดนตรีประกอบเชิงภาพยนตร์',
+
+      reel2_meta: 'EP.02 — GENERATIVE AI',
+      reel2_title: 'ตัวละครเสมือน & AI Avatar — HeyGen AI',
+      reel2_desc: 'จำลองและสร้างตัวละคร AI เสมือนจริงขยับปากพูดตามบท (Lip-sync & Voice AI) สำหรับสื่อโฆษณาและการตลาดดิจิทัลยุคใหม่',
+
+      reel3_meta: 'EP.03 — VOICE & STORYTELLING',
+      reel3_title: 'บทพากย์เสียงสารคดี — วาฬ 52 Hz (The 52-Hertz Whale)',
+      reel3_desc: 'งานพากย์เสียงสารคดีเล่าเรื่อง (Voiceover & Audio Storytelling) ควบคุมจังหวะ ลมหายใจ และถ่ายทอดอารมณ์ความเหงาของวาฬใต้สมุทร',
+
+      reel4_meta: 'EP.04 — NEWSROOM',
+      reel4_title: 'ผู้ประกาศข่าวในสตูดิโอ & บอร์ดแคสต์ TNN News',
+      reel4_desc: 'ฝึกปฏิบัติการอ่านข่าวสดหน้ากล้องผ่าน Teleprompter ควบคุมน้ำเสียง จังหวะ บุคลิกภาพหน้ากล้องโทรทัศน์ และการจำลองสกู๊ปข่าว',
+
+      reel5_meta: 'EP.05 — COMMERCIAL PRODUCTION',
+      reel5_title: 'วิดีโอโฆษณาจำลอง — ฟิตเนส & เครื่องดื่มเกลือแร่',
+      reel5_desc: 'ถ่ายทำและกำกับโฆษณาจำลองในยิม ออกแบบมุมกล้อง การเคลื่อนไหวแอ็กชัน จังหวะตัดต่อกระชับเร้าใจ และเกรดสี Mood & Tone',
+
+      reel6_meta: 'EP.06 — SHORT-FORM',
+      reel6_title: 'Creative Short Content — ตำส้มตำแซ่บ (CapCut)',
+      reel6_desc: 'ตัดต่อวิดีโอสั้นสไตล์อาหารและไลฟ์สไตล์ ดีไซน์จังหวะสับภาพตามจังหวะเพลง (Beat Sync) ใส่ Keyframe และ Sound FX ให้ดูน่ารับประทาน',
+
+      reel7_meta: 'EP.07 — SHORT-FORM',
+      reel7_title: 'Lifestyle & Food Vlog — รีวิวของอร่อย & คาเฟ่',
+      reel7_desc: 'วิดีโอบล็อกเกาะเทรนด์ไลฟ์สไตล์ เล่าเรื่องเป็นธรรมชาติ ใส่ทรานซิชันซูมและสปีดการตัดต่อเพื่อดึงดูดความสนใจและ Engagement',
+
+      reel8_meta: 'EP.08 — DIRECTOR\'S CUT',
+      reel8_title: 'Cinematic Light & Mood — Red Dome Installation',
+      reel8_desc: 'งานตัดต่อคุมโทนภาพยนตร์ (Color Grade & Mood) บันทึกแสงเงาศิลปะร่วมสมัยในโดมสีแดง ถ่ายทอดอารมณ์และมุมมองผู้กำกับ',
+
+      reel9_meta: 'EP.09 — DIRECTOR\'S CUT',
+      reel9_title: 'Night Street Dance & Night Market Vlog',
+      reel9_desc: 'วิดีโอบันทึกโมเมนต์สตรีทแดนซ์และบรรยากาศสตรีทฟู้ดยามค่ำคืน การคุมจังหวะภาพสนุกสนานและมีชีวิตชีวา',
+
+      reel10_meta: 'EP.10 — PHOTOGRAPHY',
+      reel10_title: 'Awakening Bangkok ณ สวนรมณีนาถ',
+      reel10_desc: 'ช่างภาพบันทึกเทศกาลไฟยามค่ำคืน ถ่ายทอดศิลปะแสงและปฏิสัมพันธ์ของผู้ชม',
+
+      reel11_meta: 'EP.11 — BEHIND THE SCENES',
+      reel11_title: 'Staff สาขา CDE & Diamond Days 2024',
+      reel11_desc: 'ออกกองหลายหน้าที่ — ช่างแต่งหน้า หาพร็อพ และพี่บิ้วงานปฐมนิเทศ ม.กรุงเทพ',
+
+      reel12_meta: 'EP.12 — MASTERCLASS',
+      reel12_title: 'Workshop "สร้างภาพอย่างคูล AI Everywhere"',
+      reel12_desc: 'อบรมและลงมือจริงกับ Intel Core Ultra ประยุกต์ AI ในการผลิตภาพและสื่อยุคใหม่',
 
       bts_subtitle: 'ประสบการณ์จริงหลังกล้อง — ออกกอง ถ่ายภาพ แต่งหน้านักแสดง และทีมสตาฟฟ์สาขา',
 
@@ -182,13 +233,64 @@
       skill_staff: 'Staff CDE & Diamond Days',
       skill_pitch: 'Pitching & Teamwork (TH/EN)',
 
-      works_subtitle: 'Real projects — click any poster to view videos and files on Google Drive.',
+      works_subtitle: 'Real projects — click any poster to stream crisp HD videos directly on the web.',
       filter_all: 'All',
       filter_ai: 'AI Content',
-      filter_anchor: 'News Anchor',
+      filter_anchor: 'Anchor & Voice',
       filter_short: 'Short-form',
-      filter_edit: 'Video Editing',
-      filter_onset: 'On-Set & Events',
+      filter_edit: 'Editing & Ads',
+      filter_onset: 'On-set & Crew',
+      reel_play_cta: 'Watch Video',
+      reel_view_photo: 'View Photos',
+
+      // Reel items
+      reel1_meta: 'EP.01 — AI CINEMA',
+      reel1_title: 'Fantasy AI Animation — The Golden Knight (EP.1)',
+      reel1_desc: 'Produced a full cinematic fantasy animation using Generative AI with consistent characters, dynamic lighting, and immersive soundtrack.',
+
+      reel2_meta: 'EP.02 — GENERATIVE AI',
+      reel2_title: 'Virtual Character & AI Host — HeyGen AI',
+      reel2_desc: 'Created a hyper-realistic AI talking avatar with synchronized voice and lip-sync for modern digital marketing content.',
+
+      reel3_meta: 'EP.03 — VOICE & STORYTELLING',
+      reel3_title: 'Documentary Voiceover — The 52-Hertz Whale',
+      reel3_desc: 'Documentary narration and storytelling piece, demonstrating vocal modulation, pacing, and emotional resonance.',
+
+      reel4_meta: 'EP.04 — NEWSROOM',
+      reel4_title: 'Studio News Anchor & Broadcast Report',
+      reel4_desc: 'Live television news broadcasting practical, teleprompter reading, vocal clarity, on-camera presence, and newsroom pacing.',
+
+      reel5_meta: 'EP.05 — COMMERCIAL PRODUCTION',
+      reel5_title: 'Spec Commercial Ad — Fitness & Energy Drink',
+      reel5_desc: 'Directed and edited a fast-paced gym commercial spot with dynamic camera work, punchy sound design, and color grading.',
+
+      reel6_meta: 'EP.06 — SHORT-FORM',
+      reel6_title: 'Creative Short Content — Somtum (CapCut)',
+      reel6_desc: 'Short-form food content editing with beat syncing, keyframe zooms, and snappy sound effects for TikTok and Reels.',
+
+      reel7_meta: 'EP.07 — SHORT-FORM',
+      reel7_title: 'Lifestyle & Food Vlog — Cafe & Street Eats',
+      reel7_desc: 'Lifestyle food vlog capturing candid food moments, snappy transitions, and engaging visual pacing.',
+
+      reel8_meta: 'EP.08 — DIRECTOR\'S CUT',
+      reel8_title: 'Cinematic Light & Mood — Red Dome Installation',
+      reel8_desc: 'Cinematic tone study in a red dome art space, emphasizing atmosphere, color grading, and intimate framing.',
+
+      reel9_meta: 'EP.09 — DIRECTOR\'S CUT',
+      reel9_title: 'Night Street Dance & Night Market Vlog',
+      reel9_desc: 'Energetic street dance and night market food vlog capturing youthful vibrancy and beat-matched cuts.',
+
+      reel10_meta: 'EP.10 — PHOTOGRAPHY',
+      reel10_title: 'Awakening Bangkok at Rommaninat Park',
+      reel10_desc: 'Event photographer capturing nighttime light installations, mood, and visitor interactions.',
+
+      reel11_meta: 'EP.11 — BEHIND THE SCENES',
+      reel11_title: 'Staff CDE & Diamond Days 2024',
+      reel11_desc: 'Multidisciplinary on-set crew: makeup artist, prop management, and freshman orientation MC.',
+
+      reel12_meta: 'EP.12 — MASTERCLASS',
+      reel12_title: 'Workshop "AI Everywhere with Intel Core Ultra"',
+      reel12_desc: 'Hands-on masterclass leveraging Intel Core Ultra processors for generative media production.',
 
       bts_subtitle: 'Hands-on experience behind the camera — filming, photography, on-set makeup, and crew staff.',
 
@@ -502,12 +604,72 @@
     $$('.reel').forEach(r => r.classList.toggle('hide', f !== 'all' && r.dataset.cat !== f));
   }));
 
-  /* ---------- Lightbox ---------- */
+  /* ---------- Lightbox (Images) ---------- */
   const lb = $('#lightbox'), lbImg = $('#lbImg'), lbCap = $('#lbCap');
   window.openLightbox = (src, cap) => { lbImg.src = src; lbCap.textContent = cap || ''; lb.classList.add('open'); document.body.style.overflow = 'hidden'; };
   const closeLb = () => { lb.classList.remove('open'); document.body.style.overflow = ''; };
   lb.addEventListener('click', e => { if (e.target === lb || e.target.closest('.lb-close')) closeLb(); });
   $$('[data-lightbox]').forEach(el => el.addEventListener('click', () => openLightbox(el.dataset.lightbox, el.dataset.caption)));
+
+  /* ---------- Cinema Video Modal Player ---------- */
+  const vm = $('#videoModal'), vmVideo = $('#vmVideo'), vmTitle = $('#vmTitle'), vmMeta = $('#vmMeta'), vmDesc = $('#vmDesc'), vmDriveLink = $('#vmDriveLink');
+  window.openVideoModal = (src, meta, title, desc, driveUrl) => {
+    if (!vm || !vmVideo) return;
+    vmVideo.src = src;
+    vmVideo.load();
+    if (vmMeta) vmMeta.textContent = meta || 'NOW PLAYING';
+    if (vmTitle) vmTitle.textContent = title || '';
+    if (vmDesc) vmDesc.textContent = desc || '';
+    if (vmDriveLink) {
+      if (driveUrl) {
+        vmDriveLink.href = driveUrl;
+        vmDriveLink.style.display = 'inline-flex';
+      } else {
+        vmDriveLink.style.display = 'none';
+      }
+    }
+    vm.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    vmVideo.play().catch(() => {});
+  };
+
+  const closeVideoModal = () => {
+    if (!vm || !vmVideo) return;
+    vmVideo.pause();
+    vmVideo.removeAttribute('src');
+    vmVideo.load();
+    vm.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  if (vm) {
+    vm.addEventListener('click', e => {
+      if (e.target === vm || e.target.closest('.vm-close') || e.target.id === 'vmBackdrop') {
+        closeVideoModal();
+      }
+    });
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      closeLb();
+      closeVideoModal();
+    }
+  });
+
+  $$('[data-video]').forEach(el => el.addEventListener('click', e => {
+    e.preventDefault();
+    const meta = $('.reel-meta', el)?.textContent || el.dataset.meta;
+    const title = $('h3', el)?.textContent || el.dataset.title;
+    const desc = $('p', el)?.textContent || el.dataset.desc;
+    openVideoModal(
+      el.dataset.video,
+      meta,
+      title,
+      desc,
+      el.dataset.drive
+    );
+  }));
 
   /* ---------- Lookbook theatre ---------- */
   const total = titles.length;
