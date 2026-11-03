@@ -988,11 +988,6 @@ section { position: relative; scroll-margin-top: 105px; }
   transition: transform .35s ease;
 }
 .ep:hover .ep-school-logo { transform: scale(1.08) rotate(3deg); }
-.ep-school-logo.bu-gem {
-  background: rgba(16, 8, 14, 0.82);
-  border-radius: 16px;
-  padding: 8px;
-}
 .ep-num { position: relative; z-index: 2; font-family: var(--f-cond); font-size: 72px; line-height: .8; color: transparent; -webkit-text-stroke: 1.5px #fff; }
 .ep-badge { position: absolute; z-index: 2; top: 14px; left: 14px; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .14em; color: #fff; background: rgba(0,0,0,.52); backdrop-filter: blur(4px); padding: 4px 9px; border-radius: 6px; }
 .ep-now { position: absolute; z-index: 2; top: 14px; right: 14px; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .1em; color: #fff; background: var(--red); padding: 4px 10px; border-radius: 6px; animation: pulseRed 1.6s ease-in-out infinite; display: inline-flex; align-items: center; gap: 6px; font-weight: 600; }
