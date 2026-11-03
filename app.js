@@ -40,21 +40,45 @@
       nav_journey: 'การศึกษา',
       nav_contact: 'ติดต่อ',
       nav_cv: 'CV / Resume',
-      nav_resume_m: 'เรซูเม่ ↗',
+      nav_resume_m: 'เปิดเรซูเม่ (CV)',
+
+      dock_works: 'ผลงาน',
+      dock_lookbook: 'เล่มพอร์ต',
+      dock_cv: 'เรซูเม่',
+      dock_contact: 'ติดต่อ',
 
       hero_name: 'ขนิษฐา วันไชย',
       hero_nick: '(อ้อม)',
-      hero_desc: 'เด็กนิเทศที่เล่าเรื่องผ่าน <strong>ภาพ แสง เสียง และ AI</strong> — จากหน้ากล้องผู้ประกาศข่าว สู่หลังกองถ่าย ไปจนถึงเวทีประกวดที่คว้า <strong>ชนะเลิศอันดับ 1 Huawei Hub</strong>',
-      hero_cta_reel: 'ดูโชว์รีล',
-      hero_cta_lookbook: 'Lookbook 11 หน้า',
-      hero_cta_contact: 'ติดต่อ',
+      hero_desc: 'นักศึกษาคณะนิเทศศาสตร์ สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE) มหาวิทยาลัยกรุงเทพ ที่เล่าเรื่องผ่าน <strong>ภาพ แสง เสียง และ Generative AI</strong> — จากหน้ากล้องผู้ประกาศข่าว สู่กองถ่ายจริง ไปจนถึงเวทีประกวดระดับประเทศ',
+      hb_huawei: 'ชนะเลิศ Huawei Hub',
+      hb_gpa: 'GPA นิเทศศาสตร์ BU',
+      hb_reels: 'ผลงานวิดีโอ & AI จริง',
+      hero_cta_reel: 'ดูโชว์รีลผลงาน',
+      hero_cta_lookbook: 'เล่มพอร์ต 11 หน้า',
+      hero_cta_contact: 'ติดต่อร่วมงาน',
       hero_sticker1: 'Huawei Hub — 1st Place',
       hero_sticker2: 'GPA <b>3.29</b> • นิเทศ BU',
+      vf_lt_name: 'ขนิษฐา วันไชย • อ้อม',
+      vf_shutter: 'ถ่ายภาพ',
 
       about_subtitle: 'ทำความรู้จักผู้กำกับเรื่องนี้ — คนที่หลงใหลการเล่าเรื่องผ่านทุกสื่อ',
       about_lead: 'ทุกเฟรมมีเรื่องเล่า — หน้าที่ของฉันคือทำให้คนดู <span class="grad-text">รู้สึก</span> ไปกับมัน',
-      about_p1: 'ตลอดการเรียนใน <strong>สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE) คณะนิเทศศาสตร์ มหาวิทยาลัยกรุงเทพ</strong> ฉันได้เรียนรู้ตั้งแต่การคิด Creative Concept เขียนบท ออกกองถ่ายทำ ไปจนถึงตัดต่อและลำดับภาพ รวมถึงการทำงานเป็นทีมและแก้ปัญหาเฉพาะหน้าในกองจริง',
-      about_p2: 'ฉันตั้งใจนำ <strong>ความคิดสร้างสรรค์ + ทักษะผลิตสื่อ + Generative AI</strong> มาสร้างคอนเทนต์ที่มีคุณค่า พร้อมเปิดรับคำแนะนำจากพี่ ๆ ในวงการ รับผิดชอบ อ่อนน้อม และพร้อมทุ่มเทเต็มที่ค่ะ',
+      about_p1: 'ตลอดการเรียนใน <strong>สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE) คณะนิเทศศาสตร์ มหาวิทยาลัยกรุงเทพ</strong> ฉันได้เรียนรู้และลงมือทำจริงครบทุกขั้นตอน ตั้งแต่การคิด Creative Concept การวางโครงเรื่องและเขียนบท การออกกองถ่ายทำ การเป็นผู้ประกาศข่าวหน้ากล้อง ไปจนถึงการตัดต่อและเกรดสี',
+      about_p2: 'ฉันตั้งใจนำ <strong>ความคิดสร้างสรรค์ + ทักษะผลิตสื่อ + Generative AI</strong> มาสร้างคอนเทนต์ที่มีคุณค่า พร้อมเปิดรับคำแนะนำจากพี่ ๆ ในวงการ มีความรับผิดชอบ อ่อนน้อม และพร้อมทุ่มเทเต็มที่ในทุกโปรเจกต์ค่ะ',
+
+      pil1_title: 'พัฒนาตนเองและเปิดรับเทคโนโลยี',
+      pil1_desc: 'กระตือรือร้นที่จะเรียนรู้เทคนิคการผลิตสื่อและเครื่องมือ AI ใหม่ ๆ พร้อมรับฟังคำแนะนำเพื่อยกระดับงานให้ดียิ่งขึ้น',
+      pil2_title: 'ลงมือทำจริงครบทุกกระบวนการ',
+      pil2_desc: 'ผ่านประสบการณ์ทั้งการคิดคอนเทนต์ เขียนบท ถ่ายทำ ตัดต่อ และประยุกต์ใช้ AI สร้างสรรค์สื่อดิจิทัล',
+      pil3_title: 'เข้าใจเทรนด์และพฤติกรรมผู้ชม',
+      pil3_desc: 'วิเคราะห์แนวโน้มโซเชียลมีเดียเพื่อออกแบบคอนเทนต์ให้ตรงใจกลุ่มเป้าหมายและเกิด Engagement จริง',
+      pil4_title: 'ทำงานเป็นทีมและแก้ปัญหาเฉพาะหน้า',
+      pil4_desc: 'สื่อสารประสานงานในกองถ่ายได้ดี ยืดหยุ่น รับผิดชอบต่อหน้าที่ และพร้อมสนับสนุนทีมในทุกสถานการณ์',
+
+      dna_char_k: 'บุคลิกนิสัย',
+      dna_char_v: 'ร่าเริง แจ่มใส เข้ากับผู้อื่นง่าย อ่อนน้อม',
+      dna_hobby_k: 'งานอดิเรก',
+      dna_hobby_v: 'ดูหนัง ฟังเพลง ถ่ายรูป ตัดต่อคลิปสั้น',
 
       stat_huawei: 'ชนะเลิศ Huawei Hub Campaign',
       stat_prize: 'เงินรางวัลทีม (บาท)',
@@ -96,9 +120,8 @@
       filter_edit: 'ตัดต่อ & โฆษณา',
       filter_onset: 'ออกกอง & กิจกรรม',
       reel_play_cta: 'เล่นวิดีโอบนเว็บ',
-      reel_view_photo: 'ดูภาพถ่าย',
+      reel_view_photo: 'ดูภาพขยาย',
 
-      // Reel items
       reel1_meta: 'EP.01 — AI CINEMA',
       reel1_title: 'ภาพยนตร์อนิเมชันแฟนตาซี — The Golden Knight (EP.1)',
       reel1_desc: 'สร้างสรรค์ภาพยนตร์แอนิเมชันเต็มเรื่องด้วย Generative AI ควบคุม Mood & Tone, การเคลื่อนไหวของตัวละคร และผสานดนตรีประกอบเชิงภาพยนตร์',
@@ -152,6 +175,14 @@
       reel13_desc: 'อบรมและลงมือจริงกับ Intel Core Ultra ประยุกต์ AI ในการผลิตภาพและสื่อยุคใหม่',
 
       bts_subtitle: 'ประสบการณ์จริงหลังกล้อง — ออกกอง ถ่ายภาพ แต่งหน้านักแสดง และทีมสตาฟฟ์สาขา',
+      pol_1: 'ช่างแต่งหน้ากองถ่าย',
+      pol_2: 'ช่างภาพ Awakening BKK',
+      pol_3: 'ผู้ประกาศข่าวในสตูดิโอ',
+      pol_4: 'พี่บิ้ว Diamond Days',
+      pol_5: 'CDE Back to the Future',
+      pol_6: 'ออกบูธแนะนำสาขา CDE',
+      pol_7: 'Intel AI Everywhere',
+      pol_8: 'ทริปถ่ายภาพชมรม',
 
       awards_subtitle: 'รางวัลแห่งความภาคภูมิใจจากเวทีประกวดระดับประเทศ (คลิกเกียรติบัตรเพื่อขยาย)',
       award1_prize: 'เงินรางวัล <b>10,000</b> บาท',
@@ -160,21 +191,35 @@
       award2_prize: 'รางวัล<b>ชมเชย</b> ระดับประเทศ',
       award2_title: 'Honorable Mention — Airdog VDO Contest 2024',
       award2_desc: 'รางวัลชมเชยการประกวดผลิตวิดีโอเครื่องฟอกอากาศ AIRDOG บนโซเชียลมีเดีย โดย NAPA SOLUTIONS CO., LTD.',
+      cert_zoom: 'คลิกเพื่อขยาย',
 
-      lookbook_subtitle: 'ม่านเปิดแล้ว! เลื่อนดูเล่มพอร์ตฉบับจริงทั้ง 11 หน้า — คลิกจอเพื่อดูเต็มจอ, ใช้ปุ่ม ← → ได้',
-      lb_prev: '‹ ก่อนหน้า',
-      lb_next: 'ถัดไป ›',
-      lb_fullscreen: '⤢ เต็มจอ',
+      lookbook_subtitle: 'ม่านเปิดแล้ว เลื่อนดูเล่มพอร์ตฉบับจริงทั้ง 11 หน้า — คลิกจอเพื่อดูเต็มจอ หรือใช้ปุ่มลูกศรซ้าย-ขวา',
+      lb_prev: 'ก่อนหน้า',
+      lb_next: 'ถัดไป',
+      lb_fullscreen: 'ดูเต็มจอ',
 
       journey_subtitle: 'เส้นทางการเรียนรู้และประสบการณ์ที่สั่งสมมาจนถึงปัจจุบัน',
+      ep1_when: 'อนุบาล 1 – มัธยมศึกษาปีที่ 3',
+      ep1_title: 'การศึกษาขั้นพื้นฐาน & จุดเริ่มต้นความคิดสร้างสรรค์',
+      ep1_org: 'โรงเรียนบ้านนาผาง',
+      ep1_desc: 'ปูพื้นฐานการเรียนรู้ การทำกิจกรรมร่วมกับผู้อื่น และค้นพบความสนใจด้านการสื่อสารและการแสดงออก',
+      ep2_when: 'มัธยมศึกษาปีที่ 4 – 6',
+      ep2_title: 'มัธยมปลาย — เริ่มจับกล้อง ตัดต่อ และกิจกรรมโรงเรียน',
+      ep2_org: 'โรงเรียนปทุมราชวงศา',
+      ep2_desc: 'ฝึกฝนการถ่ายภาพ การตัดต่อวิดีโอเบื้องต้น และการทำงานเป็นทีมผ่านกิจกรรมสื่อสารของโรงเรียน',
+      ep3_when: 'ระดับปริญญาตรี • ปัจจุบัน',
+      ep3_title: 'คณะนิเทศศาสตร์ — สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE)',
+      ep3_org: 'มหาวิทยาลัยกรุงเทพ (Bangkok University)',
+      ep3_desc: 'เรียนรู้ครบวงจรทั้งการคิดคอนเทนต์ เขียนบท ถ่ายทำ ผู้ประกาศข่าว ตัดต่อ และ Generative AI พร้อมคว้ารางวัลชนะเลิศ Huawei Hub',
 
       contact_subtitle: 'พร้อมสำหรับการฝึกงาน และการร่วมงานในทุกโปรเจกต์สร้างสรรค์ค่ะ',
-      cs_talent: 'ขนิษฐา วันไชย (อ้อม)',
+      cs_talent: 'นางสาว ขนิษฐา วันไชย (อ้อม)',
       cs_pos: 'AI Content Creator • Video Editor • Production Assistant',
-      cs_loc: 'Bangkok University • กรุงเทพฯ / ปทุมธานี',
+      cs_loc: 'มหาวิทยาลัยกรุงเทพ • กรุงเทพฯ / ปทุมธานี / อำนาจเจริญ',
+      clapper_hint: 'คลิกที่สเลทเพื่อสั่ง ACTION!',
 
       cv_title: 'ต้องการเอกสารประวัติและผลงานฉบับย่อ?',
-      cv_desc: 'เปิด Resume / CV ฉบับพร้อมพิมพ์ หรือบันทึกเป็น PDF ได้ทันที',
+      cv_desc: 'เปิด Resume / CV ฉบับทางการพร้อมพิมพ์ หรือบันทึกเป็น PDF ได้ทันที',
       cv_btn: 'เปิดดู Resume / CV',
 
       footer_copyright: '© 2024–2026 Khanittha Wanchai • Creative Content Production and Digital Experience (CDE) • School of Communication Arts, Bangkok University'
@@ -189,21 +234,45 @@
       nav_journey: 'Journey',
       nav_contact: 'Contact',
       nav_cv: 'CV / Resume',
-      nav_resume_m: 'Resume ↗',
+      nav_resume_m: 'Open Resume (CV)',
+
+      dock_works: 'Works',
+      dock_lookbook: 'Lookbook',
+      dock_cv: 'Resume',
+      dock_contact: 'Contact',
 
       hero_name: 'Khanittha Wanchai',
       hero_nick: '(Aom)',
-      hero_desc: 'Communication Arts student storytelling through <strong>Visuals, Light, Sound & AI</strong> — from on-camera anchor to production crew, to winning <strong>1st Place in the Huawei Hub Campaign</strong>.',
+      hero_desc: 'Communication Arts student in Creative Content Production and Digital Experience (CDE) at Bangkok University — crafting stories through <strong>Visuals, Light, Sound & Generative AI</strong> from studio newsrooms to national competitions.',
+      hb_huawei: 'Huawei Hub Winner',
+      hb_gpa: 'Comm Arts BU GPA',
+      hb_reels: 'Video & AI Projects',
       hero_cta_reel: 'Watch Showreel',
       hero_cta_lookbook: '11-Page Lookbook',
-      hero_cta_contact: 'Contact',
+      hero_cta_contact: 'Get in Touch',
       hero_sticker1: 'Huawei Hub — 1st Place',
       hero_sticker2: 'GPA <b>3.29</b> • Comm Arts BU',
+      vf_lt_name: 'Khanittha Wanchai • Aom',
+      vf_shutter: 'CAPTURE',
 
       about_subtitle: 'Get to know the director — passionate about cinematic storytelling across all media.',
       about_lead: 'Every frame tells a story — my mission is to make the audience <span class="grad-text">feel</span> it.',
-      about_p1: 'Throughout my studies in <strong>Creative Content Production and Digital Experience (CDE), School of Communication Arts, Bangkok University</strong>, I learned the full production lifecycle: creative concepting, scriptwriting, filming on set, video editing, audio mixing, and live problem-solving with the crew.',
-      about_p2: 'I aim to combine <strong>creative imagination + production craftsmanship + Generative AI</strong> to craft meaningful stories. Open to mentorship, humble, responsible, and ready to give 100% to every production.',
+      about_p1: 'Throughout my studies in <strong>Creative Content Production and Digital Experience (CDE), School of Communication Arts, Bangkok University</strong>, I have practiced the complete production workflow: creative concepting, scriptwriting, studio anchoring, on-set filming, editing, and color grading.',
+      about_p2: 'I combine <strong>creative imagination + production craftsmanship + Generative AI</strong> to deliver meaningful stories. Humble, reliable, eager to learn from industry mentors, and ready to give 100% to every project.',
+
+      pil1_title: 'Continuous Growth & AI Adaptability',
+      pil1_desc: 'Eager to master emerging production techniques and AI tools while welcoming constructive feedback.',
+      pil2_title: 'End-to-End Production Experience',
+      pil2_desc: 'Hands-on experience across ideation, scriptwriting, filming, editing, and Generative AI media creation.',
+      pil3_title: 'Audience & Social Trend Insight',
+      pil3_desc: 'Analyzing platform trends and viewer behavior to craft resonant content that drives genuine engagement.',
+      pil4_title: 'Teamwork & On-Set Problem Solving',
+      pil4_desc: 'Strong crew communication, adaptability under pressure, and full accountability on every shoot.',
+
+      dna_char_k: 'PERSONALITY',
+      dna_char_v: 'Cheerful, adaptable, collaborative & humble',
+      dna_hobby_k: 'INTERESTS',
+      dna_hobby_v: 'Cinema, music, photography & short-form editing',
 
       stat_huawei: 'Huawei Hub 1st Place Champion',
       stat_prize: 'Team Prize Pool (THB)',
@@ -245,9 +314,8 @@
       filter_edit: 'Editing & Ads',
       filter_onset: 'On-set & Crew',
       reel_play_cta: 'Watch Video',
-      reel_view_photo: 'View Photos',
+      reel_view_photo: 'View Photo',
 
-      // Reel items
       reel1_meta: 'EP.01 — AI CINEMA',
       reel1_title: 'Fantasy AI Animation — The Golden Knight (EP.1)',
       reel1_desc: 'Produced a full cinematic fantasy animation using Generative AI with consistent characters, dynamic lighting, and immersive soundtrack.',
@@ -301,6 +369,14 @@
       reel13_desc: 'Hands-on masterclass leveraging Intel Core Ultra processors for generative media production.',
 
       bts_subtitle: 'Hands-on experience behind the camera — filming, photography, on-set makeup, and crew staff.',
+      pol_1: 'On-Set Makeup Artist',
+      pol_2: 'Awakening BKK Photographer',
+      pol_3: 'Studio News Anchor',
+      pol_4: 'Diamond Days Orientation',
+      pol_5: 'CDE Back to the Future',
+      pol_6: 'CDE Open House Booth',
+      pol_7: 'Intel AI Everywhere',
+      pol_8: 'Photo Club Field Trip',
 
       awards_subtitle: 'National competition honors and achievements (click certificates to zoom).',
       award1_prize: 'Prize: <b>10,000</b> THB',
@@ -309,18 +385,32 @@
       award2_prize: 'National <b>Honorable Mention</b>',
       award2_title: 'Honorable Mention — Airdog VDO Contest 2024',
       award2_desc: 'National Honorable Mention in the Airdog Air Purifier short-video contest by NAPA SOLUTIONS CO., LTD.',
+      cert_zoom: 'Click to Zoom',
 
       lookbook_subtitle: 'Curtain rises! Flip through all 11 pages of the official portfolio lookbook — click to view fullscreen.',
-      lb_prev: '‹ Prev',
-      lb_next: 'Next ›',
-      lb_fullscreen: '⤢ Fullscreen',
+      lb_prev: 'Prev',
+      lb_next: 'Next',
+      lb_fullscreen: 'Fullscreen',
 
       journey_subtitle: 'Learning milestones and creative journey from early years to university.',
+      ep1_when: 'Kindergarten 1 – Grade 9',
+      ep1_title: 'Primary & Lower Secondary Education',
+      ep1_org: 'Ban Naphang School',
+      ep1_desc: 'Built strong foundations in communication, group collaboration, and creative expression.',
+      ep2_when: 'Grade 10 – Grade 12',
+      ep2_title: 'Upper Secondary — Photography, Editing & School Media',
+      ep2_org: 'Patumratchawongsa School',
+      ep2_desc: 'Developed skills in photography, video editing, and teamwork through school media activities.',
+      ep3_when: 'Bachelor’s Degree • Present',
+      ep3_title: 'School of Communication Arts — Creative Content Production & Digital Experience (CDE)',
+      ep3_org: 'Bangkok University',
+      ep3_desc: 'Mastering end-to-end content production, scriptwriting, broadcast anchoring, editing, and Generative AI.',
 
       contact_subtitle: 'Open for internships, production roles, and creative collaborations.',
-      cs_talent: 'Khanittha Wanchai (Aom)',
+      cs_talent: 'Miss Khanittha Wanchai (Aom)',
       cs_pos: 'AI Content Creator • Video Editor • Production Assistant',
       cs_loc: 'Bangkok University • Bangkok / Pathum Thani',
+      clapper_hint: 'Click the clapperboard to call ACTION!',
 
       cv_title: 'Looking for a concise CV / Resume?',
       cv_desc: 'View the print-ready Resume / CV or download it as PDF.',
@@ -361,7 +451,6 @@
     root.lang = currentLang;
     localStorage.setItem('aom-lang', currentLang);
 
-    // Update nav toggle buttons
     const lTh = $('.lang-toggle .l-th');
     const lEn = $('.lang-toggle .l-en');
     if (lTh && lEn) {
@@ -369,25 +458,21 @@
       lEn.classList.toggle('active', currentLang === 'en');
     }
 
-    // Update mobile menu language buttons
     $$('.m-lang-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.setlang === currentLang);
     });
 
-    // Translate DOM elements
     const dict = I18N[currentLang] || I18N.th;
     $$('[data-i18n]').forEach(el => {
       const key = el.dataset.i18n;
       if (dict[key]) el.innerHTML = dict[key];
     });
 
-    // Update roles for typewriter
     roles = rolesMap[currentLang] || rolesMap.th;
     if (typeof typeEl !== 'undefined' && typeEl && roles && roles.length) {
       typeEl.textContent = roles[0];
     }
 
-    // Update lookbook titles
     titles = lookbookTitlesMap[currentLang] || lookbookTitlesMap.th;
     if (typeof ttl !== 'undefined' && ttl && typeof page !== 'undefined' && titles[page - 1]) {
       ttl.textContent = titles[page - 1];
@@ -404,33 +489,8 @@
     el.innerHTML = [...el.textContent].map(c => c === ' ' ? ' ' : `<span class="ch" style="--i:${i++}">${c}</span>`).join('');
   });
 
-  /* ---------- Intro: film-leader countdown ---------- */
-  const intro = $('#intro');
-  const start = () => document.body.classList.add('ready');
-  start(); // Initialize immediately so hero text is never blank
-  const endIntro = () => {
-    if (!intro || intro.classList.contains('done')) return;
-    intro.classList.add('done');
-    setTimeout(() => intro.classList.add('gone'), 700);
-  };
-  if (window.location.hash || sessionStorage.getItem('aom-intro') || reduce) {
-    intro && intro.classList.add('gone');
-  } else if (intro) {
-    sessionStorage.setItem('aom-intro', '1');
-    const num = $('.num', intro);
-    let n = 3;
-    const tick = setInterval(() => {
-      n--;
-      if (n > 0) num.textContent = n;
-      else {
-        clearInterval(tick);
-        intro.classList.add('presents');
-        setTimeout(endIntro, 600);
-      }
-    }, 280);
-    $('.intro-skip', intro).addEventListener('click', () => { clearInterval(tick); endIntro(); });
-    intro.addEventListener('click', () => { clearInterval(tick); endIntro(); });
-  }
+  /* ---------- Start ready state immediately ---------- */
+  document.body.classList.add('ready');
 
   /* ---------- Typewriter roles ---------- */
   const typeEl = $('#typeText');
@@ -447,6 +507,35 @@
       setTimeout(loop, del ? 35 : 75);
     };
     setTimeout(loop, 1800);
+  }
+
+  /* ---------- Interactive Director Monitor: LUT Switcher & Shutter ---------- */
+  const directorVf = $('#directorVf');
+  const lutLabel = $('#lutLabel');
+  const lutNames = {
+    natural: 'LUT: REC.709',
+    warm: 'LUT: GOLD 35MM',
+    noir: 'LUT: NOIR B&W'
+  };
+  $$('[data-setlut]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lut = btn.dataset.setlut || 'natural';
+      $$('[data-setlut]').forEach(b => b.classList.toggle('active', b === btn));
+      if (directorVf) directorVf.dataset.lut = lut;
+      if (lutLabel && lutNames[lut]) lutLabel.textContent = lutNames[lut];
+    });
+  });
+
+  const shutterBtn = $('#shutterBtn');
+  const vfFlash = $('#vfFlash');
+  if (shutterBtn && vfFlash) {
+    shutterBtn.addEventListener('click', () => {
+      vfFlash.classList.add('fire');
+      setTimeout(() => vfFlash.classList.remove('fire'), 90);
+      if (typeof showToast === 'function') {
+        showToast(currentLang === 'th' ? 'บันทึกเฟรมภาพ A001_C014.RAW เรียบร้อย' : 'Frame captured: A001_C014.RAW');
+      }
+    });
   }
 
   /* ---------- Hero spotlight + 3D tilt (throttled) ---------- */
@@ -493,7 +582,7 @@
     setInterval(() => { k = (k + 1) % pts.length; focus.style.left = pts[k][0] + '%'; focus.style.top = pts[k][1] + '%'; }, 2400);
   }
 
-  /* Live timecode (throttled to 10 FPS to eliminate layout thrashing) */
+  /* Live timecode (throttled to 10 FPS) */
   const tcEls = $$('[data-tc]');
   const t0 = performance.now();
   const pad = n => String(n).padStart(2, '0');
@@ -562,16 +651,22 @@
   window.addEventListener('scroll', checkVisible, { passive: true });
   setTimeout(checkVisible, 50);
 
-  /* ---------- Nav active + scroll progress ---------- */
+  /* ---------- Nav active + Mobile Dock active + Scroll progress ---------- */
   const bar = $('.scroll-bar');
   const links = $$('.nav-links a');
+  const dockLinks = $$('.mobile-dock .dock-item[href^="#"]');
   const secs = links.map(a => $(a.getAttribute('href'))).filter(Boolean);
   const onScroll = () => {
     const h = document.documentElement;
-    bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+    bar.style.width = (h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight) * 100) + '%';
     let cur = null;
-    secs.forEach(s => { if (s.getBoundingClientRect().top < innerHeight * .4) cur = s.id; });
+    secs.forEach(s => { if (s.getBoundingClientRect().top < innerHeight * .42) cur = s.id; });
     links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+    dockLinks.forEach(a => {
+      if (!a.classList.contains('dock-cta')) {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+      }
+    });
   };
   addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -591,7 +686,7 @@
     }));
   }
 
-  // Wire Language toggles
+  /* ---------- Wire Language toggles ---------- */
   const langToggleBtn = $('#langToggle');
   if (langToggleBtn) {
     langToggleBtn.addEventListener('click', () => {
@@ -732,17 +827,17 @@
     navigator.clipboard.writeText(b.dataset.copy).then(() => showToast(b.dataset.msg || 'คัดลอกข้อความแล้วค่ะ')).catch(() => showToast('คัดลอกไม่สำเร็จ'));
   }));
 
-  /* ---------- Confetti (gold + rose) ---------- */
+  /* ---------- Confetti (geometric gold + rose ribbons, zero text symbols) ---------- */
   const cv = $('#confetti'), cx = cv.getContext('2d');
   let parts = [], running = false;
   const sizeCv = () => { cv.width = innerWidth * devicePixelRatio; cv.height = innerHeight * devicePixelRatio; };
   sizeCv(); addEventListener('resize', sizeCv);
   const colors = ['#FF3D7F', '#FF8FB8', '#F6C46A', '#FFE7A8', '#B69CFF', '#ffffff'];
-  window.confetti = (x = innerWidth / 2, y = innerHeight / 2, n = 140) => {
+  window.confetti = (x = innerWidth / 2, y = innerHeight / 2, n = 130) => {
     if (reduce) return;
     for (let i = 0; i < n; i++) {
       const a = Math.random() * Math.PI * 2, v = 4 + Math.random() * 9;
-      parts.push({ x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - 6, s: 4 + Math.random() * 6, r: Math.random() * 6, vr: (Math.random() - .5) * .4, c: colors[i % colors.length], life: 1, star: Math.random() < .25 });
+      parts.push({ x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - 6, s: 4 + Math.random() * 6, r: Math.random() * 6, vr: (Math.random() - .5) * .4, c: colors[i % colors.length], life: 1, diamond: Math.random() < .3 });
     }
     if (!running) { running = true; requestAnimationFrame(drawC); }
   };
@@ -753,8 +848,13 @@
     parts.forEach(p => {
       p.vy += .22; p.vx *= .985; p.x += p.vx; p.y += p.vy; p.r += p.vr; p.life -= .009;
       cx.save(); cx.translate(p.x * d, p.y * d); cx.rotate(p.r); cx.globalAlpha = Math.max(p.life, 0); cx.fillStyle = p.c;
-      if (p.star) { cx.font = `${p.s * 3 * d}px serif`; cx.fillText('✦', 0, 0); }
-      else cx.fillRect(-p.s * d / 2, -p.s * d / 4, p.s * d, p.s * d / 2);
+      if (p.diamond) {
+        const sz = p.s * 0.75 * d;
+        cx.rotate(Math.PI / 4);
+        cx.fillRect(-sz / 2, -sz / 2, sz, sz);
+      } else {
+        cx.fillRect(-p.s * d / 2, -p.s * d / 4, p.s * d, p.s * d / 2);
+      }
       cx.restore();
     });
     if (parts.length) requestAnimationFrame(drawC); else { running = false; cx.clearRect(0, 0, cv.width, cv.height); }
@@ -763,7 +863,7 @@
 
   /* Awards: confetti burst when first visible */
   const aw = $('#awards');
-  if (aw) new IntersectionObserver((en, o) => { if (en[0].isIntersecting) { setTimeout(() => confetti(innerWidth / 2, innerHeight * .35, 180), 400); o.disconnect(); } }, { threshold: .35 }).observe(aw);
+  if (aw) new IntersectionObserver((en, o) => { if (en[0].isIntersecting) { setTimeout(() => confetti(innerWidth / 2, innerHeight * .35, 160), 400); o.disconnect(); } }, { threshold: .35 }).observe(aw);
 
   /* ---------- Clapperboard: ACTION! ---------- */
   const clapper = $('#clapper');
@@ -802,7 +902,6 @@
     const srcs = ['ai-work-2', 'anchor-1', 'awakening-bangkok', 'cde-staff-2', 'anchor-2', 'ai-workshop-2', 'capcut-1', 'photo-club-2', 'cde-future-1', 'edit-2', 'ai-work-3', 'cde-staff-1'];
     const imgs = srcs.map(s => { const im = new Image(); im.src = `assets/cine/${s}.jpg`; return im; });
 
-    // Pre-bake bokeh sprite onto an offscreen canvas (avoids createRadialGradient in render loop)
     const bCan = document.createElement('canvas');
     bCan.width = 64; bCan.height = 64;
     const bg = bCan.getContext('2d');
@@ -813,7 +912,6 @@
     bg.fillStyle = bGr;
     bg.beginPath(); bg.arc(32, 32, 32, 0, Math.PI * 2); bg.fill();
 
-    // 2 sleek floating strips with 13 frames each (smooth, low draw calls)
     const strips = [
       { y: -130, z: 540, amp: 65, freq: .0040, tilt: -.16, speed: .30, phase: 0, off: 0 },
       { y: 140, z: 780, amp: 85, freq: .0032, tilt: .12, speed: -.22, phase: 2, off: 5 }
@@ -864,7 +962,6 @@
       g.clearRect(0, 0, W, H);
       const light = root.dataset.theme === 'light';
 
-      // 1. Draw pre-baked bokeh sprites
       for (let i = 0; i < bokeh.length; i++) {
         const b = bokeh[i];
         const p = proj(b.x + Math.sin(t * .003 + b.tw) * 25, b.y + Math.cos(t * .002 + b.tw) * 18, b.z);
@@ -874,7 +971,6 @@
         g.drawImage(bCan, p.x - dia / 2, p.y - dia / 2, dia, dia);
       }
 
-      // 2. Film strips
       for (let si = 0; si < strips.length; si++) {
         const st = strips[si];
         const shift = (t * st.speed) % PITCH;
@@ -898,11 +994,9 @@
           g.scale(s, s);
           g.globalAlpha = 0.35 * Math.min(1, s * 1.5);
 
-          // Strip background
           g.fillStyle = light ? '#2a1620' : '#14080e';
           g.fillRect(-PITCH / 2, -FH / 2 - 24, PITCH, FH + 48);
 
-          // Fast sprocket holes (fillRect)
           g.fillStyle = light ? '#FFF6F3' : 'rgba(255,240,245,.8)';
           for (let k = 0; k < 5; k++) {
             const sx = -PITCH / 2 + 6 + k * (PITCH / 5);
@@ -910,7 +1004,6 @@
             g.fillRect(sx, FH / 2 + 10, 12, 8);
           }
 
-          // Frame image
           const im = imgs[(i + st.off) % imgs.length];
           if (im.complete && im.naturalWidth) {
             const ir = im.naturalWidth / im.naturalHeight, fr = FW / FH;
@@ -923,18 +1016,16 @@
             g.fillRect(-FW / 2, -FH / 2, FW, FH);
           }
 
-          // Tint + frame code
           g.fillStyle = `rgba(255,61,127,${0.12 + si * .04})`;
           g.fillRect(-FW / 2, -FH / 2, FW, FH);
           g.fillStyle = '#F6C46A';
           g.font = '600 9px "IBM Plex Mono", monospace';
-          g.fillText(`${String((i + st.off) % 36 + 1).padStart(2, '0')}A  ▸ KODAK 5219`, -PITCH / 2 + 6, FH / 2 + 23);
+          g.fillText(`${String((i + st.off) % 36 + 1).padStart(2, '0')}A  KODAK 5219`, -PITCH / 2 + 6, FH / 2 + 23);
 
           g.restore();
         }
       }
 
-      // 3. Subtle horizontal anamorphic flare
       const fx = W * (.62 + mx * .4), fy = H * (.38 + my * .35);
       g.globalAlpha = light ? 0.18 : 0.28;
       const lg = g.createLinearGradient(0, fy, W, fy);
@@ -948,7 +1039,7 @@
     rafId = requestAnimationFrame(draw);
   }
 
-  /* ---------- Scroll param helper for testing & direct navigation ---------- */
+  /* ---------- Scroll param helper ---------- */
   const urlParam = new URLSearchParams(window.location.search);
   const targetId = urlParam.get('scroll') || window.location.hash.slice(1);
   if (targetId) {
@@ -959,6 +1050,5 @@
       $$('[data-reveal]', el).forEach(c => c.classList.add('in'));
     }
   }
-  // Initialize language on startup
   setLanguage(currentLang, false);
 })();

@@ -9,7 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="ขนิษฐา วันไชย (อ้อม) — THE STORYTELLER | Comm Arts BU">
   <meta property="og:description" content="Creative Content Producer & AI Storyteller • ชนะเลิศอันดับ 1 Huawei Hub • นิเทศศาสตร์ CDE ม.กรุงเทพ">
-  <meta property="og:image" content="assets/hero-cover.jpg">
+  <meta property="og:image" content="assets/cine/profile-uniform-hero.jpg">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23ff3d7f'/><circle cx='16' cy='16' r='9' fill='none' stroke='%23fff' stroke-width='2.2'/><circle cx='16' cy='16' r='3.5' fill='%23fff'/><circle cx='16' cy='10' r='1.5' fill='%23fff'/><circle cx='16' cy='22' r='1.5' fill='%23fff'/><circle cx='10' cy='16' r='1.5' fill='%23fff'/><circle cx='22' cy='16' r='1.5' fill='%23fff'/></svg>">
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('aom-theme')||document.documentElement.dataset.theme;}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
 </head>
 <body>
 
-  <!-- ===== SVG sprite: laurel + mini clapper ===== -->
+  <!-- ===== SVG Sprite Sheet: Bespoke Cinema Vector Icons ===== -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
       <symbol id="laurel" viewBox="0 0 300 200">
@@ -53,27 +53,30 @@
           <path d="M14 6l-6 12M30 6l-6 12M46 6l-6 12M62 6l-6 12" stroke="#fff" stroke-width="5"/>
         </g>
       </symbol>
+      <symbol id="ico-play" viewBox="0 0 24 24">
+        <polygon points="7,4 20,12 7,20" fill="currentColor"/>
+      </symbol>
+      <symbol id="ico-expand" viewBox="0 0 24 24">
+        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-ext" viewBox="0 0 24 24">
+        <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-copy" viewBox="0 0 24 24">
+        <rect x="9" y="9" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-close" viewBox="0 0 24 24">
+        <path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-prev" viewBox="0 0 24 24">
+        <polyline points="15 18 9 12 15 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-next" viewBox="0 0 24 24">
+        <polyline points="9 18 15 12 9 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
     </defs>
   </svg>
-
-  <!-- ===== INTRO: film leader countdown ===== -->
-  <div class="intro" id="intro" aria-hidden="true">
-    <div class="intro-meta">PROD. CDE—BU<br>ROLL A001<br>24 FPS • 2.39:1</div>
-    <div class="leader">
-      <div class="sweep"></div>
-      <div class="ring"></div>
-      <div class="ring r2"></div>
-      <div class="num">3</div>
-    </div>
-    <div class="intro-presents">
-      <div>
-        <small>COMMUNICATION ARTS • BANGKOK UNIVERSITY PRESENTS</small>
-        <strong>The Storyteller</strong>
-        <em>STARRING AOM KHANITTHA</em>
-      </div>
-    </div>
-    <button class="intro-skip" type="button">SKIP ▸▸</button>
-  </div>
 
   <div class="grain" aria-hidden="true"></div>
   <div class="vignette" aria-hidden="true"></div>
@@ -109,31 +112,68 @@
           <span class="l-sep">/</span>
           <span class="l-opt l-en">EN</span>
         </button>
-        <a href="resume.html" target="_blank" class="btn btn-sm"><svg class="btn-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px;vertical-align:-1px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span data-i18n="nav_cv">CV / Resume</span></a>
+        <a href="resume.html" target="_blank" class="btn btn-sm nav-cv-btn">
+          <svg class="btn-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <span data-i18n="nav_cv">CV / Resume</span>
+        </a>
         <button class="icon-btn" id="themeToggle" type="button" aria-label="สลับโหมดสี">
           <svg class="theme-icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
           <svg class="theme-icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
         </button>
         <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="เปิดเมนู">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+          <svg class="menu-ico-bars" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="15" y2="17"/></svg>
         </button>
       </div>
     </div>
   </nav>
-  <div class="mobile-menu" id="mobileMenu">
-    <div class="mobile-lang-row">
-      <button class="m-lang-btn active" data-setlang="th" type="button">TH</button>
-      <button class="m-lang-btn" data-setlang="en" type="button">EN</button>
+
+  <!-- Fullscreen Mobile Menu Drawer -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <div class="mobile-menu-head">
+        <span class="mono">SCENE INDEX • ROLL A01</span>
+        <div class="mobile-lang-row">
+          <button class="m-lang-btn active" data-setlang="th" type="button">ภาษาไทย (TH)</button>
+          <button class="m-lang-btn" data-setlang="en" type="button">ENGLISH (EN)</button>
+        </div>
+      </div>
+      <div class="mobile-nav-list">
+        <a href="#about"><small>SC.01</small><span data-i18n="nav_about">ผู้กำกับ</span></a>
+        <a href="#skills"><small>SC.02</small><span data-i18n="nav_skills">ทักษะ</span></a>
+        <a href="#works"><small>SC.03</small><span data-i18n="nav_works">ผลงาน</span></a>
+        <a href="#bts"><small>SC.04</small><span data-i18n="nav_bts">เบื้องหลัง</span></a>
+        <a href="#awards"><small>SC.05</small><span data-i18n="nav_awards">รางวัล</span></a>
+        <a href="#lookbook"><small>SC.06</small><span data-i18n="nav_lookbook">เล่มพอร์ต</span></a>
+        <a href="#journey"><small>SC.07</small><span data-i18n="nav_journey">การศึกษา</span></a>
+        <a href="#contact"><small>SC.08</small><span data-i18n="nav_contact">ติดต่อ</span></a>
+      </div>
+      <div class="mobile-menu-foot">
+        <a href="resume.html" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span data-i18n="nav_resume_m">เปิดดู Resume / CV ฉบับเต็ม</span>
+        </a>
+      </div>
     </div>
-    <a href="#about"><small>01</small><span data-i18n="nav_about">ผู้กำกับ</span></a>
-    <a href="#skills"><small>02</small><span data-i18n="nav_skills">ทักษะ</span></a>
-    <a href="#works"><small>03</small><span data-i18n="nav_works">ผลงาน</span></a>
-    <a href="#bts"><small>04</small><span data-i18n="nav_bts">เบื้องหลัง</span></a>
-    <a href="#awards"><small>05</small><span data-i18n="nav_awards">รางวัล</span></a>
-    <a href="#lookbook"><small>06</small><span data-i18n="nav_lookbook">เล่มพอร์ต</span></a>
-    <a href="#journey"><small>07</small><span data-i18n="nav_journey">การศึกษา</span></a>
-    <a href="#contact"><small>08</small><span data-i18n="nav_contact">ติดต่อ</span></a>
-    <a href="resume.html" target="_blank"><small>CV</small><span data-i18n="nav_resume_m">เรซูเม่ ↗</span></a>
+  </div>
+
+  <!-- Mobile Floating Bottom Quick-Dock -->
+  <div class="mobile-dock" aria-label="ทางลัดบนมือถือ">
+    <a href="#works" class="dock-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      <span data-i18n="dock_works">โชว์รีล</span>
+    </a>
+    <a href="#lookbook" class="dock-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <span data-i18n="dock_lookbook">พอร์ต 11 หน้า</span>
+    </a>
+    <a href="resume.html" target="_blank" class="dock-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      <span data-i18n="dock_cv">เรซูเม่</span>
+    </a>
+    <a href="#contact" class="dock-item dock-cta">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span data-i18n="dock_contact">ติดต่อ</span>
+    </a>
   </div>
 
   <!-- ===== HERO ===== -->
@@ -142,47 +182,117 @@
     <div class="spotlight" aria-hidden="true"></div>
     <div class="wrap">
       <div class="hero-grid">
-        <div>
-          <div class="kicker">COMM ARTS • CDE • BANGKOK UNIVERSITY <span style="color:var(--gold)">— EST. 2022</span></div>
+        <div class="hero-copy">
+          <div class="kicker">
+            <span class="kicker-dot"></span>
+            <span>COMM ARTS • CDE • BANGKOK UNIVERSITY</span>
+            <span class="kicker-year">ARCHIVE 2022—2026</span>
+          </div>
           <h1 class="hero-title">
             <span class="l1 glitch" data-split>Storyteller</span>
-            <span class="l2"><span data-split data-offset="11">ON AIR</span><sup>(TAKE 01)</sup></span>
+            <span class="l2"><span data-split data-offset="11">ON AIR</span><sup>TAKE 01</sup></span>
           </h1>
-          <div class="hero-th"><span data-i18n="hero_name">ขนิษฐา วันไชย</span> <span class="nick" data-i18n="hero_nick">(อ้อม)</span></div>
-          <div class="typeline">&gt; ROLE: <b id="typeText">AI Content Creator</b><span class="caret"></span></div>
+          <div class="hero-th">
+            <span data-i18n="hero_name">ขนิษฐา วันไชย</span>
+            <span class="nick" data-i18n="hero_nick">(อ้อม)</span>
+          </div>
+          <div class="typeline">
+            <span class="type-prefix">DIRECTOR ROLE //</span>
+            <b id="typeText">AI Content Creator</b><span class="caret"></span>
+          </div>
           <p class="hero-desc" data-i18n="hero_desc">
             เด็กนิเทศที่เล่าเรื่องผ่าน <strong>ภาพ แสง เสียง และ AI</strong> — จากหน้ากล้องผู้ประกาศข่าว สู่หลังกองถ่าย
             ไปจนถึงเวทีประกวดที่คว้า <strong>ชนะเลิศอันดับ 1 Huawei Hub</strong>
           </p>
+
+          <!-- Highlight Credentials Strip -->
+          <div class="hero-badges">
+            <div class="h-badge">
+              <span class="hb-num">#01</span>
+              <span class="hb-txt" data-i18n="hb_huawei">Winner — Huawei Hub Campaign</span>
+            </div>
+            <div class="h-badge">
+              <span class="hb-num">3.29</span>
+              <span class="hb-txt" data-i18n="hb_gpa">GPAX — Comm Arts CDE BU</span>
+            </div>
+            <div class="h-badge">
+              <span class="hb-num">13+</span>
+              <span class="hb-txt" data-i18n="hb_reels">Selected Production Reels</span>
+            </div>
+          </div>
+
           <div class="hero-cta">
-            <a href="#works" class="btn btn-primary"><span class="play-ico">▶</span> <span data-i18n="hero_cta_reel">ดูโชว์รีล</span></a>
-            <a href="#lookbook" class="btn"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5C10.3 5 8 4.5 4.5 4.5v13c3.5 0 5.8.5 7.5 2 1.7-1.5 4-2 7.5-2v-13c-3.5 0-5.8.5-7.5 2Z"/><path d="M12 6.5v13"/></svg> <span data-i18n="hero_cta_lookbook">Lookbook 11 หน้า</span></a>
-            <a href="#contact" class="btn"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m3.8 7 8.2 6 8.2-6"/></svg> <span data-i18n="hero_cta_contact">ติดต่อ</span></a>
+            <a href="#works" class="btn btn-primary">
+              <span class="play-ico"><svg width="11" height="11"><use href="#ico-play"/></svg></span>
+              <span data-i18n="hero_cta_reel">ดูโชว์รีล 13 ผลงาน</span>
+            </a>
+            <a href="#lookbook" class="btn">
+              <svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5C10.3 5 8 4.5 4.5 4.5v13c3.5 0 5.8.5 7.5 2 1.7-1.5 4-2 7.5-2v-13c-3.5 0-5.8.5-7.5 2Z"/><path d="M12 6.5v13"/></svg>
+              <span data-i18n="hero_cta_lookbook">Lookbook 11 หน้า</span>
+            </a>
+            <a href="#contact" class="btn">
+              <svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m3.8 7 8.2 6 8.2-6"/></svg>
+              <span data-i18n="hero_cta_contact">ติดต่อร่วมงาน</span>
+            </a>
           </div>
         </div>
 
+        <!-- Interactive ARRI / RED Cinema Director's Monitor -->
         <div class="vf-wrap">
           <div class="vf-border" aria-hidden="true"></div>
-          <div class="vf">
-            <img src="assets/cine/profile-uniform-hero.jpg" alt="ขนิษฐา วันไชย (อ้อม)">
+          <div class="vf" id="directorVf" data-lut="std">
+            <img src="assets/cine/profile-uniform-hero.jpg" alt="ขนิษฐา วันไชย (อ้อม)" id="vfPortrait">
+            <div class="vf-flash" id="vfFlash" aria-hidden="true"></div>
             <div class="frame-glare"></div>
             <div class="vf-ui">
               <div class="vf-grid"></div>
               <i class="vf-corner a"></i><i class="vf-corner b"></i><i class="vf-corner c"></i><i class="vf-corner d"></i>
-              <div class="vf-top"><span class="vf-rec">REC</span><span data-tc=""></span><span class="battery"><i></i>78%</span></div>
-              <div class="vf-focus"></div>
-              <div class="meters"><span></span><span></span></div>
-              <div class="vf-exp">ISO 400 • 1/50 • f1.8</div>
+              <div class="vf-top">
+                <span class="vf-rec">REC</span>
+                <span class="vf-tc" data-tc="">00:00:00:00</span>
+                <span class="battery"><i></i>98%</span>
+              </div>
+              <div class="vf-focus">
+                <span class="af-tag">AF-C EYE</span>
+              </div>
+              <div class="meters" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="vf-exp">ARRI RAW • ISO 400 • 1/48 • T1.5</div>
               <div class="lower-third">
-                <span class="lt-tag">LIVE</span>
-                <span class="lt-name">ขนิษฐา วันไชย (อ้อม)</span>
+                <span class="lt-tag">DIRECTOR MONITOR</span>
+                <span class="lt-name" data-i18n="vf_lt_name">ขนิษฐา วันไชย (อ้อม)</span>
                 <span class="lt-role">CREATIVE CONTENT PRODUCER • COMM ARTS BU</span>
               </div>
-              <div class="vf-bottom"><span>4K UHD</span><span>24P</span><span>WB 5600K</span><span>S-LOG3</span></div>
+              <div class="vf-bottom">
+                <span>4K ANAMORPHIC</span>
+                <span>24.00 FPS</span>
+                <span>5600K</span>
+                <span id="lutLabel">LUT: REC.709</span>
+              </div>
             </div>
           </div>
-          <div class="sticker s1" data-i18n="hero_sticker1">Huawei Hub — 1st Place</div>
-          <div class="sticker s2" data-i18n="hero_sticker2">GPA <b>3.29</b> • นิเทศ BU</div>
+
+          <!-- Interactive Camera Controls Bar under Viewfinder -->
+          <div class="vf-controls" role="toolbar" aria-label="ควบคุมจอผู้กำกับ">
+            <div class="lut-group">
+              <span class="vc-label">COLOR LUT</span>
+              <button type="button" class="lut-btn active" data-setlut="std">REC.709</button>
+              <button type="button" class="lut-btn" data-setlut="warm">GOLD 35MM</button>
+              <button type="button" class="lut-btn" data-setlut="noir">NOIR B&amp;W</button>
+            </div>
+            <button type="button" class="shutter-btn" id="shutterBtn" aria-label="กดชัตเตอร์ถ่ายภาพ">
+              <span class="shutter-ring"></span>
+              <span data-i18n="vf_shutter">SNAP 4K</span>
+            </button>
+          </div>
+
+          <div class="sticker s1">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.45 1-1 1H8c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h8c.55 0 1-.45 1-1v-1c0-.55-.45-1-1-1h-1c-.55 0-1-.45-1-1v-2.34M18 4H6v5c0 3.31 2.69 6 6 6s6-2.69 6-6V4z"/></svg>
+            <span data-i18n="hero_sticker1">Huawei Hub — 1st Place</span>
+          </div>
+          <div class="sticker s2">
+            <span class="s2-dot"></span>
+            <span data-i18n="hero_sticker2">GPA <b>3.29</b> • นิเทศ BU</span>
+          </div>
         </div>
       </div>
     </div>
@@ -194,12 +304,12 @@
       <div class="ticker-live"><b>LIVE</b><span data-tc=""></span></div>
       <div class="ticker-view">
         <div class="ticker-track" data-loop>
-          <span>อ้อม ขนิษฐา คว้าชนะเลิศอันดับ 1 โครงการ HUAWEI HUB & FIRST GENERATE CAMPAIGN รับเงินรางวัล 10,000 บาท</span>
+          <span>อ้อม ขนิษฐา คว้าชนะเลิศอันดับ 1 โครงการ HUAWEI HUB &amp; FIRST GENERATE CAMPAIGN รับเงินรางวัล 10,000 บาท</span>
           <span>รางวัลชมเชยระดับประเทศ AIRDOG VDO CONTEST 2024</span>
           <span>ช่างภาพประจำงาน AWAKENING BANGKOK ณ สวนรมณีนาถ</span>
-          <span>สตาฟฟ์สาขา CDE & ปฐมนิเทศ DIAMOND DAYS 2024</span>
+          <span>สตาฟฟ์สาขา CDE &amp; ปฐมนิเทศ DIAMOND DAYS 2024</span>
           <span>ผ่านเวิร์กช็อป "สร้างภาพอย่างคูล AI EVERYWHERE" กับ INTEL CORE ULTRA</span>
-          <span>พร้อมรับฝึกงานสาย AI CONTENT • VIDEO EDITOR • PRODUCTION ASSISTANT แล้ววันนี้!</span>
+          <span>พร้อมรับฝึกงานสาย AI CONTENT • VIDEO EDITOR • PRODUCTION ASSISTANT แล้ววันนี้</span>
         </div>
       </div>
     </div>
@@ -215,7 +325,7 @@
     </div></div>
   </div>
 
-  <!-- ===== SCENE 01 — ABOUT ===== -->
+  <!-- ===== SCENE 01 — ABOUT & DIRECTOR'S DOSSIER ===== -->
   <section class="scene" id="about">
     <div class="wrap">
       <div class="scene-head">
@@ -241,16 +351,61 @@
             <div class="pre">AOM KHANITTHA IN</div>
             <h3>The Storyteller</h3>
             <div class="tag">ภาพ • แสง • เสียง • AI</div>
-            <div class="billing">DIRECTED BY <b>KHANITTHA WANCHAI</b> • WRITTEN BY <b>CHATGPT & HER IMAGINATION</b> • CINEMATOGRAPHY <b>AOM</b> • EDITED IN <b>CAPCUT & PREMIERE PRO</b> • VISUALS BY <b>MIDJOURNEY</b> • A <b>CDE — BANGKOK UNIVERSITY</b> PICTURE</div>
+            <div class="billing">DIRECTED BY <b>KHANITTHA WANCHAI</b> • WRITTEN BY <b>CHATGPT &amp; HER IMAGINATION</b> • CINEMATOGRAPHY <b>AOM</b> • EDITED IN <b>CAPCUT &amp; PREMIERE PRO</b> • VISUALS BY <b>MIDJOURNEY</b> • A <b>CDE — BANGKOK UNIVERSITY</b> PICTURE</div>
             <div class="poster-date">NOW STREAMING</div>
           </div>
         </div>
 
         <div class="statement" data-reveal="right">
-          <div class="q">“</div>
+          <div class="q" aria-hidden="true">“</div>
           <p class="lead" data-i18n="about_lead">ทุกเฟรมมีเรื่องเล่า — หน้าที่ของฉันคือทำให้คนดู <span class="grad-text">รู้สึก</span> ไปกับมัน</p>
           <p data-i18n="about_p1">ตลอดการเรียนใน <strong>สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE) คณะนิเทศศาสตร์ มหาวิทยาลัยกรุงเทพ</strong> ฉันได้เรียนรู้ตั้งแต่การคิด Creative Concept เขียนบท ออกกองถ่ายทำ ไปจนถึงตัดต่อและลำดับภาพ รวมถึงการทำงานเป็นทีมและแก้ปัญหาเฉพาะหน้าในกองจริง</p>
           <p data-i18n="about_p2">ฉันตั้งใจนำ <strong>ความคิดสร้างสรรค์ + ทักษะผลิตสื่อ + Generative AI</strong> มาสร้างคอนเทนต์ที่มีคุณค่า พร้อมเปิดรับคำแนะนำจากพี่ ๆ ในวงการ รับผิดชอบ อ่อนน้อม และพร้อมทุ่มเทเต็มที่ค่ะ</p>
+
+          <!-- 4 Core Strengths from Portfolio .pdf Page 3 -->
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <span class="pillar-no">01</span>
+              <div>
+                <h4 data-i18n="pil1_title">AI &amp; Visual Production</h4>
+                <p data-i18n="pil1_desc">ถนัดด้านการถ่ายภาพ การตัดต่อวิดีโอ และการผลิตสื่อสร้างสรรค์ด้วย Generative AI</p>
+              </div>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-no">02</span>
+              <div>
+                <h4 data-i18n="pil2_title">Communication &amp; Crew</h4>
+                <p data-i18n="pil2_desc">ถนัดด้านการสื่อสาร การนำเสนอ การประสานงานในกองถ่าย และการทำงานเป็นทีม</p>
+              </div>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-no">03</span>
+              <div>
+                <h4 data-i18n="pil3_title">Creative &amp; Social Media</h4>
+                <p data-i18n="pil3_desc">ถนัดด้านการคิดสร้างสรรค์ การทำคอนเทนต์ไวรัล และการใช้แพลตฟอร์มสื่อออนไลน์</p>
+              </div>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-no">04</span>
+              <div>
+                <h4 data-i18n="pil4_title">Story &amp; Public Relations</h4>
+                <p data-i18n="pil4_desc">ถนัดด้านการเขียนสคริปต์ การเรียบเรียงข้อมูลเนื้อหา และงานประชาสัมพันธ์</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal DNA Strip from Portfolio .pdf Page 4 -->
+          <div class="dna-bar">
+            <div class="dna-item">
+              <span class="dna-k" data-i18n="dna_char_k">ลักษณะนิสัย</span>
+              <span class="dna-v" data-i18n="dna_char_v">เข้ากับคนง่าย • ช่างสังเกต • ชอบเรียนรู้สิ่งใหม่ • อดทนและรับผิดชอบสูง</span>
+            </div>
+            <div class="dna-item">
+              <span class="dna-k" data-i18n="dna_hobby_k">แรงบันดาลใจ &amp; งานอดิเรก</span>
+              <span class="dna-v" data-i18n="dna_hobby_v">ดูภาพยนตร์ • ท่องเที่ยวถ่ายภาพ • ออกกำลังกาย • ทำอาหารและขนม</span>
+            </div>
+          </div>
+
           <div class="sign">
             <div>
               <div class="autograph">Khanittha W.</div>
@@ -264,7 +419,7 @@
         <div class="stat" data-num="01"><div class="v">#<span data-count="1">0</span></div><div class="k" data-i18n="stat_huawei">ชนะเลิศ Huawei Hub Campaign</div></div>
         <div class="stat" data-num="02"><div class="v"><span data-count="10" data-suf="K">0</span></div><div class="k" data-i18n="stat_prize">เงินรางวัลทีม (บาท)</div></div>
         <div class="stat" data-num="03"><div class="v"><span data-count="3.29">0</span></div><div class="k" data-i18n="stat_gpa">GPA นิเทศ CDE ม.กรุงเทพ</div></div>
-        <div class="stat" data-num="04"><div class="v"><span data-count="12" data-suf="+">0</span></div><div class="k" data-i18n="stat_works">ผลงานวิดีโอ / AI / ภาพถ่าย</div></div>
+        <div class="stat" data-num="04"><div class="v"><span data-count="13" data-suf="+">0</span></div><div class="k" data-i18n="stat_works">ผลงานวิดีโอ / AI / ภาพถ่าย</div></div>
       </div>
     </div>
   </section>
@@ -286,12 +441,12 @@
       <div class="skills-grid">
         <div class="skill-card" data-reveal style="--d:0s">
           <div class="frame"><div class="frame-glare"></div><div class="frame-in">
-            <div class="frame-head"><span class="no">01</span><span class="edge">▸ KODAK 01A</span></div>
-            <h3 data-i18n="skill_cat1">AI & Generative Media</h3>
+            <div class="frame-head"><span class="no">01</span><span class="edge">KODAK 5219 • 01A</span></div>
+            <h3 data-i18n="skill_cat1">AI &amp; Generative Media</h3>
             <div class="chips">
               <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#141416"/> <path fill="#FFFFFF" d="M22 66.5c1.2-5.4 4.5-9.8 9.3-12.8 5.5-3.4 12.4-4.8 19.2-4.2-1.8-6.1-5.8-11.2-11.1-14.6 9.1-1.2 18.4 1.8 24.8 7.9 3.8 3.6 6.3 8.3 7.4 13.4 3.7 1.4 7 3.9 9.4 7.2-6.5-1.5-13.3-1.2-19.6.9-4.8 1.6-9.3 4.2-12.8 7.8-5.8-3.4-12.4-5.3-19.2-5.5-2.6 0-5.1.3-7.4-.1zM48 30c-.6 2.3-1.6 4.5-2.9 6.5 3.8-.5 7.6-.2 11.2.9-2.5-3-5.3-5.5-8.3-7.4z"/> <circle cx="50" cy="50" r="3.5" fill="#A855F7"/> </svg></span><span class="chip-txt" data-i18n="skill_mj">Midjourney — Image Gen</span></div>
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#10A37F"/> <path fill="#FFFFFF" d="M76.8 54.3a14.7 14.7 0 0 0 .9-7.2 15 15 0 0 0-9.8-12.7 14.8 14.8 0 0 0-9.2-1.7 15 15 0 0 0-13-7.5 15 15 0 0 0-14.4 10.5 14.8 14.8 0 0 0-10.4 5.3 15 15 0 0 0-1.6 15.9 14.8 14.8 0 0 0-.9 7.2 15 15 0 0 0 9.8 12.7 14.8 14.8 0 0 0 9.2 1.7 15 15 0 0 0 13 7.5 15 15 0 0 0 14.4-10.5 14.8 14.8 0 0 0 10.4-5.3 15 15 0 0 0 1.6-15.9zm-26.8 28.5a9.8 9.8 0 0 1-7.8-3.9l.4-.2 13-7.5a2.7 2.7 0 0 0 1.3-2.3v-18.4l5.5 3.2v17.4a9.9 9.9 0 0 1-12.4 11.7zm-22.7-8.3a9.8 9.8 0 0 1-2.9-8.2l.4.2 13 7.5a2.7 2.7 0 0 0 2.7 0l16-9.2v6.4l-15.1 8.7a9.9 9.9 0 0 1-14.1-5.4zm-4.9-23.7a9.8 9.8 0 0 1 4.9-4.3v15.5a2.7 2.7 0 0 0 1.3 2.3l16 9.2-5.5 3.2-15.1-8.7a9.9 9.9 0 0 1-1.6-17.2zm42.6-4.5-16-9.2 5.5-3.2 15.1 8.7a9.9 9.9 0 0 1 1.6 17.2 9.8 9.8 0 0 1-4.9 4.3v-15.5a2.7 2.7 0 0 0-1.3-2.3zm13.1 19.3a9.8 9.8 0 0 1 2.9 8.2l-.4-.2-13-7.5a2.7 2.7 0 0 0-2.7 0l-16 9.2v-6.4l15.1-8.7a9.9 9.9 0 0 1 14.1 5.4zm-29.3-11-7.2-4.2 16-9.2 7.2 4.2zm-2.4 12.8-8.8-5.1v-10.2l8.8 5.1zm4.8 0v-10.2l8.8-5.1v10.2z"/> </svg></span><span class="chip-txt" data-i18n="skill_gpt">ChatGPT & Prompting</span></div>
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#8B5CF6"/> <polygon points="42,34 68,50 42,66" fill="#FFFFFF"/> <!-- Sparkles / AI Motion --> <path d="M72 26 L74 32 L80 34 L74 36 L72 42 L70 36 L64 34 L70 32 Z" fill="#FDE047"/> <path d="M26 62 L28 66 L32 68 L28 70 L26 74 L24 70 L20 68 L24 66 Z" fill="#FDE047"/> </svg></span><span class="chip-txt" data-i18n="skill_vid">Generative Video / Motion</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#10A37F"/> <path fill="#FFFFFF" d="M76.8 54.3a14.7 14.7 0 0 0 .9-7.2 15 15 0 0 0-9.8-12.7 14.8 14.8 0 0 0-9.2-1.7 15 15 0 0 0-13-7.5 15 15 0 0 0-14.4 10.5 14.8 14.8 0 0 0-10.4 5.3 15 15 0 0 0-1.6 15.9 14.8 14.8 0 0 0-.9 7.2 15 15 0 0 0 9.8 12.7 14.8 14.8 0 0 0 9.2 1.7 15 15 0 0 0 13 7.5 15 15 0 0 0 14.4-10.5 14.8 14.8 0 0 0 10.4-5.3 15 15 0 0 0 1.6-15.9zm-26.8 28.5a9.8 9.8 0 0 1-7.8-3.9l.4-.2 13-7.5a2.7 2.7 0 0 0 1.3-2.3v-18.4l5.5 3.2v17.4a9.9 9.9 0 0 1-12.4 11.7zm-22.7-8.3a9.8 9.8 0 0 1-2.9-8.2l.4.2 13 7.5a2.7 2.7 0 0 0 2.7 0l16-9.2v6.4l-15.1 8.7a9.9 9.9 0 0 1-14.1-5.4zm-4.9-23.7a9.8 9.8 0 0 1 4.9-4.3v15.5a2.7 2.7 0 0 0 1.3 2.3l16 9.2-5.5 3.2-15.1-8.7a9.9 9.9 0 0 1-1.6-17.2zm42.6-4.5-16-9.2 5.5-3.2 15.1 8.7a9.9 9.9 0 0 1 1.6 17.2 9.8 9.8 0 0 1-4.9 4.3v-15.5a2.7 2.7 0 0 0-1.3-2.3zm13.1 19.3a9.8 9.8 0 0 1 2.9 8.2l-.4-.2-13-7.5a2.7 2.7 0 0 0-2.7 0l-16 9.2v-6.4l15.1-8.7a9.9 9.9 0 0 1 14.1 5.4zm-29.3-11-7.2-4.2 16-9.2 7.2 4.2zm-2.4 12.8-8.8-5.1v-10.2l8.8 5.1zm4.8 0v-10.2l8.8-5.1v10.2z"/> </svg></span><span class="chip-txt" data-i18n="skill_gpt">ChatGPT &amp; Prompting</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#8B5CF6"/> <polygon points="42,34 68,50 42,66" fill="#FFFFFF"/> <path d="M72 26 L74 32 L80 34 L74 36 L72 42 L70 36 L64 34 L70 32 Z" fill="#FDE047"/> <path d="M26 62 L28 66 L32 68 L28 70 L26 74 L24 70 L20 68 L24 66 Z" fill="#FDE047"/> </svg></span><span class="chip-txt" data-i18n="skill_vid">Generative Video / Motion</span></div>
               <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#0068B5"/> <text x="50" y="58" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="28" text-anchor="middle" letter-spacing="-1">intel</text> <rect x="36" y="26" width="6" height="6" fill="#00C7FD"/> <text x="50" y="76" fill="#00C7FD" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="11" text-anchor="middle" letter-spacing="1">ULTRA AI</text> </svg></span><span class="chip-txt" data-i18n="skill_intel">Intel AI Everywhere</span></div>
             </div>
           </div></div>
@@ -299,25 +454,25 @@
 
         <div class="skill-card" data-reveal style="--d:.1s">
           <div class="frame"><div class="frame-glare"></div><div class="frame-in">
-            <div class="frame-head"><span class="no">02</span><span class="edge">▸ KODAK 02A</span></div>
-            <h3 data-i18n="skill_cat2">Edit & Post-Production</h3>
+            <div class="frame-head"><span class="no">02</span><span class="edge">KODAK 5219 • 02A</span></div>
+            <h3 data-i18n="skill_cat2">Edit &amp; Post-Production</h3>
             <div class="chips">
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#000000"/> <path fill="#00E5FF" d="M24 33h20l14 17-14 17H24l14-17z"/> <path fill="#FFFFFF" d="M76 33H56L42 50l14 17h20L62 50z"/> </svg></span><span class="chip-txt" data-i18n="skill_capcut">CapCut — Effects & Keyframes</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#000000"/> <path fill="#00E5FF" d="M24 33h20l14 17-14 17H24l14-17z"/> <path fill="#FFFFFF" d="M76 33H56L42 50l14 17h20L62 50z"/> </svg></span><span class="chip-txt" data-i18n="skill_capcut">CapCut — Effects &amp; Keyframes</span></div>
               <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#2A0634" d="M0 0h128v128H0z"/><path fill="#E976B9" d="M0 0v128h128V0H0zm123 123H5V5h118v118z"/><path fill="#E976B9" d="M69 47.1c-.1-9.4-7.8-16.9-17.2-16.8H33.3v58.5h9.6V67.5h8.3C61 67.4 69 59.3 69 49.4v-2.3zm-9.6 3c0 5-4.1 9.1-9.1 9.1h-7.4V38.5h7.4c5 0 9.1 4.1 9.1 9.1v2.5zM77.1 88.8V48.9s10.2-5.1 20.2-3.8v8.3s-7 0-10.1 1.3v34.2H77.1z"/></svg></span><span class="chip-txt" data-i18n="skill_premiere">Adobe Premiere Pro</span></div>
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#001e36" d="M22.667 1.6h82.666C117.867 1.6 128 11.733 128 24.267v79.466c0 12.534-10.133 22.667-22.667 22.667H22.667C10.133 126.4 0 116.267 0 103.733V24.267C0 11.733 10.133 1.6 22.667 1.6Z"/><path fill="#31a8ff" d="M45.867 33.333c-1.6 0-3.2 0-4.853.054-1.654.053-3.201.053-4.641.107-1.44.053-2.773.053-4.053.106-1.227.053-2.08.053-2.987.053-.373 0-.533.213-.533.587v54.88c0 .48.213.694.64.694h10.347c.373-.054.64-.374.586-.747v-17.12c1.013 0 1.76 0 2.294.053.533.053 1.386.053 2.666.053 4.374 0 8.374-.48 12-1.813 3.467-1.28 6.454-3.52 8.587-6.507 2.133-2.986 3.2-6.773 3.2-11.36 0-2.4-.426-4.693-1.226-6.933A16.98 16.98 0 0 0 64 39.36a19.049 19.049 0 0 0-7.147-4.374c-2.987-1.12-6.613-1.653-10.986-1.653Zm1.19 10.505c1.9.036 3.75.368 5.476 1.068 1.547.587 2.827 1.654 3.734 3.04a8.779 8.779 0 0 1 1.227 4.748c0 2.346-.534 4.16-1.654 5.493-1.174 1.333-2.667 2.347-4.373 2.827-1.974.64-4.054.959-6.134.959h-2.827c-.64 0-1.332-.053-2.079-.106v-17.92c.373-.054 1.12-.107 2.187-.053 1.013-.054 2.239-.054 3.626-.054.273-.007.546-.008.817-.002zm44.73 2.723c-3.787 0-6.934.586-9.44 1.866-2.293 1.067-4.267 2.773-5.6 4.906-1.173 1.974-1.814 4.16-1.814 6.454a11.447 11.447 0 0 0 1.227 5.44 13.809 13.809 0 0 0 4.054 4.533 32.629 32.629 0 0 0 7.573 3.84c2.613 1.013 4.373 1.813 5.227 2.506.853.694 1.28 1.387 1.28 2.134 0 .96-.587 1.867-1.44 2.24-.96.48-2.4.747-4.427.747-2.133 0-4.267-.267-6.294-.8a22.834 22.834 0 0 1-6.613-2.613c-.16-.107-.32-.16-.48-.053-.16.106-.213.319-.213.479v9.28c-.053.427.213.8.587 1.013a21.49 21.49 0 0 0 5.44 1.707c2.4.48 4.799.693 7.252.693 3.84 0 7.041-.586 9.654-1.706 2.4-.96 4.48-2.613 5.973-4.747a12.41 12.41 0 0 0 2.08-7.093 11.512 11.512 0 0 0-1.226-5.493c-1.014-1.814-2.454-3.307-4.214-4.427a38.625 38.625 0 0 0-8.213-3.894 48.784 48.784 0 0 1-3.787-1.76c-.693-.373-1.333-.853-1.813-1.44-.32-.427-.533-.906-.533-1.386 0-.48.16-1.013.426-1.44.374-.533.96-.907 1.653-1.067 1.014-.266 2.134-.427 3.2-.374 2.027 0 4 .267 5.974.694 1.814.373 3.52.96 5.12 1.814.213.106.48.106.96 0a.656.656 0 0 0 .267-.534v-8.693c0-.214-.054-.427-.107-.64-.107-.213-.32-.427-.533-.48A18.762 18.762 0 0 0 98.4 47.04a45.98 45.98 0 0 0-6.613-.48z"/></svg></span><span class="chip-txt" data-i18n="skill_ps">Photoshop — Cover & Retouch</span></div>
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#F97316"/> <!-- Sound Waves Equalizer --> <rect x="22" y="42" width="8" height="16" rx="4" fill="#FFFFFF"/> <rect x="36" y="30" width="8" height="40" rx="4" fill="#FFFFFF"/> <rect x="50" y="20" width="8" height="60" rx="4" fill="#FFFFFF"/> <rect x="64" y="34" width="8" height="32" rx="4" fill="#FFFFFF"/> <rect x="78" y="44" width="8" height="12" rx="4" fill="#FFFFFF"/> </svg></span><span class="chip-txt" data-i18n="skill_sound">Sound & Beat Sync</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#001e36" d="M22.667 1.6h82.666C117.867 1.6 128 11.733 128 24.267v79.466c0 12.534-10.133 22.667-22.667 22.667H22.667C10.133 126.4 0 116.267 0 103.733V24.267C0 11.733 10.133 1.6 22.667 1.6Z"/><path fill="#31a8ff" d="M45.867 33.333c-1.6 0-3.2 0-4.853.054-1.654.053-3.201.053-4.641.107-1.44.053-2.773.053-4.053.106-1.227.053-2.08.053-2.987.053-.373 0-.533.213-.533.587v54.88c0 .48.213.694.64.694h10.347c.373-.054.64-.374.586-.747v-17.12c1.013 0 1.76 0 2.294.053.533.053 1.386.053 2.666.053 4.374 0 8.374-.48 12-1.813 3.467-1.28 6.454-3.52 8.587-6.507 2.133-2.986 3.2-6.773 3.2-11.36 0-2.4-.426-4.693-1.226-6.933A16.98 16.98 0 0 0 64 39.36a19.049 19.049 0 0 0-7.147-4.374c-2.987-1.12-6.613-1.653-10.986-1.653Zm1.19 10.505c1.9.036 3.75.368 5.476 1.068 1.547.587 2.827 1.654 3.734 3.04a8.779 8.779 0 0 1 1.227 4.748c0 2.346-.534 4.16-1.654 5.493-1.174 1.333-2.667 2.347-4.373 2.827-1.974.64-4.054.959-6.134.959h-2.827c-.64 0-1.332-.053-2.079-.106v-17.92c.373-.054 1.12-.107 2.187-.053 1.013-.054 2.239-.054 3.626-.054.273-.007.546-.008.817-.002zm44.73 2.723c-3.787 0-6.934.586-9.44 1.866-2.293 1.067-4.267 2.773-5.6 4.906-1.173 1.974-1.814 4.16-1.814 6.454a11.447 11.447 0 0 0 1.227 5.44 13.809 13.809 0 0 0 4.054 4.533 32.629 32.629 0 0 0 7.573 3.84c2.613 1.013 4.373 1.813 5.227 2.506.853.694 1.28 1.387 1.28 2.134 0 .96-.587 1.867-1.44 2.24-.96.48-2.4.747-4.427.747-2.133 0-4.267-.267-6.294-.8a22.834 22.834 0 0 1-6.613-2.613c-.16-.107-.32-.16-.48-.053-.16.106-.213.319-.213.479v9.28c-.053.427.213.8.587 1.013a21.49 21.49 0 0 0 5.44 1.707c2.4.48 4.799.693 7.252.693 3.84 0 7.041-.586 9.654-1.706 2.4-.96 4.48-2.613 5.973-4.747a12.41 12.41 0 0 0 2.08-7.093 11.512 11.512 0 0 0-1.226-5.493c-1.014-1.814-2.454-3.307-4.214-4.427a38.625 38.625 0 0 0-8.213-3.894 48.784 48.784 0 0 1-3.787-1.76c-.693-.373-1.333-.853-1.813-1.44-.32-.427-.533-.906-.533-1.386 0-.48.16-1.013.426-1.44.374-.533.96-.907 1.653-1.067 1.014-.266 2.134-.427 3.2-.374 2.027 0 4 .267 5.974.694 1.814.373 3.52.96 5.12 1.814.213.106.48.106.96 0a.656.656 0 0 0 .267-.534v-8.693c0-.214-.054-.427-.107-.64-.107-.213-.32-.427-.533-.48A18.762 18.762 0 0 0 98.4 47.04a45.98 45.98 0 0 0-6.613-.48z"/></svg></span><span class="chip-txt" data-i18n="skill_ps">Photoshop — Cover &amp; Retouch</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#F97316"/> <rect x="22" y="42" width="8" height="16" rx="4" fill="#FFFFFF"/> <rect x="36" y="30" width="8" height="40" rx="4" fill="#FFFFFF"/> <rect x="50" y="20" width="8" height="60" rx="4" fill="#FFFFFF"/> <rect x="64" y="34" width="8" height="32" rx="4" fill="#FFFFFF"/> <rect x="78" y="44" width="8" height="12" rx="4" fill="#FFFFFF"/> </svg></span><span class="chip-txt" data-i18n="skill_sound">Sound &amp; Beat Sync</span></div>
             </div>
           </div></div>
         </div>
 
         <div class="skill-card" data-reveal style="--d:.2s">
           <div class="frame"><div class="frame-glare"></div><div class="frame-in">
-            <div class="frame-head"><span class="no">03</span><span class="edge">▸ KODAK 03A</span></div>
-            <h3 data-i18n="skill_cat3">Camera & Lighting</h3>
+            <div class="frame-head"><span class="no">03</span><span class="edge">KODAK 5219 • 03A</span></div>
+            <h3 data-i18n="skill_cat3">Camera &amp; Lighting</h3>
             <div class="chips">
               <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#18181B"/> <path fill="#3F3F46" d="M34 26h32l4 8H30z"/> <rect x="18" y="34" width="64" height="42" rx="8" fill="#27272A" stroke="#52525B" stroke-width="2"/> <circle cx="50" cy="55" r="16" fill="#18181B" stroke="#A855F7" stroke-width="3"/> <circle cx="50" cy="55" r="10" fill="#09090B"/> <circle cx="46" cy="51" r="3" fill="#FFFFFF" opacity="0.8"/> <circle cx="72" cy="42" r="3.5" fill="#EF4444"/> <rect x="25" y="40" width="8" height="4" rx="2" fill="#71717A"/> </svg></span><span class="chip-txt" data-i18n="skill_cam">DSLR / Mirrorless</span></div>
               <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#18181B"/> <polygon points="50,18 60,40 84,42 66,58 72,82 50,68 28,82 34,58 16,42 40,40" fill="#E879F9"/> <circle cx="50" cy="50" r="10" fill="#FDE047"/> </svg></span><span class="chip-txt" data-i18n="skill_photo">Event Photo — Awakening BKK</span></div>
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#FFF7ED"/> <!-- Softbox Dome --> <path d="M50 18 L76 34 L76 66 L50 82 L24 66 L24 34 Z" fill="#F97316" opacity="0.15" stroke="#F97316" stroke-width="3"/> <circle cx="50" cy="50" r="14" fill="#FBBF24"/> <line x1="50" y1="28" x2="50" y2="34" stroke="#EA580C" stroke-width="3" stroke-linecap="round"/> <line x1="50" y1="66" x2="50" y2="72" stroke="#EA580C" stroke-width="3" stroke-linecap="round"/> <line x1="28" y1="50" x2="34" y2="50" stroke="#EA580C" stroke-width="3" stroke-linecap="round"/> <line x1="66" y1="50" x2="72" y2="50" stroke="#EA580C" stroke-width="3" stroke-linecap="round"/> <circle cx="47" cy="47" r="4" fill="#FFFFFF"/> </svg></span><span class="chip-txt" data-i18n="skill_light">Studio Lighting & Mood</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#FFF7ED"/> <path d="M50 18 L76 34 L76 66 L50 82 L24 66 L24 34 Z" fill="#F97316" opacity="0.15" stroke="#F97316" stroke-width="3"/> <circle cx="50" cy="50" r="14" fill="#FBBF24"/> <line x1="50" y1="28" x2="50" y2="34" stroke="#EA580C" stroke-width="3" stroke-linecap="round"/> <line x1="50" y1="66" x2="50" y2="72" stroke="#EA580C" stroke-width="3" stroke-linecap="round"/> <line x1="28" y1="50" x2="34" y2="50" stroke="#EA580C" stroke-width="3" stroke-linecap="round"/> <line x1="66" y1="50" x2="72" y2="50" stroke="#EA580C" stroke-width="3" stroke-linecap="round"/> <circle cx="47" cy="47" r="4" fill="#FFFFFF"/> </svg></span><span class="chip-txt" data-i18n="skill_light">Studio Lighting &amp; Mood</span></div>
               <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <defs> <linearGradient id="cv" x1="0" y1="0" x2="1" y2="1"> <stop offset="0" stop-color="#00C4CC"/> <stop offset=".55" stop-color="#7D2AE8"/> <stop offset="1" stop-color="#5A2DE8"/> </linearGradient> </defs> <rect width="100" height="100" rx="24" fill="url(#cv)"/> <path d="M66 35c-5-4-11-6-17-6-13 0-23 9-23 21s10 21 23 21c6 0 12-2 17-6" fill="none" stroke="#FFFFFF" stroke-width="8.5" stroke-linecap="round"/> </svg></span><span class="chip-txt" data-i18n="skill_canva">Canva — Social Design</span></div>
             </div>
           </div></div>
@@ -325,26 +480,26 @@
 
         <div class="skill-card" data-reveal style="--d:.05s">
           <div class="frame"><div class="frame-glare"></div><div class="frame-in">
-            <div class="frame-head"><span class="no">04</span><span class="edge">▸ KODAK 04A</span></div>
-            <h3 data-i18n="skill_cat4">On-Air & Storytelling</h3>
+            <div class="frame-head"><span class="no">04</span><span class="edge">KODAK 5219 • 04A</span></div>
+            <h3 data-i18n="skill_cat4">On-Air &amp; Storytelling</h3>
             <div class="chips">
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#FFF1F2"/> <!-- Microphone Capsule --> <rect x="40" y="22" width="20" height="34" rx="10" fill="#E11D48"/> <path d="M32 44 C32 58 68 58 68 44" fill="none" stroke="#BE123C" stroke-width="4" stroke-linecap="round"/> <line x1="50" y1="60" x2="50" y2="74" stroke="#BE123C" stroke-width="4" stroke-linecap="round"/> <line x1="36" y1="74" x2="64" y2="74" stroke="#BE123C" stroke-width="4" stroke-linecap="round"/> <!-- On Air Dot --> <circle cx="50" cy="30" r="3" fill="#FFFFFF"/> <!-- Sound Waves --> <path d="M24 38 C22 46 22 52 24 60" fill="none" stroke="#FB7185" stroke-width="3" stroke-linecap="round"/> <path d="M76 38 C78 46 78 52 76 60" fill="none" stroke="#FB7185" stroke-width="3" stroke-linecap="round"/> </svg></span><span class="chip-txt" data-i18n="skill_anchor">ผู้ประกาศข่าว & พิธีกรหน้ากล้อง</span></div>
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#FDF2F8"/> <path d="M26 24 C26 20 30 18 34 18 L70 18 C74 18 78 22 78 26 L78 74 C78 78 74 82 70 82 L34 82 C30 82 26 78 26 74 Z" fill="#FFFFFF" stroke="#EC4899" stroke-width="3"/> <line x1="38" y1="32" x2="66" y2="32" stroke="#F43F5E" stroke-width="3" stroke-linecap="round"/> <line x1="38" y1="44" x2="66" y2="44" stroke="#F43F5E" stroke-width="3" stroke-linecap="round"/> <line x1="38" y1="56" x2="56" y2="56" stroke="#FB7185" stroke-width="3" stroke-linecap="round"/> <path d="M30 18 L30 82" stroke="#FBCFE8" stroke-width="4"/> <!-- Feather / Pen --> <circle cx="68" cy="68" r="8" fill="#BE185D"/> <path d="M68 64 L72 68 L68 72 Z" fill="#FFFFFF"/> </svg></span><span class="chip-txt" data-i18n="skill_story">Digital Storytelling & เขียนบท</span></div>
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#010101"/> <!-- Cyan Shadow --> <path fill="#25F4EE" d="M68 34.2a19.8 19.8 0 0 1-13-4.7V62a19 19 0 1 1-19-19c1.7 0 3.3.2 4.9.7v9.5a9.5 9.5 0 1 0 4.6 8.2V18h9.5c.2 4.7 2.3 9.1 5.8 12.3 2.1 1.9 4.6 3.2 7.2 3.9v9.5z" opacity="0.9"/> <!-- Red Shadow --> <path fill="#FE2C55" d="M71 36.2a19.8 19.8 0 0 1-13-4.7V64a19 19 0 1 1-19-19c1.7 0 3.3.2 4.9.7v9.5a9.5 9.5 0 1 0 4.6 8.2V20h9.5c.2 4.7 2.3 9.1 5.8 12.3 2.1 1.9 4.6 3.2 7.2 3.9v9.5z" opacity="0.9"/> <!-- White Core --> <path fill="#FFFFFF" d="M69.5 35.2a19.8 19.8 0 0 1-13-4.7V63a19 19 0 1 1-19-19c1.7 0 3.3.2 4.9.7v9.5a9.5 9.5 0 1 0 4.6 8.2V19h9.5c.2 4.7 2.3 9.1 5.8 12.3 2.1 1.9 4.6 3.2 7.2 3.9v9.5z"/> </svg></span><span class="chip-txt" data-i18n="skill_tiktok">Short-form — TikTok / Reels</span></div>
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#10B981"/> <!-- Rising Chart --> <rect x="24" y="56" width="10" height="22" rx="3" fill="#FFFFFF"/> <rect x="40" y="44" width="10" height="34" rx="3" fill="#FFFFFF"/> <rect x="56" y="32" width="10" height="46" rx="3" fill="#FFFFFF"/> <rect x="72" y="22" width="10" height="56" rx="3" fill="#A7F3D0"/> <!-- Growth Arrow --> <polyline points="30,44 48,32 64,22 78,16" fill="none" stroke="#FEF08A" stroke-width="4" stroke-linecap="round"/> <polyline points="70,16 78,16 78,24" fill="none" stroke="#FEF08A" stroke-width="4" stroke-linecap="round"/> </svg></span><span class="chip-txt" data-i18n="skill_trend">Social Trend & Engagement</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#FFF1F2"/> <rect x="40" y="22" width="20" height="34" rx="10" fill="#E11D48"/> <path d="M32 44 C32 58 68 58 68 44" fill="none" stroke="#BE123C" stroke-width="4" stroke-linecap="round"/> <line x1="50" y1="60" x2="50" y2="74" stroke="#BE123C" stroke-width="4" stroke-linecap="round"/> <line x1="36" y1="74" x2="64" y2="74" stroke="#BE123C" stroke-width="4" stroke-linecap="round"/> <circle cx="50" cy="30" r="3" fill="#FFFFFF"/> <path d="M24 38 C22 46 22 52 24 60" fill="none" stroke="#FB7185" stroke-width="3" stroke-linecap="round"/> <path d="M76 38 C78 46 78 52 76 60" fill="none" stroke="#FB7185" stroke-width="3" stroke-linecap="round"/> </svg></span><span class="chip-txt" data-i18n="skill_anchor">ผู้ประกาศข่าว &amp; พิธีกรหน้ากล้อง</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#FDF2F8"/> <path d="M26 24 C26 20 30 18 34 18 L70 18 C74 18 78 22 78 26 L78 74 C78 78 74 82 70 82 L34 82 C30 82 26 78 26 74 Z" fill="#FFFFFF" stroke="#EC4899" stroke-width="3"/> <line x1="38" y1="32" x2="66" y2="32" stroke="#F43F5E" stroke-width="3" stroke-linecap="round"/> <line x1="38" y1="44" x2="66" y2="44" stroke="#F43F5E" stroke-width="3" stroke-linecap="round"/> <line x1="38" y1="56" x2="56" y2="56" stroke="#FB7185" stroke-width="3" stroke-linecap="round"/> <path d="M30 18 L30 82" stroke="#FBCFE8" stroke-width="4"/> <circle cx="68" cy="68" r="8" fill="#BE185D"/> <path d="M68 64 L72 68 L68 72 Z" fill="#FFFFFF"/> </svg></span><span class="chip-txt" data-i18n="skill_story">Digital Storytelling &amp; เขียนบท</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#010101"/> <path fill="#25F4EE" d="M68 34.2a19.8 19.8 0 0 1-13-4.7V62a19 19 0 1 1-19-19c1.7 0 3.3.2 4.9.7v9.5a9.5 9.5 0 1 0 4.6 8.2V18h9.5c.2 4.7 2.3 9.1 5.8 12.3 2.1 1.9 4.6 3.2 7.2 3.9v9.5z" opacity="0.9"/> <path fill="#FE2C55" d="M71 36.2a19.8 19.8 0 0 1-13-4.7V64a19 19 0 1 1-19-19c1.7 0 3.3.2 4.9.7v9.5a9.5 9.5 0 1 0 4.6 8.2V20h9.5c.2 4.7 2.3 9.1 5.8 12.3 2.1 1.9 4.6 3.2 7.2 3.9v9.5z" opacity="0.9"/> <path fill="#FFFFFF" d="M69.5 35.2a19.8 19.8 0 0 1-13-4.7V63a19 19 0 1 1-19-19c1.7 0 3.3.2 4.9.7v9.5a9.5 9.5 0 1 0 4.6 8.2V19h9.5c.2 4.7 2.3 9.1 5.8 12.3 2.1 1.9 4.6 3.2 7.2 3.9v9.5z"/> </svg></span><span class="chip-txt" data-i18n="skill_tiktok">Short-form — TikTok / Reels</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#10B981"/> <rect x="24" y="56" width="10" height="22" rx="3" fill="#FFFFFF"/> <rect x="40" y="44" width="10" height="34" rx="3" fill="#FFFFFF"/> <rect x="56" y="32" width="10" height="46" rx="3" fill="#FFFFFF"/> <rect x="72" y="22" width="10" height="56" rx="3" fill="#A7F3D0"/> <polyline points="30,44 48,32 64,22 78,16" fill="none" stroke="#FEF08A" stroke-width="4" stroke-linecap="round"/> <polyline points="70,16 78,16 78,24" fill="none" stroke="#FEF08A" stroke-width="4" stroke-linecap="round"/> </svg></span><span class="chip-txt" data-i18n="skill_trend">Social Trend &amp; Engagement</span></div>
             </div>
           </div></div>
         </div>
 
         <div class="skill-card" data-reveal style="--d:.15s">
           <div class="frame"><div class="frame-glare"></div><div class="frame-in">
-            <div class="frame-head"><span class="no">05</span><span class="edge">▸ KODAK 05A</span></div>
-            <h3 data-i18n="skill_cat5">Crew, Set & People Skills</h3>
+            <div class="frame-head"><span class="no">05</span><span class="edge">KODAK 5219 • 05A</span></div>
+            <h3 data-i18n="skill_cat5">Crew, Set &amp; People Skills</h3>
             <div class="chips">
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#FFF1F5"/> <!-- Lipstick --> <rect x="28" y="52" width="18" height="30" rx="3" fill="#27272A"/> <rect x="31" y="44" width="12" height="8" fill="#F43F5E"/> <path d="M31 44 L31 34 Q37 26 43 30 L43 44 Z" fill="#E11D48"/> <!-- Makeup Brush --> <path d="M68 22 C62 26 60 34 62 42 L54 78 Q55 82 59 80 L73 48 C78 44 82 36 78 28 Z" fill="#FB7185"/> <path d="M63 24 C60 27 60 33 63 37 L75 31 C78 27 75 22 71 21 Z" fill="#881337"/> </svg></span><span class="chip-txt" data-i18n="skill_makeup">On-set Makeup & Styling</span></div>
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#3B82F6"/> <!-- Clapperboard top --> <path d="M20 28 L80 28 L80 42 L20 42 Z" fill="#1E293B"/> <polygon points="26,28 36,28 30,42 20,42" fill="#FFFFFF"/> <polygon points="44,28 54,28 48,42 38,42" fill="#FFFFFF"/> <polygon points="62,28 72,28 66,42 56,42" fill="#FFFFFF"/> <!-- Base --> <rect x="20" y="44" width="60" height="32" rx="4" fill="#0F172A"/> <line x1="28" y1="56" x2="52" y2="56" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/> <line x1="28" y1="66" x2="68" y2="66" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/> </svg></span><span class="chip-txt" data-i18n="skill_props">Props & Scene Management</span></div>
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#6366F1"/> <!-- Lanyard --> <path d="M50 14 L36 30 L64 30 Z" fill="#4F46E5"/> <!-- Badge --> <rect x="28" y="30" width="44" height="56" rx="6" fill="#FFFFFF"/> <circle cx="50" cy="48" r="9" fill="#818CF8"/> <path d="M38 68 C38 60 62 60 62 68" fill="#6366F1"/> <rect x="36" y="73" width="28" height="4" rx="2" fill="#C7D2FE"/> </svg></span><span class="chip-txt" data-i18n="skill_staff">Staff CDE & Diamond Days</span></div>
-              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#EC4899"/> <rect x="22" y="24" width="56" height="40" rx="6" fill="#FFFFFF"/> <polyline points="32,52 44,40 54,48 68,34" fill="none" stroke="#DB2777" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/> <circle cx="68" cy="34" r="4" fill="#BE185D"/> <!-- Stand --> <line x1="50" y1="64" x2="50" y2="76" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/> <line x1="38" y1="76" x2="62" y2="76" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/> </svg></span><span class="chip-txt" data-i18n="skill_pitch">Pitching & Teamwork (TH/EN)</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#FFF1F5"/> <rect x="28" y="52" width="18" height="30" rx="3" fill="#27272A"/> <rect x="31" y="44" width="12" height="8" fill="#F43F5E"/> <path d="M31 44 L31 34 Q37 26 43 30 L43 44 Z" fill="#E11D48"/> <path d="M68 22 C62 26 60 34 62 42 L54 78 Q55 82 59 80 L73 48 C78 44 82 36 78 28 Z" fill="#FB7185"/> <path d="M63 24 C60 27 60 33 63 37 L75 31 C78 27 75 22 71 21 Z" fill="#881337"/> </svg></span><span class="chip-txt" data-i18n="skill_makeup">On-set Makeup &amp; Styling</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#3B82F6"/> <path d="M20 28 L80 28 L80 42 L20 42 Z" fill="#1E293B"/> <polygon points="26,28 36,28 30,42 20,42" fill="#FFFFFF"/> <polygon points="44,28 54,28 48,42 38,42" fill="#FFFFFF"/> <polygon points="62,28 72,28 66,42 56,42" fill="#FFFFFF"/> <rect x="20" y="44" width="60" height="32" rx="4" fill="#0F172A"/> <line x1="28" y1="56" x2="52" y2="56" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/> <line x1="28" y1="66" x2="68" y2="66" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/> </svg></span><span class="chip-txt" data-i18n="skill_props">Props &amp; Scene Management</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#6366F1"/> <path d="M50 14 L36 30 L64 30 Z" fill="#4F46E5"/> <rect x="28" y="30" width="44" height="56" rx="6" fill="#FFFFFF"/> <circle cx="50" cy="48" r="9" fill="#818CF8"/> <path d="M38 68 C38 60 62 60 62 68" fill="#6366F1"/> <rect x="36" y="73" width="28" height="4" rx="2" fill="#C7D2FE"/> </svg></span><span class="chip-txt" data-i18n="skill_staff">Staff CDE &amp; Diamond Days</span></div>
+              <div class="chip"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <rect width="100" height="100" rx="22" fill="#EC4899"/> <rect x="22" y="24" width="56" height="40" rx="6" fill="#FFFFFF"/> <polyline points="32,52 44,40 54,48 68,34" fill="none" stroke="#DB2777" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/> <circle cx="68" cy="34" r="4" fill="#BE185D"/> <line x1="50" y1="64" x2="50" y2="76" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/> <line x1="38" y1="76" x2="62" y2="76" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/> </svg></span><span class="chip-txt" data-i18n="skill_pitch">Pitching &amp; Teamwork (TH/EN)</span></div>
             </div>
           </div></div>
         </div>
@@ -359,16 +514,18 @@
         <div class="marquee-sign" data-reveal="zoom"><div class="txt">NOW SHOWING</div></div>
         <div class="slate"><div class="slate-meta"><span>SC.03</span><span>13 TITLES</span><span>PREMIERE</span></div></div>
         <h2 class="scene-title">Selected <em>Reels</em></h2>
-        <p class="scene-th" data-i18n="works_subtitle">ผลงานจริงทุกชิ้น — คลิกที่โปสเตอร์เพื่อดูวิดีโอระดับคมชัดบนเว็บได้ทันที</p>
+        <p class="scene-th" data-i18n="works_subtitle">ผลงานจริงทุกชิ้น — แตะที่โปสเตอร์เพื่อเปิดเล่นวิดีโอระดับคมชัดบนเว็บได้ทันที</p>
       </div>
 
-      <div class="filters">
-        <button class="filter active" data-filter="all" type="button"><span data-i18n="filter_all">ทั้งหมด</span> <small>13</small></button>
-        <button class="filter" data-filter="ai" type="button"><span data-i18n="filter_ai">AI Content</span> <small>02</small></button>
-        <button class="filter" data-filter="anchor" type="button"><span data-i18n="filter_anchor">ผู้ประกาศ &amp; พากย์</span> <small>03</small></button>
-        <button class="filter" data-filter="short" type="button"><span data-i18n="filter_short">Short-form</span> <small>02</small></button>
-        <button class="filter" data-filter="edit" type="button"><span data-i18n="filter_edit">ตัดต่อ &amp; โฆษณา</span> <small>03</small></button>
-        <button class="filter" data-filter="onset" type="button"><span data-i18n="filter_onset">ออกกอง &amp; กิจกรรม</span> <small>03</small></button>
+      <div class="filters-wrap">
+        <div class="filters" role="tablist" aria-label="หมวดหมู่ผลงาน">
+          <button class="filter active" data-filter="all" type="button"><span data-i18n="filter_all">ทั้งหมด</span> <small>13</small></button>
+          <button class="filter" data-filter="ai" type="button"><span data-i18n="filter_ai">AI Content</span> <small>02</small></button>
+          <button class="filter" data-filter="anchor" type="button"><span data-i18n="filter_anchor">ผู้ประกาศ &amp; พากย์</span> <small>03</small></button>
+          <button class="filter" data-filter="short" type="button"><span data-i18n="filter_short">Short-form</span> <small>02</small></button>
+          <button class="filter" data-filter="edit" type="button"><span data-i18n="filter_edit">ตัดต่อ &amp; โฆษณา</span> <small>03</small></button>
+          <button class="filter" data-filter="onset" type="button"><span data-i18n="filter_onset">ออกกอง &amp; กิจกรรม</span> <small>03</small></button>
+        </div>
       </div>
 
       <div class="reels">
@@ -379,7 +536,7 @@
             <div class="shade"></div>
             <span class="reel-tag">9:16 • AI CINEMA</span>
             <span class="reel-ch">EP.01</span>
-            <span class="reel-play">▶</span>
+            <span class="reel-play"><svg width="22" height="22"><use href="#ico-play"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">02:22</span>
           </div>
@@ -389,7 +546,7 @@
             <p data-i18n="reel1_desc">สร้างสรรค์ภาพยนตร์แอนิเมชันเต็มเรื่องด้วย Generative AI ควบคุม Mood &amp; Tone, การเคลื่อนไหวของตัวละคร และผสานดนตรีประกอบเชิงภาพยนตร์</p>
             <div class="reel-cta">
               <span data-i18n="reel_play_cta">เล่นวิดีโอบนเว็บ</span>
-              <span>▶</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-play"/></svg></span>
             </div>
           </div>
         </button>
@@ -401,7 +558,7 @@
             <div class="shade"></div>
             <span class="reel-tag">9:16 • AI AVATAR</span>
             <span class="reel-ch">EP.02</span>
-            <span class="reel-play">▶</span>
+            <span class="reel-play"><svg width="22" height="22"><use href="#ico-play"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">00:16</span>
           </div>
@@ -411,7 +568,7 @@
             <p data-i18n="reel2_desc">จำลองและสร้างตัวละคร AI เสมือนจริงขยับปากพูดตามบท (Lip-sync &amp; Voice AI) สำหรับสื่อโฆษณาและการตลาดดิจิทัลยุคใหม่</p>
             <div class="reel-cta">
               <span data-i18n="reel_play_cta">เล่นวิดีโอบนเว็บ</span>
-              <span>▶</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-play"/></svg></span>
             </div>
           </div>
         </button>
@@ -423,7 +580,7 @@
             <div class="shade"></div>
             <span class="reel-tag">9:16 • VOICEOVER</span>
             <span class="reel-ch">EP.03</span>
-            <span class="reel-play">▶</span>
+            <span class="reel-play"><svg width="22" height="22"><use href="#ico-play"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">01:42</span>
           </div>
@@ -433,7 +590,7 @@
             <p data-i18n="reel3_desc">งานพากย์เสียงสารคดีเล่าเรื่อง (Voiceover &amp; Audio Storytelling) ควบคุมจังหวะ ลมหายใจ และถ่ายทอดอารมณ์ความเหงาของวาฬใต้สมุทร</p>
             <div class="reel-cta">
               <span data-i18n="reel_play_cta">เล่นวิดีโอบนเว็บ</span>
-              <span>▶</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-play"/></svg></span>
             </div>
           </div>
         </button>
@@ -445,7 +602,7 @@
             <div class="shade"></div>
             <span class="reel-tag">16:9 • NEWSROOM</span>
             <span class="reel-ch">EP.04</span>
-            <span class="reel-play">▶</span>
+            <span class="reel-play"><svg width="22" height="22"><use href="#ico-play"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">01:54</span>
           </div>
@@ -455,7 +612,7 @@
             <p data-i18n="reel4_desc">ฝึกปฏิบัติการอ่านข่าวสดหน้ากล้องผ่าน Teleprompter ควบคุมน้ำเสียง จังหวะ บุคลิกภาพหน้ากล้องโทรทัศน์ และการจำลองสกู๊ปข่าว</p>
             <div class="reel-cta">
               <span data-i18n="reel_play_cta">เล่นวิดีโอบนเว็บ</span>
-              <span>▶</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-play"/></svg></span>
             </div>
           </div>
         </button>
@@ -467,7 +624,7 @@
             <div class="shade"></div>
             <span class="reel-tag">16:9 • BU BROADCAST</span>
             <span class="reel-ch">EP.05</span>
-            <span class="reel-play">▶</span>
+            <span class="reel-play"><svg width="22" height="22"><use href="#ico-play"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">03:56</span>
           </div>
@@ -477,7 +634,7 @@
             <p data-i18n="reel5_desc">ผลงานผู้ประกาศข่าวฉบับสมบูรณ์ (Master Cut) เปิดรายการหน้ากล้องในสตูดิโอ รายงานสกู๊ปข่าวอาชญากรรมและคลิปกล้องวงจรปิดพร้อมเสียงบรรยาย</p>
             <div class="reel-cta">
               <span data-i18n="reel_play_cta">เล่นวิดีโอบนเว็บ</span>
-              <span>▶</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-play"/></svg></span>
             </div>
           </div>
         </button>
@@ -489,7 +646,7 @@
             <div class="shade"></div>
             <span class="reel-tag">9:16 • COMMERCIAL</span>
             <span class="reel-ch">EP.06</span>
-            <span class="reel-play">▶</span>
+            <span class="reel-play"><svg width="22" height="22"><use href="#ico-play"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">00:36</span>
           </div>
@@ -499,7 +656,7 @@
             <p data-i18n="reel6_desc">ถ่ายทำและกำกับโฆษณาจำลองในยิม ออกแบบมุมกล้อง การเคลื่อนไหวแอ็กชัน จังหวะตัดต่อกระชับเร้าใจ และเกรดสี Mood &amp; Tone</p>
             <div class="reel-cta">
               <span data-i18n="reel_play_cta">เล่นวิดีโอบนเว็บ</span>
-              <span>▶</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-play"/></svg></span>
             </div>
           </div>
         </button>
@@ -511,7 +668,7 @@
             <div class="shade"></div>
             <span class="reel-tag">9:16 • REELS</span>
             <span class="reel-ch">EP.07</span>
-            <span class="reel-play">▶</span>
+            <span class="reel-play"><svg width="22" height="22"><use href="#ico-play"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">00:35</span>
           </div>
@@ -521,7 +678,7 @@
             <p data-i18n="reel7_desc">ตัดต่อวิดีโอสั้นสไตล์อาหารและไลฟ์สไตล์ ดีไซน์จังหวะสับภาพตามจังหวะเพลง (Beat Sync) ใส่ Keyframe และ Sound FX ให้ดูน่ารับประทาน</p>
             <div class="reel-cta">
               <span data-i18n="reel_play_cta">เล่นวิดีโอบนเว็บ</span>
-              <span>▶</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-play"/></svg></span>
             </div>
           </div>
         </button>
@@ -533,7 +690,7 @@
             <div class="shade"></div>
             <span class="reel-tag">4:5 • VLOG</span>
             <span class="reel-ch">EP.08</span>
-            <span class="reel-play">▶</span>
+            <span class="reel-play"><svg width="22" height="22"><use href="#ico-play"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">01:31</span>
           </div>
@@ -543,7 +700,7 @@
             <p data-i18n="reel8_desc">วิดีโอบล็อกเกาะเทรนด์ไลฟ์สไตล์ เล่าเรื่องเป็นธรรมชาติ ใส่ทรานซิชันซูมและสปีดการตัดต่อเพื่อดึงดูดความสนใจและ Engagement</p>
             <div class="reel-cta">
               <span data-i18n="reel_play_cta">เล่นวิดีโอบนเว็บ</span>
-              <span>▶</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-play"/></svg></span>
             </div>
           </div>
         </button>
@@ -555,7 +712,7 @@
             <div class="shade"></div>
             <span class="reel-tag">9:16 • CINEMATIC</span>
             <span class="reel-ch">EP.09</span>
-            <span class="reel-play">▶</span>
+            <span class="reel-play"><svg width="22" height="22"><use href="#ico-play"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">01:35</span>
           </div>
@@ -565,7 +722,7 @@
             <p data-i18n="reel9_desc">งานตัดต่อคุมโทนภาพยนตร์ (Color Grade &amp; Mood) บันทึกแสงเงาศิลปะร่วมสมัยในโดมสีแดง ถ่ายทอดอารมณ์และมุมมองผู้กำกับ</p>
             <div class="reel-cta">
               <span data-i18n="reel_play_cta">เล่นวิดีโอบนเว็บ</span>
-              <span>▶</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-play"/></svg></span>
             </div>
           </div>
         </button>
@@ -577,7 +734,7 @@
             <div class="shade"></div>
             <span class="reel-tag">9:16 • STREET DANCE</span>
             <span class="reel-ch">EP.10</span>
-            <span class="reel-play">▶</span>
+            <span class="reel-play"><svg width="22" height="22"><use href="#ico-play"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">00:36</span>
           </div>
@@ -587,7 +744,7 @@
             <p data-i18n="reel10_desc">วิดีโอบันทึกโมเมนต์สตรีทแดนซ์และบรรยากาศสตรีทฟู้ดยามค่ำคืน การคุมจังหวะภาพสนุกสนานและมีชีวิตชีวา</p>
             <div class="reel-cta">
               <span data-i18n="reel_play_cta">เล่นวิดีโอบนเว็บ</span>
-              <span>▶</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-play"/></svg></span>
             </div>
           </div>
         </button>
@@ -599,7 +756,7 @@
             <div class="shade"></div>
             <span class="reel-tag">4K • LIGHT FEST</span>
             <span class="reel-ch">EP.11</span>
-            <span class="reel-play">⤢</span>
+            <span class="reel-play"><svg width="20" height="20"><use href="#ico-expand"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">NIGHT</span>
           </div>
@@ -609,7 +766,7 @@
             <p data-i18n="reel11_desc">ช่างภาพบันทึกเทศกาลไฟยามค่ำคืน ถ่ายทอดศิลปะแสงและปฏิสัมพันธ์ของผู้ชม</p>
             <div class="reel-cta">
               <span data-i18n="reel_view_photo">ดูภาพถ่าย</span>
-              <span>⤢</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-expand"/></svg></span>
             </div>
           </div>
         </button>
@@ -621,7 +778,7 @@
             <div class="shade"></div>
             <span class="reel-tag">ON-SET • CREW</span>
             <span class="reel-ch">EP.12</span>
-            <span class="reel-play">⤢</span>
+            <span class="reel-play"><svg width="20" height="20"><use href="#ico-expand"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">2567</span>
           </div>
@@ -631,7 +788,7 @@
             <p data-i18n="reel12_desc">ออกกองหลายหน้าที่ — ช่างแต่งหน้า หาพร็อพ และพี่บิ้วงานปฐมนิเทศ ม.กรุงเทพ</p>
             <div class="reel-cta">
               <span data-i18n="reel_view_photo">ดูภาพถ่าย</span>
-              <span>⤢</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-expand"/></svg></span>
             </div>
           </div>
         </button>
@@ -643,7 +800,7 @@
             <div class="shade"></div>
             <span class="reel-tag">WORKSHOP • AI</span>
             <span class="reel-ch">EP.13</span>
-            <span class="reel-play">⤢</span>
+            <span class="reel-play"><svg width="20" height="20"><use href="#ico-expand"/></svg></span>
             <span class="reel-bar"><i></i></span>
             <span class="reel-tc">2024</span>
           </div>
@@ -653,7 +810,7 @@
             <p data-i18n="reel13_desc">อบรมและลงมือจริงกับ Intel Core Ultra ประยุกต์ AI ในการผลิตภาพและสื่อยุคใหม่</p>
             <div class="reel-cta">
               <span data-i18n="reel_view_photo">ดูภาพถ่าย</span>
-              <span>⤢</span>
+              <span class="cta-ico"><svg width="14" height="14"><use href="#ico-expand"/></svg></span>
             </div>
           </div>
         </button>
@@ -675,14 +832,46 @@
         </div>
       </div>
       <div class="cork">
-        <figure class="polaroid" style="--r:-4deg" data-reveal data-lightbox="assets/cine/cde-staff-2.jpg" data-caption="แต่งหน้านักแสดงก่อนเข้าฉาก"><img src="assets/cine/cde-staff-2.jpg" alt="แต่งหน้านักแสดง" loading="lazy"><figcaption>แต่งหน้านักแสดงก่อนเข้าฉาก</figcaption></figure>
-        <figure class="polaroid" style="--r:3deg; --d:.06s" data-reveal data-lightbox="assets/cine/diamond-days.jpg" data-caption="ช่างภาพประจำงาน"><img src="assets/cine/diamond-days.jpg" alt="ช่างภาพ" loading="lazy"><figcaption>บันทึกภาพเบื้องหลังงานสำคัญ</figcaption></figure>
-        <figure class="polaroid" style="--r:-2deg; --d:.12s" data-reveal data-lightbox="assets/cine/cde-future-1.jpg" data-caption="CDE Back to the Future"><img src="assets/cine/cde-future-1.jpg" alt="CDE Back to the Future" loading="lazy"><figcaption>CDE Back to the Future</figcaption></figure>
-        <figure class="polaroid" style="--r:5deg; --d:.18s" data-reveal data-lightbox="assets/cine/photo-club-1.jpg" data-caption="ครอบครัวถ่ายภาพ 47"><img src="assets/cine/photo-club-1.jpg" alt="ชมรมถ่ายภาพ" loading="lazy"><figcaption>ชมรมถ่ายภาพ รุ่น 47</figcaption></figure>
-        <figure class="polaroid" style="--r:4deg" data-reveal data-lightbox="assets/cine/activity-staff.jpg" data-caption="สตาฟฟ์งานสาขา CDE"><img src="assets/cine/activity-staff.jpg" alt="สตาฟฟ์ CDE" loading="lazy"><figcaption>ทีมสตาฟฟ์สาขา CDE</figcaption></figure>
-        <figure class="polaroid" style="--r:-5deg; --d:.06s" data-reveal data-lightbox="assets/cine/photo-club-2.jpg" data-caption="แต่งหน้าเอฟเฟกต์ในกองถ่าย"><img src="assets/cine/photo-club-2.jpg" alt="กองถ่าย" loading="lazy"><figcaption>Makeup FX ประจำกองถ่าย</figcaption></figure>
-        <figure class="polaroid" style="--r:2deg; --d:.12s" data-reveal data-lightbox="assets/cine/freshy-bu.jpg" data-caption="Freshy & ปฐมนิเทศ Diamond Days"><img src="assets/cine/freshy-bu.jpg" alt="Freshy BU" loading="lazy"><figcaption>ปฐมนิเทศ Diamond Days</figcaption></figure>
-        <figure class="polaroid" style="--r:-3deg; --d:.18s" data-reveal data-lightbox="assets/cine/cde-future-2.jpg" data-caption="เวที THE FUTURE — CDE"><img src="assets/cine/cde-future-2.jpg" alt="THE FUTURE stage" loading="lazy"><figcaption>เวที THE FUTURE CDE</figcaption></figure>
+        <figure class="polaroid" style="--r:-3.5deg" data-reveal data-lightbox="assets/cine/cde-staff-2.jpg" data-caption="แต่งหน้านักแสดงก่อนเข้าฉาก">
+          <span class="pol-no">RAW 01</span>
+          <img src="assets/cine/cde-staff-2.jpg" alt="แต่งหน้านักแสดง" loading="lazy">
+          <figcaption data-i18n="pol_1">แต่งหน้านักแสดงก่อนเข้าฉาก</figcaption>
+        </figure>
+        <figure class="polaroid" style="--r:2.8deg; --d:.06s" data-reveal data-lightbox="assets/cine/diamond-days.jpg" data-caption="ช่างภาพประจำงาน">
+          <span class="pol-no">RAW 02</span>
+          <img src="assets/cine/diamond-days.jpg" alt="ช่างภาพ" loading="lazy">
+          <figcaption data-i18n="pol_2">บันทึกภาพเบื้องหลังงานสำคัญ</figcaption>
+        </figure>
+        <figure class="polaroid" style="--r:-2deg; --d:.12s" data-reveal data-lightbox="assets/cine/cde-future-1.jpg" data-caption="CDE Back to the Future">
+          <span class="pol-no">RAW 03</span>
+          <img src="assets/cine/cde-future-1.jpg" alt="CDE Back to the Future" loading="lazy">
+          <figcaption data-i18n="pol_3">CDE Back to the Future</figcaption>
+        </figure>
+        <figure class="polaroid" style="--r:4.2deg; --d:.18s" data-reveal data-lightbox="assets/cine/photo-club-1.jpg" data-caption="ครอบครัวถ่ายภาพ 47">
+          <span class="pol-no">RAW 04</span>
+          <img src="assets/cine/photo-club-1.jpg" alt="ชมรมถ่ายภาพ" loading="lazy">
+          <figcaption data-i18n="pol_4">ชมรมถ่ายภาพ รุ่น 47</figcaption>
+        </figure>
+        <figure class="polaroid" style="--r:3.2deg" data-reveal data-lightbox="assets/cine/activity-staff.jpg" data-caption="สตาฟฟ์งานสาขา CDE">
+          <span class="pol-no">RAW 05</span>
+          <img src="assets/cine/activity-staff.jpg" alt="สตาฟฟ์ CDE" loading="lazy">
+          <figcaption data-i18n="pol_5">ทีมสตาฟฟ์สาขา CDE</figcaption>
+        </figure>
+        <figure class="polaroid" style="--r:-4deg; --d:.06s" data-reveal data-lightbox="assets/cine/photo-club-2.jpg" data-caption="แต่งหน้าเอฟเฟกต์ในกองถ่าย">
+          <span class="pol-no">RAW 06</span>
+          <img src="assets/cine/photo-club-2.jpg" alt="กองถ่าย" loading="lazy">
+          <figcaption data-i18n="pol_6">Makeup FX ประจำกองถ่าย</figcaption>
+        </figure>
+        <figure class="polaroid" style="--r:2.2deg; --d:.12s" data-reveal data-lightbox="assets/cine/freshy-bu.jpg" data-caption="Freshy &amp; ปฐมนิเทศ Diamond Days">
+          <span class="pol-no">RAW 07</span>
+          <img src="assets/cine/freshy-bu.jpg" alt="Freshy BU" loading="lazy">
+          <figcaption data-i18n="pol_7">ปฐมนิเทศ Diamond Days</figcaption>
+        </figure>
+        <figure class="polaroid" style="--r:-2.8deg; --d:.18s" data-reveal data-lightbox="assets/cine/cde-future-2.jpg" data-caption="เวที THE FUTURE — CDE">
+          <span class="pol-no">RAW 08</span>
+          <img src="assets/cine/cde-future-2.jpg" alt="THE FUTURE stage" loading="lazy">
+          <figcaption data-i18n="pol_8">เวที THE FUTURE CDE</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -701,11 +890,11 @@
             <path d="M10 14.66V17c0 .55-.45 1-1 1H8c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h8c.55 0 1-.45 1-1v-1c0-.55-.45-1-1-1h-1c-.55 0-1-.45-1-1v-2.34"/>
             <path d="M18 4H6v5c0 3.31 2.69 6 6 6s6-2.69 6-6V4z"/>
           </svg>
-          <span class="trophy-hint">CLICK TO CELEBRATE</span>
+          <span class="trophy-hint">TAP TO CELEBRATE</span>
         </button>
         <div class="goes-to">AND THE AWARD GOES TO…</div>
         <h2 class="scene-title">Red Carpet <em>Moments</em></h2>
-        <p class="scene-th" data-i18n="awards_subtitle">รางวัลแห่งความภาคภูมิใจจากเวทีประกวดระดับประเทศ (คลิกเกียรติบัตรเพื่อขยาย)</p>
+        <p class="scene-th" data-i18n="awards_subtitle">รางวัลแห่งความภาคภูมิใจจากเวทีประกวดระดับประเทศ (แตะเกียรติบัตรเพื่อขยายดูภาพใหญ่)</p>
       </div>
 
       <div class="award-grid">
@@ -713,10 +902,11 @@
           <div class="laurel"><svg viewBox="0 0 300 200"><use href="#laurel"/></svg>
             <div class="lt"><small>OFFICIAL WINNER</small><b>1ST PLACE</b><span>HUAWEI HUB</span></div></div>
           <div class="prize" data-i18n="award1_prize">เงินรางวัล <b>10,000</b> บาท</div>
-          <h3 data-i18n="award1_title">Award of Excellence — Huawei Hub & First Generate Campaign</h3>
+          <h3 data-i18n="award1_title">Award of Excellence — Huawei Hub &amp; First Generate Campaign</h3>
           <p data-i18n="award1_desc">ชนะเลิศการประกวดและเวิร์กช็อป "HUAWEI HUB" และ "HUAWEI FIRST GENERATE CAMPAIGN" ในฐานะทีมที่นำเสนอผลงานได้ดีที่สุด</p>
-          <button class="cert" type="button" data-lightbox="assets/cert-huawei-fixed.jpg" data-caption="เกียรติบัตรชนะเลิศอันดับ 1 — HUAWEI HUB & FIRST GENERATE CAMPAIGN">
-            <img src="assets/cert-huawei-fixed.jpg" alt="เกียรติบัตร Huawei Hub" loading="lazy"><span class="zoom">⤢ ขยาย</span>
+          <button class="cert" type="button" data-lightbox="assets/cert-huawei-fixed.jpg" data-caption="เกียรติบัตรชนะเลิศอันดับ 1 — HUAWEI HUB &amp; FIRST GENERATE CAMPAIGN">
+            <img src="assets/cert-huawei-fixed.jpg" alt="เกียรติบัตร Huawei Hub" loading="lazy">
+            <span class="zoom"><svg width="13" height="13"><use href="#ico-expand"/></svg> <span data-i18n="cert_zoom">ขยายภาพ</span></span>
           </button>
         </div>
         <div class="award" data-reveal="zoom" style="--d:.15s">
@@ -726,7 +916,8 @@
           <h3 data-i18n="award2_title">Honorable Mention — Airdog VDO Contest 2024</h3>
           <p data-i18n="award2_desc">รางวัลชมเชยการประกวดผลิตวิดีโอเครื่องฟอกอากาศ AIRDOG บนโซเชียลมีเดีย โดย NAPA SOLUTIONS CO., LTD.</p>
           <button class="cert" type="button" data-lightbox="assets/cert-airdog.jpg" data-caption="เกียรติบัตรชมเชย — Airdog VDO Contest 2024">
-            <img src="assets/cert-airdog.jpg" alt="เกียรติบัตร Airdog" loading="lazy"><span class="zoom">⤢ ขยาย</span>
+            <img src="assets/cert-airdog.jpg" alt="เกียรติบัตร Airdog" loading="lazy">
+            <span class="zoom"><svg width="13" height="13"><use href="#ico-expand"/></svg> <span data-i18n="cert_zoom">ขยายภาพ</span></span>
           </button>
         </div>
       </div>
@@ -744,7 +935,7 @@
         </div>
         <div>
           <h2 class="scene-title">The <em>Lookbook</em> Premiere</h2>
-          <p class="scene-th" data-i18n="lookbook_subtitle">ม่านเปิดแล้ว! เลื่อนดูเล่มพอร์ตฉบับจริงทั้ง 11 หน้า — คลิกจอเพื่อดูเต็มจอ, ใช้ปุ่ม ← → ได้</p>
+          <p class="scene-th" data-i18n="lookbook_subtitle">ม่านเปิดแล้ว — เลื่อนดูเล่มพอร์ตฉบับจริงทั้ง 11 หน้า แตะที่จอเพื่อดูเต็มจอ หรือปัดซ้าย-ขวาได้ทันที</p>
         </div>
       </div>
 
@@ -752,19 +943,32 @@
         <div class="valance" aria-hidden="true"></div>
         <div class="curtain l" aria-hidden="true"></div>
         <div class="curtain r" aria-hidden="true"></div>
-        <div class="screen-label">SCREEN 1 • PORTFOLIO LOOKBOOK</div>
+        <div class="screen-label">SCREEN 01 • OFFICIAL PORTFOLIO LOOKBOOK (11 PAGES)</div>
         <div class="screen">
           <img class="screen-bg" id="screenBg" src="assets/pages/page-1.webp" alt="" aria-hidden="true">
           <img id="screenImg" src="assets/pages/page-1.webp" alt="หน้าพอร์ตโฟลิโอ">
-          <button class="screen-nav prev" id="prevPage" type="button" aria-label="หน้าก่อนหน้า">‹</button>
-          <button class="screen-nav next" id="nextPage" type="button" aria-label="หน้าถัดไป">›</button>
+          <button class="screen-nav prev" id="prevPage" type="button" aria-label="หน้าก่อนหน้า">
+            <svg width="22" height="22"><use href="#ico-prev"/></svg>
+          </button>
+          <button class="screen-nav next" id="nextPage" type="button" aria-label="หน้าถัดไป">
+            <svg width="22" height="22"><use href="#ico-next"/></svg>
+          </button>
         </div>
         <div class="projector">
           <div class="reel-count">REEL <b id="pageNum">01</b>/ 11 <em id="pageTitle">หน้าปก (Cover Page)</em></div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <button class="btn btn-sm" type="button" data-page="-1" data-i18n="lb_prev">‹ ก่อนหน้า</button>
-            <button class="btn btn-sm" type="button" data-page="1" data-i18n="lb_next">ถัดไป ›</button>
-            <button class="btn btn-sm btn-primary" type="button" id="zoomPage" data-i18n="lb_fullscreen">⤢ เต็มจอ</button>
+          <div class="projector-btns">
+            <button class="btn btn-sm" type="button" data-page="-1">
+              <svg width="14" height="14"><use href="#ico-prev"/></svg>
+              <span data-i18n="lb_prev">ก่อนหน้า</span>
+            </button>
+            <button class="btn btn-sm" type="button" data-page="1">
+              <span data-i18n="lb_next">ถัดไป</span>
+              <svg width="14" height="14"><use href="#ico-next"/></svg>
+            </button>
+            <button class="btn btn-sm btn-primary" type="button" id="zoomPage">
+              <svg width="14" height="14"><use href="#ico-expand"/></svg>
+              <span data-i18n="lb_fullscreen">เต็มจอ</span>
+            </button>
           </div>
         </div>
         <div class="thumbs" id="thumbs"></div>
@@ -787,21 +991,53 @@
       </div>
       <div class="episodes">
         <article class="ep" style="--p:100%">
-          <div class="ep-art g1"><span class="ep-badge">S1 • E1</span><span class="ep-num">E01</span></div>
-          <div class="ep-progress"><i></i></div>
-          <div class="ep-body"><div class="when">อนุบาล 1 — ม.3</div><h3>Pilot: ความคิดสร้างสรรค์ในวัยเรียน</h3><div class="org">โรงเรียนบ้านนาผาง (วิบูลยาราษฎร์สามัคคี)</div><p>เด็กกิจกรรม ช่างสังเกต และมีความรับผิดชอบ</p><span class="gpa">GPA 3.22</span></div>
-        </article>
-        <article class="ep" style="--p:100%">
-          <div class="ep-art g2">
-            <span class="ep-badge">S1 • E2</span><span class="ep-num">E02</span>
+          <div class="ep-art g1">
+            <span class="ep-badge">S1 • E1</span>
+            <img src="assets/logos/logo-naphang.png" alt="โลโก้โรงเรียนบ้านนาผาง" class="ep-school-logo" loading="lazy">
+            <span class="ep-num">E01</span>
           </div>
           <div class="ep-progress"><i></i></div>
-          <div class="ep-body"><div class="when">ม.4 — ม.6</div><h3>Rising Action: แผนการเรียนศิลป์-คำนวณ</h3><div class="org">โรงเรียนปทุมราชวงศา</div><p>ฝึกทักษะการทำกิจกรรมและทำงานร่วมกับเพื่อน จุดเริ่มต้นความชอบด้านสื่อ</p><span class="gpa">GPA 2.51</span></div>
+          <div class="ep-body">
+            <div class="when" data-i18n="ep1_when">อนุบาล 1 — ม.3</div>
+            <h3 data-i18n="ep1_title">Pilot: ความคิดสร้างสรรค์ในวัยเรียน</h3>
+            <div class="org" data-i18n="ep1_org">โรงเรียนบ้านนาผาง (วิบูลยาราษฎร์สามัคคี)</div>
+            <p data-i18n="ep1_desc">เด็กกิจกรรม ช่างสังเกต ชอบเรียนรู้สิ่งใหม่ และมีความรับผิดชอบสูง</p>
+            <span class="gpa">GPA 3.22</span>
+          </div>
         </article>
-        <article class="ep" style="--p:72%">
-          <div class="ep-art"><img src="assets/cine/cde-future-2.jpg" alt="" loading="lazy"><span class="ep-badge">S1 • E3</span><span class="ep-now">● NOW PLAYING</span><span class="ep-num">E03</span></div>
+
+        <article class="ep" style="--p:100%">
+          <div class="ep-art g2">
+            <span class="ep-badge">S1 • E2</span>
+            <img src="assets/logos/logo-patum.png" alt="โลโก้โรงเรียนปทุมราชวงศา" class="ep-school-logo" loading="lazy">
+            <span class="ep-num">E02</span>
+          </div>
           <div class="ep-progress"><i></i></div>
-          <div class="ep-body"><div class="when">2565 — ปัจจุบัน</div><h3>The Main Plot: นักศึกษานิเทศศาสตร์ CDE</h3><div class="org">มหาวิทยาลัยกรุงเทพ — คณะนิเทศศาสตร์</div><p>สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (Creative Content Production and Digital Experience)</p><span class="gpa" style="border-color:var(--rose); color:var(--rose);">GPA 3.29</span></div>
+          <div class="ep-body">
+            <div class="when" data-i18n="ep2_when">มัธยมศึกษาตอนปลาย (ม.4 — ม.6)</div>
+            <h3 data-i18n="ep2_title">Rising Action: กิจกรรมและการทำงานเป็นทีม</h3>
+            <div class="org" data-i18n="ep2_org">โรงเรียนปทุมราชวงศา</div>
+            <p data-i18n="ep2_desc">ฝึกฝนทักษะการทำกิจกรรมและการทำงานร่วมกับผู้อื่น จุดเริ่มต้นความสนใจด้านสื่อสร้างสรรค์</p>
+            <span class="gpa">GPA 2.51</span>
+          </div>
+        </article>
+
+        <article class="ep" style="--p:78%">
+          <div class="ep-art">
+            <img src="assets/cine/cde-future-2.jpg" alt="มหาวิทยาลัยกรุงเทพ" class="ep-bg-photo" loading="lazy">
+            <span class="ep-badge">S1 • E3</span>
+            <span class="ep-now"><i class="ep-now-dot"></i> NOW PLAYING</span>
+            <img src="assets/logos/logo-bu-diamond.png" alt="Bangkok University Diamond" class="ep-school-logo bu-gem" loading="lazy">
+            <span class="ep-num">E03</span>
+          </div>
+          <div class="ep-progress"><i></i></div>
+          <div class="ep-body">
+            <div class="when" data-i18n="ep3_when">2565 — ปัจจุบัน (ปริญญาตรี)</div>
+            <h3 data-i18n="ep3_title">The Main Plot: นักศึกษานิเทศศาสตร์ CDE</h3>
+            <div class="org" data-i18n="ep3_org">มหาวิทยาลัยกรุงเทพ — คณะนิเทศศาสตร์</div>
+            <p data-i18n="ep3_desc">สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (Creative Content Production and Digital Experience)</p>
+            <span class="gpa gpa-highlight">GPAX 3.29</span>
+          </div>
         </article>
       </div>
     </div>
@@ -818,20 +1054,62 @@
 
       <div class="contact-grid">
         <div class="callsheet" data-reveal="left">
+          <div class="cs-top-meta">
+            <span>FORM CDE-BU-08</span>
+            <span>PROD. ARCHIVE // VERIFIED</span>
+          </div>
           <h3>CALL SHEET</h3>
-          <div class="sub">PRODUCTION: "THE NEXT SCENE" • CREW CALL: ANYTIME ✦</div>
-          <div class="cs-row"><span class="k">TALENT / CREW</span><span class="v" data-i18n="cs_talent">ขนิษฐา วันไชย (อ้อม)</span><span></span></div>
-          <div class="cs-row"><span class="k">POSITION</span><span class="v" data-i18n="cs_pos">AI Content Creator • Video Editor • Production Assistant</span><span></span></div>
-          <div class="cs-row"><span class="k">PHONE</span><span class="v">061-528-7148</span><button class="cs-btn" type="button" data-copy="0615287148" data-msg="คัดลอกเบอร์โทรศัพท์แล้วค่ะ">COPY</button></div>
-          <div class="cs-row"><span class="k">EMAIL</span><span class="v">khanittha.wanc@bumail.net</span><button class="cs-btn" type="button" data-copy="khanittha.wanc@bumail.net" data-msg="คัดลอกอีเมลแล้วค่ะ">COPY</button></div>
-          <div class="cs-row"><span class="k">INSTAGRAM</span><span class="v">@khanittha_wanchai</span><a class="cs-btn" href="https://instagram.com/khanittha_wanchai" target="_blank" rel="noopener">OPEN ↗</a></div>
-          <div class="cs-row"><span class="k">TIKTOK</span><span class="v">@khanitthawanchai</span><a class="cs-btn" href="https://www.tiktok.com/@khanitthawanchai" target="_blank" rel="noopener">OPEN ↗</a></div>
-          <div class="cs-row"><span class="k">FACEBOOK</span><span class="v">Aom Mi</span><button class="cs-btn" type="button" data-copy="Aom Mi" data-msg="คัดลอกชื่อ Facebook แล้วค่ะ">COPY</button></div>
-          <div class="cs-row"><span class="k">LOCATION</span><span class="v" data-i18n="cs_loc">Bangkok University • กรุงเทพฯ / ปทุมธานี</span><span></span></div>
-          <div class="stamp">READY<br>TO<br>SHOOT</div>
+          <div class="sub">PRODUCTION: "THE NEXT SCENE" • CREW CALL: IMMEDIATE AVAILABILITY</div>
+          <div class="cs-row">
+            <span class="k">TALENT / CREW</span>
+            <span class="v" data-i18n="cs_talent">นางสาว ขนิษฐา วันไชย (อ้อม)</span>
+            <span class="cs-tag">LEAD</span>
+          </div>
+          <div class="cs-row">
+            <span class="k">POSITION</span>
+            <span class="v" data-i18n="cs_pos">AI Content Creator • Video Editor • Production Assistant</span>
+            <span></span>
+          </div>
+          <div class="cs-row">
+            <span class="k">PHONE</span>
+            <span class="v"><a href="tel:0615287148" class="cs-link">061-528-7148</a></span>
+            <div class="cs-actions">
+              <a href="tel:0615287148" class="cs-btn cs-btn-outline">CALL</a>
+              <button class="cs-btn" type="button" data-copy="0615287148" data-msg="คัดลอกเบอร์โทรศัพท์แล้วค่ะ">COPY</button>
+            </div>
+          </div>
+          <div class="cs-row">
+            <span class="k">EMAIL</span>
+            <span class="v"><a href="mailto:khanittha.wanc@bumail.net" class="cs-link">khanittha.wanc@bumail.net</a></span>
+            <button class="cs-btn" type="button" data-copy="khanittha.wanc@bumail.net" data-msg="คัดลอกอีเมลแล้วค่ะ">COPY</button>
+          </div>
+          <div class="cs-row">
+            <span class="k">INSTAGRAM</span>
+            <span class="v">@khanittha_wanchai</span>
+            <a class="cs-btn" href="https://instagram.com/khanittha_wanchai" target="_blank" rel="noopener">OPEN <svg width="11" height="11"><use href="#ico-ext"/></svg></a>
+          </div>
+          <div class="cs-row">
+            <span class="k">TIKTOK</span>
+            <span class="v">@khanitthawanchai</span>
+            <a class="cs-btn" href="https://www.tiktok.com/@khanitthawanchai" target="_blank" rel="noopener">OPEN <svg width="11" height="11"><use href="#ico-ext"/></svg></a>
+          </div>
+          <div class="cs-row">
+            <span class="k">FACEBOOK</span>
+            <span class="v">Aom Mi</span>
+            <button class="cs-btn" type="button" data-copy="Aom Mi" data-msg="คัดลอกชื่อ Facebook แล้วค่ะ">COPY</button>
+          </div>
+          <div class="cs-row">
+            <span class="k">LOCATION</span>
+            <span class="v" data-i18n="cs_loc">Bangkok University • กรุงเทพฯ / ปทุมธานี</span>
+            <span></span>
+          </div>
+          <div class="cs-footer">
+            <div class="cs-barcode" aria-hidden="true"></div>
+            <div class="stamp">READY<br>TO<br>SHOOT</div>
+          </div>
         </div>
 
-        <div data-reveal="right">
+        <div data-reveal="right" class="clapper-col">
           <svg class="clapper" id="clapper" viewBox="0 -80 380 410" role="button" aria-label="กดแคลปบอร์ดเพื่อ ACTION!">
             <rect x="10" y="80" width="360" height="240" rx="12" fill="#1a0f14"/>
             <rect x="10" y="80" width="360" height="240" rx="12" fill="none" stroke="#3b2530" stroke-width="2"/>
@@ -845,7 +1123,7 @@
             <text x="146" y="178" font-size="11" letter-spacing="3">SCENE</text><text class="chalk" x="164" y="210" font-size="26">08</text>
             <text x="266" y="178" font-size="11" letter-spacing="3">TAKE</text><text class="chalk" id="takeNo" x="284" y="210" font-size="26">01</text>
             <text x="26" y="238" font-size="11" letter-spacing="3">DIRECTOR</text><text class="chalk" x="26" y="262" font-size="20">Khanittha Wanchai (Aom)</text>
-            <text x="26" y="290" font-size="11" letter-spacing="3">DATE</text><text class="chalk" x="26" y="312" font-size="17">TODAY ✦</text>
+            <text x="26" y="290" font-size="11" letter-spacing="3">STATUS</text><text class="chalk" x="26" y="312" font-size="17">READY ON SET</text>
             <text x="206" y="290" font-size="11" letter-spacing="3">FACULTY</text><text class="chalk" x="206" y="312" font-size="17">COMM ARTS BU</text>
             <g>
               <rect x="10" y="44" width="360" height="36" fill="#F4E7D7"/>
@@ -857,7 +1135,7 @@
               <circle cx="22" cy="42" r="8" fill="#F6C46A"/>
             </g>
           </svg>
-          <div class="action-hint">▲ กดแคลปบอร์ดเพื่อ “ACTION!” ▲</div>
+          <div class="action-hint" data-i18n="clapper_hint">แตะที่แคลปบอร์ดเพื่อสั่ง “ACTION!”</div>
         </div>
       </div>
 
@@ -875,9 +1153,9 @@
       <div class="credits-roll">
         <div class="credits-inner">
           <div class="credit big"><small>STARRING</small><b>Khanittha Wanchai “Aom”</b></div>
-          <div class="credit"><small>DIRECTED, SHOT & EDITED BY</small><b>ขนิษฐา วันไชย</b></div>
+          <div class="credit"><small>DIRECTED, SHOT &amp; EDITED BY</small><b>ขนิษฐา วันไชย</b></div>
           <div class="credit"><small>FACULTY</small><b>Communication Arts, Bangkok University</b></div>
-          <div class="credit"><small>MAJOR</small><b>Creative Content Production & Digital Experience (CDE)</b></div>
+          <div class="credit"><small>MAJOR</small><b>Creative Content Production &amp; Digital Experience (CDE)</b></div>
           <div class="credit"><small>AI VISUALS</small><b>Midjourney • ChatGPT • Generative Video</b></div>
           <div class="credit"><small>POST-PRODUCTION</small><b>CapCut • Premiere Pro • Photoshop</b></div>
           <div class="credit"><small>SPECIAL THANKS</small><b>เพื่อน ๆ CDE • ครอบครัว • อาจารย์คณะนิเทศศาสตร์</b></div>
@@ -893,7 +1171,9 @@
 
   <!-- Lightbox & Video Modal & toast -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="ภาพขยาย">
-    <button class="lb-close" type="button" aria-label="ปิด">✕</button>
+    <button class="lb-close" type="button" aria-label="ปิด">
+      <svg width="20" height="20"><use href="#ico-close"/></svg>
+    </button>
     <img id="lbImg" src="" alt="ภาพขยาย">
     <div class="lb-cap" id="lbCap"></div>
   </div>
@@ -908,10 +1188,7 @@
           <span class="vm-meta-txt" id="vmMeta">NOW PLAYING</span>
         </div>
         <button class="vm-close" type="button" aria-label="ปิดวิดีโอ (Close)">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
+          <svg width="20" height="20"><use href="#ico-close"/></svg>
         </button>
       </div>
       <div class="vm-screen">
@@ -925,7 +1202,7 @@
         <div class="vm-actions">
           <a id="vmDriveLink" href="#" target="_blank" rel="noopener" class="vm-btn-drive">
             <span>เปิดไฟล์เต็ม</span>
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            <svg width="13" height="13"><use href="#ico-ext"/></svg>
           </a>
         </div>
       </div>
