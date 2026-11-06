@@ -31,10 +31,14 @@
       font-family: var(--font-th);
       background: var(--bg-page);
       color: var(--text);
-      font-size: 8.4pt;
-      line-height: 1.34;
+      font-size: 8.85pt;
+      line-height: 1.4;
       -webkit-font-smoothing: antialiased;
       padding: 16px 0 36px;
+    }
+    body[data-lang="en"] {
+      font-size: 8.45pt;
+      line-height: 1.34;
     }
 
     /* Bilingual display rules */
@@ -166,7 +170,7 @@
       background: var(--bg-card);
       box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
       border-radius: 4px;
-      padding: 9mm 13mm 7mm;
+      padding: 11mm 14mm 10mm;
       display: flex;
       flex-direction: column;
       position: relative;
@@ -178,10 +182,10 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 16px;
+      gap: 18px;
       border-bottom: 2px solid var(--primary);
-      padding-bottom: 7px;
-      margin-bottom: 7px;
+      padding-bottom: 9px;
+      margin-bottom: 9px;
     }
 
     .header-info {
@@ -197,7 +201,7 @@
     }
 
     .name-th {
-      font-size: 18pt;
+      font-size: 20pt;
       font-weight: 700;
       color: var(--primary);
       letter-spacing: -0.01em;
@@ -206,14 +210,14 @@
 
     .name-en {
       font-family: var(--font-mono);
-      font-size: 9.5pt;
+      font-size: 10pt;
       color: var(--text-light);
       font-weight: 600;
       letter-spacing: 0.02em;
     }
 
     .title-role {
-      font-size: 8.8pt;
+      font-size: 9.2pt;
       font-weight: 600;
       color: var(--accent);
       margin-bottom: 4px;
@@ -223,8 +227,8 @@
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(2, auto);
-      gap: 2px 18px;
-      font-size: 8pt;
+      gap: 3px 20px;
+      font-size: 8.3pt;
       color: var(--text-muted);
       margin-top: 3px;
     }
@@ -249,8 +253,8 @@
 
     /* Formal Photo Frame */
     .photo-frame {
-      width: 78px;
-      height: 102px;
+      width: 86px;
+      height: 112px;
       border: 1px solid var(--border);
       border-radius: 4px;
       overflow: hidden;
@@ -268,34 +272,34 @@
 
     /* Section Styles */
     .section {
-      margin-bottom: 6px;
+      margin-bottom: 8.5px;
       page-break-inside: avoid;
     }
 
     .sec-title {
-      font-size: 8.8pt;
+      font-size: 9.3pt;
       font-weight: 700;
       color: var(--primary);
       text-transform: uppercase;
       letter-spacing: 0.05em;
       border-bottom: 1px solid var(--border);
       padding-bottom: 2px;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
       display: flex;
       align-items: center;
       gap: 5px;
     }
     .sec-title-bar {
       width: 3px;
-      height: 11px;
+      height: 12px;
       background: var(--primary);
       border-radius: 1px;
     }
 
     p.summary {
-      font-size: 8.2pt;
+      font-size: 8.6pt;
       color: #1e293b;
-      line-height: 1.35;
+      line-height: 1.42;
       text-align: justify;
     }
 
@@ -303,12 +307,12 @@
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4px 16px;
+      gap: 5px 18px;
     }
 
     /* Items (Timeline / Experience) */
     .item {
-      margin-bottom: 4px;
+      margin-bottom: 5.5px;
       page-break-inside: avoid;
     }
     .item:last-child {
@@ -318,17 +322,17 @@
     /* Education with logo */
     .item-edu {
       display: flex;
-      gap: 8px;
+      gap: 10px;
       align-items: flex-start;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
       page-break-inside: avoid;
     }
     .item-edu:last-child {
       margin-bottom: 0;
     }
     .edu-logo-wrap {
-      width: 28px;
-      height: 28px;
+      width: 30px;
+      height: 30px;
       border-radius: 5px;
       background: #ffffff;
       border: 1px solid var(--border-light);
@@ -358,13 +362,13 @@
 
     .item-title {
       font-weight: 700;
-      font-size: 8.6pt;
+      font-size: 8.9pt;
       color: var(--text);
     }
 
     .item-date {
       font-family: var(--font-mono);
-      font-size: 7.6pt;
+      font-size: 7.8pt;
       color: var(--primary);
       font-weight: 600;
       flex-shrink: 0;
@@ -372,16 +376,16 @@
     }
 
     .item-subtitle {
-      font-size: 8.1pt;
+      font-size: 8.4pt;
       color: var(--accent);
       font-weight: 500;
-      margin-bottom: 1px;
+      margin-bottom: 1.5px;
     }
 
     .item-desc {
-      font-size: 7.9pt;
+      font-size: 8.2pt;
       color: var(--text-muted);
-      line-height: 1.3;
+      line-height: 1.36;
     }
     .item-desc ul {
       margin: 2px 0 0 16px;
@@ -393,7 +397,7 @@
 
     .badge-pill {
       display: inline-block;
-      font-size: 6.9pt;
+      font-size: 7pt;
       font-weight: 600;
       background: #eff6ff;
       color: var(--accent);
@@ -406,17 +410,17 @@
 
     /* Skills Table / Category */
     .skill-category {
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
     .skill-cat-title {
       font-weight: 600;
-      font-size: 8.1pt;
+      font-size: 8.4pt;
       color: var(--text);
       display: inline-block;
-      min-width: 120px;
+      min-width: 125px;
     }
     .skill-cat-items {
-      font-size: 7.9pt;
+      font-size: 8.2pt;
       color: var(--text-muted);
     }
 
@@ -456,13 +460,17 @@
     @media print {
       @page {
         size: A4 portrait;
-        margin: 6mm 10mm 6mm 10mm;
+        margin: 7mm 12mm 7mm 12mm;
       }
       body {
         background: #ffffff;
         padding: 0;
-        font-size: 8.2pt;
-        line-height: 1.32;
+        font-size: 9.2pt;
+        line-height: 1.47;
+      }
+      body[data-lang="en"] {
+        font-size: 8.5pt;
+        line-height: 1.34;
       }
       body[data-lang="en"] .l-th { display: none !important; }
       body[data-lang="th"] .l-en { display: none !important; }
@@ -483,73 +491,74 @@
       }
       .header {
         border-bottom: 2px solid var(--primary);
-        padding-bottom: 6px;
-        margin-bottom: 6px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        gap: 16px;
       }
-      .name-th { font-size: 17pt; }
-      .name-en { font-size: 9.5pt; }
-      .title-role { font-size: 8.6pt; margin-bottom: 3px; }
-      .contact-grid { gap: 2px 14px; font-size: 7.8pt; }
+      .name-th { font-size: 20pt; }
+      .name-en { font-size: 10pt; }
+      .title-role { font-size: 9.2pt; margin-bottom: 3.5px; }
+      .contact-grid { gap: 3px 18px; font-size: 8.3pt; }
       .photo-frame {
-        width: 78px;
-        height: 100px;
+        width: 88px;
+        height: 114px;
         border: 1px solid #cbd5e1;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
       .section {
-        margin-bottom: 5px;
+        margin-bottom: 11px;
         page-break-inside: avoid;
       }
       .sec-title {
-        font-size: 8.8pt;
-        padding-bottom: 1px;
-        margin-bottom: 3px;
+        font-size: 9.3pt;
+        padding-bottom: 1.5px;
+        margin-bottom: 4.5px;
       }
       p.summary {
-        font-size: 8.1pt;
-        line-height: 1.34;
+        font-size: 8.8pt;
+        line-height: 1.43;
       }
       .item {
-        margin-bottom: 4px;
+        margin-bottom: 6.5px;
         page-break-inside: avoid;
       }
       .item-edu {
-        gap: 8px;
-        margin-bottom: 4px;
+        gap: 10px;
+        margin-bottom: 5px;
         page-break-inside: avoid;
       }
       .edu-logo-wrap {
-        width: 26px;
-        height: 26px;
+        width: 28px;
+        height: 28px;
         padding: 2px;
       }
       .item-title {
-        font-size: 8.5pt;
+        font-size: 8.9pt;
       }
       .item-subtitle {
-        font-size: 8pt;
+        font-size: 8.4pt;
         margin-bottom: 1px;
       }
       .item-desc {
-        font-size: 7.8pt;
-        line-height: 1.28;
+        font-size: 8.35pt;
+        line-height: 1.37;
       }
       .item-date {
-        font-size: 7.5pt;
+        font-size: 7.8pt;
       }
       .badge-pill {
-        font-size: 6.8pt;
+        font-size: 7pt;
       }
       .skill-category {
-        margin-bottom: 2px;
+        margin-bottom: 3.5px;
       }
       .skill-cat-title {
-        font-size: 8pt;
-        min-width: 120px;
+        font-size: 8.4pt;
+        min-width: 125px;
       }
       .skill-cat-items {
-        font-size: 7.8pt;
+        font-size: 8.2pt;
       }
     }
   </style>
