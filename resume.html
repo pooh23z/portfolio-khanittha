@@ -31,10 +31,10 @@
       font-family: var(--font-th);
       background: var(--bg-page);
       color: var(--text);
-      font-size: 9.3pt;
-      line-height: 1.45;
+      font-size: 8.4pt;
+      line-height: 1.34;
       -webkit-font-smoothing: antialiased;
-      padding: 24px 0 44px;
+      padding: 16px 0 36px;
     }
 
     /* Bilingual display rules */
@@ -44,31 +44,41 @@
     /* Actions Bar */
     .actions-bar {
       max-width: 210mm;
-      margin: 0 auto 16px;
+      margin: 0 auto 12px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0 4px;
-      gap: 12px;
+      gap: 10px;
+      flex-wrap: wrap;
     }
 
-    .actions-top {
-      display: contents;
+    .actions-left, .actions-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-act {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      border: 1px solid transparent;
     }
 
     .btn-back {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
       color: var(--text-muted);
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 500;
-      padding: 7px 14px;
-      border-radius: 6px;
       background: var(--bg-card);
-      border: 1px solid var(--border);
-      transition: all 0.2s ease;
+      border-color: var(--border);
     }
     .btn-back:hover {
       color: var(--primary);
@@ -76,24 +86,59 @@
       background: #ffffff;
     }
 
+    .btn-dl-pdf {
+      background: #eff6ff;
+      color: var(--primary);
+      border-color: #bfdbfe;
+      font-weight: 600;
+    }
+    .btn-dl-pdf:hover {
+      background: #dbeafe;
+      border-color: #93c5fd;
+      transform: translateY(-1px);
+    }
+
+    .btn-dl-img {
+      background: #fef3c7;
+      color: #92400e;
+      border-color: #fde68a;
+      font-weight: 600;
+    }
+    .btn-dl-img:hover {
+      background: #fde68a;
+      transform: translateY(-1px);
+    }
+
+    .btn-print {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary-dark);
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(15, 41, 74, 0.15);
+    }
+    .btn-print:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
     /* Language Switcher */
     .lang-switch {
       display: inline-flex;
       background: #e2e8f0;
-      padding: 3px;
-      border-radius: 8px;
+      padding: 2px;
+      border-radius: 7px;
       border: 1px solid var(--border);
       gap: 2px;
     }
     .lang-btn {
       border: none;
       background: transparent;
-      padding: 4px 14px;
-      min-width: 42px;
-      border-radius: 6px;
+      padding: 4px 12px;
+      min-width: 38px;
+      border-radius: 5px;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: .08em;
+      letter-spacing: .06em;
       font-family: var(--font-mono);
       color: var(--text-muted);
       cursor: pointer;
@@ -108,39 +153,20 @@
     .lang-btn.active {
       background: #ffffff;
       color: var(--primary);
-      box-shadow: 0 1px 4px rgba(15, 23, 42, 0.12);
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12);
     }
 
-    .btn-print {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      background: var(--primary);
-      color: #ffffff;
-      padding: 8px 18px;
-      border-radius: 6px;
-      font-size: 13px;
-      font-weight: 600;
-      border: 1px solid var(--primary-dark);
-      cursor: pointer;
-      box-shadow: 0 2px 6px rgba(15, 41, 74, 0.2);
-      transition: all 0.2s ease;
-    }
-    .btn-print:hover {
-      background: var(--primary-dark);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 10px rgba(15, 41, 74, 0.25);
-    }
-
-    /* A4 Page */
+    /* A4 Page container */
     .sheet {
       width: 210mm;
+      max-width: 100%;
       min-height: 297mm;
+      box-sizing: border-box;
       margin: 0 auto;
       background: var(--bg-card);
       box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
       border-radius: 4px;
-      padding: 16mm 18mm 14mm;
+      padding: 9mm 13mm 7mm;
       display: flex;
       flex-direction: column;
       position: relative;
@@ -152,10 +178,10 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 20px;
+      gap: 16px;
       border-bottom: 2px solid var(--primary);
-      padding-bottom: 14px;
-      margin-bottom: 12px;
+      padding-bottom: 7px;
+      margin-bottom: 7px;
     }
 
     .header-info {
@@ -165,13 +191,13 @@
     .name-row {
       display: flex;
       align-items: baseline;
-      gap: 12px;
-      margin-bottom: 3px;
+      gap: 10px;
+      margin-bottom: 2px;
       flex-wrap: wrap;
     }
 
     .name-th {
-      font-size: 21pt;
+      font-size: 18pt;
       font-weight: 700;
       color: var(--primary);
       letter-spacing: -0.01em;
@@ -180,32 +206,33 @@
 
     .name-en {
       font-family: var(--font-mono);
-      font-size: 11pt;
+      font-size: 9.5pt;
       color: var(--text-light);
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: 0.02em;
     }
 
     .title-role {
-      font-size: 10.2pt;
+      font-size: 8.8pt;
       font-weight: 600;
       color: var(--accent);
-      margin-bottom: 8px;
+      margin-bottom: 4px;
+      line-height: 1.25;
     }
 
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(2, auto);
-      gap: 4px 22px;
-      font-size: 8.6pt;
+      gap: 2px 18px;
+      font-size: 8pt;
       color: var(--text-muted);
-      margin-top: 6px;
+      margin-top: 3px;
     }
 
     .contact-item {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
     }
     .contact-item svg {
       flex-shrink: 0;
@@ -220,10 +247,10 @@
       text-decoration: underline;
     }
 
-    /* Formal Photo Frame (Formal 1.5 - 2 inches) */
+    /* Formal Photo Frame */
     .photo-frame {
-      width: 96px;
-      height: 124px;
+      width: 78px;
+      height: 102px;
       border: 1px solid var(--border);
       border-radius: 4px;
       overflow: hidden;
@@ -241,34 +268,34 @@
 
     /* Section Styles */
     .section {
-      margin-bottom: 11px;
+      margin-bottom: 6px;
       page-break-inside: avoid;
     }
 
     .sec-title {
-      font-size: 10pt;
+      font-size: 8.8pt;
       font-weight: 700;
       color: var(--primary);
       text-transform: uppercase;
       letter-spacing: 0.05em;
       border-bottom: 1px solid var(--border);
-      padding-bottom: 3px;
-      margin-bottom: 7px;
+      padding-bottom: 2px;
+      margin-bottom: 4px;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
     }
     .sec-title-bar {
-      width: 4px;
-      height: 12px;
+      width: 3px;
+      height: 11px;
       background: var(--primary);
       border-radius: 1px;
     }
 
     p.summary {
-      font-size: 9pt;
+      font-size: 8.2pt;
       color: #1e293b;
-      line-height: 1.5;
+      line-height: 1.35;
       text-align: justify;
     }
 
@@ -276,12 +303,12 @@
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 6px 18px;
+      gap: 4px 16px;
     }
 
     /* Items (Timeline / Experience) */
     .item {
-      margin-bottom: 7px;
+      margin-bottom: 4px;
       page-break-inside: avoid;
     }
     .item:last-child {
@@ -291,25 +318,25 @@
     /* Education with logo */
     .item-edu {
       display: flex;
-      gap: 12px;
+      gap: 8px;
       align-items: flex-start;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
       page-break-inside: avoid;
     }
     .item-edu:last-child {
       margin-bottom: 0;
     }
     .edu-logo-wrap {
-      width: 36px;
-      height: 36px;
-      border-radius: 6px;
+      width: 28px;
+      height: 28px;
+      border-radius: 5px;
       background: #ffffff;
       border: 1px solid var(--border-light);
       display: grid;
       place-items: center;
       flex-shrink: 0;
-      padding: 3px;
-      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+      padding: 2px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
     }
     .edu-logo {
       max-width: 100%;
@@ -331,30 +358,30 @@
 
     .item-title {
       font-weight: 700;
-      font-size: 9.3pt;
+      font-size: 8.6pt;
       color: var(--text);
     }
 
     .item-date {
       font-family: var(--font-mono);
-      font-size: 8.2pt;
+      font-size: 7.6pt;
       color: var(--primary);
       font-weight: 600;
       flex-shrink: 0;
-      margin-left: 12px;
+      margin-left: 8px;
     }
 
     .item-subtitle {
-      font-size: 8.8pt;
+      font-size: 8.1pt;
       color: var(--accent);
       font-weight: 500;
-      margin-bottom: 2px;
+      margin-bottom: 1px;
     }
 
     .item-desc {
-      font-size: 8.6pt;
+      font-size: 7.9pt;
       color: var(--text-muted);
-      line-height: 1.42;
+      line-height: 1.3;
     }
     .item-desc ul {
       margin: 2px 0 0 16px;
@@ -366,30 +393,30 @@
 
     .badge-pill {
       display: inline-block;
-      font-size: 7.4pt;
+      font-size: 6.9pt;
       font-weight: 600;
       background: #eff6ff;
       color: var(--accent);
-      padding: 0 6px;
+      padding: 0 5px;
       border-radius: 3px;
-      margin-left: 6px;
+      margin-left: 5px;
       border: 1px solid #bfdbfe;
       vertical-align: 1px;
     }
 
     /* Skills Table / Category */
     .skill-category {
-      margin-bottom: 5px;
+      margin-bottom: 2px;
     }
     .skill-cat-title {
       font-weight: 600;
-      font-size: 8.8pt;
+      font-size: 8.1pt;
       color: var(--text);
       display: inline-block;
-      min-width: 140px;
+      min-width: 120px;
     }
     .skill-cat-items {
-      font-size: 8.6pt;
+      font-size: 7.9pt;
       color: var(--text-muted);
     }
 
@@ -403,52 +430,25 @@
         gap: 8px;
         margin-bottom: 12px;
       }
-      .actions-top {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
+      .actions-left, .actions-right {
         width: 100%;
+        justify-content: space-between;
       }
-      .btn-back, .btn-print {
-        justify-content: center;
-        padding: 9px 8px;
-        font-size: 11.5px;
-        text-align: center;
-        width: 100%;
-        white-space: nowrap;
-      }
-      .lang-switch {
-        display: flex;
-        width: 100%;
-      }
-      .lang-btn {
+      .btn-act {
         flex: 1;
         justify-content: center;
-        padding: 7px 10px;
-        font-size: 12px;
+        padding: 8px 6px;
+        font-size: 11px;
       }
-      .sheet { width: 100%; min-height: auto; padding: 18px 14px; border-radius: 6px; }
-      .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 12px;
-      }
-      .header-info { min-width: 0; flex: 1; }
-      .name-row { gap: 6px; }
-      .name-th { font-size: 17pt; line-height: 1.15; }
-      .name-en { font-size: 9.5pt; }
-      .title-role { font-size: 9.2pt; }
-      .photo-frame {
-        width: 82px;
-        height: 106px;
-        flex-shrink: 0;
-        margin: 0;
-      }
-      .contact-grid { grid-template-columns: 1fr; gap: 4px; font-size: 8.2pt; }
-      .grid-2 { grid-template-columns: 1fr; gap: 6px; }
-      .item-head { flex-wrap: wrap; gap: 2px 8px; }
+      .sheet { width: 100%; height: auto; max-height: none; min-height: auto; padding: 16px 12px; }
+      .header { gap: 10px; }
+      .name-th { font-size: 16pt; }
+      .name-en { font-size: 9pt; }
+      .title-role { font-size: 8.5pt; }
+      .photo-frame { width: 72px; height: 94px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 3px; font-size: 7.8pt; }
+      .grid-2 { grid-template-columns: 1fr; gap: 5px; }
+      .item-head { flex-wrap: wrap; gap: 1px 6px; }
       .item-date { margin-left: 0; }
     }
 
@@ -456,13 +456,13 @@
     @media print {
       @page {
         size: A4 portrait;
-        margin: 10mm 14mm 10mm 14mm;
+        margin: 6mm 10mm 6mm 10mm;
       }
       body {
         background: #ffffff;
         padding: 0;
-        font-size: 9pt;
-        line-height: 1.4;
+        font-size: 8.2pt;
+        line-height: 1.32;
       }
       body[data-lang="en"] .l-th { display: none !important; }
       body[data-lang="th"] .l-en { display: none !important; }
@@ -476,20 +476,80 @@
         margin: 0;
         padding: 0;
         width: 100%;
+        height: auto;
+        max-height: none;
         min-height: auto;
+        overflow: visible;
       }
       .header {
         border-bottom: 2px solid var(--primary);
-        padding-bottom: 10px;
-        margin-bottom: 10px;
+        padding-bottom: 6px;
+        margin-bottom: 6px;
       }
-      .section {
-        margin-bottom: 9px;
-      }
+      .name-th { font-size: 17pt; }
+      .name-en { font-size: 9.5pt; }
+      .title-role { font-size: 8.6pt; margin-bottom: 3px; }
+      .contact-grid { gap: 2px 14px; font-size: 7.8pt; }
       .photo-frame {
+        width: 78px;
+        height: 100px;
         border: 1px solid #cbd5e1;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
+      }
+      .section {
+        margin-bottom: 5px;
+        page-break-inside: avoid;
+      }
+      .sec-title {
+        font-size: 8.8pt;
+        padding-bottom: 1px;
+        margin-bottom: 3px;
+      }
+      p.summary {
+        font-size: 8.1pt;
+        line-height: 1.34;
+      }
+      .item {
+        margin-bottom: 4px;
+        page-break-inside: avoid;
+      }
+      .item-edu {
+        gap: 8px;
+        margin-bottom: 4px;
+        page-break-inside: avoid;
+      }
+      .edu-logo-wrap {
+        width: 26px;
+        height: 26px;
+        padding: 2px;
+      }
+      .item-title {
+        font-size: 8.5pt;
+      }
+      .item-subtitle {
+        font-size: 8pt;
+        margin-bottom: 1px;
+      }
+      .item-desc {
+        font-size: 7.8pt;
+        line-height: 1.28;
+      }
+      .item-date {
+        font-size: 7.5pt;
+      }
+      .badge-pill {
+        font-size: 6.8pt;
+      }
+      .skill-category {
+        margin-bottom: 2px;
+      }
+      .skill-cat-title {
+        font-size: 8pt;
+        min-width: 120px;
+      }
+      .skill-cat-items {
+        font-size: 7.8pt;
       }
     }
   </style>
@@ -499,24 +559,39 @@
 
   <!-- Top action bar -->
   <aside class="actions-bar" aria-label="เครื่องมือ / Actions">
-    <div class="actions-top">
-      <a href="index.html" class="btn-back">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-        <span class="l-th">กลับสู่หน้าหลัก Portfolio</span>
+    <div class="actions-left">
+      <a href="index.html" class="btn-act btn-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span class="l-th">กลับสู่ Portfolio</span>
         <span class="l-en">Back to Portfolio</span>
       </a>
 
-      <button class="btn-print" onclick="window.print()" type="button">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-        <span class="l-th">พิมพ์เอกสาร / บันทึกเป็น PDF</span>
-        <span class="l-en">Print / Save as PDF</span>
-      </button>
+      <!-- Quick Download Buttons -->
+      <a href="assets/downloads/Resume_Khanittha_Wanchai_TH.pdf" download="Resume_Khanittha_Wanchai_TH.pdf" class="btn-act btn-dl-pdf" id="btnDlPdf" title="ดาวน์โหลดไฟล์ PDF ขนาด A4">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><polyline points="9 15 12 18 15 15"></polyline></svg>
+        <span class="l-th">ดาวน์โหลด PDF</span>
+        <span class="l-en">Download PDF</span>
+      </a>
+
+      <a href="assets/downloads/Resume_Khanittha_Wanchai_TH.png" download="Resume_Khanittha_Wanchai_TH.png" class="btn-act btn-dl-img" id="btnDlImg" title="ดาวน์โหลดรูปภาพ PNG ความละเอียดสูง 300 DPI">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+        <span class="l-th">ดาวน์โหลดรูปภาพ (PNG)</span>
+        <span class="l-en">Download Image (PNG)</span>
+      </a>
     </div>
 
-    <!-- Language Selector Pill -->
-    <div class="lang-switch" role="group" aria-label="เลือกภาษา / Choose Language">
-      <button type="button" class="lang-btn active" data-lang="th" id="btnTh">TH</button>
-      <button type="button" class="lang-btn" data-lang="en" id="btnEn">EN</button>
+    <div class="actions-right">
+      <button class="btn-act btn-print" onclick="window.print()" type="button" title="พิมพ์หน้านี้หรือบันทึก PDF ทันที">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        <span class="l-th">พิมพ์ / Print</span>
+        <span class="l-en">Print</span>
+      </button>
+
+      <!-- Language Selector Pill -->
+      <div class="lang-switch" role="group" aria-label="เลือกภาษา / Choose Language">
+        <button type="button" class="lang-btn active" data-lang="th" id="btnTh">TH</button>
+        <button type="button" class="lang-btn" data-lang="en" id="btnEn">EN</button>
+      </div>
     </div>
   </aside>
 
@@ -873,6 +948,8 @@
     (function() {
       const btnTh = document.getElementById('btnTh');
       const btnEn = document.getElementById('btnEn');
+      const btnDlPdf = document.getElementById('btnDlPdf');
+      const btnDlImg = document.getElementById('btnDlImg');
 
       function setLang(lang) {
         const valid = lang === 'en' ? 'en' : 'th';
@@ -886,6 +963,24 @@
         if (btnTh && btnEn) {
           btnTh.classList.toggle('active', valid === 'th');
           btnEn.classList.toggle('active', valid === 'en');
+        }
+
+        if (btnDlPdf) {
+          btnDlPdf.href = valid === 'en'
+            ? 'assets/downloads/Resume_Khanittha_Wanchai_EN.pdf'
+            : 'assets/downloads/Resume_Khanittha_Wanchai_TH.pdf';
+          btnDlPdf.setAttribute('download', valid === 'en'
+            ? 'Resume_Khanittha_Wanchai_EN.pdf'
+            : 'Resume_Khanittha_Wanchai_TH.pdf');
+        }
+
+        if (btnDlImg) {
+          btnDlImg.href = valid === 'en'
+            ? 'assets/downloads/Resume_Khanittha_Wanchai_EN.png'
+            : 'assets/downloads/Resume_Khanittha_Wanchai_TH.png';
+          btnDlImg.setAttribute('download', valid === 'en'
+            ? 'Resume_Khanittha_Wanchai_EN.png'
+            : 'Resume_Khanittha_Wanchai_TH.png');
         }
 
         document.title = valid === 'en'

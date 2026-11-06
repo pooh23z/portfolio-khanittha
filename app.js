@@ -219,8 +219,11 @@
       clapper_hint: 'คลิกที่สเลทเพื่อสั่ง ACTION!',
 
       cv_title: 'ต้องการเอกสารประวัติและผลงานฉบับย่อ?',
-      cv_desc: 'เปิด Resume / CV ฉบับทางการพร้อมพิมพ์ หรือบันทึกเป็น PDF ได้ทันที',
+      cv_desc: 'เปิด Resume / CV ฉบับหน้าเดียวจบ (1-Page A4) พร้อมพิมพ์ หรือดาวน์โหลดเป็นไฟล์ PDF และรูปภาพได้ทันที',
       cv_btn: 'เปิดดู Resume / CV',
+      cv_btn_text: 'เปิดดู Resume / CV (A4)',
+      cv_dl_pdf: 'ดาวน์โหลด PDF (A4)',
+      cv_dl_img: 'ดาวน์โหลดรูปภาพ (PNG)',
 
       footer_copyright: '© 2023–2026 Khanittha Wanchai • Creative Content Production and Digital Experience (CDE) • School of Communication Arts, Bangkok University'
     },
@@ -413,8 +416,11 @@
       clapper_hint: 'Click the clapperboard to call ACTION!',
 
       cv_title: 'Looking for a concise CV / Resume?',
-      cv_desc: 'View the print-ready Resume / CV or download it as PDF.',
+      cv_desc: 'View the official 1-page A4 print-ready Resume / CV or download as PDF & PNG.',
       cv_btn: 'View Resume / CV',
+      cv_btn_text: 'Open Resume / CV (A4)',
+      cv_dl_pdf: 'Download PDF (A4)',
+      cv_dl_img: 'Download Image (PNG)',
 
       footer_copyright: '© 2023–2026 Khanittha Wanchai • Creative Content Production and Digital Experience (CDE) • School of Communication Arts, Bangkok University'
     }
@@ -471,6 +477,25 @@
     roles = rolesMap[currentLang] || rolesMap.th;
     if (typeof typeEl !== 'undefined' && typeEl && roles && roles.length) {
       typeEl.textContent = roles[0];
+    }
+
+    const cvPdf = $('#cvDlPdf');
+    const cvImg = $('#cvDlImg');
+    if (cvPdf) {
+      cvPdf.href = currentLang === 'en'
+        ? 'assets/downloads/Resume_Khanittha_Wanchai_EN.pdf'
+        : 'assets/downloads/Resume_Khanittha_Wanchai_TH.pdf';
+      cvPdf.setAttribute('download', currentLang === 'en'
+        ? 'Resume_Khanittha_Wanchai_EN.pdf'
+        : 'Resume_Khanittha_Wanchai_TH.pdf');
+    }
+    if (cvImg) {
+      cvImg.href = currentLang === 'en'
+        ? 'assets/downloads/Resume_Khanittha_Wanchai_EN.png'
+        : 'assets/downloads/Resume_Khanittha_Wanchai_TH.png';
+      cvImg.setAttribute('download', currentLang === 'en'
+        ? 'Resume_Khanittha_Wanchai_EN.png'
+        : 'Resume_Khanittha_Wanchai_TH.png');
     }
 
     titles = lookbookTitlesMap[currentLang] || lookbookTitlesMap.th;
