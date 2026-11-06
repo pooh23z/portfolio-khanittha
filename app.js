@@ -186,11 +186,11 @@
 
       awards_subtitle: 'รางวัลแห่งความภาคภูมิใจจากเวทีประกวดระดับประเทศ (คลิกเกียรติบัตรเพื่อขยาย)',
       award1_prize: 'เงินรางวัล <b>10,000</b> บาท',
-      award1_title: 'Award of Excellence — Huawei Hub & First Generate Campaign',
-      award1_desc: 'ชนะเลิศการประกวดและเวิร์กช็อป "HUAWEI HUB" และ "HUAWEI FIRST GENERATE CAMPAIGN" ในฐานะทีมที่นำเสนอผลงานได้ดีที่สุด',
+      award1_title: 'Award of Excellence — Huawei Hub Strategic Campaign Project 2025',
+      award1_desc: 'ชนะเลิศอันดับ 1 (Best Strategic Project) การประกวดแผนงานและเวิร์กช็อป HUAWEI HUB by UFicon ร่วมกับ คณะนิเทศศาสตร์ มหาวิทยาลัยกรุงเทพ (29 พ.ย. 2568)',
       award2_prize: 'รางวัล<b>ชมเชย</b> ระดับประเทศ',
       award2_title: 'Honorable Mention — Airdog VDO Contest 2024',
-      award2_desc: 'รางวัลชมเชยการประกวดผลิตวิดีโอเครื่องฟอกอากาศ AIRDOG บนโซเชียลมีเดีย โดย NAPA SOLUTIONS CO., LTD.',
+      award2_desc: 'รางวัลชมเชยการประกวดผลิตวิดีโอเครื่องฟอกอากาศ AIRDOG บนโซเชียลมีเดีย โดย NAPA SOLUTIONS CO., LTD. (ปี 2567)',
       cert_zoom: 'คลิกเพื่อขยาย',
 
       lookbook_subtitle: 'ม่านเปิดแล้ว เลื่อนดูเล่มพอร์ตฉบับจริงทั้ง 11 หน้า — คลิกจอเพื่อดูเต็มจอ หรือใช้ปุ่มลูกศรซ้าย-ขวา',
@@ -199,18 +199,18 @@
       lb_fullscreen: 'ดูเต็มจอ',
 
       journey_subtitle: 'เส้นทางการเรียนรู้และประสบการณ์ที่สั่งสมมาจนถึงปัจจุบัน',
-      ep1_when: 'อนุบาล 1 – มัธยมศึกษาปีที่ 3',
+      ep1_when: '2551 – 2563 • อนุบาล 1 – มัธยมศึกษาปีที่ 3',
       ep1_title: 'การศึกษาขั้นพื้นฐาน & จุดเริ่มต้นความคิดสร้างสรรค์',
-      ep1_org: 'โรงเรียนบ้านนาผาง',
-      ep1_desc: 'ปูพื้นฐานการเรียนรู้ การทำกิจกรรมร่วมกับผู้อื่น และค้นพบความสนใจด้านการสื่อสารและการแสดงออก',
-      ep2_when: 'มัธยมศึกษาปีที่ 4 – 6',
+      ep1_org: 'โรงเรียนบ้านนาผาง (วิบูลยาราษฎร์สามัคคี)',
+      ep1_desc: 'ปูพื้นฐานการเรียนรู้ การทำกิจกรรมร่วมกับผู้อื่น และค้นพบความสนใจด้านการสื่อสารและการแสดงออก (เกรดเฉลี่ย 3.22)',
+      ep2_when: '2563 – 2566 • มัธยมศึกษาปีที่ 4 – 6',
       ep2_title: 'มัธยมปลาย — เริ่มจับกล้อง ตัดต่อ และกิจกรรมโรงเรียน',
       ep2_org: 'โรงเรียนปทุมราชวงศา',
-      ep2_desc: 'ฝึกฝนการถ่ายภาพ การตัดต่อวิดีโอเบื้องต้น และการทำงานเป็นทีมผ่านกิจกรรมสื่อสารของโรงเรียน',
-      ep3_when: 'ระดับปริญญาตรี • ปัจจุบัน',
+      ep2_desc: 'ฝึกฝนการถ่ายภาพ การตัดต่อวิดีโอเบื้องต้น และการทำงานเป็นทีมผ่านกิจกรรมสื่อสารของโรงเรียน (เกรดเฉลี่ย 2.51)',
+      ep3_when: '2566 – ปัจจุบัน • ปริญญาตรี (กำลังศึกษาชั้นปีที่ 3)',
       ep3_title: 'คณะนิเทศศาสตร์ — สาขาการผลิตเนื้อหาสร้างสรรค์และประสบการณ์ดิจิทัล (CDE)',
       ep3_org: 'มหาวิทยาลัยกรุงเทพ (Bangkok University)',
-      ep3_desc: 'เรียนรู้ครบวงจรทั้งการคิดคอนเทนต์ เขียนบท ถ่ายทำ ผู้ประกาศข่าว ตัดต่อ และ Generative AI พร้อมคว้ารางวัลชนะเลิศ Huawei Hub',
+      ep3_desc: 'รหัสนักศึกษา 166... เรียนรู้ครบวงจรทั้งการคิดคอนเทนต์ เขียนบท ถ่ายทำ ผู้ประกาศข่าว ตัดต่อ และ Generative AI พร้อมคว้ารางวัลชนะเลิศ Huawei Hub (เกรดเฉลี่ยสะสม 3.29)',
 
       contact_subtitle: 'พร้อมสำหรับการฝึกงาน และการร่วมงานในทุกโปรเจกต์สร้างสรรค์ค่ะ',
       cs_talent: 'นางสาว ขนิษฐา วันไชย (อ้อม)',
@@ -222,7 +222,7 @@
       cv_desc: 'เปิด Resume / CV ฉบับทางการพร้อมพิมพ์ หรือบันทึกเป็น PDF ได้ทันที',
       cv_btn: 'เปิดดู Resume / CV',
 
-      footer_copyright: '© 2024–2026 Khanittha Wanchai • Creative Content Production and Digital Experience (CDE) • School of Communication Arts, Bangkok University'
+      footer_copyright: '© 2023–2026 Khanittha Wanchai • Creative Content Production and Digital Experience (CDE) • School of Communication Arts, Bangkok University'
     },
     en: {
       nav_about: 'Director',
@@ -380,11 +380,11 @@
 
       awards_subtitle: 'National competition honors and achievements (click certificates to zoom).',
       award1_prize: 'Prize: <b>10,000</b> THB',
-      award1_title: 'Award of Excellence — Huawei Hub & First Generate Campaign',
-      award1_desc: '1st Place Winner in the HUAWEI HUB & FIRST GENERATE CAMPAIGN workshop and pitching competition for top creative presentation.',
+      award1_title: 'Award of Excellence — Huawei Hub Strategic Campaign Project 2025',
+      award1_desc: '1st Place Winner (Best Strategic Project) in the HUAWEI HUB by UFicon strategic campaign pitching with BU School of Communication Arts (Nov 2025).',
       award2_prize: 'National <b>Honorable Mention</b>',
       award2_title: 'Honorable Mention — Airdog VDO Contest 2024',
-      award2_desc: 'National Honorable Mention in the Airdog Air Purifier short-video contest by NAPA SOLUTIONS CO., LTD.',
+      award2_desc: 'National Honorable Mention in the Airdog Air Purifier short-video contest by NAPA SOLUTIONS CO., LTD. (2024).',
       cert_zoom: 'Click to Zoom',
 
       lookbook_subtitle: 'Curtain rises! Flip through all 11 pages of the official portfolio lookbook — click to view fullscreen.',
@@ -393,18 +393,18 @@
       lb_fullscreen: 'Fullscreen',
 
       journey_subtitle: 'Learning milestones and creative journey from early years to university.',
-      ep1_when: 'Kindergarten 1 – Grade 9',
+      ep1_when: '2008 – 2020 • Kindergarten 1 – Grade 9',
       ep1_title: 'Primary & Lower Secondary Education',
       ep1_org: 'Ban Naphang School',
-      ep1_desc: 'Built strong foundations in communication, group collaboration, and creative expression.',
-      ep2_when: 'Grade 10 – Grade 12',
+      ep1_desc: 'Built strong foundations in communication, group collaboration, and creative expression (GPA: 3.22).',
+      ep2_when: '2020 – 2023 • Upper Secondary (Grade 10 – 12)',
       ep2_title: 'Upper Secondary — Photography, Editing & School Media',
       ep2_org: 'Patumratchawongsa School',
-      ep2_desc: 'Developed skills in photography, video editing, and teamwork through school media activities.',
-      ep3_when: 'Bachelor’s Degree • Present',
+      ep2_desc: 'Developed skills in photography, video editing, and teamwork through school media activities (GPA: 2.51).',
+      ep3_when: '2023 – Present • Bachelor’s Degree (3rd Year)',
       ep3_title: 'School of Communication Arts — Creative Content Production & Digital Experience (CDE)',
       ep3_org: 'Bangkok University',
-      ep3_desc: 'Mastering end-to-end content production, scriptwriting, broadcast anchoring, editing, and Generative AI.',
+      ep3_desc: 'Class of 2023 (ID 166...). Mastering end-to-end content production, scriptwriting, broadcast anchoring, editing, and Generative AI (Cumulative GPAX: 3.29).',
 
       contact_subtitle: 'Open for internships, production roles, and creative collaborations.',
       cs_talent: 'Miss Khanittha Wanchai (Aom)',
@@ -416,7 +416,7 @@
       cv_desc: 'View the print-ready Resume / CV or download it as PDF.',
       cv_btn: 'View Resume / CV',
 
-      footer_copyright: '© 2024–2026 Khanittha Wanchai • Creative Content Production and Digital Experience (CDE) • School of Communication Arts, Bangkok University'
+      footer_copyright: '© 2023–2026 Khanittha Wanchai • Creative Content Production and Digital Experience (CDE) • School of Communication Arts, Bangkok University'
     }
   };
 
@@ -431,14 +431,14 @@
       'ข้อมูลส่วนตัว & ประวัติการศึกษา', 'กิจกรรมในมหาวิทยาลัย (CDE Staff & Awakening Bangkok)',
       'ผลงานในชั้นเรียน — AI Content Creation', 'ผลงานในชั้นเรียน — ผู้ประกาศข่าว & CapCut',
       'กิจกรรม — ผลงานตัดต่อวิดีโอส่วนตัว', 'เวิร์กช็อป — CDE Back to the Future & Intel AI',
-      'เกียรติบัตร — Huawei Hub 1st Place & Airdog 2024', 'ขอขอบคุณ (Thank You)'
+      'เกียรติบัตร — Huawei Hub 2025 (1st Place) & Airdog 2024', 'ขอขอบคุณ (Thank You)'
     ],
     en: [
       'Cover Page', 'Preface & Vision', 'Career Goals & Motivation',
       'Personal Profile & Education', 'Campus Life: CDE Staff & Awakening BKK',
       'Coursework: AI Content Creation', 'Coursework: News Anchor & CapCut',
       'Projects: Personal Video Showcase', 'Workshops: CDE Future & Intel AI',
-      'Awards: Huawei Hub 1st & Airdog 2024', 'Thank You & Wrap'
+      'Awards: Huawei Hub 2025 (1st Place) & Airdog 2024', 'Thank You & Wrap'
     ]
   };
 
