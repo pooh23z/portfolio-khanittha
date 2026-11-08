@@ -402,7 +402,7 @@ section { position: relative; scroll-margin-top: 105px; }
 .battery i { width: 22px; height: 11px; border: 1.5px solid #fff; border-radius: 2px; position: relative; padding: 1px; }
 .battery i::before { content: ""; display: block; height: 100%; width: 78%; background: #7CFFB2; }
 .battery i::after { content: ""; position: absolute; right: -4px; top: 3px; width: 2px; height: 4px; background: #fff; }
-.vf-focus { position: absolute; left: 50%; top: 36%; width: 92px; height: 92px; transform: translate(-50%, -50%); transition: left .5s ease, top .5s ease; }
+.vf-focus { position: absolute; left: 50%; top: 20%; width: 92px; height: 92px; transform: translate(-50%, -50%); transition: left .5s ease, top .5s ease; }
 .vf-focus::before, .vf-focus::after { content: ""; position: absolute; inset: 0; border: 1.5px solid #7CFFB2; clip-path: polygon(0 0, 22% 0, 22% 3%, 3% 3%, 3% 22%, 0 22%, 0 78%, 3% 78%, 3% 97%, 22% 97%, 22% 100%, 0 100%, 0 0, 100% 0, 100% 22%, 97% 22%, 97% 3%, 78% 3%, 78% 0, 100% 0, 100% 100%, 78% 100%, 78% 97%, 97% 97%, 97% 78%, 100% 78%, 100% 100%); animation: focusPulse 2.4s ease-in-out infinite; }
 .af-tag { position: absolute; left: 50%; bottom: -18px; transform: translateX(-50%); font-size: 9px; letter-spacing: .12em; color: #7CFFB2; background: rgba(0,0,0,.65); padding: 1px 6px; border-radius: 3px; white-space: nowrap; }
 @keyframes focusPulse { 0%, 100% { transform: scale(1); opacity: 1; } 45% { transform: scale(1.18); opacity: .6; } 55% { transform: scale(.96); opacity: 1; } }
