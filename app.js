@@ -146,33 +146,37 @@
       reel6_title: 'วิดีโอโฆษณาจำลอง — ฟิตเนส & เครื่องดื่มเกลือแร่',
       reel6_desc: 'ถ่ายทำและกำกับโฆษณาจำลองในยิม ออกแบบมุมกล้อง การเคลื่อนไหวแอ็กชัน จังหวะตัดต่อกระชับเร้าใจ และเกรดสี Mood & Tone',
 
-      reel7_meta: 'EP.07 — SHORT-FORM',
-      reel7_title: 'Creative Short Content — ตำส้มตำแซ่บ (CapCut)',
-      reel7_desc: 'ตัดต่อวิดีโอสั้นสไตล์อาหารและไลฟ์สไตล์ ดีไซน์จังหวะสับภาพตามจังหวะเพลง (Beat Sync) ใส่ Keyframe และ Sound FX ให้ดูน่ารับประทาน',
+      reel7_meta: 'EP.07 — NATIONAL CONTEST WINNER',
+      reel7_title: 'วิดีโอสั้นรางวัลระดับประเทศ — เครื่องฟอกอากาศ Airdog',
+      reel7_desc: 'รางวัลชมเชยระดับประเทศ Airdog VDO Contest 2024 โดย NAPA SOLUTIONS CO., LTD. ออกแบบสตอรี่บอร์ด ถ่ายทำ ตัดต่อ และนำเสนอคุณสมบัติเครื่องฟอกอากาศ Airdog ในรูปแบบคลิปสั้นร่วมสมัย',
 
       reel8_meta: 'EP.08 — SHORT-FORM',
-      reel8_title: 'Lifestyle & Food Vlog — รีวิวของอร่อย & คาเฟ่',
-      reel8_desc: 'วิดีโอบล็อกเกาะเทรนด์ไลฟ์สไตล์ เล่าเรื่องเป็นธรรมชาติ ใส่ทรานซิชันซูมและสปีดการตัดต่อเพื่อดึงดูดความสนใจและ Engagement',
+      reel8_title: 'Creative Short Content — ตำส้มตำแซ่บ (CapCut)',
+      reel8_desc: 'ตัดต่อวิดีโอสั้นสไตล์อาหารและไลฟ์สไตล์ ดีไซน์จังหวะสับภาพตามจังหวะเพลง (Beat Sync) ใส่ Keyframe และ Sound FX ให้ดูน่ารับประทาน',
 
-      reel9_meta: 'EP.09 — DIRECTOR\'S CUT',
-      reel9_title: 'Cinematic Light & Mood — Red Dome Installation',
-      reel9_desc: 'งานตัดต่อคุมโทนภาพยนตร์ (Color Grade & Mood) บันทึกแสงเงาศิลปะร่วมสมัยในโดมสีแดง ถ่ายทอดอารมณ์และมุมมองผู้กำกับ',
+      reel9_meta: 'EP.09 — SHORT-FORM',
+      reel9_title: 'Lifestyle & Food Vlog — รีวิวของอร่อย & คาเฟ่',
+      reel9_desc: 'วิดีโอบล็อกเกาะเทรนด์ไลฟ์สไตล์ เล่าเรื่องเป็นธรรมชาติ ใส่ทรานซิชันซูมและสปีดการตัดต่อเพื่อดึงดูดความสนใจและ Engagement',
 
       reel10_meta: 'EP.10 — DIRECTOR\'S CUT',
-      reel10_title: 'Night Street Dance & Night Market Vlog',
-      reel10_desc: 'วิดีโอบันทึกโมเมนต์สตรีทแดนซ์และบรรยากาศสตรีทฟู้ดยามค่ำคืน การคุมจังหวะภาพสนุกสนานและมีชีวิตชีวา',
+      reel10_title: 'Cinematic Light & Mood — Red Dome Installation',
+      reel10_desc: 'งานตัดต่อคุมโทนภาพยนตร์ (Color Grade & Mood) บันทึกแสงเงาศิลปะร่วมสมัยในโดมสีแดง ถ่ายทอดอารมณ์และมุมมองผู้กำกับ',
 
-      reel11_meta: 'EP.11 — PHOTOGRAPHY',
-      reel11_title: 'Awakening Bangkok ณ สวนรมณีนาถ',
-      reel11_desc: 'ช่างภาพบันทึกเทศกาลไฟยามค่ำคืน ถ่ายทอดศิลปะแสงและปฏิสัมพันธ์ของผู้ชม',
+      reel11_meta: 'EP.11 — DIRECTOR\'S CUT',
+      reel11_title: 'Night Street Dance & Night Market Vlog',
+      reel11_desc: 'วิดีโอบันทึกโมเมนต์สตรีทแดนซ์และบรรยากาศสตรีทฟู้ดยามค่ำคืน การคุมจังหวะภาพสนุกสนานและมีชีวิตชีวา',
 
-      reel12_meta: 'EP.12 — BEHIND THE SCENES',
-      reel12_title: 'Staff สาขา CDE & Diamond Days 2024',
-      reel12_desc: 'ออกกองหลายหน้าที่ — ช่างแต่งหน้า หาพร็อพ และพี่บิ้วงานปฐมนิเทศ ม.กรุงเทพ',
+      reel12_meta: 'EP.12 — PHOTOGRAPHY',
+      reel12_title: 'Awakening Bangkok ณ สวนรมณีนาถ',
+      reel12_desc: 'ช่างภาพบันทึกเทศกาลไฟยามค่ำคืน ถ่ายทอดศิลปะแสงและปฏิสัมพันธ์ของผู้ชม',
 
-      reel13_meta: 'EP.13 — MASTERCLASS',
-      reel13_title: 'Workshop "สร้างภาพอย่างคูล AI Everywhere"',
-      reel13_desc: 'อบรมและลงมือจริงกับ Intel Core Ultra ประยุกต์ AI ในการผลิตภาพและสื่อยุคใหม่',
+      reel13_meta: 'EP.13 — BEHIND THE SCENES',
+      reel13_title: 'Staff สาขา CDE & Diamond Days 2024',
+      reel13_desc: 'ออกกองหลายหน้าที่ — ช่างแต่งหน้า หาพร็อพ และพี่บิ้วงานปฐมนิเทศ ม.กรุงเทพ',
+
+      reel14_meta: 'EP.14 — MASTERCLASS',
+      reel14_title: 'Workshop "สร้างภาพอย่างคูล AI Everywhere"',
+      reel14_desc: 'อบรมและลงมือจริงกับ Intel Core Ultra ประยุกต์ AI ในการผลิตภาพและสื่อยุคใหม่',
 
       bts_subtitle: 'ประสบการณ์จริงหลังกล้อง — ออกกอง ถ่ายภาพ แต่งหน้านักแสดง และทีมสตาฟฟ์สาขา',
       pol_1: 'ช่างแต่งหน้ากองถ่าย',
@@ -192,6 +196,7 @@
       award2_title: 'Honorable Mention — Airdog VDO Contest 2024',
       award2_desc: 'รางวัลชมเชยการประกวดผลิตวิดีโอเครื่องฟอกอากาศ AIRDOG บนโซเชียลมีเดีย โดย NAPA SOLUTIONS CO., LTD. (ปี 2567)',
       cert_zoom: 'คลิกเพื่อขยาย',
+      award_play_video: 'ดูคลิปวิดีโอผลงานประกวดจริง',
 
       lookbook_subtitle: 'ม่านเปิดแล้ว เลื่อนดูเล่มพอร์ตฉบับจริงทั้ง 11 หน้า — คลิกจอเพื่อดูเต็มจอ หรือใช้ปุ่มลูกศรซ้าย-ขวา',
       lb_prev: 'ก่อนหน้า',
@@ -343,33 +348,37 @@
       reel6_title: 'Spec Commercial Ad — Fitness & Energy Drink',
       reel6_desc: 'Directed and edited a fast-paced gym commercial spot with dynamic camera work, punchy sound design, and color grading.',
 
-      reel7_meta: 'EP.07 — SHORT-FORM',
-      reel7_title: 'Creative Short Content — Somtum (CapCut)',
-      reel7_desc: 'Short-form food content editing with beat syncing, keyframe zooms, and snappy sound effects for TikTok and Reels.',
+      reel7_meta: 'EP.07 — NATIONAL CONTEST WINNER',
+      reel7_title: 'National Contest Video — Airdog Air Purifier',
+      reel7_desc: 'Honorable Mention award winner at Airdog VDO Contest 2024 by NAPA SOLUTIONS CO., LTD. Designed storyboard, filmed, edited, and presented product features in an engaging short-form video.',
 
       reel8_meta: 'EP.08 — SHORT-FORM',
-      reel8_title: 'Lifestyle & Food Vlog — Cafe & Street Eats',
-      reel8_desc: 'Lifestyle food vlog capturing candid food moments, snappy transitions, and engaging visual pacing.',
+      reel8_title: 'Creative Short Content — Somtum (CapCut)',
+      reel8_desc: 'Short-form food content editing with beat syncing, keyframe zooms, and snappy sound effects for TikTok and Reels.',
 
-      reel9_meta: 'EP.09 — DIRECTOR\'S CUT',
-      reel9_title: 'Cinematic Light & Mood — Red Dome Installation',
-      reel9_desc: 'Cinematic tone study in a red dome art space, emphasizing atmosphere, color grading, and intimate framing.',
+      reel9_meta: 'EP.09 — SHORT-FORM',
+      reel9_title: 'Lifestyle & Food Vlog — Cafe & Street Eats',
+      reel9_desc: 'Lifestyle food vlog capturing candid food moments, snappy transitions, and engaging visual pacing.',
 
       reel10_meta: 'EP.10 — DIRECTOR\'S CUT',
-      reel10_title: 'Night Street Dance & Night Market Vlog',
-      reel10_desc: 'Energetic street dance and night market food vlog capturing youthful vibrancy and beat-matched cuts.',
+      reel10_title: 'Cinematic Light & Mood — Red Dome Installation',
+      reel10_desc: 'Cinematic tone study in a red dome art space, emphasizing atmosphere, color grading, and intimate framing.',
 
-      reel11_meta: 'EP.11 — PHOTOGRAPHY',
-      reel11_title: 'Awakening Bangkok at Rommaninat Park',
-      reel11_desc: 'Event photographer capturing nighttime light installations, mood, and visitor interactions.',
+      reel11_meta: 'EP.11 — DIRECTOR\'S CUT',
+      reel11_title: 'Night Street Dance & Night Market Vlog',
+      reel11_desc: 'Energetic street dance and night market food vlog capturing youthful vibrancy and beat-matched cuts.',
 
-      reel12_meta: 'EP.12 — BEHIND THE SCENES',
-      reel12_title: 'Staff CDE & Diamond Days 2024',
-      reel12_desc: 'Multidisciplinary on-set crew: makeup artist, prop management, and freshman orientation MC.',
+      reel12_meta: 'EP.12 — PHOTOGRAPHY',
+      reel12_title: 'Awakening Bangkok at Rommaninat Park',
+      reel12_desc: 'Event photographer capturing nighttime light installations, mood, and visitor interactions.',
 
-      reel13_meta: 'EP.13 — MASTERCLASS',
-      reel13_title: 'Workshop "AI Everywhere with Intel Core Ultra"',
-      reel13_desc: 'Hands-on masterclass leveraging Intel Core Ultra processors for generative media production.',
+      reel13_meta: 'EP.13 — BEHIND THE SCENES',
+      reel13_title: 'Staff CDE & Diamond Days 2024',
+      reel13_desc: 'Multidisciplinary on-set crew: makeup artist, prop management, and freshman orientation MC.',
+
+      reel14_meta: 'EP.14 — MASTERCLASS',
+      reel14_title: 'Workshop "AI Everywhere with Intel Core Ultra"',
+      reel14_desc: 'Hands-on masterclass leveraging Intel Core Ultra processors for generative media production.',
 
       bts_subtitle: 'Hands-on experience behind the camera — filming, photography, on-set makeup, and crew staff.',
       pol_1: 'On-Set Makeup Artist',
@@ -389,6 +398,7 @@
       award2_title: 'Honorable Mention — Airdog VDO Contest 2024',
       award2_desc: 'National Honorable Mention in the Airdog Air Purifier short-video contest by NAPA SOLUTIONS CO., LTD. (2024).',
       cert_zoom: 'Click to Zoom',
+      award_play_video: 'Watch Winning Video',
 
       lookbook_subtitle: 'Curtain rises! Flip through all 11 pages of the official portfolio lookbook — click to view fullscreen.',
       lb_prev: 'Prev',
@@ -729,7 +739,7 @@
     $$('.filter').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const f = btn.dataset.filter;
-    $$('.reel').forEach(r => r.classList.toggle('hide', f !== 'all' && r.dataset.cat !== f));
+    $$('.reel').forEach(r => r.classList.toggle('hide', f !== 'all' && !(r.dataset.cat || '').split(' ').includes(f)));
   }));
 
   /* ---------- Lightbox (Images) ---------- */

@@ -922,6 +922,36 @@ section { position: relative; scroll-margin-top: 105px; }
 .cert img { border-radius: 5px; width: 100%; }
 .cert .zoom { position: absolute; right: 16px; top: 16px; font-family: var(--f-mono); font-size: 11px; background: rgba(0,0,0,.7); backdrop-filter: blur(6px); color: #fff; padding: 5px 10px; border-radius: 6px; transition: opacity .25s; display: inline-flex; align-items: center; gap: 5px; }
 @media (hover: hover) { .cert .zoom { opacity: 0; } .cert:hover .zoom, .cert:focus-visible .zoom { opacity: 1; } }
+.award-play-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff3d7f, #e3a740);
+  color: #0b0b10;
+  font-family: var(--f-body);
+  font-size: .88rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 24px -6px rgba(255, 61, 127, .45);
+  transition: transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s ease, filter .25s ease;
+  width: auto;
+}
+.award-play-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 14px 28px -6px rgba(255, 61, 127, .6);
+  filter: brightness(1.08);
+}
+.award-play-btn:active {
+  transform: translateY(0) scale(.98);
+}
+.award-play-btn svg {
+  flex-shrink: 0;
+}
 .trophy { display: inline-flex; flex-direction: column; align-items: center; gap: 8px; cursor: pointer; background: none; border: none; padding: 6px 16px; border-radius: 12px; transition: transform .25s ease; }
 .trophy:hover { transform: scale(1.06); }
 .trophy-svg { width: 56px; height: 56px; stroke: #f6c46a; stroke-width: 1.8; fill: rgba(246, 196, 106, .18); filter: drop-shadow(0 10px 24px rgba(246,196,106,.45)); animation: trophy 3s ease-in-out infinite; }
